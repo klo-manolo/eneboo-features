@@ -1,0 +1,76 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >288</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >662</xupdate:update>
+<xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/spacer[spacer20]" />
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbIvaIncluido</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>110</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>ivaincluido</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasFacturasCli]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIvaIncluido]" >
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPvpUnitarioIva</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>170</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="fieldName" >
+<string>pvpunitarioiva</string>
+</property>
+<property name="tableName" >
+<string/>
+</property>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]/text()[1]" >fdbDescripcion</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]/text()[1]" >fdbPvpSinDto</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]/text()[1]" >fdbDtoLineal</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]/text()[1]" >fdbDtoPor</xupdate:update>
+<xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]/text()[1]" >fdbPvpTotal</xupdate:update>
+</xupdate:modifications>

@@ -1,0 +1,10 @@
+<flpatch:modifications name="tpv_iva_incl" >
+    <flpatch:patchXml path="facturacion/tpv/forms/" name="tpv_lineascomanda.ui" />
+    <flpatch:replaceFile path="facturacion/tpv/queries/" name="tpv_i_comandas.qry" />
+    <flpatch:replaceFile path="facturacion/tpv/reports/" name="tpv_i_comandas.kut" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="flfact_tpv.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_comandas.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_lineascomanda.qs" />
+    <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastercomandas.qs" />
+    <flpatch:patchXml path="facturacion/tpv/tables/" name="tpv_lineascomanda.mtd" />
+</flpatch:modifications>
