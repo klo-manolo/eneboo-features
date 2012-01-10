@@ -1,0 +1,85 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]" >
+<action>
+<name>jrpt_declararinforme</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;declararinforme&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Declaración de los informes &quot;)</description>
+<table>jrpt_declararinforme</table>
+<form>jrpt_masterdeclararinforme</form>
+<scriptform>jrpt_masterdeclararinforme</scriptform>
+<formrecord>jrpt_declararinforme</formrecord>
+<scriptformrecord>jrpt_declararinforme</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[jrpt_declararinforme]" >
+<action>
+<name>jrpt_generarinforme</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;generarinforme&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;generación de los informes &quot;)</description>
+<table>jrpt_generarinforme</table>
+<form>i_master</form>
+<scriptform>jrpt_mastergenerarinforme</scriptform>
+<formrecord>jrpt_generarinforme</formrecord>
+<scriptformrecord>jrpt_generarinforme</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[jrpt_generarinforme]" >
+<action>
+<name>jrpt_colaimpresion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cola de Impresion&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cola de Impresion&quot;)</description>
+<table>jrpt_colaimpresion</table>
+<form>master</form>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[jrpt_colaimpresion]" >
+<action>
+<name>jrpt_modeloinforme</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelos de los Informes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelos de los Informes&quot;)</description>
+<table>jrpt_modeloinforme</table>
+<form>master</form>
+<formrecord>jrpt_modeloinforme</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[jrpt_modeloinforme]" >
+<action>
+<name>jrpt_argumentoinforme</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Argumento de los Informes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Argumento de los Informes&quot;)</description>
+<table>jrpt_argumentoinforme</table>
+<form>master</form>
+<formrecord>jrpt_argumentoinforme</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[jrpt_argumentoinforme]" >
+<action>
+<name>jrpt_argugenerarinforme</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Argumento de Generar Informes&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Argumento de Generar Informes&quot;)</description>
+<table>jrpt_argugenerarinforme</table>
+<form>master</form>
+<formrecord>jrpt_argugenerarinforme</formrecord>
+<scriptformrecord>jrpt_argugenerarinforme</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[jrpt_argugenerarinforme]" >
+<action>
+<name>jrpt_config</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Configuración&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;configuración&quot;)</description>
+<table>jrpt_modeloinforme</table>
+<form>jrpt_config</form>
+<scriptform>jrpt_config</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[jrpt_config]" >
+<action>
+<name>jrpt_selecinforme</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seleccionar Informe&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seleccionar Informe&quot;)</description>
+<table>jrpt_modeloinforme</table>
+<form>jrpt_selecinforme</form>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

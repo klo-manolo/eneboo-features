@@ -1,0 +1,27 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="jasper" >
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:addFile path="facturacion/informes/doc/" name="Instalacion_de_jasper_reports_para_abanq.odt" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_argugenerarinforme.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_argumentoinforme.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_config.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_declararinforme.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_generarinforme.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_masterdeclararinforme.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_modeloinforme.ui" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="jrpt_selecinforme.ui" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="jrpt_argugenerarinforme.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="jrpt_config.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="jrpt_declararinforme.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="jrpt_generarinforme.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="jrpt_masterdeclararinforme.qs" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="jrpt_mastergenerarinforme.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="jrpt_argugenerarinforme.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="jrpt_argumentoinforme.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="jrpt_colaimpresion.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="jrpt_declararinforme.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="jrpt_generarinforme.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="jrpt_modeloinforme.mtd" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="jrpt_selecinforme.mtd" />
+</flpatch:modifications>

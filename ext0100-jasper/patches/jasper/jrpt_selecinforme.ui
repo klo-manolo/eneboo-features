@@ -1,0 +1,85 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formSelecInforme</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formSelecInforme</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>319</width>
+            <height>166</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Seleccionar Informe</string>
+    </property>
+    <property name="iconText">
+        <string></string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>6</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QGroupBox" row="0" column="0">
+            <property name="name">
+                <cstring>groupBox3</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string>Personalizado</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QListBox" row="0" column="0">
+                    <item>
+                        <property name="text">
+                            <string>InformeKut</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>InformeJrxml</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Argumentos</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>listBox1</cstring>
+                    </property>
+                    <property name="acceptDrops">
+                        <bool>false</bool>
+                    </property>
+                    <property name="frameShape">
+                        <enum>GroupBoxPanel</enum>
+                    </property>
+                    <property name="midLineWidth">
+                        <number>0</number>
+                    </property>
+                    <property name="resizePolicy">
+                        <enum>AutoOneFit</enum>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

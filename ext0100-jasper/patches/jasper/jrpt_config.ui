@@ -1,0 +1,194 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>config</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>config</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>428</width>
+            <height>252</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Configuración</string>
+    </property>
+    <property name="iconText">
+        <string></string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>gbxConfiguracion</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox" row="2" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>gbxDirImpresora_2</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Programa Visor PDF</string>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblRutaVisor</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>250</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnVisorPdf</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>120</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>Visor Pdf</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QGroupBox" row="1" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>gbxDirImpresora</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Ruta al servidor de Impresion</string>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>lblRutaServer</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>250</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnBuscar</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>120</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>Buscar</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Configuracion</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="0" column="1">
+                    <property name="name">
+                        <cstring>cbnCambiarBarras</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Cambiar a Contrabarras</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>pbnGuardar</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>32</horstretch>
+                    <verstretch>32</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32</width>
+                    <height>32</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="iconSet">
+                <iconset>image0</iconset>
+            </property>
+        </widget>
+        <spacer row="1" column="0">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>360</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1427">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000055a49444154789ced976b6c145514c7fff7de99d96e5bfba085b6b640e551b0ad4079531091800f4835180b3125418982a1624a88d1a8113f58436263f00bc418500b86884422a6d1d6b64a440481f0dab6dbf4614b5b762905babbed3e66eec30f856dcbcb12403ec84d4ee666ce3df3ffcd993be7de4b9452b89f8dde57f5070000b4ab9d988fd2a0940421144c68a0dcb872d5c084010802c904a412500687240292092826208980d20514159094f78d231cd0250478df18267428f526185b472077c835b218f82f32400029551a2cf5654a7272c993d373c6d8ed518557ddf71c4070b11494fd9c9339b160c3827988613a42bda2e5aa5fbb45ec9d358578cb941f460c8f7d237f7a162d98381edb6b9cd8ffbba38d5a2a9c817b0220b99c69527c3a2a23656ee19cc9589294822dce3a7cff5bad8706d5abc4464fdc2b009d5b722d8db56d9a37253571fdb42c4c8d8cc3b6bf1bf14d555d0feb51af20825648c870c040805829d5744ad531009edb5556424d0809f9f1b0f4f81796e78e45fe98911846756c696c406979ad898bbc9045907d822828d25f7dc3008c689f458eb0bfe4bf685642aa0200dd4315975cbe2822d927999386a7af9e9581b90989a09463674b1b7697374aeee6ef6936bd544a02ca0988ea9ffb6100026dfeac1969467b9b6f49fdb1ae5d065105ff9a0989382ee5fbda08dbfa45b31f360ab2c761b42d0ea6f0e380fb3c4a2b9a113ac78b0dc3288104986903b966e909a3701fd9ef739b589e3b12a3b3872de51c3b9544cccdb495504f70422a53b36237aecbcb368aa6cc40aa9684a03051e972e3f3b256f4345a2586c6368184a3a0aef90461009bd44a6b6abc1e1ad2b161d154244d88cab3b8fa0240f46065d8848977f190f6c3b4c713a6bdf5740ef252a7003c1a2111c4914b2eecac6c47b733f4adc1d83b20b8e5721b0660d04f99e7f14bd5994ecc8ccf41e1a2594818672cb72cb20d4ad9fade1a8f7282ddd1e94671de3369b145b3e720db9e097f88c2523d38ed6d47695507ba1cd68f06d3d6124ac4adc4810173804a4d181629759cf12cabce76b015a39621f054003b50bbd2eb80a00a7faa68b669ecd48894fcd9e9c84d7c0c9076784c1f407b51eb6dc7d7d5e7e03a6a551994beac881cd29fd40f60eaa040b9e522472a9d75b9f393e66159eaf3082c0ca0d4d7b2caeca1ab66ccb5237f721632222722640904a40f2041b4f8dbb0e7a00baebf448d0d6cb560f2d250b739fd005c0700530f6257bdc3cc3d9cf90716262ec59294c5f02efe0921c1f1ec239390c0d2e0330308a95e10124447a815df1d72a1e5a06cd22db652d9e4d9216a5f03a0faba84606fb0094507ea1b3226c438112147e0b9d10ba0c0a1a48ecba16e582a0410132eeb2cf61eee40433569d3836c85b45b27073f5e01e48adda4f54f42ae81710d9ad22fb05e7db7b386a3ced38080f420c025fca680d7ea869ff7c25241b8ad36949d70a1a94af7e87efa1ad1e8712802a2fa0a0d9114443210a181dec0aecfc0809b44d1525f037bfdd8d9d6a4e4f10990c200572108c5a1c0e1159da8ae75c35961f4685eb286d84439e50c1a376e27fb833340851e36466833edb255384f7334f536c32f7ce8317df0f31e74f10e54d6b8e128b373add328a23af6dcb6ea8d0098a90f30033ad7b77aeaa2ccda8e2e784517fca217dde23c0e355c80b32c0aa4c3f601d1b1fd4ec4070150ae0d32a6d851b8237e6dae63e80c75c1ab2ee064fb45d497c781b54596301d9bef547c308034061b34a187f4af7ca76364ebe54ba8e9f0a0ae2c11a88fda4a35bc0d72774e34032a21bbde4b4819ce459d6a3e199f63b645423962f651c3dc28c9801dc55d03e03700007c44d0cdfecae46212a0c7291185922078b7c401803c381bfeef01fe01eb138c416c8145760000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

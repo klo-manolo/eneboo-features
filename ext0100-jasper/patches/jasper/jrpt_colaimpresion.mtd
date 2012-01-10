@@ -1,0 +1,90 @@
+<!DOCTYPE TMD> 
+<TMD> 
+    <name>jrpt_colaimpresion</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Cola Impresión")</alias>
+<field>
+        <name>id</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+</field>
+<field>
+	<name>codinforme</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Informe")</alias>
+	<pk>false</pk>
+        <type>string</type>
+        <length>18</length>
+		<relation>
+			<table>jrpt_declararinforme</table>
+			<field>codinforme</field>
+			<card>M1</card>
+		</relation>
+</field>
+<field>
+        <name>modelo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Modelo Del Informe")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>80</length>
+            <relation>
+                        <table>jrpt_modeloinforme</table>
+                        <field>nombre</field>
+                        <card>M1</card>
+            </relation>
+</field>
+<field>
+	<name>peticion</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Peticion de Impresión")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>18</length>
+</field>
+<field>
+	<name>estado</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Estado de la Impresión")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+        <length>20</length>
+        <optionslist>Pendiente, Procesando, Terminado</optionslist>
+</field>
+<field>
+        <name>fecha</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Fecha de Impresión")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>date</type>
+</field>
+<field>
+        <name>hora</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Hora de la Impresión")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>time</type>
+</field>
+<field>
+        <name>urlpdf</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Url del Pdf")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+	<length>200</length>
+</field>
+<field>
+        <name>argumentos</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Argumentos de la Impresión")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+</field>
+<field>
+        <name>mensaje</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Mensaje")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>stringlist</type>
+</field>
+</TMD>

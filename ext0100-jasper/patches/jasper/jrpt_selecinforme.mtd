@@ -1,0 +1,40 @@
+<!DOCTYPE TMD> 
+<TMD> 
+    <name>jrpt_selecinforme</name>
+    <alias>QT_TRANSLATE_NOOP("MetaData","Selecionar Informe")</alias>
+<field>
+        <name>id</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+</field>
+<field>
+        <name>codinforme</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","CodInforme")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <ck>true</ck> 
+        <type>string</type>
+        <length>65</length>
+                <relation>
+                        <table>jrpt_modeloinforme</table>
+                        <field>codinforme</field>
+                        <card>M1</card>
+                </relation>
+</field>
+<field>
+        <name>informekut</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Informe Kut")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>                
+</field>
+</TMD>
+
+
+
+
+
+
