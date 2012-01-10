@@ -1,0 +1,13 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[customviewer]" >
+<action>
+<name>modelosimpresion</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelos de impresin&quot;)</alias>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<table>modelosimpresion</table>
+<form>i_master</form>
+<formrecord>modelosimpresion</formrecord>
+<scriptformrecord>modelosimpresion</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

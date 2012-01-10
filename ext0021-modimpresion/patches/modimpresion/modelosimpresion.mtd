@@ -1,0 +1,90 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>modelosimpresion</name>
+	<!-- Listado de modelos de impresión para informes -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Modelos de impresión")</alias>
+	
+	<field>
+		<name>tipo</name>
+		<!-- Tipo de documento -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de documento")</alias>
+		<pk>false</pk>
+		<null>false</null>
+		<type>string</type>
+		<length>50</length>
+		<optionslist>QT_TRANSLATE_NOOP("MetaData","Presupuesto de cliente");QT_TRANSLATE_NOOP("MetaData","Pedido de cliente");QT_TRANSLATE_NOOP("MetaData","Albaran de cliente");QT_TRANSLATE_NOOP("MetaData","Factura de cliente");QT_TRANSLATE_NOOP("MetaData","Recibo de cliente");QT_TRANSLATE_NOOP("MetaData","Pedido de proveedor");QT_TRANSLATE_NOOP("MetaData","Albaran de proveedor");QT_TRANSLATE_NOOP("MetaData","Factura de proveedor");QT_TRANSLATE_NOOP("MetaData","Recibo de proveedor")</optionslist>
+		<default>QT_TRANSLATE_NOOP("MetaData","Presupuesto de cliente")</default>
+	</field>
+
+	<field>
+		<name>descripcion</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<pk>false</pk>
+		<null>false</null>
+		<type>string</type>
+		<length>200</length>
+	</field>
+	
+	<field>
+		<name>report</name>
+		<!-- Tipo de documento -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fichero de report")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>consulta</name>
+		<!--Fichero de consulta-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fichero de consulta")</alias>
+		<pk>false</pk>
+		<null>true</null>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>ordenacion</name>
+		<!--Order by-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Order by")</alias>
+		<pk>false</pk>
+		<null>true</null>
+		<type>string</type>
+		<length>100</length>
+	</field>
+	
+	<field>
+	    <name>codmodelo</name>
+		<!--Código identificativo del modelo-->
+        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Código&quot;)</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>string</type>
+        <length>4</length>
+        <counter>true</counter>
+	</field>
+
+	<field>
+	    <name>modelodefecto</name>
+		<!--Modelo por defecto-->
+        <alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Modelo por defecto&quot;)</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+	</field>
+	
+	<field>
+		<name>tipointerno</name>
+		<!-- Tipo de documento -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de documento")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+		<default>presupuestoscli</default>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+</TMD>
