@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="50" TopMargin="50" RightMargin="30" LeftMargin="60" PageOrientation="0" PageSize="0" >
+	<Detail Height="0" Level="0"/>
+	
+	<DetailHeader Height="700" Level="1" >
+		
+		<!-- CLIENTE -->
+		<!-- KLO  
+		     <Line Width="1" Y1="89" Y2="89" X1="219" X2="591" Style="1" Color="100,100,100" />
+		     <Line Width="1" Y1="174" Y2="174" X1="219" X2="591" Style="1" Color="100,100,100" />
+		     <Line Width="1" Y1="89" Y2="174" X1="219" X2="219" Style="1" Color="100,100,100" />
+		     <Line Width="1" Y1="89" Y2="174" X1="590" X2="590" Style="1" Color="100,100,100" />
+		     -->
+		     
+		     <Label WordWrap="1" Width="78" X="262" Y="91" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text=" Cliente" FontWeight="65" FontSize="12" BorderWidth="0" FontFamily="Arial" />
+		     <Field WordWrap="1" Width="250" X="310" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="2" DataType="0" Field="facturascli.codcliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.codcliente]" FontWeight="65" FontSize="12" BorderWidth="0" Precision="2" FontFamily="Arial Narrow" />
+		     
+		     <Field WordWrap="1" Width="350" X="265" Y="115" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="facturascli.nombrecliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.nombrecliente]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		     
+		     <Field WordWrap="1" Width="350" X="265" Y="135" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="facturascli.direccion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.direccion]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		     <Field WordWrap="1" Width="50" X="265" Y="155" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="facturascli.codpostal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.codpostal]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		     <Field WordWrap="1" Width="160" X="305" Y="155" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="facturascli.ciudad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.ciudad]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		     <Field WordWrap="1" Width="100" X="475" Y="155" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="facturascli.provincia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.provincia]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		     
+		     <!-- KLO. Texto de la carta.-->
+		     <Label WordWrap="1" Width="450" X="60" Y="220" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="          Estimado cliente:" FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="450" X="60" Y="260" BorderStyle="0" Height="45" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Nos volvemos aponer en contacto con Vd. en relación a una incidencia de cobro que le comunicamos hace unos días." FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="450" X="60" Y="315" BorderStyle="0" Height="45" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="En ella hacíamos referencia a una factura que, todavía, está registrada como pendiente de pago, y que abajo le indicamos." FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="450" X="60" Y="365" BorderStyle="0" Height="65" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Lamentamos que, desde entonces, la situación continúe de forma irregular, ya que esto no beneficia en nada su relación con esta empresa." FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="450" X="60" Y="430" BorderStyle="0" Height="75" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Por ello, rogamos realice el pago correspondiente en un plazo prudencial de DIEZ DÍAS. Le recordamos que la cuenta bancaria donde puede realizalo es: 2043 0324 19 2001201789." FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="450" X="60" Y="510" BorderStyle="0" Height="100" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Quedamos a la espera de recibir su documento de pago, para evitar el incremento de esa deuda por intereses de demora (Art. 7, Ley 2/2004) recordándole también, que mantener pendiente de pago una deuda más de treinta días después del vencimiento, puede ser motivo suficiente para ser incluido en un fichero de morosos e impagados." FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="450" X="60" Y="620" BorderStyle="0" Height="45" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Confiamos en que esta situación se resolverá de forma rápida, sin necesidad de pasar el asunto a otras instancias." FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="450" X="60" Y="680" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="          Sin más, reciba un cordial saludo." FontWeight="50" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="126" X="335" Y="730" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Megar Oil" FontWeight="65" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     <Special WordWrap="1" Width="90" X="465" Y="730" BorderStyle="0" Height="20" HAlignment="0" DateFormat="19" BorderColor="0,0,0" BackgroundColor="255,255,255" Type="0" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="65" FontSize="14" BorderWidth="1" FontFamily="Times New Roman" />
+		     
+		     <!-- Datos de la factura -->
+		     <Label WordWrap="1" Width="80" X="5" Y="730" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Factura" FontWeight="65" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     <Field WordWrap="1" Width="100" X="5" Y="750" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="facturascli.codigo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.codigo]" FontWeight="50" FontSize="14" BorderWidth="1" Precision="2" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="60" X="130" Y="730" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Fecha" FontWeight="65" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     <Field WordWrap="1" Width="80" X="130" Y="750" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="1" DataType="3" Field="facturascli.fecha" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.fecha]" FontWeight="50" FontSize="14" BorderWidth="1" Precision="2" FontFamily="Times New Roman" />
+		     
+		     <Label WordWrap="1" Width="90" X="220" Y="730" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" Text="Importe" FontWeight="65" FontSize="14" BorderWidth="0" FontFamily="Times New Roman" />
+		     <Field WordWrap="1" Width="90" X="220" Y="750" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="facturascli.total" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="1" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.total]" FontWeight="50" FontSize="14" BorderWidth="1" Precision="2" FontFamily="Times New Roman" />
+		     
+	     </DetailHeader>
+	     
+	     <Detail Height="0" Level="1" DrawIf="facturascli.deabono">
+	     </Detail>
+	     
+	     <DetailHeader Height="0" Level="2" DrawIf="albaranescli.codigo">
+	     </DetailHeader>
+	     
+	     <Detail Height="0" Level="2" >
+	     </Detail>
+	     
+	     <AddOnFooter Height="0" Level="2">
+	     </AddOnFooter>
+	     
+	     <AddOnFooter Height="0" Level="1">
+	     </AddOnFooter>
+	     
+	     <DetailFooter Height="0" Level="1" PlaceAtBottom="true">
+	     </DetailFooter>
+	     
+     </KugarTemplate>
