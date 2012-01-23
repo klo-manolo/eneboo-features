@@ -1,0 +1,3 @@
+Tener en cuenta que en el base de megar usado aqui, est√° ivaIncuido (no el de TPV) y fux-ecommerce.
+Por eso en required-features no est· flux-ecommerce
+
