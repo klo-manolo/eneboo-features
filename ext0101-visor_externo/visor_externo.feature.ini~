@@ -1,0 +1,6 @@
+[feature]
+type=ext
+code=0101
+name=visorexterno
+description=Visualizar informes de Eneboo con un visor externo
+

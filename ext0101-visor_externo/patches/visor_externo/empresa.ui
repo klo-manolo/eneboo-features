@@ -1,0 +1,250 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPage]/vbox[vbox,1]/widget[QGroupBox,gbxConfLocal]/vbox[vbox,1]/spacer[spcConfLocal]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]" >210</xupdate:update>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPage]/vbox[vbox,1]/widget[QGroupBox,gbxConfLocal]/vbox[vbox,1]/property[name]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxEjecutableVisor</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="title" >
+<string>Visor externo</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout20</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblNombreVisor</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>30</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnCambiarVisor</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>100</width>
+<height>32767</height>
+</size>
+</property>
+<property name="text" >
+<string>Cambiar</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Usuario</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Cambiar usuario</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layout19</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>textLabel1</cstring>
+</property>
+<property name="text" >
+<string>Preguntar para usar el visor externo:</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblUsoVisor</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>100</width>
+<height>30</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnCambiarUsoVisor</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>100</width>
+<height>32767</height>
+</size>
+</property>
+<property name="text" >
+<string>Cambiar</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Usuario</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Cambiar usuario</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPage]/vbox[vbox,1]/widget[QGroupBox,gbxConfLocal]/vbox[vbox,1]/widget[QGroupBox,gbxEjecutableVisor]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxDirectorioTmpVisor</cstring>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="title" >
+<string>Directorio donde se guardarán los .pdf temporales del visor externo</string>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblDirTmpVisor</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>5</hsizetype>
+<vsizetype>5</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>400</width>
+<height>30</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="alignment" >
+<set>AlignVCenter</set>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>pbnCambiarDirTmpVisor</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>100</width>
+<height>32767</height>
+</size>
+</property>
+<property name="text" >
+<string>Cambiar</string>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Usuario</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Cambiar usuario</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,dsbAdministrador]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >151</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >85</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,fdbCodEdi]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >98</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[FLFieldDB,fdbCodEjercicio]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >139</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreEjercicio]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >83</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[FLFieldDB,fdbLogo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >80</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[FLFieldDB,fdbCiudad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >98</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[FLFieldDB,fdbDireccion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >117</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout17]/hbox[hbox,1]/widget[FLFieldDB,fdbEmail]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >89</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout17]/hbox[hbox,1]/widget[FLFieldDB,fdbWeb]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >79</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout46]/hbox[hbox,1]/widget[FLFieldDB,fdbBanderaPais]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >87</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout46]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPais]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >85</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout60]/hbox[hbox,1]/widget[FLFieldDB,fdbApartado]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >114</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout60]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPostal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >121</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout90]/hbox[hbox,1]/widget[FLFieldDB,fdbFax]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >72</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layout90]/hbox[hbox,1]/widget[FLFieldDB,fdbTelefono]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >108</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QLayoutWidget,layout92]/hbox[hbox,1]/widget[QFrame,frmDireccion]/vbox[vbox,1]/widget[QLayoutWidget,layoutProvincia]/hbox[hbox,1]/widget[FLFieldDB,fdbProvincia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >95</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >112</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbDesPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbDesPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >23</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >139</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbDesAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbDesAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >23</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >113</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >23</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13]/hbox[hbox,1]/widget[FLFieldDB,fdbContIntegrada]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13]/hbox[hbox,1]/widget[FLFieldDB,fdbContIntegrada]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >150</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13_2]/hbox[hbox,1]/widget[FLFieldDB,fdbStockPedidos]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13_2]/hbox[hbox,1]/widget[FLFieldDB,fdbStockPedidos]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >148</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[FLFieldDB,fdbRecEquivalencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >31</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[FLFieldDB,fdbRecEquivalencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >178</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >120</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDivisa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]" >29</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]" >23</xupdate:update>
+</xupdate:modifications>
