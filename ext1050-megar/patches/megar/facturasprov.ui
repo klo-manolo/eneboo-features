@@ -1,0 +1,102 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">593</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodigo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">80</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodEjercicio]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">108</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">67</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QFrame,frame36]/hbox[hbox,1]/widget[FLFieldDB,fdbNumero]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">85</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">115</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">63</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreProveedor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">51</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbNumProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">119</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fecha]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">75</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,proveedor]/vbox[vbox,1]/widget[QGroupBox,groupBox30_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbAutomatica]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">104</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,contabilidad]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>modelos</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Modelos</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxModelo347</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="title">
+            <string>347</string>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbNoModelo347</cstring>
+              </property>
+              <property name="font">
+                <font/>
+              </property>
+              <property name="acceptDrops">
+                <bool>false</bool>
+              </property>
+              <property name="fieldName">
+                <string>nomodelo347</string>
+              </property>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacer347</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>61</width>
+                  <height>20</height>
+                </size>
+              </property>
+            </spacer>
+          </hbox>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerModelos</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Vertical</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>21</width>
+              <height>178</height>
+            </size>
+          </property>
+        </spacer>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QGroupBox,groupBox27]/grid[grid,1]/widget[FLFieldDB,fdbTotalRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">108</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QGroupBox,groupBox27]/grid[grid,1]/widget[FLFieldDB,fdbTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">81</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QGroupBox,groupBox27]/grid[grid,1]/widget[FLFieldDB,fdbNeto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">69</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QGroupBox,groupBox27]/grid[grid,1]/widget[FLFieldDB,fdbTotalIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">85</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QGroupBox,groupBox27]/grid[grid,1]/widget[FLFieldDB,fdbTotaIrpf]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">87</xupdate:update>
+</xupdate:modifications>

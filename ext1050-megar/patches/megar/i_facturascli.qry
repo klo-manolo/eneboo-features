@@ -1,0 +1,51 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_facturascli</name>
+	
+	<tables>empresa,facturascli,lineasfacturascli,albaranescli</tables>
+	<group>
+		<level>0</level>
+		<field>facturascli.idfactura</field>
+	</group>
+	<group>
+		<level>1</level>
+		<field>lineasfacturascli.idalbaran</field>
+	</group>
+	
+	<select>
+		facturascli.idfactura, lineasfacturascli.idfactura, facturascli.codigo, facturascli.codserie, facturascli.fecha,
+		facturascli.total, facturascli.coddivisa, facturascli.codejercicio, facturascli.codpago, facturascli.codalmacen, facturascli.totaliva,
+		facturascli.codcliente, facturascli.nombrecliente, facturascli.cifnif, facturascli.tasaconv, facturascli.coddir,
+		facturascli.direccion, facturascli.codpostal, facturascli.ciudad, facturascli.provincia, facturascli.apartado, facturascli.totalrecargo,
+		facturascli.codpais, facturascli.neto, lineasfacturascli.referencia,
+		facturascli.deabono, facturascli.idfacturarect,
+		dirclientes.direccion, dirclientes.codpostal, dirclientes.ciudad, dirclientes.apartado, dirclientes.provincia, dirclientes.codpais,
+		lineasfacturascli.descripcion,
+		lineasfacturascli.cantidad,facturascli.irpf, facturascli.totalirpf,
+		lineasfacturascli.pvpunitario, lineasfacturascli.pvptotal, lineasfacturascli.codimpuesto, lineasfacturascli.iva,
+		lineasfacturascli.recargo,((lineasfacturascli.iva/100)*lineasfacturascli.pvpunitario)+((lineasfacturascli.recargo/100)*lineasfacturascli.pvpunitario)+lineasfacturascli.pvpunitario,
+		((lineasfacturascli.iva/100)*lineasfacturascli.dtolineal)+((lineasfacturascli.recargo/100)*lineasfacturascli.dtolineal)+lineasfacturascli.dtolineal,
+		(lineasfacturascli.iva/100)*lineasfacturascli.pvptotal,
+		((lineasfacturascli.iva/100)*lineasfacturascli.pvptotal)+lineasfacturascli.pvptotal,
+		albaranescli.codigo, albaranescli.fecha, albaranescli.observaciones,
+		lineasfacturascli.idalbaran,
+		empresa.nombre, empresa.cifnif, empresa.direccion, empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado, empresa.codpais,
+		facturascli.neto+facturascli.totaliva+facturascli.totalrecargo,
+		formaspago.descripcion
+	</select>
+	
+	<from>
+		empresa,facturascli INNER JOIN lineasfacturascli ON facturascli.idfactura = lineasfacturascli.idfactura
+		INNER JOIN formaspago ON facturascli.codpago = formaspago.codpago
+		LEFT OUTER JOIN albaranescli ON albaranescli.idalbaran = lineasfacturascli.idalbaran
+		INNER JOIN dirclientes ON dirclientes.codcliente = facturascli.codcliente
+	</from>
+	
+	<where>
+	</where>
+	
+	<order>
+		lineasfacturascli.idalbaran, lineasfacturascli.numlinea
+	</order>
+</QRY>

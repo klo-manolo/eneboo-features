@@ -1,0 +1,76 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">170</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnAsociarAFactura]">
+    <spacer>
+      <property name="name">
+        <cstring>SpacerModelos</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Expanding</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>87</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[SpacerModelos]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnModelos</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>base_modelosimage49350</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Modelos fiscales</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Permite vincular o desvincular la factura seleccionada a uno o más modelos fiscales</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="base_modelosimage49350">
+      <data format="PNG" length="1620">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000061b49444154789cc5976d8c5c5519c77f776676667676a7c36eb7d376d92a522ad0c6c652495c35365a1222312285940f16e24b52b11214522b880aa604a1621a8c465e5a50222ff643291f28344009511623aed5aa296937b0a5ddeea6db9dee7476e6de73ef39e7f1c3b9339dee6e97ad21f62427f7de33f79ee777fecfff3977aed7d7d7c7f96c89f31afd5c016eb9f349e91f48c9bbb51e1938d129cfecda27ff1780addbde9430bd58fef1c663dc7ad3955cfd99f98469c3d69f6fe0b24ff4caaebd47fe679019011e7afc0dc9cdfd98ecd8be91552b8b78f178576b9a5c6b8a9d7b0fd2d10e0fdebd9603a3dd72fdfa47cf19c49bce843fddba47eef9e15a3eb7723160e39e025a1accfd8363fceef97d2c5ed88116a1675181da98707971cc9b32e10c2dd57c71d36d8fc8dd77ddcc2b3bd6c7814a71d0246062902490a6bb33c357afbe948e5c8e8b1614e8ccbaa9bef69d5fcbad37af9c35444381a7761f94cd1b3f455721dd14a825664c361deb63f57e663b34a4f9fc556bd9f9c40f6605e17de48a0db2e5be1bb8f14b79c08b575e0f38b9a7a9a7c00f34274e1a4e9c8c28953595aac6f3126432290e1c1a6564e4285d9d7946abf0f2f34ff3e896f5d302797d7d7dec79739fdcbb71054ee67ab0668816868f2bfeba7f9ca3c38a5a942493c9916bcbb0b058a0bb98a7ab23477b364d3e9720d514aa7f700cbf9a60eb030fb171c397a740345250a324ab7bdb63159293e44ed3f7f7519eda1d70ed573e494ff71ce6cec95248bbbb88754931b5acfa07c7387cb8c49a554bb876dd4fb8f3bbd79c01d1b8ffb6effd9eaa02080135e918b072598e2b57cc65c9d222f9391922114aa130ae61c24255a00604f113f57a8c22c3d048058017feb0997b7fb9fb8c526d006c7bf876ef67bfe88fafc22600050464329034e31c1e9ac0b742600565056504a54149dc9b9e0418ab051c2d57d8f6c27e5e7e6b90d56bd6b1ea9a5b1a1067d8f8bad5bddefe832559fe71c3693fd4f700a1bb33e2f8f132f38a39309a9497c02412b478424a7b583ca204b424ddd3c683decb17b17cf17c86462af82ae4aacfcee7894b964e55a0de7ebc792fce0793531170718f30325c22f2702b3796d058026309ac108810c6aaf802818554daa3d89ee1d39774f18565dd5cf1d156962d5d767680bb36dce0edf97315889a52e040167646447e85aad22823044650c6a0c4a28c455983b2426020d42e3541ec8f32e0c73196af587e760080fb1e7c2d3eab43b863db1c4bae65825239246c5aadf381258c9c1a4a1b02238422282d280391053fcefcc54b2e9a1960cb8fbee9ed7ab5ca543346b426aa9cac8484825bbd15422384d6e28b101a4b2896c85a7c1d9bd5b87365a00af42c2ace0c00f0f06ffe82f3c2e9e01091cffa4cd4144a5b97021de7dfbae0ca587c2304c6121aedc62c0dd00ab0e0c25900dcbfe9ebdeeb6feb26155c85cf2b8454cb559408ca5a578ada38435a4e8368a7883216d500115428b41512ac597787cc0800f0c8e3efe0f6ffd369b8a03da456f589042223283144c6c6a6332e0531886e18d529e2baa013d035ffc2991500f8fe37d67887deaf6f151688e8c88704be729b8e6d2e41eb143182af0d619c9afa983242680c81d16860de82451f0c00f0ecce519af7abf66c44e807b1db2d511c2434c6add43a03bad4d4cbb3697f3082065af3edb30378eee93eac641bd7d90c588908ad2bb340c755a0eb20aef4023184d6c4bf590263627f0881860b8ab35460fbaf36797bdf3210ff23b4a4b1dae22bed1468aa046584d01a9435f10ee91409ac53c7a5c5100ae4f285d90100fc71e77b409652b99d6fddfe1e83874b90701e505ac7155077bfdb019d42166d8550dc7b41a712d844129b8444263b7b80575efa1bdb77a458d1fb24777cfb7a4ffb15208189df8861bce20830a904b4a6907486882481f1a8a924636386e1230183ef563978e014be9f06a6fb53374d7b76db3d1ec073db1f00c04b64f03c48a692245329bca4878e20aa0995910aa78e8d327e6c94f2f00863c786183d3a803f718a5af9044a95c11a5e7ff1316fd600935bbaad95745b9e70b4c2c8bf8f317c6080f7fff54f8efc671fe323036ef2cb0a4001b814f8e259e79af6bbe083daa6dfbe2d8653bcf3a7d778f199fbcfe93be04301f830db79ff3afe2f26e6f14c550653260000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:append-first>
+</xupdate:modifications>

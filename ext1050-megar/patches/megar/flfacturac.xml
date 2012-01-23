@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]">
+    <action>
+      <name>recibosclifac</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Lista los recibos des cliente desde facturas.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Recibos del cliente desde facturas")</alias>
+      <table>reciboscli</table>
+      <form>master</form>
+      <formrecord>recibosclifac</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

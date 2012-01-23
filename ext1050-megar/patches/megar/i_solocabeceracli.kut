@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate TopMargin="20" BottomMargin="50" LeftMargin="20" RightMargin="30" PageSize="0" PageOrientation="0" >
+	
+	<Detail Level="0" Height="0">
+	</Detail>
+	
+	<DetailHeader Level="1" Height="295">
+		<Label  X="470" Y="245" Width="46" Height="21" FontFamily="Arial" FontSize="8" FontWeight="65" frameShape="QFrame::StyledPanel" Text ="" HAlignment="1" VAlignment="1" WordWrap ="0" BackgroundColor="221255229" BorderColor="000" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+		<Field  X="324" Y="180" Width="251" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="La Puebla" HAlignment="0" VAlignment="0" WordWrap ="1" DataType="0" Field="dirclientes.ciudad" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="200" Width="251" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="Granada" HAlignment="0" VAlignment="0" WordWrap ="1" DataType="0" Field="dirclientes.provincia" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="140" Width="301" Height="20" FontFamily="Arial" FontSize="10" FontWeight="65" BackgroundColor = "255,255,255" Text ="Juan de las Heras SmithSonian" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="facturascli.nombrecliente" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="180" Width="46" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="28001" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="dirclientes.codpostal" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="160" Width="301" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="C/ Santiago de las Majadas, 23" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="dirclientes.direccion" ForegroundColor="0,0,0"/>
+	</DetailHeader>
+	
+	<Detail Level="2" Height="16">
+	</Detail>
+	
+	<DetailFooter Level="1" PlaceAtBottom="true" Height="231">
+	</DetailFooter>
+	
+	<Detail Level="1" DrawIf="albaranescli.codigo" Height="16">
+	</Detail>
+	
+	<AddOnFooter Level="1" PlaceAtBottom="true" Height="171">
+		<Label  X="460" Y="110" Width="121" Height="21" FontFamily="Arial" FontSize="8" FontWeight="65" BackgroundColor = "221,255,229" BorderColor = "0,0,0" BorderStyle ="1" frameShape="QFrame::StyledPanel" Text ="Suma y Sigue" HAlignment="1" VAlignment="1" WordWrap ="0" ForegroundColor="0,0,0"/>
+		<Label  X="10" Y="110" Width="451" Height="21" FontFamily="Arial" FontSize="8" FontWeight="65" BackgroundColor = "221,255,229" BorderColor = "0,0,0" BorderStyle ="1" frameShape="QFrame::StyledPanel" Text ="" HAlignment="1" VAlignment="1" WordWrap ="0" ForegroundColor="0,0,0"/>
+		<Label  X="10" Y="130" Width="451" Height="26" FontFamily="Arial" FontSize="8" FontWeight="65" BackgroundColor = "255,255,255" BorderColor = "0,0,0" BorderStyle ="1" frameShape="QFrame::StyledPanel" Text ="" HAlignment="1" VAlignment="1" WordWrap ="0" ForegroundColor="0,0,0"/>
+		<CalculatedField  X="460" Y="130" Width="121" Height="26" FontFamily="Arial" FontSize="11" FontWeight="65" BackgroundColor = "255,255,255" BorderColor = "0,0,0" BorderStyle ="1" frameShape="QFrame::StyledPanel" Text ="210,55" HAlignment="1" VAlignment="1" WordWrap ="0" DataType="2" Field="lineasfacturascli.pvptotal" FunctionName="" CalculationType="1" Precision="2" ForegroundColor="0,0,0"/>
+	</AddOnFooter>
+	
+	<AddOnHeader Level="1" Height="295">
+		<Label  X="470" Y="245" Width="46" Height="21" FontFamily="Arial" FontSize="8" FontWeight="65" frameShape="QFrame::StyledPanel" Text ="" HAlignment="1" VAlignment="1" WordWrap ="0" BackgroundColor="221255229" BorderColor="000" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="160" Width="301" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="C/ Santiago de las Majadas, 23" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="dirclientes.direccion" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="180" Width="46" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="28001" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="dirclientes.codpostal" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="140" Width="301" Height="20" FontFamily="Arial" FontSize="10" FontWeight="65" BackgroundColor = "255,255,255" Text ="Juan de las Heras SmithSonian" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="facturascli.nombrecliente" ForegroundColor="0,0,0"/>
+		<Field  X="275" Y="200" Width="251" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="Granada" HAlignment="0" VAlignment="0" WordWrap ="1" DataType="0" Field="dirclientes.provincia" ForegroundColor="0,0,0"/>
+		<Field  X="325" Y="180" Width="251" Height="20" FontFamily="Arial" FontSize="10" FontWeight="50" BackgroundColor = "255,255,255" Text ="La Puebla" HAlignment="0" VAlignment="0" WordWrap ="1" DataType="0" Field="dirclientes.ciudad" ForegroundColor="0,0,0"/>
+	</AddOnHeader>
+</KugarTemplate>

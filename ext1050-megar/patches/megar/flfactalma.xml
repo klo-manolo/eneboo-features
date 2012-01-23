@@ -1,0 +1,120 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]/text()[1]">masterfamilias</xupdate:update>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]">
+    <scriptform>masterfamilias</scriptform>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/scriptformrecord[scriptformrecord,1]">
+    <scriptformrecord>familias</scriptformrecord>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/scriptformrecord[scriptformrecord,2]">
+    <scriptformrecord>familias</scriptformrecord>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articulos]">
+    <action>
+      <name>articuloslp</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Lista los artículos para asignarles los precios diarios y ver su historial.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Historial de precios de artículos")</alias>
+      <scriptformrecord>articuloslp</scriptformrecord>
+      <table>articulos</table>
+      <form>master</form>
+      <formrecord>articuloslp</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloslp]">
+    <action>
+      <name>lineasarticuloslp</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada línea de de precio de arículo se edita para asignarlo diariamente")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Lineas de precios de artículos")</alias>
+      <table>lineasarticuloslp</table>
+      <form>master</form>
+      <formrecord>lineasarticuloslp</formrecord>
+      <scriptformrecord>lineasarticuloslp</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[traducciones]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[idiomas]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[galeriasimagenes]">
+    <action>
+      <name>pasarelaspago</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</alias>
+      <table>pasarelaspago</table>
+      <form>master</form>
+      <formrecord>pasarelaspago</formrecord>
+      <scriptformrecord>pasarelaspago</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pasarelaspago]">
+    <action>
+      <name>parametrospasarela</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Parámetros de pasarelas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Parámetros de pasarelas de pago")</alias>
+      <table>parametrospasarela</table>
+      <form>master</form>
+      <formrecord>parametrospasarela</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[parametrospasarela]">
+    <action>
+      <name>statsweb</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Estadísticas de visitas de web")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Estadísticas de visitas de web")</alias>
+      <table>statsweb</table>
+      <form>master</form>
+      <formrecord>statsweb</formrecord>
+      <scriptformrecord>statsweb</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[statsweb]">
+    <action>
+      <name>zonasventa</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</alias>
+      <table>zonasventa</table>
+      <form>master</form>
+      <formrecord>zonasventa</formrecord>
+      <scriptformrecord>zonasventa</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasventa]">
+    <action>
+      <name>zonasformasenvio</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de envío")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de envío")</alias>
+      <table>zonasformasenvio</table>
+      <form>master</form>
+      <formrecord>zonasformasenvio</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasformasenvio]">
+    <action>
+      <name>zonasformaspago</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de pago")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Zonas por formas de pago")</alias>
+      <table>zonasformaspago</table>
+      <form>master</form>
+      <formrecord>zonasformaspago</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasformaspago]">
+    <action>
+      <name>intervalospesos</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Intervalos de pesos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Intervalos de pesos")</alias>
+      <table>intervalospesos</table>
+      <form>master</form>
+      <formrecord>intervalospesos</formrecord>
+      <scriptformrecord>intervalospesos</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[intervalospesos]">
+    <action>
+      <name>codigosdescuento</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Códigos de descuento")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Códigos de descuento")</alias>
+      <table>codigosdescuento</table>
+      <form>master</form>
+      <formrecord>codigosdescuento</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
