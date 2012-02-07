@@ -1,4 +1,5 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="gtesoreria">
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesasprov.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" style="legacy"/>
