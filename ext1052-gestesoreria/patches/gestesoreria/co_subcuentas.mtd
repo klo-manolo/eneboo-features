@@ -1,0 +1,10 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[idsubcuenta]/relation[rh_empleados,idsubcuenta]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuenta]/relation[pagosmulticli,idsubcuenta]">
+    <relation>
+      <table>co_traspasosubcta</table>
+      <field>idsubcuentaori</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>

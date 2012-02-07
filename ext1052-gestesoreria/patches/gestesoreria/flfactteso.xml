@@ -1,0 +1,187 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[factteso_general]/description[description,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Los datos generales son una serie de valores que se usan para personalizar el funcionamiento del módulo de Tesorería")</xupdate:update>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[vdisco58]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[anticiposcli]">
+    <action>
+      <name>pagosmulticli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los pagos múltiples de recibos de clientes permiten introducir u ingresos que dan por cobrados más de un recibo de cliente a la vez.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagos múltiples de recibos de clientes")</alias>
+      <table>pagosmulticli</table>
+      <form>master</form>
+      <formrecord>pagosmulticli</formrecord>
+      <scriptformrecord>pagosmulticli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[seleccionrecibosprov]">
+    <action>
+      <name>vdisco58</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","El volcado a disco de una remesa genera un fichero con el listado de recibos de la remesa")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Volcado a disco de remesas")</alias>
+      <table>remesas</table>
+      <formrecord>vdisco58</formrecord>
+      <scriptformrecord>vdisco58</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]">
+    <action>
+      <name>recibosmulticli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Agrupación de múltiples recibos de clientes")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Agrupación de recibos de clientes")</alias>
+      <table>recibosmulticli</table>
+      <form>master</form>
+      <formrecord>recibosmulticli</formrecord>
+      <scriptformrecord>recibosmulticli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosmulticli]">
+    <action>
+      <name>recibosmultiprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Agrupación de múltiples recibos de proveedores")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Agrupación de recibos de proveedores")</alias>
+      <table>recibosmultiprov</table>
+      <form>master</form>
+      <formrecord>recibosmultiprov</formrecord>
+      <scriptformrecord>recibosmultiprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosmultiprov]">
+    <action>
+      <name>recibosfactcli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Gestión de recibos relacionados a una factura de Cliente")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Factura-Recibos")</alias>
+      <table>recibosfactaux</table>
+      <form>recibosfactcli</form>
+      <scriptform>recibosfactcli</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosfactcli]">
+    <action>
+      <name>recibosfactprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Gestión de recibos relacionados a una factura de Proveedor")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Factura-Recibos")</alias>
+      <table>recibosfactaux</table>
+      <form>recibosfactprov</form>
+      <scriptform>recibosfactprov</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[recibosfactprov]">
+    <action>
+      <name>pagaresemi</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Gestión de Pagarés emitidos desde una remesa de proveedor")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pagarés Emitidos")</alias>
+      <table>pagaresemi</table>
+      <form>master</form>
+      <formrecord>pagaresemi</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagaresemi]">
+    <action>
+      <name>anticiposconf</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Gestión de Pagos anticipados para un confirming ")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Anticipos Confirming")</alias>
+      <table>anticiposconf</table>
+      <form>master</form>
+      <formrecord>anticiposconf</formrecord>
+      <scriptformrecord>anticiposconf</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[anticiposconf]">
+    <action>
+      <name>pagorecibosrem</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Gestión de pagos para recibos de proveedor remesados en norma 58")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Esta acción permite insertar de manera cómoda registros de tipo pago para recibos de cliente remesados en norma 58")</alias>
+      <table>pagorecibosrem</table>
+      <form>master</form>
+      <formrecord>pagorecibosrem</formrecord>
+      <scriptformrecord>pagorecibosrem</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagorecibosrem]">
+    <action>
+      <name>pagorecibosremprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Gestión de pagos y anticipos para recibos de proveedor remesados")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Esta acción permite insertar de manera cómoda registros de tipo pago y anticipo para recibos de proveedor remesados")</alias>
+      <table>pagorecibosremprov</table>
+      <form>master</form>
+      <formrecord>pagorecibosremprov</formrecord>
+      <scriptformrecord>pagorecibosremprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagorecibosremprov]">
+    <action>
+      <name>recibosprovsearch</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Formulario de búsqueda para recibos de proveedores")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Recibos de proveedores")</alias>
+      <table>recibosprov</table>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[pagosmultiprov]"/>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[pagosmulticli]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[vdisco34]">
+    <action>
+      <name>gastospdcli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Registro de gastos bancarios relacionado con un pago o devolucion de recibos de clientes. Es posible escoger la subcuenta en la que se efecturará el asiento, con contrapartida a la subcuenta del banco seleccionada en el pago o devolución relacionado.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gastos de pagos y devoluciones de recibos de clientes")</alias>
+      <table>gastospdcli</table>
+      <form>master</form>
+      <formrecord>gastospdcli</formrecord>
+      <scriptformrecord>gastospdcli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gastospdcli]">
+    <action>
+      <name>gastospdprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Registro de gastos bancarios relacionado con un pago o devolucion de recibos de proveeedores. Es posible escoger la subcuenta en la que se efecturará el asiento, con contrapartida a la subcuenta del banco seleccionada en el pago o devolución relacionado.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gastos de pagos y devoluciones de recibos de proveedores")</alias>
+      <table>gastospdprov</table>
+      <form>master</form>
+      <formrecord>gastospdprov</formrecord>
+      <scriptformrecord>gastospdprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gastospdprov]">
+    <action>
+      <name>gastospmcli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Registro de gastos bancarios relacionado con un pago múltiple de recibos de clientes. Es posible escoger la subcuenta en la que se efecturará el asiento, con contrapartida a la subcuenta del banco seleccionada en el pago relacionado.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gastos de pagos múltiples de recibos de clientes")</alias>
+      <table>gastospmcli</table>
+      <form>master</form>
+      <formrecord>gastospmcli</formrecord>
+      <scriptformrecord>gastospmcli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gastospmcli]">
+    <action>
+      <name>gastospmprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Registro de gastos bancarios relacionado con un pago múltiple de recibos de proveeedores. Es posible escoger la subcuenta en la que se efecturará el asiento, con contrapartida a la subcuenta del banco seleccionada en el pago o devolución relacionado.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gastos de pagos y devoluciones de recibos de proveedores")</alias>
+      <table>gastospmprov</table>
+      <form>master</form>
+      <formrecord>gastospmprov</formrecord>
+      <scriptformrecord>gastospmprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gastospmprov]">
+    <action>
+      <name>gastospdrem</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Registro de gastos bancarios relacionado con un pago de Remesa. Es posible escoger la subcuenta en la que se efecturará el asiento, con contrapartida a la subcuenta del banco seleccionada en la remesa.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gastos de pagos de Remesas")</alias>
+      <table>gastospdrem</table>
+      <form>master</form>
+      <formrecord>gastospdrem</formrecord>
+      <scriptformrecord>gastospdrem</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[gastospdrem]">
+    <action>
+      <name>gastospdremprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Registro de gastos bancarios relacionado con un pago de Remesa de Proveedores. Es posible escoger la subcuenta en la que se efecturará el asiento, con contrapartida a la subcuenta del banco seleccionada en la remesa de Proveedor.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gastos de pagos y devoluciones de recibos de proveedores")</alias>
+      <table>gastospdremprov</table>
+      <form>master</form>
+      <formrecord>gastospdremprov</formrecord>
+      <scriptformrecord>gastospdremprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

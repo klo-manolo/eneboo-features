@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idpagorem]/visiblegrid[visiblegrid,1]">
+    <relation>
+      <table>gastospdrem</table>
+      <field>idpagorem</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idremesa]/visiblegrid[visiblegrid,1]">
+    <unique>true</unique>
+  </xupdate:insert-after>
+</xupdate:modifications>

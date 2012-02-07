@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[wg_widget]">
+    <action>
+      <name>tipospago</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipos de Pago")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Tipos de pago para clasificar las formas de pago")</description>
+      <table>tipospago</table>
+      <form>master</form>
+      <formrecord>tipospago</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

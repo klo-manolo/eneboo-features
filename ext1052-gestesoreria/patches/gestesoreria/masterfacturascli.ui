@@ -1,0 +1,352 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturascli]/vbox[vbox,1]/widget[QFrame,barraBotones]/property[frameShadow]">
+    <grid>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <property name="margin">
+        <number>5</number>
+      </property>
+      <property name="spacing">
+        <number>2</number>
+      </property>
+      <widget class="QLayoutWidget" row="0" column="0">
+        <property name="name">
+          <cstring>layout12</cstring>
+        </property>
+        <hbox>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <property name="spacing">
+            <number>2</number>
+          </property>
+          <widget class="QToolButton">
+            <property name="name">
+              <cstring>toolButtomInsert</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>32</width>
+                <height>32</height>
+              </size>
+            </property>
+            <property name="focusPolicy">
+              <enum>NoFocus</enum>
+            </property>
+            <property name="text">
+              <string/>
+            </property>
+            <property name="iconSet">
+              <iconset>image0</iconset>
+            </property>
+            <property name="toolTip" stdset="0">
+              <string>Insertar registro (A)</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+              <string>Para crear un nuevo registro en la tabla</string>
+            </property>
+          </widget>
+          <widget class="QToolButton">
+            <property name="name">
+              <cstring>toolButtonEdit</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>32</width>
+                <height>32</height>
+              </size>
+            </property>
+            <property name="focusPolicy">
+              <enum>NoFocus</enum>
+            </property>
+            <property name="text">
+              <string/>
+            </property>
+            <property name="iconSet">
+              <iconset>image1</iconset>
+            </property>
+            <property name="toolTip" stdset="0">
+              <string>Modificar registro (M)</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+              <string>Para modificar el registro activo de la tabla</string>
+            </property>
+          </widget>
+          <widget class="QToolButton">
+            <property name="name">
+              <cstring>toolButtonDelete</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>32</width>
+                <height>32</height>
+              </size>
+            </property>
+            <property name="focusPolicy">
+              <enum>NoFocus</enum>
+            </property>
+            <property name="text">
+              <string/>
+            </property>
+            <property name="iconSet">
+              <iconset>image2</iconset>
+            </property>
+            <property name="toolTip" stdset="0">
+              <string>Eliminar registro (E)</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+              <string>Elimina el registro actual de la tabla</string>
+            </property>
+          </widget>
+          <widget class="QToolButton">
+            <property name="name">
+              <cstring>toolButtonZoom</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>32</width>
+                <height>32</height>
+              </size>
+            </property>
+            <property name="focusPolicy">
+              <enum>NoFocus</enum>
+            </property>
+            <property name="text">
+              <string/>
+            </property>
+            <property name="iconSet">
+              <iconset>image3</iconset>
+            </property>
+            <property name="toolTip" stdset="0">
+              <string>Ver registro (V)</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+              <string>Para ver registro, sin permitir editar</string>
+            </property>
+          </widget>
+          <widget class="QToolButton">
+            <property name="name">
+              <cstring>toolButtonCopy</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>32</width>
+                <height>32</height>
+              </size>
+            </property>
+            <property name="focusPolicy">
+              <enum>NoFocus</enum>
+            </property>
+            <property name="text">
+              <string/>
+            </property>
+            <property name="iconSet">
+              <iconset>image4</iconset>
+            </property>
+            <property name="toolTip" stdset="0">
+              <string>Copiar registro (C)</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+              <string>Para copiar el contenido del registro actual a uno nuevo</string>
+            </property>
+          </widget>
+          <spacer>
+            <property name="name">
+              <cstring>Spacer2_2</cstring>
+            </property>
+            <property name="orientation">
+              <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+              <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+              <size>
+                <width>16</width>
+                <height>20</height>
+              </size>
+            </property>
+          </spacer>
+          <widget class="QPushButton">
+            <property name="name">
+              <cstring>toolButtonPrint</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>32</width>
+                <height>32</height>
+              </size>
+            </property>
+            <property name="maximumSize">
+              <size>
+                <width>32</width>
+                <height>32</height>
+              </size>
+            </property>
+            <property name="focusPolicy">
+              <enum>NoFocus</enum>
+            </property>
+            <property name="text">
+              <string/>
+            </property>
+            <property name="accel">
+              <string>I</string>
+            </property>
+            <property name="iconSet">
+              <iconset>image5</iconset>
+            </property>
+            <property name="toolTip" stdset="0">
+              <string>Imprimir tabla (I)</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+              <string>Para imprimir los registros de la tabla</string>
+            </property>
+          </widget>
+        </hbox>
+      </widget>
+      <spacer row="0" column="1">
+        <property name="name">
+          <cstring>Spacer2</cstring>
+        </property>
+        <property name="orientation">
+          <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+          <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+          <size>
+            <width>170</width>
+            <height>16</height>
+          </size>
+        </property>
+      </spacer>
+      <widget class="QPushButton" row="0" column="3">
+        <property name="name">
+          <cstring>pbnRecibos</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>0</width>
+            <height>28</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>32767</width>
+            <height>28</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>1</bold>
+            <italic>1</italic>
+          </font>
+        </property>
+        <property name="text">
+          <string>Recibos</string>
+        </property>
+        <property name="iconSet">
+          <iconset>image6</iconset>
+        </property>
+      </widget>
+      <widget class="QPushButton" row="0" column="2">
+        <property name="name">
+          <cstring>pbnAsociarAFactura</cstring>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>32767</width>
+            <height>32767</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>1</bold>
+            <italic>1</italic>
+          </font>
+        </property>
+        <property name="text">
+          <string>&amp;Asociar</string>
+        </property>
+        <property name="accel">
+          <string>Alt+A</string>
+        </property>
+        <property name="toolTip" stdset="0">
+          <string>Asociar albaranes en factura</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+          <string>Abre la ventana que permite asociar en una factura uno o mas albaranes</string>
+        </property>
+      </widget>
+    </grid>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image5]">
+    <image name="image6">
+      <data format="PNG" length="1599">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000060649444154789cd5974d681dd715c77f2e633803af70c73c9599e285075cd0535d88e42458af0e54af7811a75d5449bb10eda2a4bb64d92e8ae94ea12bad025ec58b4268c0756568821a0a960aa65268223d83835f2086671a9179c40fdf0b1e9803bea02eeefbb0abf147a0507ae071e0be9939fff99ffff918f81fdb91bac3ddbddd031414050fea158964ea018984d6c97cf7d8b78e3dff5f07706de3dac1e29945a02e78f03b37faacde7c8bb861588adbb44fccf3fd17bf5bfbbc27d937ea0e6d6951af21a80844903412909107e6673356bff706b29ff0bbfbbfe655ff4396feb674f0cefa07075f07402de22b97af1cb4cfb6914870ce0510001e8882b7a5455571c3823f5fbfc31fa34b98972d3463b27dc31bee023f5ffed15319a96500428e8b61811d5afafb7dd42b562d5a2a852b70a5c3394771d7d19e15567485c1fb097adbe252c7da736f71fef2cac13fb6779fc8482d0089043cc4518c18214f7320d06f9a863ccd3162304d83490c1219daa7123abe83fb5cb0fb161d167006de6cfc8a2b7fb9f65810b500b45288401a42223144601a06f51a2e882031c9342547010fad468ef8182da1182a7bb737c92467ede42aef5caed7467d0a8e8e8038a53f2802ed8302148a41117ec32268c03adc7d872b9534aa101fc0e85dd06ec2e69f7ab8aeb22a6fd63211d532f040276f97a73908880fd5904a1a2aa4d40923d6599801671dc97e4abf07f3e522b9cfc94c86dc511461dd6db3fbcfdd83d32f9e3ef244007234d4bb3106e71c2632212591e0d461c4a0916287a112f0e0ee3b8884257d95958690a52051886092132426a1d7835eaff76c0c08427fbf1f981859e52bb454ac5862892986c5a453e241d5d13e114a563d380dcf19f8018949500d4deca900c60c249250514dce63621050557a9ff57077dda41fa80fc144842ccd2052d2464ab825041d77d4676220dc019470ebce2d065f0cc2c36732c408ed33ede9f53ad24269c1437fbf4ff77a976250f0fa2f5e9fa4afceea1940b0ced2fdb88b7c535838b5c02b3f7865d2051ff69556818152c99a19ea95eec75d8882282b5f91349230d86aa2d502180c07c86d61f927cbc41253f92a04f31571144fbd56a8575c19da75312858bfba8e202cbeb048ef660fbdaf14be206b66cfc6c0bb7f78f7a0bdd8264dd389c291ff084e088e072d152386de9d1e1b5737304d43e7a50ec5b04044905888259ee6de3f06c0bdafee7db2f1d78dd3e7cf9da71816f4eff489250e8348435a1c2e78efc240524b1cc56c7fbacdcef51d5ab32de6e7e7a755310a5af98ad8c74f6660f3ef9ba75de9b8f4dea5300724c61883c4426292f036f2909a47cadfea6e510c0a969696983b39179ad243a5e9eebb102009d11e5b059db31dd6de5e63f9c7cbb8d24dc5f540e97dde03cf23b91f6bc50e2d9db31de666e7269a50557810ae9f983f4cff23008e7dfbd8912b97af1cb8d2b1f8fce2741919992bdd6416746f7611115adf6931373b8755cbde8dbdc054346e444a1cc5a1f9883c5d0300affdecb523177e7be1203f91238d51ee471b51d6cca87c1526649a901fcf278ca43e2569246cef6c830749ea6bbe8e8143d3303f9973ebb35b13ca54159409edc5b02035e9645f18fbfc784e67a9839931504d1bcfa45356f57de01080e5979759bfba8e7516573ab40c75aeaa0cf607a11d8f86ccc3fd617c9635337ab77b6c7cb831dd25a96fc3875200410b177e73e1606b6b8bf3e7ce637d28352d155b5ab2342396e99befddd863676787bd4ff770771de94c4a96662c3cb710d238a27e3c2b94679805f9c99ced8fb669b55a98a699285b1a42d6ccb0a565e3fd0dd63f58c788213b9eb130bb00a798aceef890aeb1656487823f16804461d86c6e6dd239d7992e27cd9c4bef5d62f3c34d5aa75aacfc74654a6fa570340c3283c1958e4cb2e9088ec25263bd7d3a0045c9f3c042bfdf279d092a5ffdfd2a894958f9e54a10e0c82a5f914882558b890263e31d524426d352bd060d3d950184fe177d5ab32df63edaa37db6cdc58b17597c6191fc448ebbeb70b847ee71de3de2c725f7b0f09e7d1f40b1038ba20c8a016b6fafd179a90312f27ae8736de4c7a9aafd1fc162996fcdd7857cbcddfbeade275ffeebcbaff5b9f57f65ff060eed6cfaa616db1e0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]"/>
+</xupdate:modifications>

@@ -1,0 +1,41 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout30]/hbox[hbox,1]/widget[FLFieldDB,fdbNoGenerarAsiento]/property[focusPolicy]/enum[enum,1]/text()[1]">StrongFocus</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,contabilidad]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>TabPage</cstring>
+      </property>
+      <attribute name="title">
+        <string>Recibos</string>
+      </attribute>
+      <grid>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLTableDB" row="1" column="0" rowspan="1" colspan="2">
+          <property name="name">
+            <cstring>tdbRecibosProv</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="tableName">
+            <string>recibosprov</string>
+          </property>
+          <property name="foreignField">
+            <string>idfactura</string>
+          </property>
+          <property name="fieldRelation">
+            <string>idfactura</string>
+          </property>
+        </widget>
+      </grid>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QGroupBox,groupBox27]/grid[grid,1]/widget[FLFieldDB,fdbTotal]/property[font]/font[font,1]/pointsize[pointsize,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,3 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[i_recibosprov_estado]/optionslist[optionslist,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Todos");QT_TRANSLATE_NOOP("MetaData","Pendiente");QT_TRANSLATE_NOOP("MetaData","Emitido");QT_TRANSLATE_NOOP("MetaData","Pagado");QT_TRANSLATE_NOOP("MetaData","Devuelto");QT_TRANSLATE_NOOP("MetaData","Agrupado");QT_TRANSLATE_NOOP("MetaData","Remesado");;QT_TRANSLATE_NOOP("MetaData","Confirmado")</xupdate:update>
+</xupdate:modifications>

@@ -1,0 +1,131 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="gestesoreria">
+  <flpatch:replaceFile path="contabilidad/informes/reports/" name="co_i_balancesis_res.kut"/>
+  <flpatch:replaceFile path="contabilidad/informes/reports/" name="co_i_balancesit_08_abr.kut"/>
+  <flpatch:patchXml path="contabilidad/informes/tables/" name="co_i_balances08_datos.mtd" style="legacy1"/>
+  <flpatch:patchScript path="contabilidad/principal/scripts/" name="flcontppal.qs" style="legacy"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_asientos.mtd" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_cuentas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="tarifas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturasprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_reciboscli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_recibosprov.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_remesascli.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_remesasprov.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_resreciboscli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_resrecibosprov.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturascli.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturasprov.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_remesasprov.kut"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/informes/tables/" name="i_reciboscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/tables/" name="i_recibosprov.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/informes/tables/" name="i_remesasprov.mtd"/>
+  <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbanco.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="formaspago.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/principal/forms/" name="tipospago.ui"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/principal/tables/" name="actualizarproveedores.sql"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="divisas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="formaspago.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/principal/tables/" name="tipospago.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="anticiposconf.ui"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="factteso_general.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="gastospdcli.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="gastospdprov.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="gastospdrem.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="gastospdremprov.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="gastospmcli.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="gastospmprov.ui"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterreciboscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterrecibosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterremesas.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterremesasprov.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagaresemi.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagorecibosrem.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagorecibosremprov.ui"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolcli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolrem.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosdevolremprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosmulticli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="pagosmultiprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="reciboscli.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="recibosfactcli.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="recibosfactprov.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="recibosmulticli.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="recibosmultiprov.ui"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="recibosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="remesas.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="remesasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="seleccionrecibosprov.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="anticiposconf.qs"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="factteso_general.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="gastospdcli.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="gastospdprov.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="gastospdrem.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="gastospdremprov.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="gastospmcli.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="gastospmprov.qs"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterrecibosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesas.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesasprov.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagorecibosrem.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagorecibosremprov.qs"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="recibosfactcli.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="recibosfactprov.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="recibosmulticli.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="recibosmultiprov.qs"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="recibosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="remesas.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="remesasprov.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="anticiposconf.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="factteso_general.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="gastospdcli.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="gastospdprov.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="gastospdrem.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="gastospdremprov.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="gastospmcli.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="gastospmprov.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagaresemi.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagorecibosrem.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagorecibosremprov.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolcli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolrem.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="pagosdevolremprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="reciboscliremesa.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="recibosfactaux.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="recibosmulticli.mtd"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="recibosmultiprov.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="recibosprov.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="recibosprovremesa.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="remesas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="remesasprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="seleccionrecibosprov.mtd" style="legacy1"/>
+</flpatch:modifications>

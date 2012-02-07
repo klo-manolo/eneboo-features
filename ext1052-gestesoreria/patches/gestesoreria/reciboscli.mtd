@@ -1,0 +1,126 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[fecha]/editable[editable,1]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[codcliente]/editable[editable,1]"/>
+  <xupdate:update select="/TMD[TMD,1]/field[idfactura]/null[null,1]/text()[1]">true</xupdate:update>
+  <xupdate:delete select="/TMD[TMD,1]/field[coddivisa]/editable[editable,1]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[coddivisa]">
+    <field>
+      <name>tasaconv</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tasa cambio")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>6</partI>
+      <partD>3</partD>
+      <default>1</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[texto]">
+    <field>
+      <name>codejercicio</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <ck>true</ck>
+      <type>string</type>
+      <length>4</length>
+      <editable>false</editable>
+      <relation>
+        <table>ejercicios</table>
+        <field>codejercicio</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]">
+    <field>
+      <name>codserie</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Serie")</alias>
+      <null>true</null>
+      <ck>true</ck>
+      <pk>false</pk>
+      <type>string</type>
+      <length>2</length>
+      <relation>
+        <table>series</table>
+        <field>codserie</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idrecibocomp]">
+    <field>
+      <name>fechamate</name>
+      <!-- Fecha de vencimiento del riesgo activo -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Vto Riesgo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fechamate]">
+    <field>
+      <name>idrecibomulti</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Recibo agrupado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idrecibomulti]">
+    <field>
+      <name>tipopago</name>
+      <!--Tipo de pago-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo Pago")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>30</length>
+      <relation>
+        <table>tipospago</table>
+        <field>tipopago</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipopago]">
+    <field>
+      <name>observaciones</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[observaciones]">
+    <field>
+      <name>automatico</name>
+      <!--Indica si el recibo es manual o automático: desde una factura-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Automático")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[automatico]">
+    <field>
+      <name>codcuentapago</name>
+      <!-- Código de la cuenta en la que se ingresa el dinero pagado por el cliente-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta de pago")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>cuentasbanco</table>
+        <field>codcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

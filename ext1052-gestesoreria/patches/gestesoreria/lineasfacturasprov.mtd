@@ -1,0 +1,5 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:append-first select="/TMD[TMD,1]/field[referencia]/relation[articulos,referencia]">
+    <card>M1</card>
+  </xupdate:append-first>
+</xupdate:modifications>

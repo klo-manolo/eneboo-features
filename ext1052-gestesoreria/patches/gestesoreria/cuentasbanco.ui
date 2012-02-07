@@ -1,0 +1,712 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">707</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">490</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbSufijo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbSufijo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbSufijoi]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout6]/hbox[hbox,1]/widget[FLFieldDB,fdbSufijoi]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout5]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15_2]/vbox[vbox,1]/widget[QLayoutWidget,layout5]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout51]/vbox[vbox,1]/widget[FLFieldDB,fdbEntidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout51]/vbox[vbox,1]/widget[FLFieldDB,fdbEntidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout51]/vbox[vbox,1]/widget[FLFieldDB,fdbDesBanco]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout51]/vbox[vbox,1]/widget[FLFieldDB,fdbDesBanco]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">21</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout49]/vbox[vbox,1]/widget[FLFieldDB,fdbAgencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout49]/vbox[vbox,1]/widget[FLFieldDB,fdbAgencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout49]/vbox[vbox,1]/widget[FLFieldDB,fdbDesSucursal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layout52]/hbox[hbox,1]/widget[QLayoutWidget,layout49]/vbox[vbox,1]/widget[FLFieldDB,fdbDesSucursal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">21</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[FLFieldDB,fdbDirSucursal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[FLFieldDB,fdbDirSucursal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">21</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,Layout5]/hbox[hbox,1]/widget[FLFieldDB,entidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,Layout5]/hbox[hbox,1]/widget[FLFieldDB,entidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">21</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,Layout5]/hbox[hbox,1]/widget[FLFieldDB,agencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,Layout5]/hbox[hbox,1]/widget[FLFieldDB,agencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">21</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,Layout5]/hbox[hbox,1]/widget[FLFieldDB,cuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,Layout5]/hbox[hbox,1]/widget[FLFieldDB,cuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layoutSwift]/hbox[hbox,1]/widget[FLFieldDB,fdbIBAN]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layoutSwift]/hbox[hbox,1]/widget[FLFieldDB,fdbIBAN]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layoutSwift]/hbox[hbox,1]/widget[FLFieldDB,fdbSWIFT]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QFrame,frame15]/vbox[vbox,1]/widget[QLayoutWidget,layoutSwift]/hbox[hbox,1]/widget[FLFieldDB,fdbSWIFT]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/vbox[vbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]/property[title]">
+    <grid>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLFieldDB" row="0" column="2">
+        <property name="name">
+          <cstring>fdbDesSubcuenta</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>250</horstretch>
+            <verstretch>25</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>2</width>
+            <height>21</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>descripcion</string>
+        </property>
+        <property name="tableName">
+          <string>co_subcuentas</string>
+        </property>
+        <property name="foreignField">
+          <string>idsubcuenta</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubcuenta</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="1" column="2">
+        <property name="name">
+          <cstring>fdbDesSubcuentaEcgc</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>250</horstretch>
+            <verstretch>25</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>9</width>
+            <height>23</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>descripcion</string>
+        </property>
+        <property name="tableName">
+          <string>co_subcuentas</string>
+        </property>
+        <property name="foreignField">
+          <string>idsubcuentaecgc</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubcuenta</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="2" column="2">
+        <property name="name">
+          <cstring>fdbDesSubcuentaEcgp_2</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>250</horstretch>
+            <verstretch>25</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>2</width>
+            <height>21</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>descripcion</string>
+        </property>
+        <property name="tableName">
+          <string>co_subcuentas</string>
+        </property>
+        <property name="foreignField">
+          <string>idsubcuentaecgp</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubcuenta</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="0" column="0">
+        <property name="name">
+          <cstring>fdbCodSubcuenta</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>16</width>
+            <height>23</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>codsubcuenta</string>
+        </property>
+        <property name="foreignField">
+          <string>codsubcuenta</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubcuenta</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="1" column="0">
+        <property name="name">
+          <cstring>fdbCodSubcuentaEfgc</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>16</width>
+            <height>23</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>codsubcuentaecgc</string>
+        </property>
+        <property name="foreignField">
+          <string>codsubcuenta</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubcuentaecgc</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="1" column="1">
+        <property name="name">
+          <cstring>fdbIdSubcuentaEfgc</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>24</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>79</width>
+            <height>32767</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="focusPolicy">
+          <enum>StrongFocus</enum>
+        </property>
+        <property name="fieldName">
+          <string>idsubcuentaecgc</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="0" column="1">
+        <property name="name">
+          <cstring>fdbIdSubcuenta</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>24</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>79</width>
+            <height>32767</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="focusPolicy">
+          <enum>StrongFocus</enum>
+        </property>
+        <property name="fieldName">
+          <string>idsubcuenta</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="2" column="0">
+        <property name="name">
+          <cstring>fdbCodSubcuentaEfgp_2</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>16</width>
+            <height>23</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>codsubcuentaecgp</string>
+        </property>
+        <property name="foreignField">
+          <string>codsubcuenta</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubcuentaecgp</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="2" column="1">
+        <property name="name">
+          <cstring>fdbIdSubcuentaEfgp_2</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>24</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>79</width>
+            <height>32767</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="focusPolicy">
+          <enum>StrongFocus</enum>
+        </property>
+        <property name="fieldName">
+          <string>idsubcuentaecgp</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="3" column="1">
+        <property name="name">
+          <cstring>fdbIdSubcuentaEfgp_2_2</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>24</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>79</width>
+            <height>32767</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="focusPolicy">
+          <enum>StrongFocus</enum>
+        </property>
+        <property name="fieldName">
+          <string>idsubctacomision</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="3" column="0">
+        <property name="name">
+          <cstring>fdbCodSubcuentaEfgp_2_2</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>16</width>
+            <height>23</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>codsubctacomision</string>
+        </property>
+        <property name="foreignField">
+          <string>codsubcuenta</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubctacomision</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="3" column="2">
+        <property name="name">
+          <cstring>fdbDesSubcuentaEcgp_2_2</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>250</horstretch>
+            <verstretch>25</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>9</width>
+            <height>23</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>descripcion</string>
+        </property>
+        <property name="tableName">
+          <string>co_subcuentas</string>
+        </property>
+        <property name="foreignField">
+          <string>idsubctacomision</string>
+        </property>
+        <property name="fieldRelation">
+          <string>idsubcuenta</string>
+        </property>
+        <property name="showAlias">
+          <bool>false</bool>
+        </property>
+      </widget>
+    </grid>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/property[margin]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/property[spacing]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/spacer[spacer34]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formCuentasBanco]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxContabilidad_2</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="title">
+        <string>Días de mate para riesgo de efectos</string>
+      </property>
+      <grid>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB" row="0" column="0">
+          <property name="name">
+            <cstring>fdbCodSubcuenta_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>matecobro</string>
+          </property>
+          <property name="foreignField">
+            <string/>
+          </property>
+          <property name="fieldRelation">
+            <string/>
+          </property>
+        </widget>
+        <widget class="FLFieldDB" row="0" column="1">
+          <property name="name">
+            <cstring>fdbCodSubcuentaEfgc_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>matedescuento</string>
+          </property>
+          <property name="foreignField">
+            <string/>
+          </property>
+          <property name="fieldRelation">
+            <string/>
+          </property>
+        </widget>
+        <spacer row="0" column="2">
+          <property name="name">
+            <cstring>spacer4</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>171</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </grid>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

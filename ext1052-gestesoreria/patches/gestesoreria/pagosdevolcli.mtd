@@ -1,0 +1,26 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[idpagodevol]/visiblegrid[visiblegrid,1]/text()[1]">true</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]">
+    <field>
+      <name>idpagomulti</name>
+      <!-- Identificador del pago múltiple al que pertenece el pago-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pago múltiple")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idremesa]">
+    <field>
+      <name>automatico</name>
+      <!--Indica si el pago es generado automáticamente desde la remesa-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Automático")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[idpagomulti]"/>
+</xupdate:modifications>

@@ -1,0 +1,19 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[i_reciboscli_estado]/optionslist[optionslist,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Todos");QT_TRANSLATE_NOOP("MetaData","Pendiente");QT_TRANSLATE_NOOP("MetaData","Emitido");QT_TRANSLATE_NOOP("MetaData","Pagado");QT_TRANSLATE_NOOP("MetaData","Devuelto");QT_TRANSLATE_NOOP("MetaData","Remesado");QT_TRANSLATE_NOOP("MetaData","Compensado");QT_TRANSLATE_NOOP("MetaData","Agrupado");QT_TRANSLATE_NOOP("MetaData","Riesgo");QT_TRANSLATE_NOOP("MetaData","En Riesgo")</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idremesa]">
+    <field>
+      <name>i_reciboscli_tipopago</name>
+      <!--Tipo de pago-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>30</length>
+      <relation>
+        <table>tipospago</table>
+        <field>tipopago</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

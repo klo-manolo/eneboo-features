@@ -1,0 +1,37 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_remesasprov</name>
+
+	<tables>remesasprov,recibosprov,recibosprovremesa,empresa,cuentasbanco</tables>
+
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+
+	<select>
+		remesasprov.idremesa, remesasprov.codcuenta,
+		cuentasbanco.descripcion,
+		recibosprov.codigo, recibosprov.fecha, recibosprov.fechav, 
+		recibosprov.codproveedor, recibosprov.nombreproveedor,
+		recibosprov.cifnif, recibosprov.estado,
+		recibosprov.importe, recibosprov.coddivisa,
+		empresa.nombre, empresa.cifnif, empresa.direccion,
+		empresa.codpostal, empresa.ciudad, empresa.provincia, empresa.apartado,
+		empresa.codpais
+	</select>
+
+	<from>
+		empresa, remesasprov
+		INNER JOIN recibosprovremesa ON remesasprov.idremesa = recibosprovremesa.idremesa
+                INNER JOIN recibosprov ON recibosprovremesa.idrecibo = recibosprov.idrecibo
+		INNER JOIN cuentasbanco ON remesasprov.codcuenta = cuentasbanco.codcuenta
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		recibosprov.codigo
+	</order>
+</QRY>

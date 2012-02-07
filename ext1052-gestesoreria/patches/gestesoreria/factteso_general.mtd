@@ -1,0 +1,280 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[pagoindirecto]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Indirecta")</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[pagoindirecto]/default[default,1]/text()[1]">true</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pagoindirecto]">
+    <field>
+      <name>tipoconta19</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de contabilizacion de remesa para norma 19")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+      <editable>false</editable>
+      <default>100</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipoconta19]">
+    <field>
+      <name>idctagescobro</name>
+      <!-- Identificador de la cuenta, de la que depende la subcuenta de efectos gestion de cobro -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_cuentas</table>
+        <field>idcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idctagescobro]">
+    <field>
+      <name>codctagescobro</name>
+      <!-- Código de la subcuenta, del que depende la subcuenta de efectos gestion de cobro -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales en gestión de cobro")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctagescobro]">
+    <field>
+      <name>idctaimp19</name>
+      <!-- Identificador de la cuenta, de la que depende la subcuenta de efectos impagados para la norma 19 -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_cuentas</table>
+        <field>idcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idctaimp19]">
+    <field>
+      <name>codctaimp19</name>
+      <!-- Código de la subcuenta, del que depende la subcuenta de efectos impagados para la norma 19 -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales impagados")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctaimp19]">
+    <field>
+      <name>tipoconta58</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de contabilizacion de remesa para norma 58")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+      <editable>false</editable>
+      <default>100</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipoconta58]">
+    <field>
+      <name>idctacartera</name>
+      <!-- Identificador de la cuenta, de la que depende la subcuenta de efectos comerciales en cartera -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_cuentas</table>
+        <field>idcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idctacartera]">
+    <field>
+      <name>codctacartera</name>
+      <!-- Código de la subcuenta del que depende la subcuenta de efectos comerciales en cartera -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales en cartera")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctacartera]">
+    <field>
+      <name>idctadescontados</name>
+      <!-- Identificador de la cuenta, de la que depende la subcuenta de efectos descontados -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_cuentas</table>
+        <field>idcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idctadescontados]">
+    <field>
+      <name>codctadescontados</name>
+      <!-- Código de la subcuenta, del que depende la subcuenta de efectos descontados -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales descontados")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctadescontados]">
+    <field>
+      <name>idctaimp58</name>
+      <!-- Identificador de la cuenta, de la que depende la subcuenta de efectos impagados para norma 58 -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_cuentas</table>
+        <field>idcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idctaimp58]">
+    <field>
+      <name>codctaimp58</name>
+      <!-- Código de la subcuenta, del que depende la subcuenta de efectos impagados para norma 58-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales impagados")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctaimp58]">
+    <field>
+      <name>actfechariesgo</name>
+      <!-- Fecha de ultima actualizacion de recibos con estado riesgo -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Fecha Actualizacion")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[actfechariesgo]">
+    <field>
+      <name>tipoconta34</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de contabilizacion de remesa para norma 34")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+      <editable>false</editable>
+      <default>100</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipoconta34]">
+    <field>
+      <name>pagoauto19</name>
+      <!-- En tipo 100 si inserta el pago automático en el cierre -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Generar pago automático al cerrar")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pagoauto19]">
+    <field>
+      <name>pagoauto58</name>
+      <!-- En tipo 100 si inserta el pago automático en el cierre -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Generar pago automático al cerrar")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pagoauto58]">
+    <field>
+      <name>pagoauto34</name>
+      <!-- En tipo 100 si inserta el pago automático en el cierre -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Generar pago automático al cerrar")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pagoauto34]">
+    <field>
+      <name>idctaecpprov</name>
+      <!-- Identificador de la cuenta, de la que depende la subcuenta de efectos comerciales a pagar para proveedores -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_cuentas</table>
+        <field>idcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idctaecpprov]">
+    <field>
+      <name>codctaecpprov</name>
+      <!-- Código de la cuenta, de la que depende la subcuenta de efectos comerciales a pagar para proveedores-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales a pagar: Proveedores")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctaecpprov]">
+    <field>
+      <name>idctaecpacre</name>
+      <!-- Identificador de la cuenta, de la que depende la subcuenta de efectos comerciales a pagar para acreedores -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_cuentas</table>
+        <field>idcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idctaecpacre]">
+    <field>
+      <name>codctaecpacre</name>
+      <!-- Código de la cuenta, de la que depende la subcuenta de efectos comerciales a pagar para acreedores -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales a pagar: Acreedores")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

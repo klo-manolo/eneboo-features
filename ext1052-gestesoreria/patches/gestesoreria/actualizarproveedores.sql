@@ -1,0 +1,1 @@
+﻿update proveedores set acreedor=true where codproveedor in (select codproveedor from co_subcuentasprov where codsubcuenta like '410%')

@@ -1,0 +1,5 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[idasiento]/relation[rh_recibossegsocial,idasiento]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[idasiento]/relation[rh_retenciones,idasiento]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[idasiento]/relation[rh_nominas,idasiento]"/>
+</xupdate:modifications>

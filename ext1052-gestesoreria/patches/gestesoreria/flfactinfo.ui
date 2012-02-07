@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">598</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">598</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_resrecibosprov]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]"/>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_recibosprov]/property[iconSet]/iconset[iconset,1]/text()[1]">recibos_provimage19</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/actions[actions,1]/action[i_resrecibosprov]/property[iconSet]/iconset[iconset,1]/text()[1]">recibos_provimage20</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[recibosprovimage57374]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[recibosprovimage10350]"/>
+</xupdate:modifications>

@@ -1,0 +1,148 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idremesa]/counter[counter,1]">
+    <relation>
+      <table>pagosdevolrem</table>
+      <field>idremesa</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[nogenerarasiento]/[]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]/name[name,1]">
+    <!--Indica si se debe generar asiento contable o no para los recibos incluidos en la remesa-->
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]/default[default,1]">
+    <visiblegrid>false</visiblegrid>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nogenerarasiento]">
+    <field>
+      <name>tipoconta</name>
+      <!--Indica que tipo de asiento contable lleva configurado por defecto-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de contabilizacion de remesas")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+      <editable>false</editable>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipoconta]">
+    <field>
+      <name>tiporem</name>
+      <!--Indica que tipo de remesa es, 19 o 58-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo Remesa: Norma")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>2</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tiporem]">
+    <field>
+      <name>codsubcuentaecgc</name>
+      <!-- Código de la subcuenta contable a la que se aplica el asiento de la remesa -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","SubcuentaECGC")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsubcuentaecgc]">
+    <field>
+      <name>idsubcuentaecgc</name>
+      <!-- Identificador de la subcuenta-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","IdECGC")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_subcuentas</table>
+        <field>idsubcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentaecgc]">
+    <field>
+      <name>idasiento</name>
+      <!-- Identificador interno del asiento de contabilidad-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Asiento")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>co_asientos</table>
+        <field>idasiento</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idasiento]">
+    <field>
+      <name>codctagescobro</name>
+      <!-- Configuracion por defecto de cuenta de efectos gestion de cobro en el momento de la creacion de la remesa-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales en gestión de cobro")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctagescobro]">
+    <field>
+      <name>codctacartera</name>
+      <!-- Configuracion por defecto de cuenta de efectos comerciales en cartera en el momento de la creacion de la remesa-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales en cartera")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctacartera]">
+    <field>
+      <name>codctadescontados</name>
+      <!-- Configuracion por defecto de cuenta de efectos descontados en el momento de la creacion de la remesa-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales descontados")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctadescontados]">
+    <field>
+      <name>codctaimpagados</name>
+      <!-- Configuracion por defecto de cuenta de efectos impagados en el momento de la creacion de la remesa -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta Efectos comerciales impagados")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codctaimpagados]">
+    <field>
+      <name>cerrada</name>
+      <!--Indica si la remesa está cerrado-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cerrada")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

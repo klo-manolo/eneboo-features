@@ -1,0 +1,33 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>tipospago</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipos de Pago")</alias>
+
+	<field>
+		<name>tipopago</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+
+	<field>
+		<name>nombre</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+	</field>
+        <field>
+        <name>tipooperacion</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de operación en Recibos a Proveedores")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <optionslist>QT_TRANSLATE_NOOP("MetaData","");QT_TRANSLATE_NOOP("MetaData","NOMINAS Y TRANSFERENCIAS");QT_TRANSLATE_NOOP("MetaData","CHEQUES BANCARIOS");QT_TRANSLATE_NOOP("MetaData","PAGARES");QT_TRANSLATE_NOOP("MetaData","PAGOS CERTIFICADOS")</optionslist>
+        <default>QT_TRANSLATE_NOOP("MetaData","")</default>
+    </field>
+	
+</TMD>

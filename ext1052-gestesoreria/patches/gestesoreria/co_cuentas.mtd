@@ -1,0 +1,37 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idcuenta]/relation[series,idcuenta]">
+    <relation>
+      <table>factteso_general</table>
+      <field>idctagescobro</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idcuenta]/relation[factteso_general,idctagescobro]">
+    <relation>
+      <table>factteso_general</table>
+      <field>idctaimp19</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idcuenta]/relation[factteso_general,idctaimp19]">
+    <relation>
+      <table>factteso_general</table>
+      <field>idctacartera</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idcuenta]/relation[factteso_general,idctacartera]">
+    <relation>
+      <table>factteso_general</table>
+      <field>idctadescontados</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idcuenta]/relation[factteso_general,idctadescontados]">
+    <relation>
+      <table>factteso_general</table>
+      <field>idctaimp58</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>
