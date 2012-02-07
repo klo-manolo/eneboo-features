@@ -1,0 +1,13 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="gtesoreria">
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolrem.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="remesasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="seleccionrecibosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco34.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco58.qs" style="legacy"/>
+</flpatch:modifications>
