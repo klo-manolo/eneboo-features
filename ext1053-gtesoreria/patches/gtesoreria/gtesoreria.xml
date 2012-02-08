@@ -1,14 +1,16 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="gtesoreria">
-  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesasprov.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolrem.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="remesasprov.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="seleccionrecibosprov.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco34.qs" style="legacy"/>
-  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco58.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="qsdir"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesasprov.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolcli.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolprov.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="pagosdevolrem.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="reciboscli.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="remesasprov.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="seleccionrecibosprov.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco34.qs" style="qsdir"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="vdisco58.qs" style="qsdir"/>
 </flpatch:modifications>
