@@ -4,8 +4,8 @@
 //// GASTOS POR DEVOLUCIÓN //////////////////////////////////////
 class gastoDevol extends oficial /** %from: oficial */ {
     function gastoDevol( context ) { oficial ( context ); }
-	function datosReciboCli() {
-		return this.ctx.gastoDevol_datosReciboCli();
+	function datosReciboCli(curFactura:FLSqlCursor) {
+		return this.ctx.gastoDevol_datosReciboCli(curFactura);
 	}
 	function generarPartidasBanco(curPD:FLSqlCursor, valoresDefecto:Array, datosAsiento:Array, recibo:Array):Boolean {
 		return this.ctx.gastoDevol_generarPartidasBanco(curPD, valoresDefecto, datosAsiento, recibo);
@@ -20,9 +20,9 @@ class gastoDevol extends oficial /** %from: oficial */ {
 /** @class_definition gastoDevol */
 /////////////////////////////////////////////////////////////////
 //// GASTOS POR DEVOLUCIÓN //////////////////////////////////////
-function gastoDevol_datosReciboCli():Boolean
+function gastoDevol_datosReciboCli(curFactura:FLSqlCursor):Boolean
 {
-	if (!this.iface.__datosReciboCli())
+	if (!this.iface.__datosReciboCli(curFactura))
 		return false;
 
 	this.iface.curReciboCli.setValueBuffer("importesingd", this.iface.curReciboCli.valueBuffer("importe"));
