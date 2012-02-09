@@ -178,12 +178,11 @@ function gestesoreria_crearPagoRecibo(idRecibo:String, fechaPago:Date):Boolean
 ////////////////////////////////////////////////////////////////
 //// RECIBOSMANUALES ////////////////////////////////////////////
 function recibosmanuales_init(){
-
-        this.iface.__init();
-        this.iface.tdbRecords = this.child("tableDBRecords");
-        connect(this.child("toolButtomInsert"), "clicked()", this, "iface.insertarRecibosManuales");
-        connect(this.child("toolButtonDelete"), "clicked()", this, "iface.borrarRecibosManualesClicked");
-        connect(formRecordrecibosprov, "closed()", this, "iface.refrescarTabla");
+	this.iface.__init();
+	this.iface.tdbRecords = this.child("tableDBRecords");
+	connect(this.child("toolButtomInsert"), "clicked()", this, "iface.insertarRecibosManuales");
+	connect(this.child("toolButtonDelete"), "clicked()", this, "iface.borrarRecibosManualesClicked");
+	connect(formRecordreciboscli, "closed()", this, "iface.refrescarTabla");
 }
 
 function recibosmanuales_insertarRecibosManuales(){

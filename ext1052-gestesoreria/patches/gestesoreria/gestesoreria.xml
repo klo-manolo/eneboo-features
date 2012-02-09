@@ -32,6 +32,7 @@
   <flpatch:patchXml path="facturacion/informes/tables/" name="i_recibosprov.mtd" style="legacy1"/>
   <flpatch:addFile path="facturacion/informes/tables/" name="i_remesasprov.mtd"/>
   <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbanco.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="formaspago.ui" style="legacy1"/>
