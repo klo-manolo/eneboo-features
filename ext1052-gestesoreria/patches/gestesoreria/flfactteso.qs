@@ -328,6 +328,12 @@ class recibosmanuales extends recibosmultiprov {
     function datosReciboAnticipo(curFactura:FLSqlCursor):Boolean {
             return this.ctx.recibosmanuales_datosReciboAnticipo(curFactura);
     }
+	function obtenerDatosCuentaPagoProv(codProveedor:String):Array {
+		return this.ctx.recibosmanuales_obtenerDatosCuentaPagoProv(codProveedor);
+	}
+	function regenerarRecibosProv(cursor:FLSqlCursor, emitirComo:String):Boolean {
+		return this.ctx.recibosmanuales_regenerarRecibosProv(cursor, emitirComo);
+	}
 }
 //// RECIBOSMANUALES //////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -3728,6 +3734,255 @@ function recibosmanuales_datosReciboAnticipo(curFactura:FLSqlCursor):Boolean
         this.iface.curReciboAnticipo.setValueBuffer("codejercicio", curFactura.valueBuffer("codejercicio"));
         this.iface.curReciboAnticipo.setValueBuffer("tasaconv",curFactura.valueBuffer("tasaconv") );
         this.iface.curReciboAnticipo.setValueBuffer("automatico", true);
+
+        return true;
+}
+
+
+function recibosmanuales_obtenerDatosCuentaPagoProv(codProveedor:String):Array
+{
+	var datosCuentaPago:Array = [];
+	var util:FLUtil = new FLUtil;
+	var codCuentaPago:String = util.sqlSelect("proveedores", "codcuentapago", "codproveedor= '" + codProveedor + "'");
+
+	if (codCuentaPago != "") {
+		datosCuentaPago = flfactppal.iface.pub_ejecutarQry("cuentasbanco", "descripcion,ctaentidad,ctaagencia,cuenta,codcuenta", "codcuenta = '" + codCuentaPago + "'");
+		switch (datosCuentaPago.result) {
+			case -1:
+				datosCuentaPago.error = 1;
+			break;
+			case 0:
+				datosCuentaPago.error = 2;
+			break;
+			case 1:
+				datosCuentaPago.dc = util.calcularDC(datosCuentaPago.ctaentidad + datosCuentaPago.ctaagencia) + util.calcularDC(datosCuentaPago.cuenta);
+				datosCuentaPago.error = 0;
+			break;
+		}
+	} else {
+		datosCuentaPago.error = 1;
+	}
+
+	return datosCuentaPago;
+}
+// KLO. OJO: Rompe herencia
+function recibosmanuales_regenerarRecibosProv(cursor:FLSqlCursor, forzarEmitirComo:String):Boolean
+{
+        if (!this.iface.siGenerarRecibosProv(cursor)) {
+                return true;
+        }
+
+        if (!this.iface.curReciboProv)
+                this.iface.curReciboProv = new FLSqlCursor("recibosprov");
+
+        var util:FLUtil = new FLUtil();
+        var contActiva:Boolean = sys.isLoadedModule("flcontppal") && util.sqlSelect("empresa", "contintegrada", "1 = 1");
+        var idFactura:Number = cursor.valueBuffer("idfactura");
+
+        if (!this.iface.curReciboProv) {
+                this.iface.curReciboProv = new FLSqlCursor("recibosprov");
+        }
+        if (!this.iface.borrarRecibosProv(idFactura)) {
+                return false;
+        }
+        if (parseFloat(cursor.valueBuffer("total")) == 0) {
+                return true;
+        }
+
+        var codPago:String = cursor.valueBuffer("codpago");
+        var emitirComo:String;
+        if (forzarEmitirComo) {
+                emitirComo = forzarEmitirComo;
+        } else {
+                emitirComo = util.sqlSelect("formaspago", "genrecibos", "codpago = '" + codPago + "'");
+        }
+
+        var codProveedor:String = cursor.valueBuffer("codproveedor");
+        var datosCuentaDom = this.iface.obtenerDatosCuentaDomProv(codProveedor);
+        var datosCuentaPago = this.iface.obtenerDatosCuentaPagoProv(codProveedor);
+        if (datosCuentaDom.error == 2) {
+                return false;
+        }
+        if(datosCuentaPago.error == 2) {
+                return false;
+        }
+
+        var total:Number = parseFloat(cursor.valueBuffer("total"));
+        var idRecibo:Number;
+        var numRecibo:Number = 1;
+        var importeRecibo:Number, importeEuros:Number;
+        var diasAplazado:Number, fechaVencimiento:String;
+        var tasaConv:Number = parseFloat(cursor.valueBuffer("tasaconv"));
+        var divisa:String = util.sqlSelect("divisas", "descripcion", "coddivisa = '" + cursor.valueBuffer("coddivisa") + "'");
+
+        var codCuentaEmp:String = "";
+        var desCuentaEmp:String = "";
+        var ctaEntidadEmp:String = "";
+        var ctaAgenciaEmp:String = "";
+        var dCEmp:String = "";
+        var cuentaEmp:String = "";
+        var codSubcuentaEmp:String = "";
+        var idSubcuentaEmp:String = "";
+        if (emitirComo == "Pagados") {
+                emitirComo = "Pagado";
+                /*D Si los recibos deben emitirse como pagados, se generarán los registros de pago asociados a cada recibo. Si el módulo Principal de contabilidad está cargado, se generará el correspondienta asiento. La subcuenta contable del Debe del apunte corresponderá a la subcuenta contable asociada a la cuenta corriente correspondiente a la cuenta de pago del proveedor, o en su defecto a la forma de pago de la factura. Si dicha cuenta corriente no está especificada, la subcuenta contable del Debe del asiento será la correspondiente a la cuenta especial Caja.
+                \end */
+                codCuentaEmp = this.iface.codCuentaPagoProv(cursor);
+
+                if (!codCuentaEmp) {
+                        codCuentaEmp = util.sqlSelect("proveedores", "codcuentapago", "codproveedor = '" + codProveedor + "'");
+                }
+                if (!codCuentaEmp) {
+                        codCuentaEmp = util.sqlSelect("formaspago", "codcuenta", "codpago = '" + codPago + "'");
+                }
+                var datosCuentaEmp:Array = [];
+                if (codCuentaEmp.toString().isEmpty()) {
+                        if (contActiva) {
+                                var qrySubcuenta:FLSqlQuery = new FLSqlQuery();
+                                with (qrySubcuenta) {
+                                        setTablesList("co_cuentas,co_subcuentas");
+                                        setSelect("s.idsubcuenta, s.codsubcuenta");
+                                        setFrom("co_cuentas c INNER JOIN co_subcuentas s ON c.idcuenta = s.idcuenta");
+                                        setWhere("c.codejercicio = '" + cursor.valueBuffer("codejercicio") + "'" + " AND c.idcuentaesp = 'CAJA'");
+                                }
+                                if (!qrySubcuenta.exec()) {
+                                        return false;
+                                }
+                                if (!qrySubcuenta.first())
+                                        return false;
+                                idSubcuentaEmp = qrySubcuenta.value(0);
+                                codSubcuentaEmp = qrySubcuenta.value(1);
+                        }
+                } else {
+                        datosCuentaEmp = flfactppal.iface.pub_ejecutarQry("cuentasbanco", "descripcion,ctaentidad,ctaagencia,cuenta,codsubcuenta", "codcuenta = '" + codCuentaEmp + "'");
+                        idSubcuentaEmp = util.sqlSelect("co_subcuentas", "idsubcuenta", "codsubcuenta = '" + datosCuentaEmp.codsubcuenta + "'" + " AND codejercicio = '" + cursor.valueBuffer("codEjercicio") + "'");
+                        desCuentaEmp = datosCuentaEmp.descripcion;
+                        ctaEntidadEmp = datosCuentaEmp.ctaentidad;
+                        ctaAgenciaEmp = datosCuentaEmp.ctaagencia;
+                        cuentaEmp = datosCuentaEmp.cuenta;
+                        var dc1:String = util.calcularDC(ctaEntidadEmp + ctaAgenciaEmp);
+                        var dc2:String = util.calcularDC(cuentaEmp);
+                        dCEmp = dc1 + dc2;
+                        codSubcuentaEmp =  datosCuentaEmp.codsubcuenta;
+                }
+        } else
+                emitirComo = "Emitido";
+        var numPlazo:Number = 1;
+        var curPlazos:FLSqlCursor = new FLSqlCursor("plazos");
+        var importeAcumulado:Number = 0;
+        curPlazos.select("codpago = '" + codPago + "' ORDER BY dias");
+        var tipopago:String = util.sqlSelect("formaspago","tipopago","codpago='"+cursor.valueBuffer("codpago")+"'");
+        while (curPlazos.next()) {
+                if ( curPlazos.at() == ( curPlazos.size() - 1 ) ) {
+                        importeRecibo = parseFloat(total) - parseFloat(importeAcumulado);
+                } else {
+                        importeRecibo = (parseFloat(total) * parseFloat(curPlazos.valueBuffer("aplazado"))) / 100;
+                }
+                importeRecibo = util.roundFieldValue(importeRecibo, "recibosprov","importe");
+                importeAcumulado = parseFloat(importeAcumulado) + parseFloat(importeRecibo);
+
+                importeEuros = importeRecibo * tasaConv;
+                diasAplazado = curPlazos.valueBuffer("dias");
+
+                with (this.iface.curReciboProv) {
+                        setModeAccess(Insert);
+                        refreshBuffer();
+                        setValueBuffer("numero", numRecibo);
+                        setValueBuffer("idfactura", idFactura);
+                        setValueBuffer("importe", importeRecibo);
+                        setValueBuffer("texto", util.enLetraMoneda(importeRecibo, divisa));
+                        setValueBuffer("importeeuros", importeEuros);
+                        setValueBuffer("coddivisa", cursor.valueBuffer("coddivisa"));
+                        setValueBuffer("codigo", cursor.valueBuffer("codigo") + "-" + flfacturac.iface.pub_cerosIzquierda(numRecibo, 2));
+                        setValueBuffer("codproveedor", codProveedor);
+                        setValueBuffer("nombreproveedor", cursor.valueBuffer("nombre"));
+                        setValueBuffer("cifnif", cursor.valueBuffer("cifnif"));
+                        setValueBuffer("fecha", cursor.valueBuffer("fecha"));
+                        setValueBuffer("estado", emitirComo);
+                        setValueBuffer("tasaconv",cursor.valueBuffer("tasaconv") );
+                        setValueBuffer("codserie", cursor.valueBuffer("codserie"));
+                        setValueBuffer("codejercicio", cursor.valueBuffer("codejercicio"));
+                        setValueBuffer("automatico", true);
+                        if (tipopago)
+                                setValueBuffer("tipopago", tipopago);
+
+                        if (datosCuentaDom.error == 0) {
+                                setValueBuffer("codcuenta", datosCuentaDom.codcuenta);
+                                setValueBuffer("descripcion", datosCuentaDom.descripcion);
+                                setValueBuffer("ctaentidad", datosCuentaDom.ctaentidad);
+                                setValueBuffer("ctaagencia", datosCuentaDom.ctaagencia);
+                                setValueBuffer("cuenta", datosCuentaDom.cuenta);
+                                setValueBuffer("dc", datosCuentaDom.dc);
+                        }
+                        if (datosCuentaPago.error == 0) {
+                                setValueBuffer("codcuentapago", datosCuentaPago.codcuenta);
+                        }
+                }
+
+
+                if (codProveedor && codProveedor != "") {
+                        var qryDir:FLSqlQuery = new FLSqlQuery;
+                        with (qryDir) {
+                                setTablesList("dirproveedores");
+                                setSelect("id, direccion, ciudad, codpostal, provincia, codpais");
+                                setFrom("dirproveedores");
+                                setWhere("codproveedor = '" + codProveedor + "' AND direccionppal = true");
+                                setForwardOnly(true);
+                        }
+                        if (!qryDir.exec())
+                                return false;
+                        if (qryDir.first()) {
+                                with (this.iface.curReciboProv) {
+                                        setValueBuffer("coddir", qryDir.value("id"));
+                                        setValueBuffer("direccion", qryDir.value("direccion"));
+                                        setValueBuffer("ciudad", qryDir.value("ciudad"));
+                                        setValueBuffer("codpostal", qryDir.value("codpostal"));
+                                        setValueBuffer("provincia", qryDir.value("provincia"));
+                                        setValueBuffer("codpais", qryDir.value("codpais"));
+                                }
+                        }
+                }
+
+                fechaVencimiento = this.iface.calcFechaVencimientoProv(cursor, numPlazo, diasAplazado);
+                this.iface.curReciboProv.setValueBuffer("fechav", fechaVencimiento);
+
+                if (!this.iface.datosReciboProv())
+                        return false;
+
+                if (!this.iface.curReciboProv.commitBuffer())
+                        return false;
+
+                if (emitirComo == "Pagado") {
+                        idRecibo = this.iface.curReciboProv.valueBuffer("idrecibo");
+
+                        var curPago:FLSqlCursor = new FLSqlCursor("pagosdevolprov");
+                        with(curPago) {
+                                setModeAccess(Insert);
+                                refreshBuffer();
+                                setValueBuffer("idrecibo", idRecibo);
+                                setValueBuffer("tipo", "Pago");
+                                setValueBuffer("fecha", cursor.valueBuffer("fecha"));
+                                setValueBuffer("codcuenta", codCuentaEmp);
+                                setValueBuffer("descripcion", desCuentaEmp);
+                                setValueBuffer("ctaentidad", ctaEntidadEmp);
+                                setValueBuffer("ctaagencia", ctaAgenciaEmp);
+                                setValueBuffer("dc", dCEmp);
+                                setValueBuffer("cuenta", cuentaEmp);
+                                setValueBuffer("codsubcuenta", codSubcuentaEmp);
+                                setValueBuffer("idSubcuenta", idSubcuentaEmp);
+                                setValueBuffer("tasaconv", cursor.valueBuffer("tasaconv"));
+                        }
+
+                        if (!curPago.commitBuffer())
+                                return false;
+                }
+                numRecibo++;
+        }
+
+        if (emitirComo == "Pagado") {
+                if (!this.iface.calcularEstadoFacturaProv(false, idFactura))
+                        return false;
+        }
 
         return true;
 }
