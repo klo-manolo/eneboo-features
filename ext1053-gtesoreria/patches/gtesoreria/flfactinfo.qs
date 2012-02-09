@@ -45,7 +45,7 @@
                           }
                   break;
                   }
-                  default {
+                  default: {
                           criterio = this.iface.__aplicarCriterio(tabla, campo, valor, signo);
                   }
           }
