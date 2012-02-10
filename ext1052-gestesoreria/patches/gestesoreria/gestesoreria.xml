@@ -18,7 +18,6 @@
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" style="legacy"/>
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturasprov.mtd" style="legacy1"/>
   <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" style="legacy1"/>
-  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_reciboscli.qry"/>
   <flpatch:replaceFile path="facturacion/informes/queries/" name="i_recibosprov.qry"/>
   <flpatch:replaceFile path="facturacion/informes/queries/" name="i_remesascli.qry"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_remesasprov.qry"/>
