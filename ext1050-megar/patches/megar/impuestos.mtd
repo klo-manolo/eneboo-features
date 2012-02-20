@@ -6,10 +6,4 @@
       <card>1M</card>
     </relation>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[iva]/partD[partD,1]">
-    <default>0</default>
-  </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[recargo]/partD[partD,1]">
-    <default>0</default>
-  </xupdate:insert-after>
 </xupdate:modifications>

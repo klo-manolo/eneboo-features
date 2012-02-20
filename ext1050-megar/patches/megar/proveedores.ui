@@ -1,0 +1,5 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[recibos_provimage7]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[recibos_provimage6]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[recibos_provimage5]"/>
+</xupdate:modifications>

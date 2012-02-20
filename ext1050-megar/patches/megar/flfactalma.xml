@@ -3,9 +3,6 @@
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]">
     <scriptform>masterfamilias</scriptform>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/scriptformrecord[scriptformrecord,1]">
-    <scriptformrecord>familias</scriptformrecord>
-  </xupdate:insert-after>
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/scriptformrecord[scriptformrecord,2]">
     <scriptformrecord>familias</scriptformrecord>
   </xupdate:insert-after>
