@@ -1,4 +1,0 @@
-<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:update select="/TMD[TMD,1]/field[inclineal]/partI[partI,1]/text()[1]">10</xupdate:update>
-  <xupdate:update select="/TMD[TMD,1]/field[inclineal]/partD[partD,1]/text()[1]">4</xupdate:update>
-</xupdate:modifications>
