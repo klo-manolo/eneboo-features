@@ -1,0 +1,37 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuario]/relation[cl_subproyectos,idusuario]">
+    <relation>
+      <table>pedidoscli</table>
+      <field>idusucrea</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuario]/relation[pedidoscli,idusucrea]">
+    <relation>
+      <table>pedidoscli</table>
+      <field>idusuprepara</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuario]/relation[pedidoscli,idusuprepara]">
+    <relation>
+      <table>pedidoscli</table>
+      <field>idusuembala</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuario]/relation[pedidoscli,idusuembala]">
+    <relation>
+      <table>pedidoscli</table>
+      <field>idusualbarana</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuario]/relation[pedidoscli,idusualbarana]">
+    <relation>
+      <table>pedidoscli</table>
+      <field>idusufactura</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+</xupdate:modifications>
