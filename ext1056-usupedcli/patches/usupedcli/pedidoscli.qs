@@ -33,8 +33,6 @@ function usupedcli_validateForm()
 	if(!this.iface.__validateForm())
 		return false;
 
-	this.iface.calcularTotales();
-
 	var cursor:FLSqlCursor = this.cursor();
 	if (cursor.valueBuffer("idusucrea") == "" || cursor.isNull("idusucrea")) {
 		var idUsuario:String = sys.nameUser();
