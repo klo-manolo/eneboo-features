@@ -5,6 +5,7 @@
   <flpatch:addFile path="facturacion/almacen/forms/" name="articuloslp.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="codigosdescuento.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="fabricantes.ui.h"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="factalma_general.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="familias.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="faqs.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" style="legacy1"/>
@@ -12,6 +13,7 @@
   <flpatch:addFile path="facturacion/almacen/forms/" name="intervalospesos.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="lineasarticuloslp.ui"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="mastertarifas.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="opcionestv.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="parametrospasarela.ui"/>
   <flpatch:addFile path="facturacion/almacen/forms/" name="pasarelaspago.ui"/>
@@ -68,8 +70,13 @@
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidoscli.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidosprov.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspresupuestoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranesprov.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpresupuestoscli.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="presupuestoscli.ui" style="legacy1"/>
@@ -103,7 +110,9 @@
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="pagospedidos.mtd" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" style="legacy1"/>
   <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="factinfo_general.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_master.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranescli_auto.qry"/>
   <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturascli.qry"/>
   <flpatch:addFile path="facturacion/informes/reports/" name="i_albaranescli_auto.kut"/>
@@ -128,6 +137,8 @@
   <flpatch:addFile path="facturacion/informes/reports/" name="i_solocabeceracli.kut"/>
   <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
   <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="FLWidgetMasterTable.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="bancos.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="contactos.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbanco.ui" style="legacy1"/>
@@ -141,6 +152,8 @@
   <flpatch:addFile path="facturacion/principal/forms/" name="idiomas.ui"/>
   <flpatch:addFile path="facturacion/principal/forms/" name="lineasgruposdto.ui"/>
   <flpatch:addFile path="facturacion/principal/forms/" name="lineassubgruposdto.ui"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="master.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="masterejercicios.ui" style="legacy1"/>
   <flpatch:addFile path="facturacion/principal/forms/" name="mastertraducciones.ui"/>
   <flpatch:addFile path="facturacion/principal/forms/" name="nivelesconsumo.ui"/>
   <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui" style="legacy1"/>

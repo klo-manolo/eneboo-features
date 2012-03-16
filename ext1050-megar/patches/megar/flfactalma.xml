@@ -1,4 +1,5 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[articulos]/form[form,1]/text()[1]">masterarticulos</xupdate:update>
   <xupdate:update select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]/text()[1]">masterfamilias</xupdate:update>
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]">
     <scriptform>masterfamilias</scriptform>

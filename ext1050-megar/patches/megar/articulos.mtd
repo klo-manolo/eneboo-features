@@ -10,7 +10,20 @@
   <xupdate:update select="/TMD[TMD,1]/field[pvp]/partD[partD,1]/text()[1]">4</xupdate:update>
   <xupdate:update select="/TMD[TMD,1]/field[costemedio]/partI[partI,1]/text()[1]">10</xupdate:update>
   <xupdate:update select="/TMD[TMD,1]/field[costemedio]/partD[partD,1]/text()[1]">4</xupdate:update>
-  <xupdate:delete select="/TMD[TMD,1]/field[ivaincluido]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pvpoferta]">
+    <field>
+      <name>tipoimagen</name>
+      <!-- Identificador interno del tipo de imagen -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de imagen")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+      <optionslist>jpg,png,gif</optionslist>
+      <default>jpg</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[tipoimagen]">
     <field>
       <name>nomfichero</name>
@@ -32,6 +45,20 @@
       <type>uint</type>
     </field>
   </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[peso]">
+    <field>
+      <name>modificado</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Modificado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>true</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[ivaincluido]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[tipoimagen]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[modificado]"/>
   <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
     <field>
       <name>descripciondeeplink</name>
