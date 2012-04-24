@@ -2,7 +2,7 @@
 /** @class_declaration ivaIncluido */
 /////////////////////////////////////////////////////////////////
 //// IVA INCLUIDO ///////////////////////////////////////////////
-class ivaIncluido extends oficial {
+class ivaIncluido extends oficial /** %from: oficial */ {
     function ivaIncluido( context ) { oficial ( context ); }
 	function imprimirTiquePOS(codComanda:String, impresora:String, qry:FLSqlQuery) {
 		return this.ctx.ivaIncluido_imprimirTiquePOS(codComanda, impresora, qry);
@@ -65,27 +65,27 @@ function ivaIncluido_imprimirTiquePOS(codComanda:String, impresora:String, qryTi
 			total = util.roundFieldValue(qryTicket.value("tpv_comandas.total"), "tpv_comandas", "total");
 			agente = qryTicket.value("tpv_agentes.descripcion");
 		}
-		
+
 		primerRegistro = false;
-		
+
 		cantidad = qryTicket.value("tpv_lineascomanda.cantidad");
 		pvpUnitarioIva = qryTicket.value("tpv_lineascomanda.pvpunitarioiva");
 		totalLinea = util.roundFieldValue(pvpUnitarioIva * cantidad, "tpv_comandas", "total");
-		
+
 		descripcion = qryTicket.value("tpv_lineascomanda.descripcion");
-		
+
 		flfact_tpv.iface.imprimirDatos(descripcion, 20);
 		flfact_tpv.iface.imprimirDatos(cantidad, 10, 2);
 		flfact_tpv.iface.imprimirDatos(totalLinea, 10, 2);
 		flfact_tpv.iface.impNuevaLinea();
 	}
-	
+
 	flfact_tpv.iface.impNuevaLinea();
 	flfact_tpv.iface.imprimirDatos("Total Ticket.", 30);
 	flfact_tpv.iface.imprimirDatos(total, 10,2);
 
 	flfact_tpv.iface.impAlinearH(1);
-	
+
 	flfact_tpv.iface.impNuevaLinea(2);
 	flfact_tpv.iface.imprimirDatos("*** I.V.A. INCLUIDO ***");
 	flfact_tpv.iface.impNuevaLinea();
@@ -108,3 +108,4 @@ function ivaIncluido_imprimirTiquePOS(codComanda:String, impresora:String, qryTi
 }
 //// IVA INCLUIDO ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

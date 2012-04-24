@@ -2,7 +2,7 @@
 /** @class_declaration ivaIncluido */
 //////////////////////////////////////////////////////////////////
 //// IVA INCLUIDO ////////////////////////////////////////////////
-class ivaIncluido extends oficial {
+class ivaIncluido extends oficial /** %from: oficial */ {
 	function ivaIncluido( context ) { oficial( context ); }
 	function datosLineaFactura(curLineaComanda:FLSqlCursor):Boolean {
 		return this.ctx.ivaIncluido_datosLineaFactura(curLineaComanda);
@@ -31,3 +31,4 @@ function ivaIncluido_datosLineaFactura(curLineaComanda:FLSqlCursor):Boolean
 }
 //// IVA INCLUIDO ////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
+

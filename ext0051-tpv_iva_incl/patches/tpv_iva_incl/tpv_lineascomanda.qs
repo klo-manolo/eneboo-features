@@ -2,9 +2,9 @@
 /** @class_declaration ivaIncluido */
 //////////////////////////////////////////////////////////////////
 //// IVA INCLUIDO ////////////////////////////////////////////////
-class ivaIncluido extends oficial {
+class ivaIncluido extends oficial /** %from: oficial */ {
 	var bloqueoPrecio:Boolean;
-    function ivaIncluido( context ) { oficial( context ); } 	
+    function ivaIncluido( context ) { oficial( context ); }
 	function init() {
 		return this.ctx.ivaIncluido_init();
 	}
@@ -35,7 +35,7 @@ function ivaIncluido_bufferChanged(fN:String)
 debug("BCH " + fN);
 	var util:FLUtil = new FLUtil();
 	var cursor:FLSqlCursor = this.cursor();
-	
+
 	switch (fN) {
 		case "referencia": {
 // 			this.iface.__bufferChanged(fN);
@@ -184,3 +184,4 @@ debug("CF " + fN + " = " + valor);
 
 //// IVAINCLUIDO /////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
+

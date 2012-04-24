@@ -2,8 +2,8 @@
 /** @class_declaration ivaIncluido */
 //////////////////////////////////////////////////////////////////
 //// IVA INCLUIDO ////////////////////////////////////////////////
-class ivaIncluido extends oficial {
-	function ivaIncluido( context ) { oficial( context ); } 	
+class ivaIncluido extends oficial /** %from: oficial */ {
+	function ivaIncluido( context ) { oficial( context ); }
 	function datosLineaVenta():Boolean {
 		return this.ctx.ivaIncluido_datosLineaVenta();
 	}
@@ -19,6 +19,9 @@ class ivaIncluido extends oficial {
 	function actualizarIvaLineas(codCliente:String) {
 		return this.ctx.ivaIncluido_actualizarIvaLineas(codCliente);
 	}
+	function calcularTotales() {
+		return this.ctx.ivaIncluido_calcularTotales();
+	}
 }
 //// IVA INCLUIDO ////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -29,7 +32,7 @@ class ivaIncluido extends oficial {
 function ivaIncluido_datosLineaVenta():Boolean
 {
 	this.iface.__datosLineaVenta();
-	
+
 	var util:FLUtil = new FLUtil;
 	var cursor:FLSqlCursor = this.cursor();
 	var ivaIncluido:Boolean;
@@ -44,7 +47,7 @@ function ivaIncluido_datosLineaVenta():Boolean
 		this.iface.curLineas.setValueBuffer("pvpunitarioiva", util.roundFieldValue(this.iface.txtPvpArticulo.text, "tpv_lineascomanda", "pvpunitarioiva"));
 		this.iface.curLineas.setValueBuffer("pvpunitario", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvpunitario2", this.iface.curLineas));
 //	}
-	
+
 	this.iface.curLineas.setValueBuffer("pvpsindto", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvpsindto", this.iface.curLineas));
 	this.iface.curLineas.setValueBuffer("pvptotal", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvptotal", this.iface.curLineas));
 
@@ -162,6 +165,32 @@ function ivaIncluido_actualizarIvaLineas(codCliente:String)
 	}
 	this.iface.calcularTotales();
 	this.child("tdbLineasComanda").refresh();
+}
+
+function ivaIncluido_calcularTotales()
+{
+	this.iface.__calcularTotales();
+
+	var util:FLUtil = new FLUtil();
+	var cursor:FLSqlCursor = this.cursor();
+
+	var dtoEspecial:Number = parseFloat(cursor.valueBuffer("dtoesp"));
+	if (!isNaN(dtoEspecial) && dtoEspecial != 0) return;
+
+	var tabla:String = "tpv_lineascomanda";
+
+	var id:Number = cursor.valueBuffer("idtpv_comanda");
+	var neto:Number = util.sqlSelect(tabla, "sum((pvpunitario-dtolineal-pvpunitario*dtopor/100)*cantidad)", "idtpv_comanda = " + id);
+	var iva:Number = util.sqlSelect(tabla, "sum((pvpunitario-dtolineal-pvpunitario*dtopor/100)*cantidad*iva/100)", "idtpv_comanda = " + id);
+
+	// Comparamos la suma exacta redondeada a 2 con la suma de neto + iva
+	var totalExacto = Math.round(100 * (parseFloat(neto) + parseFloat(iva)))/100;
+	var totalActual = parseFloat(cursor.valueBuffer("neto")) + parseFloat(cursor.valueBuffer("totaliva"));
+
+	var dif:Number = parseFloat(totalActual) - parseFloat(totalExacto);
+	if (dif != 0) {
+		cursor.setValueBuffer("totaliva", parseFloat(cursor.valueBuffer("totaliva")) - dif);
+	}
 }
 
 //// IVA INCLUIDO ////////////////////////////////////////////////
