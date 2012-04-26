@@ -1,0 +1,4 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fernando">
+  <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
+</flpatch:modifications>
