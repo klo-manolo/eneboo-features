@@ -1,2 +1,3 @@
 Tener en cuenta que en el base de megar usado aqui, está ivaIncuido (no el de TPV) y fux-ecommerce.
+OJO: AQUI ESTÁ EL CÓDIGO SIN LO DEL NUEVO 347 PUESTO. SE TRATA DEL CÓDIGO ANTERIOR QUE GENERA EL PARCHE DE MEGAR Y QUE DESPUÉS SE APLICA A prj1050-megaroil.
 
