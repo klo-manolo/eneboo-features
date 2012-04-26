@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[cantidad]/null[null,1]/text()[1]">true</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[orden]/default[default,1]/text()[1]">NIF</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[parrafo2]">
+    <field>
+      <name>parrafo3</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Parrafo 3")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

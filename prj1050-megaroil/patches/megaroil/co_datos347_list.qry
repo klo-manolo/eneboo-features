@@ -1,0 +1,26 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_datos347_list</name>
+
+	<tables>empresa,co_datos347_list</tables>
+	
+	<select>
+		empresa.nombre, empresa.cifnif, empresa.direccion,
+		empresa.codpostal, empresa.ciudad,
+		co_datos347_list.clavecodigo,
+                co_datos347_list.nifdeclarado, co_datos347_list.apellidosnombrers,co_datos347_list.direccion,
+		co_datos347_list.importe,co_datos347_list.importe1t,
+                co_datos347_list.importe2t,co_datos347_list.importe3t,co_datos347_list.importe4t,
+                co_datos347_list.parrafo1,co_datos347_list.parrafo2,co_datos347_list.parrafo3,
+                co_datos347.saludo,co_datos347.despedida
+	</select>
+	
+	<from>
+		empresa, co_datos347_list 
+                inner join co_datos347 on co_datos347_list.id = co_datos347.id
+	</from>
+
+	<where>
+	</where>
+
+</QRY>

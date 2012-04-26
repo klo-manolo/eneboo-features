@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate TopMargin="20" BottomMargin="50" LeftMargin="20" RightMargin="30" PageSize="0" PageOrientation="0" >
+
+<Detail Level="0" Height="800">
+<Field WordWrap='0' Width='320' X='60' Y='136' BorderStyle='0' NegValueColor='0,0,0' Height='16' HAlignment='0' DataType='0' Field='co_datos347_list.apellidosnombrers' DateFormat='11' Currency='32' BorderColor='0,0,0' BackgroundColor='255,255,255' FontItalic='0' VAlignment='1' ForegroundColor='0,0,0' CommaSeparator='44' Text='[co_datos347_list.apellidosnombrers]' FontWeight='50' FontSize='9' BorderWidth='1' Precision='2' FontFamily='Verdana'></Field>
+<Field WordWrap='0' Width='320' X='60' Y='152' BorderStyle='0' NegValueColor='0,0,0' Height='100' HAlignment='0' DataType='0' Field='co_datos347_list.direccion' DateFormat='11' Currency='32' BorderColor='0,0,0' BackgroundColor='255,255,255' FontItalic='0' VAlignment='0' ForegroundColor='0,0,0' CommaSeparator='44' Text='[co_datos347_list.direccion]' FontWeight='50' FontSize='9' BorderWidth='1' Precision='2' FontFamily='Verdana' WordWrap ="1" ></Field>
+
+<Field  X="60" Y="748" Width="350" Height="18" FontFamily="Verdana" FontSize="9" FontWeight="50" BackgroundColor = "255,255,255" Text = "empresa.nombre" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="empresa.nombre" ForegroundColor="0,0,0"/>
+
+<Field  X="180" Y="230" Width="220" Height="18" FontFamily="Verdana" FontSize="9" FontWeight="50" BackgroundColor = "255,255,255" Text ="Ciudad" HAlignment="2" VAlignment="0" WordWrap ="0" DataType="0" Field="empresa.ciudad" ForegroundColor="0,0,0"/>
+<CalculatedField  X="410" Y="230" Width="140" Height="18" FontFamily="Verdana" FontSize="9" FontWeight="50" BackgroundColor = "255,255,255" Text ="fecha" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="" CalculationType="6" FunctionName ="formco_datos347.pub_fechaEnLetra" ForegroundColor="0,0,0"/>
+<Label  X="400" Y="230" Width="16" Height="16" FontFamily="Verdana" FontSize="9" FontWeight="50" BackgroundColor = "255,255,255" Text ="," HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="," ForegroundColor="0,0,0"/>
+
+<Field WordWrap='0' Width='300' X='60' Y='260' BorderStyle='0' NegValueColor='0,0,0' Height='70' HAlignment='0' DataType='0' Field='co_datos347.saludo' DateFormat='11' Currency='32' BorderColor='0,0,0' BackgroundColor='255,255,255' FontItalic='0' VAlignment='1' WordWrap ="1" ForegroundColor='0,0,0' CommaSeparator='44' Text='[co_datos347.saludo]' FontWeight='50' FontSize='9' BorderWidth='1' Precision='2' FontFamily='Verdana'></Field>
+
+<Field WordWrap='0' Width='500' X='60' Y='330' BorderStyle='0' NegValueColor='0,0,0' Height='100' HAlignment='0' DataType='0' Field='co_datos347_list.parrafo1' DateFormat='11' Currency='32' BorderColor='0,0,0' BackgroundColor='255,255,255' FontItalic='0' VAlignment='1' WordWrap ="1" ForegroundColor='0,0,0' CommaSeparator='44' Text='[co_datos347_list.parrafo1]' FontWeight='50' FontSize='9' BorderWidth='1' Precision='2' FontFamily='Verdana'></Field>
+
+<Field WordWrap='0' Width='500' X='60' Y='430' BorderStyle='0' NegValueColor='0,0,0' Height='100' HAlignment='0' DataType='0' Field='co_datos347_list.parrafo2' DateFormat='11' Currency='32' BorderColor='0,0,0' BackgroundColor='255,255,255' FontItalic='0' VAlignment='1' WordWrap ="1" ForegroundColor='0,0,0' CommaSeparator='44' Text='[co_datos347_list.parrafo2]' FontWeight='50' FontSize='9' BorderWidth='1' Precision='2' FontFamily='Verdana'></Field>
+
+<Field WordWrap='0' Width='500' X='60' Y='530' BorderStyle='0' NegValueColor='0,0,0' Height='100' HAlignment='0' DataType='0' Field='co_datos347_list.parrafo3' DateFormat='11' Currency='32' BorderColor='0,0,0' BackgroundColor='255,255,255' FontItalic='0' VAlignment='1' WordWrap ="1" ForegroundColor='0,0,0' CommaSeparator='44' Text='[co_datos347_list.parrafo3]' FontWeight='50' FontSize='9' BorderWidth='1' Precision='2' FontFamily='Verdana'></Field>
+
+<Field WordWrap='0' Width='300' X='60' Y='670' BorderStyle='0' NegValueColor='0,0,0' Height='20' HAlignment='0' DataType='0' Field='co_datos347.despedida' DateFormat='11' Currency='32' BorderColor='0,0,0' BackgroundColor='255,255,255' FontItalic='0' VAlignment='1' WordWrap ="1" ForegroundColor='0,0,0' CommaSeparator='44' Text='[co_datos347.despedida]' FontWeight='50' FontSize='9' BorderWidth='1' Precision='2' FontFamily='Verdana'></Field>
+
+</Detail>
+</KugarTemplate>

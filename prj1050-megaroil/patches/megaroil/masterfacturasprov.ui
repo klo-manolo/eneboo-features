@@ -1,0 +1,48 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,pbnAsociarAFactura]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnModelos</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>base_modelosimage49350</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Modelos fiscales</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Permite vincular o desvincular la factura seleccionada a uno o más modelos fiscales</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,tbnModelos]"/>
+</xupdate:modifications>

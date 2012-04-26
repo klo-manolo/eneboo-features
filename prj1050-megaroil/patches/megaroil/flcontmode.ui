@@ -1,0 +1,205 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo300]"/>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo320]"/>
+  <xupdate:append-first select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]">
+    <action name="co_modelo390"/>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo390]">
+    <action name="co_modelo349"/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo349]"/>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo390]"/>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo340]">
+    <action name="co_modelo303"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo303]">
+    <action name="co_modelo180"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Modelos]/action[co_modelo180]">
+    <action name="co_modelo115"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">108</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/x[x,1]/text()[1]">10</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">77</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[name]">
+    <property name="cursor">
+      <cursor>0</cursor>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[cursor]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[acceptDrops]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[frameShape]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo300]"/>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo320]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,1]">
+    <action name="co_modelo349"/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo349]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo340]">
+    <action name="co_modelo303"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo390]">
+    <action name="co_modelo115"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[co_modelo115]">
+    <action name="co_modelo180"/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[co_modelo300]"/>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[co_modelo320]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_datosfiscales]">
+    <action>
+      <property name="name">
+        <cstring>co_modelo390</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>modelo390image29024</iconset>
+      </property>
+      <property name="text">
+        <string>Modelo 390</string>
+      </property>
+      <property name="menuText">
+        <string>Modelo 390</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_modelo390]">
+    <action>
+      <property name="name">
+        <cstring>co_modelo349</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>modelo349image20904</iconset>
+      </property>
+      <property name="text">
+        <string>Modelo 349</string>
+      </property>
+      <property name="menuText">
+        <string>Modelo 349</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[co_modelo349]"/>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[co_modelo390]"/>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_modelo340]">
+    <action>
+      <property name="name">
+        <cstring>co_modelo303</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>modelo303image6545</iconset>
+      </property>
+      <property name="text">
+        <string>Modelo 303</string>
+      </property>
+      <property name="menuText">
+        <string>Modelo 303</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_modelo303]">
+    <action>
+      <property name="name">
+        <cstring>co_modelo180</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>modelo180image26155</iconset>
+      </property>
+      <property name="text">
+        <string>Modelo 180</string>
+      </property>
+      <property name="menuText">
+        <string>Modelo 180</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_modelo180]">
+    <action>
+      <property name="name">
+        <cstring>co_modelo115</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>modelo115image58837</iconset>
+      </property>
+      <property name="text">
+        <string>Modelo 115</string>
+      </property>
+      <property name="menuText">
+        <string>Modelo 115</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[modelo300image31695]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[modelo320image3223]"/>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="modelo390image29024">
+      <data format="PNG" length="1774">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006b549444154789cc5974f685cc71dc73f2a4f30036b985714d8070ee8851ebcc12948c4a55a52a897bac429be38f8503bbe48ee21de9e5ca7171b5f52d18b9dd016517ab07c08b60fad24a8a375217875482b155c6b030dd621a6cfa426ef418d67a81e7a83f5607a98dd956469ddf41f5d78fc98f766e7f79befeff7fdfe66869c73fc3f7f5fd9e39d6313a7b57614dbecdfb463dd8f0b5db8fb9d5547c17f1cfdd02e043671731fce513f58070b36b068ab09458828055640516a789070c3ce327650601fd5698c1c263af8320c33f42f45e09cdbf13c79f2c4dd69dd711b7fdf70eea9731b1b1bceb967ec53e7bef8fc0b776ff99ebbf0ce8fdcbdcf711b1b55f787a713ee37bffdd0b9a7ce3dbbeea067570a4211a2730d25604022611d6420a1e8da1c9450082538796292e4a76739f3fb0c4b42edd80d567999e58f961dfcf314ed0aa007b7b1062a7e8c80a22c40f6a2048bedcf8b4f3739be709699df6524c53c6238467c7386cb7ffd1ef7efae3e3788bd11b01a251458082b219420a5844d6018d8f4ef45295015456a32a263a718bb3d897d68898a16e9be94daa7673187ced3bebd3830883d11109bc22320a0b0dd9df79ce36d51165001630d6145a0ada6363a4e2b030b8caf2f111d3d835d9a421d58a17d6bef2082bd1030983e02b2e273df871f86002785c43eb628a1b08f2d5284986a060aac015d81954e86aebc85198193c74659fd3874e3dfaaef60c9ae00b4d52814c61aa49214b640ee933b11a08b8cf0080821d08f352aa82296dea035d1a2f54830ba749238358c95d07a5161558bf840cd852f84430303f8120800d04320aa44245942a44252521a0f6bd84faa4cbedec0be2688c29002680482e53f2fd3f95387c6d1c6bf8d403ff2c216888a401b4d5555c9f28c4845e82387892a11daa64441882e355125c262898288244dc0d3730806b0c06050411701d1456078e73cb94f2291c4233132f016017135460582b81a43c58f45e0d9d25f77736b9d3d59d04360170bb60bcb2650f17aa0aaaaef9c0a84d510028847622c16a924b6b4a8a0bbeeb6cd3cbf06f2813530c4308e12a26a04b9d785222f501585cd2d918ac042548948f3945084d8c0b3667b41ef8d40a9c8f20c44570903288ae2d9a93b94b1080ae488c462114a60b1feffa557d6344fb790dd86c0e01a108a222f0883d0d7424f09b7d230d445c2c72225945de5b42002e1953408fbbd232b33ff7e5b0dec4cc126eefcfbd759fdd480ec70fcdb13a4794aa4228a759f87e9f7e7d0b970e3af844c9dd8262a9b5058b8f2c122c9234b3402cd13755293220281c9cdf3114892c2c9af3769df3580e6cca536d3d75afd5ab016befa8d26f31f2580e1e27b6d4e9dbbea7ace198697be7b9eab0b6bd8d270e55a8733ef5e270c424c6e1081d85903cf22f0c3776789f7c7dc993dc9f2ad65960e1aae5c6bd3fc7e1d2a70e682ff7e6fbe89dc27b9f8b6e6a5c645964f37a81f8cf9c9cf173179c15fe64f2102c1f1c31ddefaf11ccbdfb94f2d8e7c10a518cc82c55f35597d50100ab9c557bab9cc6175ada07128f4e7030d910a89f787b49712eaa331ed4f33260e79ce5b6319ff5a0cc0da034bed05bf4e9f5d7bb26098a1f19a1c6a7f729f998594e96b2d9aa7df2035a9effd154b9269d23ca5a040e79ae49126c9120a0a92cf12a291b83f5fe79aea8864ed51e28f75b9fe722c5022240c2d63a331571796c04ad23c65ea589d95bb0933d75699b9d9e6cdc91b5d8414d6584041992191e85c2310ddeffe842503b913814101c4fb0593afd5b87ca98ecd0baedc6c1306218727aa5c7efb4d5a2b1d6edceed03852a55a8d01e3398fc196ca573d82cc6480c2d81419c88108f46be0d4d9ebce58c3e2cf9a180cb5a086a848287d4e5b77133263587c6f0a2ce8d232fdcb368d4375acb134c66aacacada182316c6e1181207b9c72ea48dd23120832b2c13530f66a447be53e737f5c45a1985958c1e605f5571545506072c3cccd65e63f5ec56279e7177354ab21f17e4141c1f80141f250337b7b058b65fa83b65fb726fc096b7d6f1dd8712f685ebaee667fbd0668442562ea58c4e4d1098cf5b99bbeb9c4fced14d08c8dc65c38d72056822cf73b9b5958e1c62dff5d8890e68998895a15b36eba8878259cfac154bfb5efba9868ad5d7ba14df862e85b68d7f9409b7bdb6b38a94909839074bdabfd6597ffa54158415aa69c3f771e069e0782ad5e60f2ae1ee4f856faccb827b369de75baddb9ec3a0fbc7325fc792014e1737a015bddb0f35907552a1212bf93c0e7b037b68145a1582bd7bcc5dba44c10a5e0a17988a2db804a4192274441446ad3c135d0fdb9abb357b166eb4ef8dfb4f557ea345e6f6c1deff6b8aff93b60ef6ef8bfb06eebeef80f79497a2a33a913300000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[modelo390image29024]">
+    <image name="modelo349image20904">
+      <data format="PNG" length="1405">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000054449444154789cc5975d685b6518c77f9153780f6490031512d9a04726ecc86e12a8d8592f1a1db8c82eccf0c2e1bca8bd91a8a0d69bb179b529ae46d0d10d745d41d7f56234bd90a617d354d8682f9446d868840a67b041020e1268e1bcd003c78bf395938f6e75820f849c3cef79dfe7fffc9f8ff749cc711cfe4f517ae81c6bcb42da32aab5c347694b9aad26a9640a4dd3624f0220d6c980b56539e59fcb18078dc0982f4211485b2284c0fccba4b458424b6818870dd2e93499c31918604f80ba18f00dea437a9f37404a8916d750e32ae5e53273f373547ead208420772ce7e45ecda1ee531f0bc8533db536b4b65b48299152baf4dbe19a2fc96492fcf13cb9a339cc4d9346bd4179b9cc446182a59f961ce09109d61b802f4af7b32a548410082182a5cc7086dcf11cf5461dd33449c413acacac30f9f1241b77367605b13b00dcb807c61535fc56c26f4b5a188641f6e52c524a1af506e60393b1b1318a178b546e56fa82e80940eec82e9daaa83040f06907e68b3ea483ede5d10e5cfaee12d9d12cab6bab2c2d2ff504d1ab0c1f25313a62ab2a2a1289887ba06c68ca26725b52bc5824114f50bd5b2535987232c3994872fe1b007d452882542a45fd7e1d00c33010711184aab458421fd21dede9b0773c3100a108d77b4520158971c8207d388d36a891482410aa97b036d4366b546e5738f1c68960ff5e0144e8f3f340088f7a05468647c2536d8264f59968fddd821d1cbf61f50760f75d09a00b21d0e21a4d9a083bf4742faeed9501078f055551918adb963545031b2cdbea021fb472bbb7b5dd01d804f1ed901803384288e07ec006618bb00c7d103204d1e39c3e00bc430422f86d61a1e2f5024f5455851d5051b16c0b618b48eb96520665d975bb7ab26b278c78128adf03621e1330107645dfa508f576a8eb041261a0b96539e72f9759bf6b829a22fba281c4a317d1ce8273e6eb25f2c732648c54b0bfd59214672b345b2d8ca104b9312334da27a90306d66b75e7991726a9fc660230f1d902d3f3ab8117fe21966d71e6c202c5efcb54ab26ec003b507fd8e4d9ec19166e5691369c9f5de3d3a972180ebb672e8500ce4e95d0f76bfc72b5c0bbafe9144e1da1385b891897b6a472bbe6ea7113d4b22d2c69f1fe17d7492635567f2870ee832c4b974e525933a96dd623fb3b9908005cfb669c6bdf16c295b6b8f99b5b0f5b4c9cbe4e6eecf99019e952bc7ea74e765847da124b5a080592832ae5dfef454bb443821cd0f6a931cd50a9ac6d38d38b35aa7f36299c3a8225ad20b926a7ca007cf5518ef2ca06966db9990e687181f9a08925ada0121a0f2de4b6e51aef93033dcb50d304fa90c6cc6295fc980109b87aa34af9d606573e3f110e23920040fea8c1f9cb158ab36ba40605a5959ac720bb96611780f4c114f9d1148661f0caf81c338b553e3935c2f48fab88b84a79a546f9967b78f9760d694bf2470df25ec6976eba6bb9119d856d89107dcb390ae0f5f16907e0da97275d850d22aed2da76e7c264520360f54e3dd85cdd6c903994424ad770735b72e574ce1bdb2da6e7d7490fb96dbad790130130366a70766a81ca1f6e19ce2dd790db16b9d121a42d59b8908f6c7ce99d190a6fa65dcfbd985fbdb18e9e14187a82e9f92a89848aa1275ce38f6260723c1b33efd59db73f9c015cef0b6f65300e68d118b607adad0ab22329cc86ced98b6eefd0f76b9c7b2f1d186fef23edd2f5c7a4d96c3aa5c512fa01fdf1ee4acf333fd383b2dd095b71a0936edf98fc6092fef380dde7b987745ebfbb19ef277d6f43f3be19ddd8f1a6df567bfd878ce8da68f7c7fa5d01f8936dbd51ef7af9494522319e3322baae1cc0bb6eadaddeadf3bf10759f0ade64f50f366db4ed3a2c01fa0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[modelo349image20904]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[modelo390image29024]"/>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[modelo340image30950]">
+    <image name="modelo303image6545">
+      <data format="PNG" length="1584">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005f749444154789cc5974f681bd91dc73f2eb3f0061498812ccc140734e0854c68a03209ac555cd6021fac90436c7cd88614ba2e3dd4dbcbc6b766590aa18565d33db4e9a5a485a6f1a125dac312199aa21cbc6b05b6680a0a9e434cc7b0829983600662980779a01e461a45966437dd427f2034f3fefdbef37ddfdfeffdde4cafd7e3ff69da84b65efa22452a39daaa8633a494c451885374d04d73e69b009839ce40fa22edd5ff5ec79d73014680084d2001a141f2cca39ed6e18c832b6c4a46890b97caf006af05688c818143a7e84c19918dd10b2695039bc64e9dede2433c670ff1b4462959ea55dfa9a09fd1ff2320df9ad8aa20394a905222a5cce857c33e1408c0b22caa575779ef994bcb0b098f62fcb31e1ffe738b479f3fea01a70a6c32808169e3cfbad011422084c8bbccf5eb6c765c7ccf27483c0ccde6d0f2b8f5788b7daf752290930190ed7bee5cd387ff5a06060d522911cb55aa1d97c08ff13b1ea14c58504bd4649dc6e3c6d4f52702902fe5589baee9f006f94f684306d052009c59a73f1f8228a0468db27448ad3d1ad9968cd9a4303ccd663846a98e4e4c0ab336ba04a4442a48c288dbea1ecea2c41421c6aed99b5f2c8f88f3bf0130dd344131d1f1494181db71b81026b00bb12da919759cf36ecf7c73983bbe31802c37488406e882f9038bb204f9ce3ca268217410c2a4a8520e9ffb34be68b0766d6d88f935fd8dd03710a8107da14ab0aeae82a6439f854cac203493434d27891378496f90b0a60350537b72e84208cc82494c8c50fdd0cc53b6983cefd8baafcb408f3e0bbaa623359981d04c5090aa74cc499ecad5646f27035020910407017edbc73ff089bb710fc03c6be2ceb9b8ae8b33e764d951650c8c3895c377318195a900a492c84452dfa9937602dcef9458bdb68a7dd646084172941076421abb0dccb64975a58a5130f2d42d15a064e641317eba9e06204e626a3b359c8b369ba555520da28289245bd8b22c1cc7a1bc58a6f1a4c183fb0fb8feee7544a1af83575950c38f9a0a207e91f6deff689bda4e0b00cbf0d8f8918b73d5653f903807b0f1e9039aed100067d6e4e64faa6cac97a92c554815acfdf42ede410c803b67f3c907550ca3ef788aa8f3547ce7f70d1abb3e5ffe658b9fdfb001d8fe2c86b64d6408eeb47dbce721ab8b3a37d74d2c5370ebe35abe50b39de27762fefccb2afffadb2d00b63eaee50c4825276a200770fb832b33e1579fcc38b3066127a45c72080e03882cc22f04f5a701f6599dd595054aa512e5ef9a2447298dddfdc17c1efdee3a41e02395a4b2e0e01fc69996941cea404d01f0aa4549821f8454162e60cd2624814f128373ceca8fe2925b04e0e1e327d9a497d9611445117137a6b1eb53b9ece40ce4213a8d8181ddbdbf47dd3308bb92a5b78b9806845d9fac04210bc7b6cfa01c880e43e238264e628410ecb563bef7c37b845d897bde442a99393f4d0303db7cb74cf562c4e68d053efcb44eeb5978ece81d1d2f9179e52495c4b5e1cb3f6db0baec72f77e8b563b3c310c276e8110828d6be5ec8b8384d2e5122041495cd7c5bde8228fb2058d82431c09a49484518810d9f3da72561bf887c9895130310f180503ffc0cfdfcb97cab8e73c5a41923bf6da59bf7ba948d41588230bfff93ea6d1a75d0ef63ca37f529133c2c095f7eef62e2cdfea01d8b33677fe58c728e8acad9430df34a9ae9489a294fa130fcff3f0da1221a0bcae433160ebd77f60eb3775dcf32ea94ca9370f1102e6cfdb99f3d318f8ed2f7ec0fb1f6df3edef67316c193a376f9470ce99006cac57a8edf86c3fd9efb3a473fbda3c5617a2b7222acb10fe55e7c7bfda03b244b5b93e8f516024048f47c3d8c5248ee35eedb31a8669d06c36595a5ae2caca95acf36596a207a2b3ba21ba92dcfbba45eb6940f9ed324217a394bfe25cca2c22b67eb6c5f47aa04f95593059b8bc80f79547b3d9a4b258c199733291294998c4b47c1fef1f2d30cc539d4fb3c9879182e0eb0014d8964dd80da97ffe9030c92e2b00a26060170456d1c1b6ec914bcc48c89d52d88c011085acbc0aa370a4ddb06c0ccb1e5b402a49d0094ef6f28ab96fb923ef631aa05f72a72f26a7ceff85e96774e85756ff069149e6cdc10579450000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[modelo303image6545]">
+    <image name="modelo180image26155">
+      <data format="PNG" length="1673">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000065049444154789cc59741681cc915863f851654411baa830cd36117dcc1818c890e23928086e420910db140172dbe38ce65b59744be24120b21912f5edfd659c8a25cb252208be3cb4a82ec6a7c30960e59a4d34a0b099a834d5a24667b581b771135eac2d3503954cf8ce419796d929081e1514d75bff7fef7bfbf5e0d596bf97ffebe32e099a58d4dd3d4921fb38f52cba1b3799adbfde6ae25e73f8e7ea80f813676f5e355eadfaa8301e319529312880051088c07392964318b070dc4b725f5075566ce8d139ebb00c30cbd5404d6da13ff274f9ed87b8d7bf6e85f47d63eb5f6e8e8c85afb8c7d6aede7fff8dc7ebafda9fdd5e2bc555f6027acb2353b613ffcf3c7d63eb5f6d9ef9ef6ef2b412002d22c8502d020917008d29390973603251442092e4fbfc1fbeb3f63eb2f351262fe34bdc685e13adb5bdb16bebc447d0174e0d64683efd608c88b1c64274a3098eebeeae81c1f36235a7742d6685021e4e6f796984c16d8ffebee7383188c804951428181c00fa0002925b48161a0ed9e8b42a07c454bb7085f9de5fa4e15eeb78859231916cc7f36c1d5d16536b7364e0d622002a22d1c0202725366de718eb37991830fda6884af484d4aedfc183c1e4703497b852b17af32bb5567f3fc0e9b7707073110018dee222085ab7dd7398ee552483025174cf99e27c08f20850340373557d4afb9516932fbda22bb7bdb7d417883105028b4d14825c94d8e3c234f2240898c28111082f4718a3a5361ea2e342614e2619dcb772a542b9ae88ea1696aac150da257aa36381b745bb55f0772ecadf55bcc5c9c711de0e33a4276770ce1c48af4618ace34712b462048b2041eed608a0471760ada82200800109e60afb94df51b634c5e9cec063090031d04fa38404f647293237c415aa4545405e319421522c209aad57984af08cf86e4e4285f81004548fccf188eb5e7e91cf04ee50000f28c4422894622a4e72c9e20aa4488d2e2d35d2b5ff5b8d5ee7de76511e8d5ab0df84e0f54c56518bd12820f4125000fa2910883412a89290cca2bbf7b2c993e129ee8820ca45f22204f6c1b62184b01612584cce9429e39b84de6ca8181d00f49b284400418cff410187e1e0285a295b540944ae8419ee7cf6e3da18cb997234724068350028371ef174e59932ce9217b0c81e7ea409ee5045ee0b8d051c25e19864a245c2c5242512aa771acc7e0de2fcf8e56d172cf8f7160a00e2407b0b4bec9fca529922c215421f9a1abc38d7757493361c74603662fd57b476f1b7203373fd8207e68084760ee529d4427084fa033fd620860048bb7b7490e4c57e9c8207ea0f9ea77e7d8dc69019aabd71acc5dbb653bce1986afff7081e5f526a6d0dcfcc31e6f5ebf45e005e84c233c719203831058fd68df5e796b09700a673c83c90cf870f37603e587dcfbe31bc83392b0b2c18df71abcf3cb19a42779fbb71be82ce7ef6b3f46788299893daebcb5caf60ff6a946a10ba210cf4760657d8bf71767514a7633179e800caae72274966032202d6b4b392f64b0f9b716e335d7f3461bc6ce4700341f98ee7706e9c009043656e686d234b50bef295a994320d529a11ff2fac588c627115f9b5ca0528968b562367e3747a2139450c4f763eab51a894e9048d22ca53222693e8c315e489aa52fd8055e00c77420f05c0b35eec6ececc55cffe9ebcc5daa52a944bcfdfb0602973128285a5de7020180f0dc84253df9e24ae8389060304e44bc80e58fb6991c1f63eab50ab3d375567f33c5ce5e4ce3933dd7f3684ca11ceb11b4740b506893203df9120808575b55661e7801461bd24ca07cd35d87bedba71f81d186c95a9566dc44794e098527683d4ea89d8b1c22a770e0140414daa4284f916409b99733f5fd80b5bbfb6c7eb68bc170f5dd3500c6bfa3c8c919fba6203e4859b9b383c170e3834d006a55e126acc3c13ad07f16f81d0e54319971a758a6999b1ea7d54a79f3da0ed0a0528978e7e7935db8c747232e4f5f60e976ccd2ed5d840898ffc998cb3c773a704209cb20fa0692344dede6fa26c1ab81736e1c6ca7daccd94eb9baf6b0d4fea2ecff42238c202912167eb100e56c31b00b3ab5d259391764b8a3f499754766133dc0b92c9d7bceb9126e1e0844f0e567812a147bf7f750852226769978ae869db5f10c0a45b3683a8bb37111230ac1813e40511e408520ce62422f2431c9090ef4cf84609757961df3cb4bca7fd3d647eb4cfe68b277871c705f7377c0ceddf07f616defeef86fb5f24e2cb29de47c0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[modelo180image26155]">
+    <image name="modelo115image58837">
+      <data format="PNG" length="1246">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004a549444154789cc5974f681b4714c67f2a6b98010724704106172c480e820622410f36049a400e6dc8c1717349e9a1313d35cd25494ffd73ea29293d941ee34b497208b60fc1f621450db4d88704e9e0600552584302d221b00b31cc030f6c0ffb4f2bed2a7152e803a1dd59edbcef7def9b6f46a52008f83fc3c9190bcc2b8358c98edaf452ace0bdf4989e99a652a994de0540699801f3ca041b7f6c503f5a4f92c5a11c95c076f7fa74ffdca2666b70026ac7eb343f6cc204870234c2409cb0365b2bf805204265b28256b0b1d9a276b7863cecd19b5a879304a73f3e8d3ea2df08c87bb9a316fc7d1f11414442fa6dfa2ce6a45aad727ee153bc5342d75d055fd03bb0fd638bf5fbeb01f05a81e50388c319bdd64aa3944229953c9affa88e3ad364bbb381f7c4872ae8e79a956f6fd1eeec8e05311e0051dfe3e48e4ebf9df4de5843e3f82c72b242bfd7c37dec63fef150a7aaf89b2ead07ad4210b900e44046c6b4a36182e4930116b5a7365bc7481f0ea0ef0aac09a60ee6b9895b321279127b5d9418eeada311eb512e2b7a53066d05e528f69eb9981d9fca314575b2c1d6543b989f6b66c4f936008ac3019906b3d3c39d72f18e8152155c403bdba8fb503f5a0b2aefa7def1ce0094a31004850a5b33358d7f46519f99474d2a945654262b186be876bbb4fe6eb1b8b03888f95091a12fd68152911e1c989b6be4ce1afa86c6f77c3820880dab18802d7c9240572aaccec343d9ecd22c9c7368dec3321010b1a01d8d381282702a60c3e5380c3eb1729b9f6d3c004bd85f67a4b21213044aa9500336744b6555f84e741f224841e4cc5300209a44a1927b8341137941145a6b38008dc65883b22a63dd221266b08ceeae518c75c24c2569c41e508a988089d41de39232d4db746c18482e03dd3d1f77bfcdd2b97984885e54c242ebf16ee0bef059ba309f5915cbf7b6693f75a38a012b5cfd72aea8907c067c5ff8f9ee2edda7fd7470a0af3ddfe3eca5df68efb8e1723a000e4201fef67b8b3b6b6d5a8f5cb63a2e5b3bbdb41d36574b59066edddb0a2eff703bb98f75101bcdf2da36d76eac44cfb2aa172bb82f3cae7e759aa58526663f3c558948023e8f890c03ab9b1d6e5e5fa45cd623958b15561eb6b9797d91ea4c2504216982ce133779e7bb5f36585eeb640499801dd782f5e5af4b17171a990a8d9824d1ed9f3ee7fc27f5685249942e22b41e850036feea02b0f2a0c3d92bab88953079810646456847af63f18995019593d20b34ead35c5a68b274a101162e9eabf3d995156e6f76397f72b670198e312293ac63850aab7006018695c7d4d667cad42e3412da35509dd2f45f7a88ad1e828181ea1311dad45012255b3062223684ef7f6d512d6b96161a09edbe40b51cb963ce21075e7724b303e631e86e76a005d16776a6c29dcd5dbacf7a1831dcb9df45f60df327a6c3e46fccc0c0c8a01d273d74203c17472d8a9e2d9eaab1f7c2e3f28d1600e5b2e6ea174dd4a015e7ac86913f269ee705ab6babd43ea8bdd95e190b35527ab26c0f522b96811563ace1da37d7283e0fe4ac82a218de7ec7252f8ac2ddd07dee665f1cfa652cc6bcff9099b101dae363fc58006a323c5ef5fabd62d86f1982503f56cf8c8d688068bb35aff2adf3bf087d444374b2fa176e96ac4effa2faf90000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[co_modelo300,activated(),FLWidgetApplication,openDefaultForm()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[co_modelo320,activated(),FLWidgetApplication,openDefaultForm()]"/>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_datosfiscales,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>co_modelo390</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_modelo390,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>co_modelo349</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[co_modelo349,activated(),FLWidgetApplication,openDefaultForm()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[co_modelo390,activated(),FLWidgetApplication,openDefaultForm()]"/>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_modelo340,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>co_modelo303</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_modelo303,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>co_modelo180</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_modelo180,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>co_modelo115</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,694 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_modelo347_tipo2d]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">858</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_modelo347_tipo2d]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">348</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_modelo347_tipo2d]/vbox[vbox,1]/widget[QGroupBox,gbxDeclarado]/vbox[vbox,1]/widget[FLFieldDB,fdbApellidosNombreRS]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_modelo347_tipo2d]/vbox[vbox,1]/widget[QGroupBox,gbxDeclarado]/vbox[vbox,1]/widget[FLFieldDB,fdbApellidosNombreRS]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,co_modelo347_tipo2d]/vbox[vbox,1]/widget[QGroupBox,gbxJustificante]/vbox[vbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_modelo347_tipo2d]/vbox[vbox,1]/widget[QGroupBox,gbxJustificante]/property[title]">
+    <grid>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLFieldDB" row="0" column="4">
+        <property name="name">
+          <cstring>fdbEjercicioMetalico</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>34</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>ejerciciometalico</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="1" column="0" rowspan="1" colspan="2">
+        <property name="name">
+          <cstring>fdbImporte</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>34</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>importe</string>
+        </property>
+      </widget>
+      <spacer row="1" column="4">
+        <property name="name">
+          <cstring>spacer54_2</cstring>
+        </property>
+        <property name="orientation">
+          <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+          <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+          <size>
+            <width>220</width>
+            <height>20</height>
+          </size>
+        </property>
+      </spacer>
+      <widget class="FLFieldDB" row="1" column="3">
+        <property name="name">
+          <cstring>fdbImporteInmuebles</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>250</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>importeinmuebles</string>
+        </property>
+        <property name="showAlias">
+          <bool>true</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="0" column="0">
+        <property name="name">
+          <cstring>fdbSeguro</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>34</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>220</width>
+            <height>32767</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>seguro</string>
+        </property>
+        <property name="showAlias">
+          <bool>true</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="0" column="1">
+        <property name="name">
+          <cstring>fdbArrendLocal</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>34</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="maximumSize">
+          <size>
+            <width>220</width>
+            <height>32767</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>arrendlocal</string>
+        </property>
+        <property name="showAlias">
+          <bool>true</bool>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="0" column="3">
+        <property name="name">
+          <cstring>fdbImporteMetalico</cstring>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>34</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>importemetalico</string>
+        </property>
+      </widget>
+      <spacer row="1" column="2">
+        <property name="name">
+          <cstring>spacer4</cstring>
+        </property>
+        <property name="orientation">
+          <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+          <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+          <size>
+            <width>50</width>
+            <height>20</height>
+          </size>
+        </property>
+      </spacer>
+    </grid>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_modelo347_tipo2d]/vbox[vbox,1]/widget[QGroupBox,gbxJustificante]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout22</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>groupBox3</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>1</bold>
+            </font>
+          </property>
+          <property name="title">
+            <string>Importe trimestral de las operaciones</string>
+          </property>
+          <grid>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB" row="0" column="1">
+              <property name="name">
+                <cstring>fdbImporte1T</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importe1t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="FLFieldDB" row="1" column="1">
+              <property name="name">
+                <cstring>fdbImporte2T</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importe2t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="FLFieldDB" row="2" column="1">
+              <property name="name">
+                <cstring>fdbImporte3T</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importe3t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="FLFieldDB" row="3" column="1">
+              <property name="name">
+                <cstring>fdbImporte4T</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importe4t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="QLabel" row="1" column="0">
+              <property name="name">
+                <cstring>textLabel1_2</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Segundo Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+            <widget class="QLabel" row="0" column="0">
+              <property name="name">
+                <cstring>textLabel1</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Primer Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+            <widget class="QLabel" row="2" column="0">
+              <property name="name">
+                <cstring>textLabel1_3</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Tercer Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+            <widget class="QLabel" row="3" column="0">
+              <property name="name">
+                <cstring>textLabel1_4</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Cuarto Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+          </grid>
+        </widget>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>groupBox3_3</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <bold>1</bold>
+            </font>
+          </property>
+          <property name="title">
+            <string>Importe trimestral percibido por transmisiones de inmuebles sujetas a IVA</string>
+          </property>
+          <grid>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB" row="0" column="1">
+              <property name="name">
+                <cstring>fdbImporte1T_3</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importeinmuebles1t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="FLFieldDB" row="1" column="1">
+              <property name="name">
+                <cstring>fdbImporte2T_3</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importeinmuebles2t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="FLFieldDB" row="2" column="1">
+              <property name="name">
+                <cstring>fdbImporte3T_3</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importeinmuebles3t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="FLFieldDB" row="3" column="1">
+              <property name="name">
+                <cstring>fdbImporte4T_3</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>29</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>350</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>importeinmuebles4t</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+            <widget class="QLabel" row="1" column="0">
+              <property name="name">
+                <cstring>textLabel1_2_3</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Segundo Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+            <widget class="QLabel" row="0" column="0">
+              <property name="name">
+                <cstring>textLabel1_6</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Primer Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+            <widget class="QLabel" row="2" column="0">
+              <property name="name">
+                <cstring>textLabel1_3_3</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Tercer Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+            <widget class="QLabel" row="3" column="0">
+              <property name="name">
+                <cstring>textLabel1_4_3</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>5</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>Cuarto Trimestre</string>
+              </property>
+              <property name="alignment">
+                <set>AlignCenter</set>
+              </property>
+            </widget>
+            <spacer row="1" column="2" rowspan="2" colspan="1">
+              <property name="name">
+                <cstring>spacer4_2</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>21</width>
+                  <height>20</height>
+                </size>
+              </property>
+            </spacer>
+          </grid>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

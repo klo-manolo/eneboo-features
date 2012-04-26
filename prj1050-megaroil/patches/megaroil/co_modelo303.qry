@@ -1,0 +1,100 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_modelo303</name>
+
+	<tables>co_modelo303</tables>
+	
+	<select>
+		co_modelo303.id AS co_modelo303_id,
+		co_modelo303.codejercicio AS co_modelo303_codejercicio,
+		co_modelo303.tipoperiodo AS co_modelo303_tipoperiodo,
+		co_modelo303.trimestre AS co_modelo303_trimestre,
+		co_modelo303.mes AS co_modelo303_mes,
+		co_modelo303.fechainicio AS co_modelo303_fechainicio,
+		co_modelo303.fechafin AS co_modelo303_fechafin,
+		co_modelo303.idtipodec AS co_modelo303_idtipodec,
+		co_modelo303.codadmon AS co_modelo303_codadmon,
+		COALESCE(co_modelo303.baseimponiblerg1,0) AS co_modelo303_baseimponiblerg1,
+		COALESCE(co_modelo303.baseimponiblerg2,0) AS co_modelo303_baseimponiblerg2,
+		COALESCE(co_modelo303.baseimponiblerg3,0) AS co_modelo303_baseimponiblerg3,
+		COALESCE(co_modelo303.baseimponiblere1,0) AS co_modelo303_baseimponiblere1,
+		COALESCE(co_modelo303.baseimponiblere2,0) AS co_modelo303_baseimponiblere2,
+		COALESCE(co_modelo303.baseimponiblere3,0) AS co_modelo303_baseimponiblere3,
+		COALESCE(co_modelo303.baseimponibleai,0) AS co_modelo303_baseimponibleai,
+		COALESCE(co_modelo303.tiporg1,0) AS co_modelo303_tiporg1,
+		COALESCE(co_modelo303.tiporg2,0) AS co_modelo303_tiporg2,
+		COALESCE(co_modelo303.tiporg3,0) AS co_modelo303_tiporg3,
+		COALESCE(co_modelo303.tipore1,0) AS co_modelo303_tipore1,
+		COALESCE(co_modelo303.tipore2,0) AS co_modelo303_tipore2,
+		COALESCE(co_modelo303.tipore3,0) AS co_modelo303_tipore3,
+		COALESCE(co_modelo303.cuotarg1,0) AS co_modelo303_cuotarg1,
+		COALESCE(co_modelo303.cuotarg2,0) AS co_modelo303_cuotarg2,
+		COALESCE(co_modelo303.cuotarg3,0) AS co_modelo303_cuotarg3,
+		COALESCE(co_modelo303.cuotare1,0) AS co_modelo303_cuotare1,
+		COALESCE(co_modelo303.cuotare2,0) AS co_modelo303_cuotare2,
+		COALESCE(co_modelo303.cuotare3,0) AS co_modelo303_cuotare3,
+		COALESCE(co_modelo303.cuotaai,0) AS co_modelo303_cuotaai,
+		COALESCE(co_modelo303.cuotadevtotal,0) AS co_modelo303_cuotadevtotal,
+		COALESCE(co_modelo303.basededoibc,0) AS co_modelo303_basededoibc,
+		COALESCE(co_modelo303.cuotadedoibc,0) AS co_modelo303_cuotadedoibc,
+		COALESCE(co_modelo303.basededoibi,0) AS co_modelo303_basededoibi,
+		COALESCE(co_modelo303.cuotadedoibi,0) AS co_modelo303_cuotadedoibi,
+		COALESCE(co_modelo303.basededimbc,0) AS co_modelo303_basededimbc,
+		COALESCE(co_modelo303.cuotadedimbc,0) AS co_modelo303_cuotadedimbc,
+		COALESCE(co_modelo303.basededimbi,0) AS co_modelo303_basededimbi,
+		COALESCE(co_modelo303.cuotadedimbi,0) AS co_modelo303_cuotadedimbi,
+		COALESCE(co_modelo303.basededaibc,0) AS co_modelo303_basededaibc,
+		COALESCE(co_modelo303.cuotadedaibc,0) AS co_modelo303_cuotadedaibc,
+		COALESCE(co_modelo303.basededaibi,0) AS co_modelo303_basededaibi,
+		COALESCE(co_modelo303.cuotadedaibi,0) AS co_modelo303_cuotadedaibi,
+		COALESCE(co_modelo303.cuotacomre,0) AS co_modelo303_cuotacomre,
+		COALESCE(co_modelo303.cuotaregin,0) AS co_modelo303_cuotaregin,
+		COALESCE(co_modelo303.cuotaregapli,0) AS co_modelo303_cuotaregapli,
+		COALESCE(co_modelo303.cuotadedtotal,0) AS co_modelo303_cuotadedtotal,
+		COALESCE(co_modelo303.cuotadif,0) AS co_modelo303_cuotadif,
+		COALESCE(co_modelo303.porcuotaestado,0) AS co_modelo303_porcuotaestado,
+		COALESCE(co_modelo303.cuotaestado,0) AS co_modelo303_cuotaestado,
+		co_modelo303.codsctacoutasanteriores AS co_modelo303_codsctacoutasanteriores,
+		COALESCE(co_modelo303.idsctacuotasanteriores,0) AS co_modelo303_idsctacuotasanteriores,
+		COALESCE(co_modelo303.cuotaanterior,0) AS co_modelo303_cuotaanterior,
+		COALESCE(co_modelo303.entregasi,0) AS co_modelo303_entregasi,
+		COALESCE(co_modelo303.exportaciones,0) AS co_modelo303_exportaciones,
+		COALESCE(co_modelo303.nosujetas,0) AS co_modelo303_nosujetas,
+		COALESCE(co_modelo303.sujetospasivos,0) AS co_modelo303_sujetospasivos,
+		COALESCE(co_modelo303.cuotaresultado,0) AS co_modelo303_cuotaresultado,
+		COALESCE(co_modelo303.adeducircompl,0) AS co_modelo303_adeducircompl,
+		COALESCE(co_modelo303.resliquid,0) AS co_modelo303_resliquid,
+		COALESCE(co_modelo303.impcompensar,0) AS co_modelo303_impcompensar,
+		co_modelo303.sinactividad AS co_modelo303_sinactividad,
+		COALESCE(co_modelo303.imported,0) AS co_modelo303_imported,
+		co_modelo303.ctaentidaddev AS co_modelo303_ctaentidaddev,
+		co_modelo303.ctaagenciadev AS co_modelo303_ctaagenciadev,
+		co_modelo303.dcdev AS co_modelo303_dcdev,
+		co_modelo303.cuentadev AS co_modelo303_cuentadev,
+		co_modelo303.formapago AS co_modelo303_formapago,
+		COALESCE(co_modelo303.importei,0) AS co_modelo303_importei,
+		co_modelo303.codcuentadev AS co_modelo303_codcuentadev,
+		co_modelo303.desctadev AS co_modelo303_desctadev,
+		co_modelo303.codcuentaingreso AS co_modelo303_codcuentaingreso,
+		co_modelo303.desctaingreso AS co_modelo303_desctaingreso,
+		co_modelo303.ctaentidadingreso AS co_modelo303_ctaentidadingreso,
+		co_modelo303.ctaagenciaingreso AS co_modelo303_ctaagenciaingreso,
+		co_modelo303.dcingreso AS co_modelo303_dcingreso,
+		co_modelo303.cuentaingreso AS co_modelo303_cuentaingreso,
+		co_modelo303.complementaria AS co_modelo303_complementaria,
+		co_modelo303.numjustificante AS co_modelo303_numjustificante,
+		co_modelo303.localidadfirma AS co_modelo303_localidadfirma,
+		co_modelo303.fechafirma AS co_modelo303_fechafirma,
+		co_modelo303.inscritoregdev AS co_modelo303_inscritoregdev
+	</select>
+	
+	<from>
+		co_modelo303
+	</from>
+
+	<where>
+	</where>
+
+	<order>
+	</order>
+</QRY>

@@ -1,0 +1,263 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">818</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">558</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbIdModelo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout35]/hbox[hbox,1]/widget[FLFieldDB,fdbIdModelo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNifRep]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout36]/hbox[hbox,1]/widget[FLFieldDB,fdbCifNifRep]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[FLFieldDB,fdbApellidosNom]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[FLFieldDB,fdbApellidosNom]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[FLFieldDB,fdbClaveIdentif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37]/hbox[hbox,1]/widget[FLFieldDB,fdbClaveIdentif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbNumIdentif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout38]/hbox[hbox,1]/widget[FLFieldDB,fdbNumIdentif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaExp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaExp]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaOperacion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaOperacion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoImpositivo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTipoImpositivo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2]/hbox[hbox,1]/widget[FLFieldDB,fdbBaseImponible]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2]/hbox[hbox,1]/widget[FLFieldDB,fdbBaseImponible]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCuotaImpuesto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCuotaImpuesto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbImporteTotal]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbImporteTotal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbIdentFactura]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbIdentFactura]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbNumRegistro]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout34]/hbox[hbox,1]/widget[FLFieldDB,fdbNumRegistro]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesgRegistro]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesgRegistro]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2_2_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbIntervaloDif]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout37_2_2_2_2_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbIntervaloDif]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout71]/hbox[hbox,1]/widget[FLFieldDB,fdbCuotaRecEquivalencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout71]/hbox[hbox,1]/widget[FLFieldDB,fdbCuotaRecEquivalencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QLayoutWidget,layout71]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>groupBox1</cstring>
+      </property>
+      <property name="title">
+        <string>Clave de operación R</string>
+      </property>
+      <grid>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB" row="1" column="0" rowspan="1" colspan="2">
+          <property name="name">
+            <cstring>fdbRefCatastral</cstring>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="fieldName">
+            <string>refcatastral</string>
+          </property>
+          <property name="showAlias">
+            <bool>true</bool>
+          </property>
+        </widget>
+        <widget class="FLFieldDB" row="0" column="0">
+          <property name="name">
+            <cstring>fdbSituacion</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>5</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>180</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="fieldName">
+            <string>situacioninmueble</string>
+          </property>
+          <property name="showAlias">
+            <bool>true</bool>
+          </property>
+        </widget>
+        <widget class="QLabel" row="0" column="1">
+          <property name="name">
+            <cstring>lblSituacion</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="alignment">
+            <set>WordBreak|AlignVCenter|AlignLeft</set>
+          </property>
+        </widget>
+      </grid>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,co_facturasemi340]/vbox[vbox,1]/widget[QGroupBox,groupBox1]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>groupBox2</cstring>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbImporteMetalico</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>38</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="fieldName">
+            <string>importemetalico</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbEjercicioMetalico</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>38</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="fieldName">
+            <string>ejerciciometalico</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbOmitir</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>38</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="fieldName">
+            <string>omitir</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacer15</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>40</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbImporteInmuebles</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="fieldName">
+            <string>importeinmuebles</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

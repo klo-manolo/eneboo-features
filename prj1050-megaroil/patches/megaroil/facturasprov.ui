@@ -1,0 +1,193 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbDeAbono]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">38</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbDeAbono]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/spacer[spacer21]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbTPV_2</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>170</horstretch>
+          <verstretch>25</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>38</width>
+          <height>24</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>90</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>servicios</string>
+      </property>
+      <property name="fieldAlias">
+        <string>servicios</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,modelos]/vbox[vbox,1]/widget[QGroupBox,gbxModelo347]/property[font]/font[font,1]/bold[bold,1]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,modelos]/vbox[vbox,1]/widget[QGroupBox,gbxModelo347]/property[title]/string[string,1]/text()[1]">Modelo 347</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,modelos]/vbox[vbox,1]/spacer[spacerModelos]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,modelos]/vbox[vbox,1]/widget[QGroupBox,gbxModelo347]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxModelo303</cstring>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32767</width>
+          <height>50</height>
+        </size>
+      </property>
+      <property name="title">
+        <string>Modelo 303</string>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbExcluir303</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>170</horstretch>
+              <verstretch>25</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>300</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>excluir303</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacer303</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>20</width>
+              <height>21</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,modelos]/vbox[vbox,1]/widget[QGroupBox,gbxModelo303]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxModelo115</cstring>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32767</width>
+          <height>50</height>
+        </size>
+      </property>
+      <property name="title">
+        <string>Modelo 115</string>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbIncluir115</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>incluir115</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacerMod115</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>20</width>
+              <height>21</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

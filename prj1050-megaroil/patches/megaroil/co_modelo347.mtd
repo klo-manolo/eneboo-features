@@ -1,0 +1,25 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[totalarrendamiento]">
+    <field>
+      <name>nifreplegal</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","N.I.F Representante Legal")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>9</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importeminimo]">
+    <field>
+      <name>importeminimoefectivo</name>
+      <!--Importe mínimo en para incluir un determinado cliente en la relación del modelo con cobros en efectivo-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Importe mínimo Efectivo")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+      <default>6000</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

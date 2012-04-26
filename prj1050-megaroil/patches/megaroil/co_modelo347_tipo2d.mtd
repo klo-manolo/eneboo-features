@@ -1,0 +1,104 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importemetalico]">
+    <field>
+      <name>ejerciciometalico</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ejercicio origen Importe Metálico")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>4</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importeinmuebles]">
+    <field>
+      <name>importe1t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","1T Importe - Imp. de las operaciones primer trimestre ")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importe1t]">
+    <field>
+      <name>importeinmuebles1t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","1T Imp.Inmuebles - Importe inmuebles primer trimestre ")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importeinmuebles1t]">
+    <field>
+      <name>importe2t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","2T Importe - Imp. de las operaciones segundo trimestre ")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importe2t]">
+    <field>
+      <name>importeinmuebles2t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","2T Imp.Inmuebles - Importe inmuebles segundo trimestre")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importeinmuebles2t]">
+    <field>
+      <name>importe3t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","3T Importe - Imp. de las operaciones tercer trimestre ")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importe3t]">
+    <field>
+      <name>importeinmuebles3t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","3T Imp.Inmuebles - Importe inmuebles tercer trimestre")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importeinmuebles3t]">
+    <field>
+      <name>importe4t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","4T Importe - Imp. de las operaciones cuarto trimestre ")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[importe4t]">
+    <field>
+      <name>importeinmuebles4t</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","4T Imp.Inmuebles - Importe inmuebles cuarto trimestre")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>13</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

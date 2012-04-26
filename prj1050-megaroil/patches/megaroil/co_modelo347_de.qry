@@ -1,0 +1,33 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>co_modelo347_de</name>
+
+	<tables>co_datosfiscales,co_modelo347</tables>
+	
+	<select>
+		co_modelo347.codejercicio, co_modelo347.idmodelo,
+		co_datosfiscales.cifnif,
+		co_modelo347_tipo2d.nifdeclarado, co_modelo347_tipo2d.apellidosnombrers,
+		co_modelo347_tipo2d.nifreplegal, co_modelo347_tipo2d.apellidosnombrers,
+		co_modelo347_tipo2d.codprovincia, co_modelo347_tipo2d.codpais,
+		co_modelo347_tipo2d.clavecodigo, co_modelo347_tipo2d.importe,
+		co_modelo347_tipo2d.seguro, co_modelo347_tipo2d.arrendlocal,
+                co_modelo347_tipo2d.importemetalico,co_modelo347_tipo2d.ejerciciometalico,co_modelo347_tipo2d.importeinmuebles,
+                co_modelo347_tipo2d.importe1t,co_modelo347_tipo2d.importe2t,
+                co_modelo347_tipo2d.importe3t,co_modelo347_tipo2d.importe4t,
+                co_modelo347_tipo2d.importeinmuebles1t,co_modelo347_tipo2d.importeinmuebles2t,
+                co_modelo347_tipo2d.importeinmuebles3t,co_modelo347_tipo2d.importeinmuebles4t
+		
+	</select>
+	
+	<from>
+		co_datosfiscales, co_modelo347 INNER JOIN co_modelo347_tipo2d ON co_modelo347.idmodelo=co_modelo347_tipo2d.idmodelo
+		
+	</from>
+
+	<where>
+	</where>
+
+	<order>
+	</order>
+</QRY>
