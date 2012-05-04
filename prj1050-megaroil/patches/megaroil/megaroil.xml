@@ -86,7 +86,10 @@
   <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidasmayor.mtd" style="legacy1"/>
   <flpatch:patchXml path="contabilidad/principal/tables/" name="co_subcuentas.mtd" style="legacy1"/>
   <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="lineasarticuloslp.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="lineasarticuloslp.qs" style="legacy"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="lineasarticuloslp.mtd" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
