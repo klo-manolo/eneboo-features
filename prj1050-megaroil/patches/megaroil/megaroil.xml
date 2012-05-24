@@ -106,6 +106,8 @@
   <flpatch:addFile path="facturacion/informes/forms/" name="i_recibosprov.ui"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_recibosprov.qry"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_resrecibosprov.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_cartacobro1.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_cartacobro1gb.kut"/>
   <flpatch:addFile path="facturacion/informes/reports/" name="i_recibosprov.kut"/>
   <flpatch:addFile path="facturacion/informes/reports/" name="i_resrecibosprov.kut"/>
   <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
