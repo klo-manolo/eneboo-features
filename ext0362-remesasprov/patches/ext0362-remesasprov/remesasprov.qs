@@ -203,7 +203,7 @@ function interna_calculateField(fN:String):String
 			if (this.iface.contabActivada) {
 				var codSubcuenta:String;
 				if (this.iface.pagoIndirecto_) {
-					codSubcuenta = util.sqlSelect("cuentasbanco", "codsubcuentaecgp", "codcuenta = '" + cursor. valueBuffer("codcuenta") + "'");
+					codSubcuenta = util.sqlSelect("cuentasbanco", "codsubcuentaecgP", "codcuenta = '" + cursor. valueBuffer("codcuenta") + "'");
 				} else {
 					codSubcuenta = util.sqlSelect("cuentasbanco", "codsubcuenta", "codcuenta = '" + cursor. valueBuffer("codcuenta") + "'");
 				}
