@@ -1,0 +1,24 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]" >
+<action>
+<name>traducciones</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Traducciones&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>traducciones</table>
+<form>mastertraducciones</form>
+<formrecord>traducciones</formrecord>
+<scriptform>mastertraducciones</scriptform>
+<scriptformrecord>traducciones</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[traducciones]" >
+<action>
+<name>idiomas</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;idiomas&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</alias>
+<table>idiomas</table>
+<form>master</form>
+<formrecord>idiomas</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

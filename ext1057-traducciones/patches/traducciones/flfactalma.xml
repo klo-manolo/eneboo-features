@@ -1,0 +1,9 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]/text()[1]" >master</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/form[form,1]" >
+<scriptform>master</scriptform>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/formrecord[formrecord,1]" >
+<scriptformrecord>familias</scriptformrecord>
+</xupdate:insert-after>
+</xupdate:modifications>

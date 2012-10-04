@@ -1,0 +1,22 @@
+<flpatch:modifications name="traducciones" >
+    <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="idiomas.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="mastertraducciones.ui" />
+    <flpatch:addFile path="facturacion/principal/forms/" name="traducciones.ui" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="idiomas.mtd" />
+    <flpatch:addFile path="facturacion/principal/tables/" name="traducciones.mtd" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui" />
+    <flpatch:addFile path="facturacion/almacen/scripts/" name="familias.qs" />
+    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="familias.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="tarifas.qs" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="tarifas.ui" />
+    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="formaspago.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="formaspago.ui" />
+</flpatch:modifications>
