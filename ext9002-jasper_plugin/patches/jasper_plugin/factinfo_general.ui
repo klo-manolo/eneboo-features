@@ -1,0 +1,434 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factinfo_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">279</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,factinfo_general]/vbox[vbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factinfo_general]/property[caption]">
+    <grid>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="QTabWidget" row="0" column="0">
+        <property name="name">
+          <cstring>tbwDatosGenerales</cstring>
+        </property>
+        <property name="font">
+          <font>
+            <bold>1</bold>
+          </font>
+        </property>
+        <widget class="QWidget">
+          <property name="name">
+            <cstring>datosgenerales</cstring>
+          </property>
+          <attribute name="title">
+            <string>Datos &amp;generales</string>
+          </attribute>
+          <widget class="QGroupBox">
+            <property name="name">
+              <cstring>gbxFicheros</cstring>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>11</x>
+                <y>11</y>
+                <width>830</width>
+                <height>227</height>
+              </rect>
+            </property>
+            <property name="title">
+              <string>Ficheros</string>
+            </property>
+            <vbox>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QFrame">
+                <property name="name">
+                  <cstring>barraBotonesF</cstring>
+                </property>
+                <property name="sizePolicy">
+                  <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                  <size>
+                    <width>0</width>
+                    <height>40</height>
+                  </size>
+                </property>
+                <property name="font">
+                  <font>
+                    <bold>0</bold>
+                  </font>
+                </property>
+                <property name="focusPolicy">
+                  <enum>NoFocus</enum>
+                </property>
+                <property name="frameShape">
+                  <enum>Box</enum>
+                </property>
+                <property name="frameShadow">
+                  <enum>Raised</enum>
+                </property>
+                <hbox>
+                  <property name="name">
+                    <cstring>unnamed</cstring>
+                  </property>
+                  <property name="margin">
+                    <number>5</number>
+                  </property>
+                  <property name="spacing">
+                    <number>1</number>
+                  </property>
+                  <widget class="QToolButton">
+                    <property name="name">
+                      <cstring>toolButtomInsertF</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                      <sizepolicy>
+                        <hsizetype>1</hsizetype>
+                        <vsizetype>1</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                      <size>
+                        <width>32</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                        <width>32767</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="focusPolicy">
+                      <enum>NoFocus</enum>
+                    </property>
+                    <property name="text">
+                      <string/>
+                    </property>
+                    <property name="iconSet">
+                      <iconset>image53665</iconset>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                      <string>Insertar registro (A)</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                      <string>Para crear un nuevo registro en la tabla</string>
+                    </property>
+                  </widget>
+                  <widget class="QToolButton">
+                    <property name="name">
+                      <cstring>toolButtonEditF</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                      <sizepolicy>
+                        <hsizetype>1</hsizetype>
+                        <vsizetype>1</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                      <size>
+                        <width>32</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                        <width>32767</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="focusPolicy">
+                      <enum>NoFocus</enum>
+                    </property>
+                    <property name="text">
+                      <string/>
+                    </property>
+                    <property name="iconSet">
+                      <iconset>image18672</iconset>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                      <string>Modificar registro (M)</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                      <string>Para modificar el registro activo de la tabla</string>
+                    </property>
+                  </widget>
+                  <widget class="QToolButton">
+                    <property name="name">
+                      <cstring>toolButtonDeleteF</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                      <sizepolicy>
+                        <hsizetype>1</hsizetype>
+                        <vsizetype>1</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                      <size>
+                        <width>32</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                        <width>32767</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="focusPolicy">
+                      <enum>NoFocus</enum>
+                    </property>
+                    <property name="text">
+                      <string/>
+                    </property>
+                    <property name="iconSet">
+                      <iconset>image51787</iconset>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                      <string>Eliminar registro (E)</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                      <string>Elimina el registro actual de la tabla</string>
+                    </property>
+                  </widget>
+                  <widget class="QToolButton">
+                    <property name="name">
+                      <cstring>toolButtonZoomF</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                      <sizepolicy>
+                        <hsizetype>1</hsizetype>
+                        <vsizetype>1</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                      <size>
+                        <width>32</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                        <width>32767</width>
+                        <height>32</height>
+                      </size>
+                    </property>
+                    <property name="focusPolicy">
+                      <enum>NoFocus</enum>
+                    </property>
+                    <property name="text">
+                      <string/>
+                    </property>
+                    <property name="iconSet">
+                      <iconset>image17655</iconset>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                      <string>Ver registro (V)</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                      <string>Para ver registro, sin permitir editar</string>
+                    </property>
+                  </widget>
+                  <spacer>
+                    <property name="name">
+                      <cstring>Spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                      <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                      <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                      <size>
+                        <width>460</width>
+                        <height>20</height>
+                      </size>
+                    </property>
+                  </spacer>
+                </hbox>
+              </widget>
+              <widget class="FLTableDB">
+                <property name="name">
+                  <cstring>tdbFicheros</cstring>
+                </property>
+                <property name="font">
+                  <font>
+                    <bold>0</bold>
+                  </font>
+                </property>
+                <property name="tableName">
+                  <string>i_ficheros</string>
+                </property>
+              </widget>
+            </vbox>
+          </widget>
+        </widget>
+        <widget class="QWidget">
+          <property name="name">
+            <cstring>TabPage</cstring>
+          </property>
+          <attribute name="title">
+            <string>Jasper Plugin</string>
+          </attribute>
+          <grid>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLineEdit" row="0" column="1">
+              <property name="name">
+                <cstring>lnPath</cstring>
+              </property>
+            </widget>
+            <widget class="QPushButton" row="0" column="2">
+              <property name="name">
+                <cstring>pbPath</cstring>
+              </property>
+              <property name="text">
+                <string>...</string>
+              </property>
+            </widget>
+            <widget class="QLabel" row="0" column="0">
+              <property name="name">
+                <cstring>textLabel1</cstring>
+              </property>
+              <property name="text">
+                <string>Ruta a Informes</string>
+              </property>
+            </widget>
+            <widget class="QLabel" row="1" column="0">
+              <property name="name">
+                <cstring>textLabel1_2</cstring>
+              </property>
+              <property name="text">
+                <string>Ruta a Librería Eneboo Reports</string>
+              </property>
+            </widget>
+            <widget class="QLineEdit" row="1" column="1">
+              <property name="name">
+                <cstring>lnJPlugin</cstring>
+              </property>
+            </widget>
+            <widget class="QPushButton" row="1" column="2">
+              <property name="name">
+                <cstring>pbJPlugin</cstring>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>60</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="text">
+                <string>...</string>
+              </property>
+            </widget>
+            <widget class="QGroupBox" row="2" column="0" rowspan="1" colspan="3">
+              <property name="name">
+                <cstring>groupBox3</cstring>
+              </property>
+              <property name="title">
+                <string>Opciones de comportamiento</string>
+              </property>
+              <grid>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox" row="0" column="2">
+                  <property name="name">
+                    <cstring>chbGuardaTemporal</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Conservar ficheros temporales</string>
+                  </property>
+                </widget>
+                <spacer row="0" column="1">
+                  <property name="name">
+                    <cstring>spacer7</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>171</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+                <widget class="QCheckBox" row="0" column="0">
+                  <property name="name">
+                    <cstring>chbRT</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Detectar RT. Uso de reportes con imagenes en Disco Duro</string>
+                  </property>
+                  <property name="checked">
+                    <bool>true</bool>
+                  </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0">
+                  <property name="name">
+                    <cstring>chbCompilar</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Compilar todos los Reports</string>
+                  </property>
+                  <property name="whatsThis" stdset="0">
+                    <string>Fuerza a compilar todos los Reports, no solo cuando cambiamos de plantilla</string>
+                  </property>
+                </widget>
+              </grid>
+            </widget>
+            <widget class="QGroupBox" row="3" column="0" rowspan="1" colspan="3">
+              <property name="name">
+                <cstring>groupBox4</cstring>
+              </property>
+              <property name="title">
+                <string>Tests</string>
+              </property>
+              <grid>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton" row="0" column="1">
+                  <property name="name">
+                    <cstring>pbPlugin</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Conexión a Librería Eneboo Reports</string>
+                  </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="0">
+                  <property name="name">
+                    <cstring>pbJava</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Java JRE</string>
+                  </property>
+                </widget>
+              </grid>
+            </widget>
+          </grid>
+        </widget>
+      </widget>
+    </grid>
+  </xupdate:insert-after>
+</xupdate:modifications>
