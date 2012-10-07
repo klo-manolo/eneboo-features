@@ -189,8 +189,12 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                              						cantidadParametrosJasper = 0;
                              						parametrosJasper="";
                              						}
+				//comprobamos orderBy y groupBy !undefined
+				if (!orderBy) orderBy="";
+				if (!groupBy) groupBy="";
 
                                	//Ahora añadimos parametros especiales a parametrosJasper (where,orderby,groupby) y añadimos 6 saltos de linea a cantidadParametrosJasper
+                               	
 
                                	if ( parametrosJasper.lastIndexOf("WHERE\n") == -1)
                                					{
