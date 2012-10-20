@@ -1,8 +1,8 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">921</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">610</xupdate:update>
-  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/vbox[vbox,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,cliente]/vbox[vbox,1]/widget[QGroupBox,groupBox30]">
-    <widget class="QGroupBox">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,cliente]/grid[grid,1]/widget[QGroupBox,groupBox30_2]">
+    <widget class="QGroupBox" row="2" column="0">
       <property name="name">
         <cstring>gbxDtoEsp</cstring>
       </property>
@@ -32,12 +32,13 @@
           </property>
           <property name="minimumSize">
             <size>
-              <width>140</width>
-              <height>25</height>
+              <width>26</width>
+              <height>22</height>
             </size>
           </property>
           <property name="font">
-            <font/>
+            <font>
+                                    </font>
           </property>
           <property name="fieldName">
             <string>netosindtoesp</string>
@@ -57,12 +58,13 @@
           </property>
           <property name="minimumSize">
             <size>
-              <width>140</width>
-              <height>25</height>
+              <width>4</width>
+              <height>21</height>
             </size>
           </property>
           <property name="font">
-            <font/>
+            <font>
+                                    </font>
           </property>
           <property name="fieldName">
             <string>pordtoesp</string>
@@ -88,12 +90,13 @@
           </property>
           <property name="minimumSize">
             <size>
-              <width>140</width>
-              <height>25</height>
+              <width>26</width>
+              <height>22</height>
             </size>
           </property>
           <property name="font">
-            <font/>
+            <font>
+                                    </font>
           </property>
           <property name="fieldName">
             <string>dtoesp</string>
@@ -119,7 +122,56 @@
       </hbox>
     </widget>
   </xupdate:insert-after>
-  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]/text()[1]">fdbNetoSinDtoEsp</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]/text()[1]">fdbPorDtoEsp</xupdate:update>
-  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]/text()[1]">fdbDtoEsp</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox3_3]/vbox[vbox,1]/widget[QLayoutWidget,layout39_3]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox3_3]/vbox[vbox,1]/widget[QLayoutWidget,layout39_3]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox3_3]/vbox[vbox,1]/widget[QLayoutWidget,layout39_3]/hbox[hbox,1]/widget[FLFieldDB,fdbDesCodDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox3_3]/vbox[vbox,1]/widget[QLayoutWidget,layout39_3]/hbox[hbox,1]/widget[FLFieldDB,fdbDesCodDivisa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox3_3]/vbox[vbox,1]/widget[QLayoutWidget,layout35_3]/hbox[hbox,1]/widget[FLFieldDB,fdbTasaConv]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox3_3]/vbox[vbox,1]/widget[QLayoutWidget,layout35_3]/hbox[hbox,1]/widget[FLFieldDB,fdbTasaConv]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox3_3]/vbox[vbox,1]/widget[QLayoutWidget,layout35_3]/hbox[hbox,1]/widget[FLFieldDB,fdbTotalEuros]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox2]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAgente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox2]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAgente]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox2]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbApellidosAgente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox2]/vbox[vbox,1]/widget[QLayoutWidget,layout41]/hbox[hbox,1]/widget[FLFieldDB,fdbApellidosAgente]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QGroupBox,groupBox2]/vbox[vbox,1]/widget[QLayoutWidget,layout42]/hbox[hbox,1]/widget[FLFieldDB,fdbPorComision]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout22]/hbox[hbox,1]/widget[FLFieldDB,fdbRecFinanciero]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout48]/hbox[hbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout48]/hbox[hbox,1]/widget[FLFieldDB,fdbFecha]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout48]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaSalida]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout48]/hbox[hbox,1]/widget[FLFieldDB,fdbFechaSalida]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout23]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout23]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout23]/hbox[hbox,1]/widget[FLFieldDB,fdbDesPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formPedidosCli]/grid[grid,1]/widget[QTabWidget,tabWidget3]/widget[QWidget,datos]/grid[grid,1]/widget[QFrame,frame4]/grid[grid,1]/widget[QLayoutWidget,layout23]/hbox[hbox,1]/widget[FLFieldDB,fdbDesPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]/text()[1]">fdbApellidosAgente</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]/text()[1]">fdbPorComision</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]/text()[1]">fdbObservaciones</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,11]/text()[1]">fdbCodigo</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,12]/text()[1]">fdbCodEjercicio</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,13]/text()[1]">fdbCodSerie</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,14]/text()[1]">fdbNumero</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,15]/text()[1]">fdbNeto</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,16]/text()[1]">fdbTotaIrpf</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,17]/text()[1]">fdbTotalIva</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,18]/text()[1]">fdbTotalRecargo</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,19]/text()[1]">fdbTotal</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,20]/text()[1]">tabWidget3</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,21]"/>
+  <xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,22]"/>
+  <xupdate:delete select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,23]"/>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]"/>
 </xupdate:modifications>
