@@ -1,0 +1,33 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtipoproceso]/relation[gd_tiposdoc,idtipoproceso]">
+    <relation>
+      <table>articulos</table>
+      <field>idtipoproceso</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[accesiblecrm]">
+    <field>
+      <name>fabricacion</name>
+      <!--Indica si se trata de un proceso de fabricación-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Proceso de produccion")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fabricacion]">
+    <field>
+      <name>tipoproduccion</name>
+      <!--Tipo de proceso de producción-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de producción")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>25</length>
+      <optionslist>Fabricación,Modificación</optionslist>
+      <default>Fabricación</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

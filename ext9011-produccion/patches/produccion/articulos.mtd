@@ -1,0 +1,102 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[referencia]/relation[lineastransstock,referencia]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[articuloscomp,refcomponente]">
+    <relation>
+      <table>lineastransstock</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineastransstock,referencia]">
+    <relation>
+      <table>lotesstock</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[tiposopcionartcomp,referencia]">
+    <relation>
+      <table>movistock</table>
+      <field>referencia</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:update select="/TMD[TMD,1]/field[pvp]/partD[partD,1]/text()[1]">4</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentacom]">
+    <field>
+      <name>codunidad</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Unidad")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <relation>
+        <table>pesosmedidas</table>
+        <field>codunidad</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[stockcomp]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[aref]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[codunidad]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
+    <field>
+      <name>idtipoproceso</name>
+      <!--Identificador del tipo de proceso asociado-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Proceso")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+      <relation>
+        <table>pr_tiposproceso</table>
+        <field>idtipoproceso</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtipoproceso]">
+    <field>
+      <name>tipostock</name>
+      <!--Tipo de stock-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tipo de stock")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>15</length>
+      <optionslist>Granel,Lotes,Sin stock,Grupo base</optionslist>
+      <default>Granel</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tipostock]">
+    <field>
+      <name>loteunico</name>
+      <!--Indica si cada línea de pedido debe servirse de un lote único-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Lote único")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[loteunico]">
+    <field>
+      <name>fabricado</name>
+      <!--Indica si el artículo es fabricado por la empresa-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Se fabrica")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fabricado]">
+    <field>
+      <name>diasprodenvio</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Días (Fabricado - Envío)")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

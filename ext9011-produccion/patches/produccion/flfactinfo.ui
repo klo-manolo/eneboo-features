@@ -1,0 +1,10 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/action[i_trazaarticulos]"/>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Generales]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_resreciboscli]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[info_trazabimage19]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[info_cliprovimage20]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[info_cliprovimage19]"/>
+</xupdate:modifications>

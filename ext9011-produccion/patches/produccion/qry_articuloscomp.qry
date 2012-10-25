@@ -1,0 +1,20 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>qry_articuloscomp</name>
+
+	<tables>articuloscomp,pr_tipostareapro</tables>
+
+	<select>
+		articuloscomp.*, pr_tipostareapro.descripcion
+	</select>
+
+	<from>
+		articuloscomp LEFT OUTER JOIN pr_tipostareapro ON articuloscomp.idtipotareapro = pr_tipostareapro.idtipotareapro
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+	</order>
+</QRY>

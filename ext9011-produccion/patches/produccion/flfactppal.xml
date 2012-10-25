@@ -1,0 +1,8 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[centroscoste]/formrecord[formrecord,1]">
+    <scriptformrecord>centroscoste</scriptformrecord>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[subcentroscoste]/formrecord[formrecord,1]">
+    <scriptformrecord>subcentroscoste</scriptformrecord>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]/relation[secuenciasejercicios,codejercicio]">
+    <relation>
+      <table>empresa</table>
+      <field>codejercicio</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[codejercicio]/relation[co_i_patrimonio,codejercicio]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[codejercicio]/relation[co_i_patrimonio,codejercicioant]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[codejercicio]/relation[co_i_patrimonio,codejercicioantant]"/>
+</xupdate:modifications>

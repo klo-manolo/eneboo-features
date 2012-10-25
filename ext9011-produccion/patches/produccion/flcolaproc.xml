@@ -1,0 +1,57 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_asignaralias]">
+    <action>
+      <name>pr_terminal</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tareas de terminal")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite realizar las tareas asignadas a un determinado terminal. Generalmente los terminales se asocian al centro de coste local.")</description>
+      <table>pr_tareas</table>
+      <form>pr_masterterminal</form>
+      <formrecord>pr_terminal</formrecord>
+      <scriptform>pr_masterterminal</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_terminal]">
+    <action>
+      <name>pr_verificarconsumos</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Verificar consumos")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite confirmar que los consumos de material han sido los esperados o modificarlos en caso contrario.")</description>
+      <table>pr_tareas</table>
+      <form>pr_verificarconsumos</form>
+      <scriptform>pr_verificarconsumos</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_config]">
+    <action>
+      <name>pr_smtipostareapro</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Selección múltiple de tipos de tarea por proceso")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","")</description>
+      <table>pr_tipostareapro</table>
+      <form>pr_mastersmtipostareapro</form>
+      <scriptform>pr_mastersmtipostareapro</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_smtipostareapro]">
+    <action>
+      <name>pr_tareastrabajador</name>
+      <alias>Terminal por Trabajador</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Terminal por trabajador")</description>
+      <table>pr_tareastrabajador</table>
+      <form>pr_masterterminaltrabajador</form>
+      <scriptform>pr_masterterminaltrabajador</scriptform>
+      <formrecord>pr_terminaltrabajador</formrecord>
+      <scriptformrecord>pr_terminaltrabajador</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pr_secuenciastareas]">
+    <action>
+      <name>pr_selecttipostareapro</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite seleccionar una o varias tareas opcionales de un tipo de proceso.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Selección de Tareas")</alias>
+      <table>pr_tipostareapro</table>
+      <form>pr_selecttipostareapro</form>
+      <formrecord>pr_selecttipostareapro</formrecord>
+      <scriptform>pr_selecttipostareapro</scriptform>
+      <scriptformrecord>pr_selecttipostareapro</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

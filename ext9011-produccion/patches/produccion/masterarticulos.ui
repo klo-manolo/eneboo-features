@@ -1,0 +1,98 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">556</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">469</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">40</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonCopy]">
+    <spacer>
+      <property name="name">
+        <cstring>spacer4</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>MinimumExpanding</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>80</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer4]">
+    <widget class="QToolButton">
+      <property name="name">
+        <cstring>tbnFiltroFamilia</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>C</string>
+      </property>
+      <property name="toggleButton">
+        <bool>true</bool>
+      </property>
+      <property name="iconSet">
+        <iconset>produccionimage5</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Filtro por familia</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Permite filtrar los artículos por familia</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterarticulos]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,tbnFiltroFamilia]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblFiltroActual</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>200</width>
+          <height>0</height>
+        </size>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="produccionimage5">
+      <data format="PNG" length="1616">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000061749444154789cbd976f681cd715c57f6a46f6dba0b4b3c50d232ad35d484206e4362b12a8424b2b5343b310b711e4432342a8c15fec84b6c4b8d8720aaea5baae6cfa4febb644a150470ed846c166bb2d49b4126971fa2f56492d4f8a15afb0dddd415eef4c2365e7a61afcfa61a4d526b6e4954a7ae1f1d8e5cd3de7dd39f7bc374d5a6b009a9a9a68242ccbc2f7fd7584ac13e40e854210ad50a18422c08d46f22ce21ab75ba85ad45da9f6d443f626fba18ef68efbac8dd6c6645b7203061f57865a27a13411322f22ef15ae14ae15a60a579d29e7a2f30fe79c33e5fc49e6e4fa4af99b96ab40aa3db5a9fb1bdddb7b1eeff97a3291dc483378d73c4a574bb8659740026456a2c5cd106f89636e3069b55a01f07c8f89bf4e14f3e3f9d3b95773bf745df7ad5b55e026024aa958ef9edeefed7c66e7b7e3f1b8bae05cc039ef50b858c09ff311110209f07d1f99153cf140c0171fc2a8a6f6bd36a907536ceedc8c203813cedcf0c9e1feb1f1b1c344ab6e4d402975e75066e8a59e6d3d5bbd9247eed51cca50d00c1248b47bd7a5542ee17b3ede9c0721c89c2044c41022a2a16059163bb7efe4e1ce87712e3a0c1f1b3e34363eb617b8b1888bd6bac6e6c0fe03035a6b5dbc5cd4a74e9cd2c5cb453df9d6a41eca0ce9279e7c42777da14b27ee4968cbb2b4699a5ab528ad543430d0ca501a96e6c5d1bba7578fe647f5c0a101b12cebd17adc9a081389c467ba1febde0690fb5d0efb5e1bcff738fed271f263794a574bf8be0f808482522aaace42068582309a251494a110893492f94586f49634c9b6e47afb7efb31d7757f0fcc435d1724ef497e5642f964100414ae16e83bd80721b865b70668591671334eeb8656d45d0a5399601081850221f8b33e9eef51982ee097fd9a6e24145a5b5b89a99805dc09fcfb0304fcb23f5b724bbaa3bda329bd254de6e799da8e217acfd3d3d3f8caa7a00a35f09811abada90972410391dc20fd689ad4032926ce4fe0f9de0cf55e51d380813ab0ffc0d9ca4c456badf5e82ba3da6eb73ff02e573b94a1f4b66f6ed3c5cb455da954f4c09181eb4aa91e607d0db75e84e606f3738399c142f5ddaad65aeb6aa5aa875e18d25d5feed2668bd93068a22da1776cdfa1475f19d5d56a55ebff689d1dc9ce2712891f009faedff84d3e6059d6970e1f3a7ca2fbf1eebb63460c9aa34a95ae9438f7f773388e83ebba78be571399699ac4cd38c94412dbb649b5a788c56378d73c30c039eff0f48ea75f98383f71087867d936aceb88af65cf64dfad56abba3253d13a2a48c351bc5cd4a3b9519d3d93d56ffee54d9dfe4afa34f040bde696adc062d8f7db4f0d1e1d7cbef3f39dcdbe1b89ca6c31514a116b59125e200122129993eb53b852a0e49688b5c4e8fa6217fd03fd678f1f3bbe07f833f07e3d0158e12c00e87cb0f35b8347077f62b7dbb8d36ee47c5053b8cc09411811905989661194a94877a5c93c9f79bb7fa07f372179e0bdfadc8bb81fbb09b52edef8db1b3fddb57bd7f70b5305ac360ba596fa5d440808a2df2c14d720027f24cdc8cb23a5233f3ef243425eff30787dac4800606c7c6cff737b9ffb995b76696d6b8ddc0f6e9a019452743fd2cdd93f9e9ded3bd8775844722c18ce9a09003746b223dfddd7bbef98cc09c9b624406de712ca82a9427a4b9a89b727c25d7b771d75cbee49a07cbbe48d100090919323cff41deccb6240321191a8793fc2e6aecd94ca25f6eddef79be9a9e95f03ff22f28695e3566db85c2843ddfdec779e7dbd582ceac90b933a7b26ab5f1c7e514f5e98d4972e5dd2e9afa64f031d3470d3baa5133612a669da43bf1aba5699a9e862b1a88b978a5a6bad4f9d38751dd80aac6f24cf226ea3afa016fe9c5f1091b2effbd191dc128950e6250466a8ebf546e2b6a5fa702843dd013441e40300cc836a562cfeff91129050c0881c102008034c319140569b6a6d049411dd7c089748d4cce8ff416011cc177f898cac9dc4da2a00911dd79341adf0d4f2b1ea2e58006daa3f1316c8ac5a80b0b60adc0824783f980b6a4f077301848d7d13fecf04442418fbc3d86fe3667c9319372302d301b9f1dc3b80f7911300c8bf96ff11219fb237d95b95a19a1dc7f967feb57c0628ae36d78a1792db845286ba4f904f105201ae00b3347200b17421f92f3f70ea5c6cfd0f910000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[produccionimage5]">
+    <image name="articulos_compimage5">
+      <data format="PNG" length="1433">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000056049444154789cc5975f885c571dc73fbbb9b3fe6e9d34679a9df48e49e84edd426eec8353859ad808bb5849075f2af6a12d166c05b13e34284b1e425e6a8b20e943a924080d145a1144979a2eab0409629a6e68ac23a464a3db32034d332159676fe2eddc9f93e35e1fce9dfde7ee66b78be40787df7cef99f3fb7ecfeffcce39f7f6a469caedb4dedbca0ef46c3480886c91bc14c5933bb1249146d734d6ebc0cdff9b00c9cbb63d5fd9f3e8f0bee1fd6118564afda522e001b3cda879bd5eaf4fd5fe523bfdcec43bbf69341a7ffd341c2b5a757ff57b6327c63e6cb7da69da4997b74e9ab65bedf4cc9fcf7cf2ec0f9e3d2e7909364c2c22e6d0c8a163972f5f4ed3344ddbedb66b37da69da4ed3f68d25b8ed04b6aeb6d2577ff16a6d6060e0c14f4d6e8cf9dc1bc7df38dd6ebbe0ad56cb11b61ce1aa3813357662ec4a38180e2d8dbd690dfcdea19143c79ffcee93fbad5aa276848787b5163b6bb1d6c22c7338d678517fdc8ea1178adb8af9627ff1a1937f3af9a6edd8eb6b1650dd5ffdfe73079e1bd9dcb719ed28d22b6847b1586cc7e2e12dc24bfba5575075e3cc5673576e36174cbc3b710298bda5009337771ffcf1c1d7efbde7de3bd5baa0aaea48751e5b2c56ed8afd1e1eb18db11d8bb9dbdc5f7baf36313d3dfd01dce220dafbd0de47c330dc91d8c43dd0cca92ec24bfdd27e55050b5828f5977aaa8f549f0272b712d0373434f42d3c50ab249a90906cc82b8a5a6568dfd037242fe55505186382300cbf249e38f5b819f89eefb0b74e9c8d3762280485ad955d95075617d06f060aa6b045514404b52e9f894de682e3ad11e3b22822288ac91b4a3b4af7ad2aa0d45f0a446453410ae041d7fb9e0facd32f185f9002bef804c560dbaa0254b16e902c0a96906c188b27289a037a96152001bbe5befa57c7af1ce742748a840493378b6622221bc25862dc2a2d2036ec0cbfc391e1872bdf2c07e11d899d64fcca283a9530bcf38754079e4151045713dd02156fed58ad8242fda3fac78b04483fe5e191e0b74f3ff64ca56c2a4eb175c553bb34cee8f9c3445ae7892f1e416d84f18c13e36585b5466c3c4373ba79b3fe41fde242017de1e3fcbcfac8de0a1ed4ed04c420b8b32408ca54740fe3e78f1298dd54079f76c7eb3a66dec500b5f3b5f71b8dc6e49c0033c8d7ca5f966a33ae934813ac8274e9dd598e086c86538d5f323cf0c4fc965a4f263231e36f8eff01b80aa44ec02e1e565fa9eb241281e433eeee7eb610458a08349a13445a273021c23a6b4084536f9faa8ffe7e7414e874b7618fef738fe0ce6cb54a142baa4a14653ed6ac1edc7a35e326be645b2bf30529dc124751645f7cfec59734d6bf67539bab013b9380ef81462edb9af5764935061298519065f6f95afc0b3f7de1b589b313bf73919c79403af311ff08d43df5c948171ca7a8fb3d1341c90b28f587d95d063efe8a3eb109beef93cc24e9e19f1c7eede8b1a32f01d3ccdf0e2e03d1454e4697183101f9199dcf8078f37fd5d8b5c03c9094a4e45872acfcf29d033fe773e1fc856b233f1a7965fc8fe3bf023e66fef206b21712abcc482f5bfdcff320b36e13609db71db06d9059d069e2d3c7ae1d3e77e6dcd9fc96bc299ae25dbef89bc86591b296dc48d2a98b53cd975f79f9ad03070ffcacf6b7da18aeea139658f7bba017d839f0759e2fece329c9bb6598db881e440d2e37dfe248d4e0d7d9e3ede160b83bbc3ffc42b95cde8ec71d40a779a97975726ab231f9fee40555fd109801da0bd3be9c00803e2030bb78dc54f876610783401fca74739273d1595ed79877817f6689cf019fc95a5f36ff3423ba9989fcf74ac4cb09e88af82cb01d8f008f3e947fe1d6ae057cc2ffae7acf824626627635d2d50474cdcb5a4f16cc02ff596bd0f558cfedfe3cff2f4a7e728531a55ffe0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[articulos_compimage5]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:append-first>
+</xupdate:modifications>

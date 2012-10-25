@@ -1,0 +1,83 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:append-first select="/UI[UI,1]/connections[connections,1]">
+    <connection>
+      <sender>toolButtonEdit</sender>
+      <signal>clicked()</signal>
+      <receiver>tableDBRecords</receiver>
+      <slot>editRecord()</slot>
+    </connection>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEdit,clicked(),tableDBRecords,editRecord()]">
+    <connection>
+      <sender>toolButtonDelete</sender>
+      <signal>clicked()</signal>
+      <receiver>tableDBRecords</receiver>
+      <slot>deleteRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDelete,clicked(),tableDBRecords,deleteRecord()]">
+    <connection>
+      <sender>toolButtonZoom</sender>
+      <signal>clicked()</signal>
+      <receiver>tableDBRecords</receiver>
+      <slot>browseRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tableDBRecords,browseRecord()]">
+    <connection>
+      <sender>toolButtomInsert</sender>
+      <signal>clicked()</signal>
+      <receiver>tableDBRecords</receiver>
+      <slot>insertRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtomInsert,clicked(),tableDBRecords,insertRecord()]">
+    <connection>
+      <sender>tableDBRecords</sender>
+      <signal>readOnlyChanged(bool)</signal>
+      <receiver>toolButtomInsert</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtomInsert,setDisabled(bool)]">
+    <connection>
+      <sender>tableDBRecords</sender>
+      <signal>insertOnlyChanged(bool)</signal>
+      <receiver>toolButtonEdit</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,insertOnlyChanged(bool),toolButtonEdit,setDisabled(bool)]">
+    <connection>
+      <sender>tableDBRecords</sender>
+      <signal>readOnlyChanged(bool)</signal>
+      <receiver>toolButtonEdit</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtonEdit,setDisabled(bool)]">
+    <connection>
+      <sender>tableDBRecords</sender>
+      <signal>insertOnlyChanged(bool)</signal>
+      <receiver>toolButtonDelete</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,insertOnlyChanged(bool),toolButtonDelete,setDisabled(bool)]">
+    <connection>
+      <sender>tableDBRecords</sender>
+      <signal>readOnlyChanged(bool)</signal>
+      <receiver>toolButtonDelete</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtomInsert,clicked(),tableDBRecords,insertRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tableDBRecords,browseRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtonDelete,setDisabled(bool)]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEdit,clicked(),tableDBRecords,editRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDelete,clicked(),tableDBRecords,deleteRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtonEdit,setDisabled(bool)]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,insertOnlyChanged(bool),toolButtonDelete,setDisabled(bool)]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtomInsert,setDisabled(bool)]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,insertOnlyChanged(bool),toolButtonEdit,setDisabled(bool)]"/>
+</xupdate:modifications>
