@@ -407,12 +407,12 @@ function jasperPlugin_tratarReport(nombreInforme:String, nombreReport:String):St
     	{
     	if (this.iface.reportAnterior == rutaFicheroOriginal)
     		{
-    		debug("JASPER_PLUGIN :: COMPILAR SIEMPRE :: Este report no será compilado");
+    		debug("JASPER_PLUGIN :: Este report no será compilado");
     		return "Repetir";
     		}
     		else
     		{
-    		debug("JASPER_PLUGIN :: COMPILAR SIEMPRE :: Este report será compilado");
+    		debug("JASPER_PLUGIN :: Este report será compilado");
     		this.iface.reportAnterior = rutaFicheroOriginal;
     		}
     	} else debug("JASPER_PLUGIN :: COMPILAR SIEMPRE :: Activado");
@@ -431,7 +431,7 @@ if (sys.osName() == "WIN32")
 	        if (xmlReport.namedItem("jasperReport"))
 	                    {
 	                     xmlFinal = xmlReport.toString(2);
-	                     xmlFinal =  xmlFinal.replace("groovy","java");
+	                     //xmlFinal =  xmlFinal.replace("groovy","java");
                              if (sys.osName() != "WIN32") //Convertimos el fichero a UTF8 si no es win32
      	                     xmlFinal = sys.toUnicode(xmlFinal, "utf8");
      	                     //Creamos el nombre del fichero...
