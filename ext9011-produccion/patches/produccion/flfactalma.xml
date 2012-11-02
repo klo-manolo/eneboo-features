@@ -1,0 +1,94 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[articulos]/form[form,1]/text()[1]">masterarticulos</xupdate:update>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articulos]/scriptform[scriptform,1]">
+    <scriptform>masterarticulos</scriptform>
+  </xupdate:insert-after>
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[opcionesarticulocomp]/form[form,1]/text()[1]">masteropcionesartcomp</xupdate:update>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[opcionesarticulocomp]/formrecord[formrecord,1]">
+    <scriptform>masteropcionesartcomp</scriptform>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[articuloscomp]">
+    <action>
+      <name>pesosmedidas</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada artículo puede tener asociada una unidad de peso o medida (metros, litros, kilos, etc.) Por defecto, el artículo tiene la unidad asociada a su familia")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Unidades de pesos y medidas")</alias>
+      <table>pesosmedidas</table>
+      <form>master_copy</form>
+      <formrecord>pesosmedidas</formrecord>
+      <scriptformrecord>pesosmedidas</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pesosmedidas]">
+    <action>
+      <name>movistock</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los movimientos de stock son variaciones en el stock (entradas, salidas, producción, consumo) de un determinado artículo")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Movimientos de stock")</alias>
+      <table>movistock</table>
+      <form>master</form>
+      <formrecord>movistock</formrecord>
+      <scriptformrecord>movistock</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[movistock]">
+    <action>
+      <name>lotesstock</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los lotes de stock son agrupaciones de artículos bajo un mismo código identificativo.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Lotes de stock")</alias>
+      <table>lotesstock</table>
+      <form>master</form>
+      <formrecord>lotesstock</formrecord>
+      <scriptformrecord>lotesstock</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[pesosmedidas]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tiposopcionartcomp]">
+    <action>
+      <name>buscarcomponente</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite seleccionar un componente de una determinada familia.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Selección de componentes")</alias>
+      <table>articulos</table>
+      <form>masterbuscarcomponente</form>
+      <scriptform>masterbuscarcomponente</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[buscarcomponente]">
+    <action>
+      <name>reglotestock</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite regularizar la cantidad actual de un lote de stock.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Regularización de lotes de stock")</alias>
+      <table>reglotestock</table>
+      <form>reglotestock</form>
+      <scriptform>reglotestock</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[reglotestock]">
+    <action>
+      <name>consumoprod</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite ajustar la cantidad consumida de un determinado material en cada tarea.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ajuste de consumo en producción")</alias>
+      <table>movistock</table>
+      <form>consumoprod</form>
+      <scriptform>consumoprod</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[consumoprod]">
+    <action>
+      <name>secuenciaslotes</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite ver y modificar las secuencias de lotes para impedir su bloqueo.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Secuencias de Lotes")</alias>
+      <table>secuenciaslotes</table>
+      <form>master</form>
+      <formrecord>secuenciaslotes</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[secuenciaslotes]">
+    <action>
+      <name>mostrarlistadoms</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Esta acción permite ver el listado de movimientos de stock para el almacén y artículo seleccionados.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar listado movimientos stock")</alias>
+      <table>mostrarlistadoms</table>
+      <form>mastermostrarlistadoms</form>
+      <scriptform>mastermostrarlistadoms</scriptform>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

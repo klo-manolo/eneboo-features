@@ -1,0 +1,4 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[codigo]/length[length,1]/text()[1]">12</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[coddir]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Dir.")</xupdate:update>
+</xupdate:modifications>

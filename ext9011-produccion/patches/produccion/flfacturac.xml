@@ -1,0 +1,22 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazadoc]">
+    <action>
+      <name>roturastock</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los artículos con rotura de stock son artículos para los que se prevé que el stock correspondiente va a romperse (quedar por debajo de su stock mínimo). Este cálculo se hace en base a los movimientos de stock pendientes.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Artículos con rotura de stock")</alias>
+      <table>roturastock</table>
+      <form>roturastock</form>
+      <scriptform>roturastock</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[roturastock]">
+    <action>
+      <name>calcunecesidades</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","El cálculo de necesidades de stock permite analizar los movimientos de stock previstos para determinar cuándo realizar los pedidos a proveedor y cuánta cantidad solicitar en los mismos.")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cálculo de necesidades de stock")</alias>
+      <table>calcunecesidades</table>
+      <form>calcunecesidades</form>
+      <scriptform>calcunecesidades</scriptform>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,525 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,articuloscomp]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">420</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QFrame,frame15]/hbox[hbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QFrame,frame15]/property[frameShadow]">
+    <vbox>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="QLayoutWidget">
+        <property name="name">
+          <cstring>layoutCompuesto</cstring>
+        </property>
+        <hbox>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <widget class="FLFieldDB">
+            <property name="name">
+              <cstring>fdbRefCompuesto</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>1</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>180</width>
+                <height>25</height>
+              </size>
+            </property>
+            <property name="fieldName">
+              <string>refcompuesto</string>
+            </property>
+          </widget>
+          <widget class="FLFieldDB">
+            <property name="name">
+              <cstring>fdbDescCompuesto</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>7</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>400</width>
+                <height>25</height>
+              </size>
+            </property>
+            <property name="fieldName">
+              <string>descripcion</string>
+            </property>
+            <property name="tableName">
+              <string>articulos</string>
+            </property>
+            <property name="foreignField">
+              <string>refcompuesto</string>
+            </property>
+            <property name="fieldRelation">
+              <string>referencia</string>
+            </property>
+          </widget>
+        </hbox>
+      </widget>
+    </vbox>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QGroupBox,groupBox13]/vbox[vbox,1]/widget[QLayoutWidget,layout27]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QGroupBox,groupBox13]/vbox[vbox,1]/property[name]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblComponente</cstring>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QGroupBox,groupBox13]/vbox[vbox,1]/widget[QLabel,lblComponente]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutComponente</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbRefComponente</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>200</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>refcomponente</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDescComponente</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>500</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>desccomponente</string>
+          </property>
+          <property name="tableName">
+            <string/>
+          </property>
+          <property name="foreignField">
+            <string>descripcion</string>
+          </property>
+          <property name="fieldRelation">
+            <string>refcomponente</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QGroupBox,groupBox13]/vbox[vbox,1]/widget[QLayoutWidget,layoutComponente]">
+    <widget class="QLabel">
+      <property name="name">
+        <cstring>lblFamilia</cstring>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QGroupBox,groupBox13]/vbox[vbox,1]/widget[QLabel,lblFamilia]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layoutFamilia</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbCodFamiliaComponente</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>200</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>codfamiliacomponente</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDesFamilia</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>500</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>descripcion</string>
+          </property>
+          <property name="tableName">
+            <string>familias</string>
+          </property>
+          <property name="foreignField">
+            <string>codfamiliacomponente</string>
+          </property>
+          <property name="fieldRelation">
+            <string>codfamilia</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,articuloscomp]/vbox[vbox,1]/widget[QGroupBox,groupBoxOpcion]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxProduccion</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>5</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="title">
+        <string>&amp;Producción</string>
+      </property>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>layoutTarea</cstring>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbIdTipoProceso</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>200</width>
+                  <height>0</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>300</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>idtipoproceso</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbIdTipoTareaPro</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>79</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>idtipotareapro</string>
+              </property>
+            </widget>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbDesTareaPro</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>200</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>descripcion</string>
+              </property>
+              <property name="tableName">
+                <string>pr_tipostareapro</string>
+              </property>
+              <property name="foreignField">
+                <string>idtipotareapro</string>
+              </property>
+              <property name="fieldRelation">
+                <string>idtipotareapro</string>
+              </property>
+              <property name="showAlias">
+                <bool>false</bool>
+              </property>
+            </widget>
+          </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>layoutAntelacion</cstring>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbDiasAntelacion</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>300</width>
+                  <height>25</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="fieldName">
+                <string>diasantelacion</string>
+              </property>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacerAntelacion</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>71</width>
+                  <height>21</height>
+                </size>
+              </property>
+            </spacer>
+          </hbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,2]/text()[1]">fdbDescComponente</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,3]/text()[1]">fdbCantidad</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,4]/text()[1]">fdbIdTipoTareaPro</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]/text()[1]">fdbDiasAntelacion</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,5]">
+    <tabstop>fdbCodFamiliaComponente</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,6]">
+    <tabstop>fdbDesFamilia</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,7]">
+    <tabstop>fdbRefCompuesto</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,8]">
+    <tabstop>fdbDescCompuesto</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,9]">
+    <tabstop>fdbCodUnidad</tabstop>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/tabstops[tabstops,1]/tabstop[tabstop,10]">
+    <tabstop>fdbDesTareaPro</tabstop>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

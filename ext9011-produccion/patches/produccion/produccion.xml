@@ -1,0 +1,210 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="produccion">
+  <flpatch:replaceFile path="colaboracion/procesos/" name="flcolaproc.mod"/>
+  <flpatch:patchXml path="colaboracion/procesos/" name="flcolaproc.xml" style="legacy1"/>
+  <flpatch:patchXml path="colaboracion/procesos/forms/" name="flcolaproc.ui" style="legacy1"/>
+  <flpatch:patchXml path="colaboracion/procesos/forms/" name="pr_config.ui" style="legacy1"/>
+  <flpatch:addFile path="colaboracion/procesos/forms/" name="pr_mastersmtipostareapro.ui"/>
+  <flpatch:addFile path="colaboracion/procesos/forms/" name="pr_masterterminal.ui"/>
+  <flpatch:addFile path="colaboracion/procesos/forms/" name="pr_masterterminaltrabajador.ui"/>
+  <flpatch:patchXml path="colaboracion/procesos/forms/" name="pr_procesos.ui" style="legacy1"/>
+  <flpatch:addFile path="colaboracion/procesos/forms/" name="pr_selecttipostareapro.ui"/>
+  <flpatch:patchXml path="colaboracion/procesos/forms/" name="pr_tareas.ui" style="legacy1"/>
+  <flpatch:addFile path="colaboracion/procesos/forms/" name="pr_terminaltrabajador.ui"/>
+  <flpatch:patchXml path="colaboracion/procesos/forms/" name="pr_tiposproceso.ui" style="legacy1"/>
+  <flpatch:patchXml path="colaboracion/procesos/forms/" name="pr_tipostareapro.ui" style="legacy1"/>
+  <flpatch:addFile path="colaboracion/procesos/forms/" name="pr_verificarconsumos.ui"/>
+  <flpatch:patchScript path="colaboracion/procesos/scripts/" name="flcolaproc.qs" style="legacy"/>
+  <flpatch:patchScript path="colaboracion/procesos/scripts/" name="pr_masterprocesos.qs" style="legacy"/>
+  <flpatch:addFile path="colaboracion/procesos/scripts/" name="pr_mastersmtipostareapro.qs"/>
+  <flpatch:addFile path="colaboracion/procesos/scripts/" name="pr_masterterminal.qs"/>
+  <flpatch:addFile path="colaboracion/procesos/scripts/" name="pr_masterterminaltrabajador.qs"/>
+  <flpatch:patchScript path="colaboracion/procesos/scripts/" name="pr_mastertiposproceso.qs" style="legacy"/>
+  <flpatch:patchScript path="colaboracion/procesos/scripts/" name="pr_procesos.qs" style="legacy"/>
+  <flpatch:addFile path="colaboracion/procesos/scripts/" name="pr_selecttipostareapro.qs"/>
+  <flpatch:patchScript path="colaboracion/procesos/scripts/" name="pr_tareas.qs" style="legacy"/>
+  <flpatch:addFile path="colaboracion/procesos/scripts/" name="pr_terminaltrabajador.qs"/>
+  <flpatch:patchScript path="colaboracion/procesos/scripts/" name="pr_tiposproceso.qs" style="legacy"/>
+  <flpatch:patchScript path="colaboracion/procesos/scripts/" name="pr_tipostareapro.qs" style="legacy"/>
+  <flpatch:addFile path="colaboracion/procesos/scripts/" name="pr_verificarconsumos.qs"/>
+  <flpatch:patchXml path="colaboracion/procesos/tables/" name="pr_config.mtd" style="legacy1"/>
+  <flpatch:patchXml path="colaboracion/procesos/tables/" name="pr_procesos.mtd" style="legacy1"/>
+  <flpatch:patchXml path="colaboracion/procesos/tables/" name="pr_tareas.mtd" style="legacy1"/>
+  <flpatch:addFile path="colaboracion/procesos/tables/" name="pr_tareastrabajador.mtd"/>
+  <flpatch:patchXml path="colaboracion/procesos/tables/" name="pr_tiposproceso.mtd" style="legacy1"/>
+  <flpatch:patchXml path="colaboracion/procesos/tables/" name="pr_tipostareapro.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="colaboracion/proyectos/" name="flcolaproy.mod"/>
+  <flpatch:patchXml path="colaboracion/proyectos/forms/" name="cl_proyectos.ui" style="legacy1"/>
+  <flpatch:replaceFile path="contabilidad/principal/" name="flcontppal.mod"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_asientos.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_masterasientos.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_masterregiva.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_mastersubcuentas.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_partidas.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_subcuentas.ui" style="legacy1"/>
+  <flpatch:patchXml path="contabilidad/principal/tables/" name="co_partidascc.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/almacen/" name="flfactalma.mod"/>
+  <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articuloscomp.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="consumoprod.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="factalma_general.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="familias.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="lotesstock.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="masterbuscarcomponente.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="mastermostrarlistadoms.ui"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="masteropcionesartcomp.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterregstocks.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="mastertarifas.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="movistock.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="opcionescomp.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="reglotestock.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="regstocks.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/forms/" name="secuenciaslotes.ui"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="tiposopcionartcomp.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="tiposopcioncomp.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/queries/" name="i_movistock.qry"/>
+  <flpatch:addFile path="facturacion/almacen/queries/" name="qry_articuloscomp.qry"/>
+  <flpatch:addFile path="facturacion/almacen/queries/" name="qry_consumoslote.qry"/>
+  <flpatch:addFile path="facturacion/almacen/reports/" name="i_mostrarlistadoms.kut"/>
+  <flpatch:addFile path="facturacion/almacen/reports/" name="i_movistock.kut"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articuloscomp.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="consumoprod.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="lotesstock.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="masterbuscarcomponente.qs"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="mastermostrarlistadoms.qs"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="masteropcionesartcomp.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="movistock.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="opcionesarticulocomp.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/almacen/scripts/" name="reglotestock.qs"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="regstocks.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="tiposopcionartcomp.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="articulosaplicables.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articuloscomp.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="familias.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="i_movistock.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="lotesstock.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="mostrarlistadoms.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="movistock.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="opcionesarticulocomp.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="opcioneslote.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="qry_articuloscomp.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="qry_consumoslote.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="reglotestock.mtd"/>
+  <flpatch:addFile path="facturacion/almacen/tables/" name="secuenciaslotes.mtd"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="tarifas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="tiposopcionartcomp.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="tiposopcioncomp.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/facturacion/" name="flfacturac.mod"/>
+  <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranesprov.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="calcunecesidades.ui"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="cambiarejer.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="flfacturac.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasalbaranesprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineasfacturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="lineaspresupuestoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranesprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterpedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="presupuestoscli.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/facturacion/forms/" name="roturastock.ui"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="agruparpedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="agruparpedidosprov.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="calcunecesidades.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasfacturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspresupuestoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/facturacion/scripts/" name="roturastock.qs"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="calcunecesidades.mtd"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranesprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturascli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturasprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidosprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspresupuestoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/facturacion/tables/" name="roturastock.mtd"/>
+  <flpatch:replaceFile path="facturacion/informes/" name="flfactinfo.mod"/>
+  <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_albaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_albaranesprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_facturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_facturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_pedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_pedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_presupuestoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/informes/forms/" name="i_reciboscli.ui" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_albaranescli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_albaranesclicomp.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_albaranesprov.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturascli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_facturasprov.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_pedidoscli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_pedidosprov.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/queries/" name="i_presupuestoscli.qry"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_albaranescli.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_albaranesprov.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturascli.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_facturasprov.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_pedidoscli.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_pedidosprov.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_presupuestoscli.kut"/>
+  <flpatch:patchXml path="facturacion/informes/tables/" name="i_facturasprov.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/principal/" name="flfactppal.mod"/>
+  <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="bancos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="centroscoste.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="contactos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="divisas.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="ejercicios.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="formaspago.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="impuestos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="usuarios.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/principal/scripts/" name="centroscoste.qs"/>
+  <flpatch:addFile path="facturacion/principal/scripts/" name="subcentroscoste.qs"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="centroscoste.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="divisas.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="impuestos.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="subcentroscoste.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="usuarios.mtd" style="legacy1"/>
+</flpatch:modifications>

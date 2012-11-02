@@ -1,0 +1,11 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">190</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutId]/hbox[hbox,1]/widget[FLFieldDB,fdbIdUsuario]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">113</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutId]/hbox[hbox,1]/widget[FLFieldDB,fdbIdUsuario]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDpto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">168</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDpto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDpto]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">28</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[QLayoutWidget,layoutDpto]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDpto]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]/vbox[vbox,1]/widget[FLFieldDB,fdbAvisarContratoPte]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]"/>
+</xupdate:modifications>

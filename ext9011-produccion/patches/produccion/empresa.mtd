@@ -1,0 +1,62 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[codejercicio]/null[null,1]/text()[1]">false</xupdate:update>
+  <xupdate:delete select="/TMD[TMD,1]/field[codejercicio]/[]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codejercicio]/length[length,1]">
+    <relation>
+      <table>ejercicios</table>
+      <field>codejercicio</field>
+      <card>M1</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[stockpedidos]">
+    <field>
+      <name>codhorariolaboral</name>
+      <!--Identificador-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Día Laboral")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <calculated>true</calculated>
+      <relation>
+        <table>pr_horarios</table>
+        <field>codhorario</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codhorariolaboral]">
+    <field>
+      <name>codhorariosabado</name>
+      <!--Identificador-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Sábado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <calculated>true</calculated>
+      <relation>
+        <table>pr_horarios</table>
+        <field>codhorario</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codhorariosabado]">
+    <field>
+      <name>codhorariodomingo</name>
+      <!--Identificador-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Domingo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <calculated>true</calculated>
+      <relation>
+        <table>pr_horarios</table>
+        <field>codhorario</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

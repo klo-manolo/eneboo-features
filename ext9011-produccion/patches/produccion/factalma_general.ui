@@ -1,0 +1,6 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factalma_general]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">878</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factalma_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">209</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factalma_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxDatosGenerales]/vbox[vbox,1]/widget[QLayoutWidget,layoutIVA]/hbox[hbox,1]/widget[FLFieldDB,fdbCodImpuesto]/property[maximumSize]/size[size,1]/width[width,1]/text()[1]">300</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,factalma_general]/property[minimumSize]"/>
+</xupdate:modifications>

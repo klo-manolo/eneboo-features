@@ -378,7 +378,7 @@
                     <cstring>chbRT</cstring>
                   </property>
                   <property name="text">
-                    <string>Detectar RT. Uso de reportes con imagenes en Disco Duro</string>
+                    <string>Detectar RT. Uso de reportes con subreports o imagenes en Disco Duro</string>
                   </property>
                   <property name="checked">
                     <bool>true</bool>

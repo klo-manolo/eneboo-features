@@ -1,0 +1,43 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idproceso]/relation[pr_tareas,idproceso]">
+    <relation>
+      <table>movistock</table>
+      <field>idproceso</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[intervalo]">
+    <field>
+      <name>codordenproduccion</name>
+      <!--Orden de producción en la que se incluye la unidad-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Orden de producción")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>10</length>
+      <editable>false</editable>
+      <relation>
+        <table>pr_ordenesproduccion</table>
+        <field>codorden</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codordenproduccion]">
+    <field>
+      <name>idlineapedidocli</name>
+      <!--Línea de pedido de cliente-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Línea pedido")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <editable>false</editable>
+      <relation>
+        <table>lineaspedidoscli</table>
+        <field>idlinea</field>
+        <card>M1</card>
+        <delC>true</delC>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,102 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_tiposproceso]/vbox[vbox,1]/widget[QFrame,frame15]">
+    <widget class="QGroupBox">
+      <property name="name">
+        <cstring>gbxProduccion</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <property name="title">
+        <string>&amp;Producción</string>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbFabricacion</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>250</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>fabricacion</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbTipoProduccion</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>250</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+              <italic>0</italic>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>tipoproduccion</string>
+          </property>
+        </widget>
+        <spacer>
+          <property name="name">
+            <cstring>spacer29</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>40</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

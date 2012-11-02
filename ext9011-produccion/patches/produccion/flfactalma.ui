@@ -1,0 +1,113 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">25</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]/action[pesosmedidas]">
+    <action name="tiposopcioncomp"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Almacn]">
+    <item name="Produccin" text="&amp;Producción">
+      <action name="lotesstock"/>
+      <action name="tiposopcioncomp"/>
+      <separator/>
+      <action name="secuenciaslotes"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[pesosmedidas]">
+    <action name="transstock"/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[transstock]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,4]">
+    <action name="lotesstock"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[transstock]">
+    <action>
+      <property name="name">
+        <cstring>lotesstock</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>produccionimage8</iconset>
+      </property>
+      <property name="text">
+        <string>Lotes</string>
+      </property>
+      <property name="menuText">
+        <string>&amp;Lotes</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[lotesstock]">
+    <action>
+      <property name="name">
+        <cstring>tiposopcioncomp</cstring>
+      </property>
+      <property name="text">
+        <string>Tipos de opción</string>
+      </property>
+      <property name="menuText">
+        <string>&amp;Tipos de opción</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tiposopcioncomp]">
+    <action>
+      <property name="name">
+        <cstring>secuenciaslotes</cstring>
+      </property>
+      <property name="text">
+        <string>Secuencias de Lotes</string>
+      </property>
+      <property name="menuText">
+        <string>&amp;Secuencias de Lotes</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[secuenciaslotes]">
+    <action>
+      <property name="name">
+        <cstring>tiposopcioncomp</cstring>
+      </property>
+      <property name="text">
+        <string>Opciones de composición</string>
+      </property>
+      <property name="menuText">
+        <string>&amp;Opciones de composición</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="produccionimage8">
+      <data format="PNG" length="2045">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000007c449444154789c9d975d6c265519c77f7d39d533cb54e7609bbc2769b52f1f66df45855660d9624cba918b05f1a2981859ae762f882c3141c08fc0728177ba628c594d544884ac185676fdda355ed85520ad814dcbc766df4a2b53639719b28533d8e99e8776b6f562a6ddb640a09c9b27ff9c39f3ccff7ffecf39f3b40d5e3d48460680ad5b8e3d790c3af840c3c73e68a559ef9167c6b64b61b737afd0e3b77d69db1f02c3ebefba2081dd7b76d39a698182dbbe7e1b6d6be77b7b7b19797a04db63df2323178d9d3add99a4344fbc1cef8867ed80433e43d8b4a2e4a39a48ac8a5fbaa9db1eeebb96df6f6b9a5781a5d5e5673d97f65f4a3a930270cfddf7a0d6252820d2d1da84f8cc771c3f397e599ae8eb46a6b92141f74b41afedbcf96257a78d1010b01a124127e1b6eb1e49fd3503a37267e354f2a79d57dbdf36ea8cd38120a0955e976ffd0700ade9d647f48ced3e3edabaaa95ea1bd25cb63bd5d88ae6121d366aa21c5a19121c1a8348890547df15866da167b037a8059a465d996f8e4ec5b7c753fa04118f3523fd7729e47f2bb92215a1b4d23594eed451b31974f75d7ff0a80cc4e2aea2b3cf8ad61fb1f5002d80ae98868624071d1a0cd0d763b021ecbcdc505710440108a003c8a1b9b571c9f1096e1d8bd9954e8f3dd7e8ddfb44961d3a26f9f499acc8688bba77dcd1bcf1c037e88c2ed3d1b68b05d7a675c94853456590c2a1b5c168c78e1e838d3c3bbb03b4f29828c08b27d0012ef30801c3d39e710968fdd7e3099002b402c95dc174f6afe4990387770f0efc5a4551f3f37a6bdfe74c14b4b98a1979c554a0111a50b0b361a88730d05b32275ccf342b028e4c419c078ca6a055403207ba23000fd68013d05d46919b2bfbaf7de0d3b65b5e5752a41ec089036590dc614243147a863e1b6043cf8eee00c163c2009f7b08d7309df28ce701ad14fc22ab4cdd22680322e5eeb9d841aa9199183d179048bcac7ba3390575288035cc77f678f65c1f10ac611aac657a6a03530fba3a3b5699aab2ee6d066e2a29d5723156191ca0555424796b4e89c4826259c4b769029c387a4388675a343a9b6405f06e4c29933a29a308e8105ce261362899661a379740bb41161d3a30b84507ed1629b2455434af3478016c18e072401b5271f42b4b96a68c489d4727cbbd5cc734ac928780032be0c63de402b331561b5c017459c81d36b2e5fba30aabfa02c5f87c4d0a29f728f7e59bc5510f219104b4a63593e26621497c5989051052becc813c9fc03f1deed9d33093215902dae00a071a445c89653d4e88174ca1f39ac62c48214b8441c5cc200236b43849b061e9114d00b3603dd0025a1e4e3aecac2ef50f2de89229aa62aade0b6bc0bc9d486bbe2645b2a06159c4838224f7648526c9128c362492aed42f14e026129872481a03e08a0c94468a0494fd6058839008b0504369563c40e5fa4371c0f06c3f49a6b161bd9c8f4c356f41838d1a657d45f5cd6305b6c39c03166a2299004bae5240a4f4c291d87370d2329264655de7aeb48824a034ae482b66e987c2c95c722ec2bc5dd3aabe00b24cc78a07caa8c380560e59515dcd61a9c0853dad98547153580305f3a9c45293a2bc9bc597cc57aa41728f5690ac2ae3405527a60e1029f7d249b679ac0244e279e07c4d8350b8f3b6e382074aa6179458a98e5525d48a1241e5ee4de0ce1247d89c82a59a147e01ccb29be38207aa6a5851625599b54a1465946293b85a9f14c95ca4a2e59a062864f53fb0610206ba3ccdae607d75446b945040b4a2c487c4056f6545424d0a3987e27c657e32ef19eace18ea3ccd400fac56c78a12b29ec987c280e4ad1ca00678c9e245db516e41bd232013477fa7615f67c280dda0c48a075694d82cae14d044f30035c9d317e2a30ffc2a3e31fc2605a4e2894253de052124e2ca7360ed39a1c015152e368967ddb24c8dcd64e9f86484e522e09c6433a332f1f46b6de7db9bcd2b073e715d9863b77470561266162e653207b5a51d16a0eb63edc812b0a51d96a06bcbfbe08fb79717d842fbf9ecb9a7fe7df6af8f3c3a35bcffc1fccd89d1feedfd4b1795bab22892bd94bf32f2627e66b267c7557d9f644b5633da323c53902d048878946aaf18b5234b1e552b23b577c3a06a904dc70bf9c9911719ffc94fbfd8933d38faeca387f36cf60cb03470c300352e8ca528e2e9c12bcc1dfb1fbaef97e3cf6773e46022537ac0541ee808aab3bc8cefc0d57366d6cda77f3e38dc983874e7be2fa45ff9db63077ef0fdbbef7f250aa3f3ab1937f6053a8cb877ffbe57c74e8c7d6fff8f1f98181bdcfbadec9a9b3ea5952599f36802c47bb40970734007c8dc853f230ac84647dea0357cc29aec373ffcf2e03f06760dbd69bacae3dc9ff54821abf92215bdb3336a440d1a7b1a6ff5f7357fb6f7dbf74d4acbed67d7beedba11d4702553570086b24f3090242ccbf4d8195e3e727c674ff4c4e09ebee76ebee5e6736c1c1b3aa3acc8367c8082244fb0c6d2e8db561c7bf2777fb9eb3bf7fe67f8f1dbbf6b76ddffd5686b7fe03cd005920367295a2f3c35559f8d8f0e746787f73db4f754636b6391f677a4ae24669d02a88dadd986de3030018ffce2e0e9830f1fb8fbd0e33f9ac86687ee8a6ebcd5caa4f7666af8451f9f78f29ec1be3f0eddb237360db3c4fb8df7eb0da510864f0ed37f797fa9446871e218ba65f71b49963d7cf0e7f7be16b586bf26b3d3c71bd7d68fde7fe7de19dda99142181b1fc3867675ddc6e8c4219920b2de03ff073c358c59afb7c73f0000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[transstock,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>lotesstock</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[lotesstock,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>tiposopcioncomp</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[tiposopcioncomp,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>secuenciaslotes</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[secuenciaslotes,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>tiposopcioncomp</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

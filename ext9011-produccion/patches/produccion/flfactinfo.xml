@@ -1,0 +1,6 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/ACTIONS[ACTIONS,1]/action[i_respresupuestoscli]/name[name,1]"/>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[i_respresupuestoscli]/description[description,1]">
+    <name>i_respresupuestoscli</name>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,55 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codloteprod]">
+    <field>
+      <name>idlineaac</name>
+      <!-- Identificador de la línea de albarán de cliente relacionada -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Id. linea albarán cliente")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <field>idlinea</field>
+        <table>lineasalbaranescli</table>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idlineaac]">
+    <field>
+      <name>idlineapc</name>
+      <!-- Identificador de la línea de pedido de cliente relacionada -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Id. línea pedido cliente")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <field>idlinea</field>
+        <table>lineaspedidoscli</table>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idlineapc]">
+    <field>
+      <name>idlineaap</name>
+      <!-- Identificador de la línea de albarán de proveedor relacionada -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Id. linea albarán proveedor")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <field>idlinea</field>
+        <table>lineasalbaranesprov</table>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[idlineaap]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[idlineafp]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[idlineapc]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[idlineaac]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[idlineafc]"/>
+</xupdate:modifications>

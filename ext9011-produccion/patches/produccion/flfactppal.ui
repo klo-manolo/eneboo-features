@@ -1,0 +1,40 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">566</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">674</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tablas_Generales]/separator[separator,4]">
+    <action name="centroscoste"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[provincias]">
+    <action>
+      <property name="name">
+        <cstring>centroscoste</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>centroscosteimage19</iconset>
+      </property>
+      <property name="text">
+        <string>Centros de coste</string>
+      </property>
+      <property name="menuText">
+        <string>Centros de coste</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[centroscoste]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[co_centroscosteimage34614]"/>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="centroscosteimage19">
+      <data format="PNG" length="1693">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000066449444154789cb59661881d5715c77ffb72379c89b3ed4c59e99bba853c3134bba41fba18a20b816421d86ee987242242b14243109216a96b2892c68234f543930fc5ae826105adda0f268b35902dae3468c9a628ec16b4fb0a8dce4296ced486cc6dfaba73706ff7f961debcb72fabc4acf4c070de7fdecc3de7fccfff9e3b3d40cfe3871fffd6e897469fc6108a11d4291bf2aa8874bc554bb5af8a5db1cdfa5bf5df9efed1e913aabac45adbbb67ef13d7dfbbdefcb46df9c67273fca9f13f009fe94ae0eccfcfce7dead15bf6f6ecdbcda03f78706d7ca346fd124c3c3fc1c2d20263fbc650a784129269d6a6f556b8cb3b259e8fb1cef2dcf3cf01e0f91ec04057028117ac96e0dccc393c3cea5fa8e3e111bb18cf78e42ec733b7c66b7d2821f5b44efd2f75f81ed00799cb1023cd6e069cb6c1e0b6411050ab586701b05804c1727b382626ea8f6067279818e16633a1846de0051eb9cd49ae255d15652edb18d69c2888c8b5b88f02e6a6043297b541dec859bcba481006a42e451052fe3f6fd5a24eb1d6aeab7e1d03e9b594643129e87242424248b8611f6b4c241138082420763142771b4ceef2ae1bf3efcc8374a8b2ce82d980c792a409366861b50412a06877026b19284552ff5b9d6ab50a86a297e48426ec7a599036ce5d4e4848e6b2227107aa4a9aa685105d6b6d5d2fc42e0d94a64e594c1709fc006b2c22453bd68edddce5608a6701124ddaefaa1657894b0690cef3a555d632d0ae4e84c00fda95e25a15b782e368072fff6f0773742a06021380165e550b4dac4d606d4622d2f1a6e5a58343098bb6f85e17ee7a4e407c59a7a1a4912022dcccb80924e82460a4b8a4f018f0c46b57a268a732823603ea94d0151a10578c63a4d041d9b6d014637bdd1c28275e81e854d41220a6484c8dae1350bb2daef09e2b860fd2125c6b1d5cc100d06ed77f64a02bb8788891a2f232b8018f6257948b85a6a57e27644e091132cd501154057142663386770e93c409a1095964b11372ad06ca8a3de3b55ba1683723144994966b5e24672d479712861b163130efe09c83705b8da11d43b002499aacd74029bc72315ce14bd596476b64a2ce970f9dde173df538a5ca88a6f06000a13072d532e68f529dfc1500736f2da00d05c72ac00b275f30c78e1f7346552b6502071f3948548d88fc0835daa63f300116db25c45280d659aa69c6c8e58bb07b2bec19028405ad12ed3f85753997cf4c902da60c1e3eda54d48d1f1bfff6d8feb147a7ce4f7ddf88917f95098c3e34cae843a31d7e56805e206f09b4759ae59ab7b1362cf2f2247cb60a3b72f0aac41f45847bc7d186527ff375e4ca14833375ea8dec93f1279f39fadd278feec28391dd234736998ab9efe1471eded5157413e4794e6fa5977cb9f0d9720615b8b6dc402a067bc3822f24af4e71cff40cdced836fc9eff478b76f0cbbd950bf3483f7cf0bdc3f14d15b13cc7258193b717ca0d7eb65f2a793f6c5d32ffeb807a81e397ce4a543df38b40f83606896fbb79c78560bfa45b5d71388555702095003c199c94d43d35386a79e81a573b07f982481981a351688ee0dc129b11ba4fac5437802a77e72ea8393cf9efc816dd8333dadbafb80613112aad3d572ef96bd6e61f74b23c715fddc13c8d3eab421462a2f393d7168cfde9d7c671cceff1af6090c8445bbfc005459b001de8e4709fc80d9972738fdec89572e36f431c09573e923e08fed2db976b677e36f067097a2e7816575ca97458eb3ad06e72f40b506f50406a4088e2569443030060e2e4cff8c07ec3c0745eebfd8501fb0ed1df0bf9840c5420fb0b975cb535feec45a989982a5185c049713c0821fa026235d5a60f68d291e08636abb6b1cd85edb1ec07db06e32dfd22a02abc0272dbca2463ee483048208ea75e88fc0863093c15ea1b63da29ad6f1b686e0d74005448cc05d00b7c580852c82bb0b320070530dfb675a870fbec05f6741737021fc2686e9393c039015c167e6881bfa714af1197d5b0c4cc02b97441e3b6b98c2c89f04c54a30882af407c521d41742ba08031e0cd48a30d369f17f3a07572cc7de895f05160036dd4e02d720fe9d73e9c866ff2b660bfb8cefef5243ffbb566fd4eef0fcde30842d06eef061d54145c1ef852dfde4ef5de5f797e6dffffa6bd3bf78a3a13f04122804b511bb17e86ffd6e02e680c8570f0c54bf36ba35ba8730ec113f685ab5cd38cb3fbc7025fefbec523a7b59f535e04de0e372a18d26f0df6c10f8bc805140a0a9701df807f03e1df1b6eddfd70d5ddaf988d6d10000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[provincias,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>centroscoste</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[centroscoste,activated(),FLWidgetApplication,openDefaultForm()]"/>
+</xupdate:modifications>

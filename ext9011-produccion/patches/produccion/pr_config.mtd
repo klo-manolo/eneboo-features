@@ -1,0 +1,22 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[emailnotificacion]">
+    <field>
+      <name>controltiempo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Control de tiempos reales")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[controltiempo]">
+    <field>
+      <name>mostrarformulario</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mostrar formulario al avanzar tareas")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

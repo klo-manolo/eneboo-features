@@ -1,0 +1,67 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtipotareapro]/relation[pr_secuencias,tareafin]">
+    <relation>
+      <table>articuloscomp</table>
+      <field>idtipotareapro</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[notificarasignacion]">
+    <field>
+      <name>diasinitareafinpro</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Días (Inicio tarea - Fin proceso)")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[terminaenunpaso]">
+    <field>
+      <name>verificarconsumos</name>
+      <!--Indicador de si al completar la tarea los movimientos de consumo serán verificados-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Verificar consumos")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[verificarconsumos]">
+    <field>
+      <name>opcional</name>
+      <!--Indicador de si la tarea es opcional-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Opcional")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[opcional]">
+    <field>
+      <name>idtipoopcion</name>
+      <!-- Identificador interno-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Opción")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <relation>
+        <table>tiposopcioncomp</table>
+        <field>idtipoopcion</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtipoopcion]">
+    <field>
+      <name>valoresopcion</name>
+      <!--Valores de opciones-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Valores")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

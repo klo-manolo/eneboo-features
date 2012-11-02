@@ -1,0 +1,80 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,pr_config]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">134</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,pr_config]/vbox[vbox,1]/widget[QGroupBox,gbxConfiguracion]/vbox[vbox,1]/widget[FLFieldDB,fdbEmailNotificacion]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">178</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,pr_config]/vbox[vbox,1]/widget[QGroupBox,gbxConfiguracion]/vbox[vbox,1]/widget[FLFieldDB,fdbEmailNotificacion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_config]/vbox[vbox,1]/widget[QGroupBox,gbxConfiguracion]/vbox[vbox,1]/widget[FLFieldDB,fdbEmailNotificacion]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbControlTiempo</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>156</width>
+          <height>26</height>
+        </size>
+      </property>
+      <property name="fieldName">
+        <string>controltiempo</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+      <property name="foreignField">
+        <string/>
+      </property>
+      <property name="fieldRelation">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,pr_config]/vbox[vbox,1]/widget[QGroupBox,gbxConfiguracion]/vbox[vbox,1]/widget[FLFieldDB,fdbControlTiempo]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbMostrarFormulario</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>184</width>
+          <height>26</height>
+        </size>
+      </property>
+      <property name="fieldName">
+        <string>mostrarformulario</string>
+      </property>
+      <property name="tableName">
+        <string/>
+      </property>
+      <property name="foreignField">
+        <string/>
+      </property>
+      <property name="fieldRelation">
+        <string/>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>
