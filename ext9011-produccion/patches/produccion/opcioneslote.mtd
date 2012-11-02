@@ -1,0 +1,105 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>opcioneslote</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Opciones de Lote de Stock")</alias>
+	
+	<field>
+		<name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+	</field>
+	
+	<field>
+		<name>codlote</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Lote")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+		
+		<relation>
+			<table>lotesstock</table>
+			<field>codlote</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>idtipoopcionart</name>
+		<!-- Tipo de opción-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id tipo opción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>tiposopcionartcomp</table>
+			<field>idtipoopcionart</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>idopcionarticulo</name>
+		<!-- Valor de la opción-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id opción")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>opcionesarticulocomp</table>
+			<field>idopcionarticulo</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>idtipoopcion</name>
+		<!-- Tipo de opción-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id tipo opción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>tiposopcioncomp</table>
+			<field>idtipoopcion</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>idopcion</name>
+		<!-- Valor de la opción-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id opción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+		
+		<relation>
+			<table>opcionescomp</table>
+			<field>idopcion</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	
+	<field>
+		<name>idproceso</name>
+		<!-- Valor del proceso del lote al que está asociado
+			Este valor se establece si el el tipo de opción tiene desactivada la opción de estructura.
+			 - Si está establecido cada vez que se genere un movimiento de composición para este lote se preguntará la opción
+			 - Si es nulo la opción siempre será la misma para este lote -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Id Proceo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+</TMD>

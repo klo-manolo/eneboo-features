@@ -1,0 +1,294 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">494</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[font]/font[font,1]"/>
+  <xupdate:append-first select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[font]">
+    <sizepolicy>
+      <hsizetype>7</hsizetype>
+      <vsizetype>7</vsizetype>
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+    </sizepolicy>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[focusPolicy]/enum[enum,1]"/>
+  <xupdate:append-first select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[focusPolicy]">
+    <font>
+      <bold>1</bold>
+    </font>
+  </xupdate:append-first>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/spacer[spacer26]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">110</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13]/hbox[hbox,1]/spacer[spacer26_2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">110</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13_2]/hbox[hbox,1]/spacer[spacer26_2_2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">30</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/property[focusPolicy]">
+    <property name="focusPolicy">
+      <enum>NoFocus</enum>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>TabPageProduccion</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Producción</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxHorarios</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>5</hsizetype>
+              <vsizetype>1</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="title">
+            <string/>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layoutLaboral</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDiaLaboral</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>150</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>200</width>
+                      <height>3277</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>codhorariolaboral</string>
+                  </property>
+                </widget>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDescLaboral</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>350</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>descripcion</string>
+                  </property>
+                  <property name="tableName">
+                    <string>pr_horarios</string>
+                  </property>
+                  <property name="foreignField">
+                    <string>codhorariolaboral</string>
+                  </property>
+                  <property name="fieldRelation">
+                    <string>codhorario</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacerLaborales</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Preferred</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>161</width>
+                      <height>21</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layoutSabado</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbSabado</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>150</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>200</width>
+                      <height>3277</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>codhorariosabado</string>
+                  </property>
+                </widget>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDescSabado</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>350</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>descripcion</string>
+                  </property>
+                  <property name="tableName">
+                    <string>pr_horarios</string>
+                  </property>
+                  <property name="foreignField">
+                    <string>codhorariosabado</string>
+                  </property>
+                  <property name="fieldRelation">
+                    <string>codhorario</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacerSabados</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Preferred</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>161</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layoutDomingo</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDomingo</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>150</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>200</width>
+                      <height>3277</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>codhorariodomingo</string>
+                  </property>
+                </widget>
+                <widget class="FLFieldDB">
+                  <property name="name">
+                    <cstring>fdbDescDomingo</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>350</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="fieldName">
+                    <string>descripcion</string>
+                  </property>
+                  <property name="tableName">
+                    <string>pr_horarios</string>
+                  </property>
+                  <property name="foreignField">
+                    <string>codhorariodomingo</string>
+                  </property>
+                  <property name="fieldRelation">
+                    <string>codhorario</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacerDomingos</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Preferred</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>161</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacerProduccion</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Vertical</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>20</width>
+                  <height>211</height>
+                </size>
+              </property>
+            </spacer>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

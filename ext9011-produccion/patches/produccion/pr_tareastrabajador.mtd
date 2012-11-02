@@ -1,0 +1,111 @@
+<!DOCTYPE TMD>
+<TMD>
+    <name>pr_tareastrabajador</name>
+<!--Tareas según trabajador-->    <alias>QT_TRANSLATE_NOOP("MetaData","Tareas por Trabajador")</alias>
+
+	<field>
+        <name>id</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+        <null>false</null>
+        <pk>true</pk>
+        <type>serial</type>
+        <visiblegrid>false</visiblegrid>
+	</field>
+    <field>
+        <name>idtarea</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Tarea")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>8</length>
+
+        <relation>
+            <table>pr_tareas</table>
+            <field>idtarea</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	<field>
+        <name>idtrabajador</name>
+ 		<alias>QT_TRANSLATE_NOOP("MetaData","Trabajador")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>30</length>
+        <relation>
+            <table>idtrabajador</table>
+            <field>pr_trabajadores</field>
+            <card>M1</card>
+        </relation>
+    </field>
+	<field>
+        <name>estado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Estado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>25</length>
+    </field>
+    <field>
+        <name>activa</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Activa")</alias>
+        <null>false</null>
+        <pk>false</pk>
+        <type>bool</type>
+        <default>false</default>
+        <editable>false</editable>
+    </field>
+	<field>
+		<name>iniciocuentaf</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha inicio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	<field>
+		<name>iniciocuentat</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hora inicio")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>time</type>
+	</field>
+	
+	<field>
+		<name>fincuentaf</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha fin")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	<field>
+		<name>fincuentat</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Hora fin")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>time</type>
+	</field>
+	
+	  <field>
+		<name>acumuladoprep</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","T.Preparación")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+	<field>
+		<name>acumuladotrab</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","T.Trabajo")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+	</field>
+    <field>
+        <name>totalacumulado</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","T.Acumulado")</alias>
+        <null>true</null>
+        <pk>false</pk>
+		<type>double</type>
+        <partI>9</partI>
+        <partD>2</partD>
+    </field>
+</TMD>

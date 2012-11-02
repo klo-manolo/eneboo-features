@@ -1,0 +1,221 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">51</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[fieldName]">
+    <property name="foreignField">
+      <string>iva</string>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QGroupBox,groupBox10]/hbox[hbox,1]/widget[FLFieldDB,fdbIva]/property[foreignField]">
+    <property name="fieldRelation">
+      <string>codimpuesto</string>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">121</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCantidad]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCerrada]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">114</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout26]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]/widget[FLFieldDB,fdbCerrada]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout26]">
+    <widget class="QTabWidget">
+      <property name="name">
+        <cstring>tbwLinea</cstring>
+      </property>
+      <property name="font">
+        <font>
+          <bold>1</bold>
+          <italic>1</italic>
+        </font>
+      </property>
+      <widget class="QWidget">
+        <property name="name">
+          <cstring>movimientos</cstring>
+        </property>
+        <attribute name="title">
+          <string>&amp;Movimientos de stock</string>
+        </attribute>
+        <vbox>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <widget class="QGroupBox">
+            <property name="name">
+              <cstring>gbxMoviStock</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>5</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="font">
+              <font/>
+            </property>
+            <property name="title">
+              <string/>
+            </property>
+            <vbox>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="FLTableDB">
+                <property name="name">
+                  <cstring>tdbMoviStock</cstring>
+                </property>
+                <property name="sizePolicy">
+                  <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>1</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                  <size>
+                    <width>0</width>
+                    <height>150</height>
+                  </size>
+                </property>
+                <property name="font">
+                  <font>
+                    <bold>0</bold>
+                    <italic>0</italic>
+                  </font>
+                </property>
+                <property name="tableName">
+                  <string>movistock</string>
+                </property>
+              </widget>
+            </vbox>
+          </widget>
+        </vbox>
+      </widget>
+      <widget class="QWidget">
+        <property name="name">
+          <cstring>lotes</cstring>
+        </property>
+        <attribute name="title">
+          <string>&amp;Lotes</string>
+        </attribute>
+        <vbox>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <widget class="QLayoutWidget">
+            <property name="name">
+              <cstring>layoutEditLote</cstring>
+            </property>
+            <hbox>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QPushButton">
+                <property name="name">
+                  <cstring>pbnEditLote</cstring>
+                </property>
+                <property name="minimumSize">
+                  <size>
+                    <width>32</width>
+                    <height>32</height>
+                  </size>
+                </property>
+                <property name="maximumSize">
+                  <size>
+                    <width>32</width>
+                    <height>32</height>
+                  </size>
+                </property>
+                <property name="text">
+                  <string/>
+                </property>
+                <property name="accel">
+                  <string>M</string>
+                </property>
+                <property name="iconSet">
+                  <iconset>produccionimage0</iconset>
+                </property>
+                <property name="toolTip" stdset="0">
+                  <string>Editar Lote (M)</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                  <string>Editar Lote (M)</string>
+                </property>
+              </widget>
+              <spacer>
+                <property name="name">
+                  <cstring>spacerButtonEdit</cstring>
+                </property>
+                <property name="orientation">
+                  <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                  <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                  <size>
+                    <width>516</width>
+                    <height>20</height>
+                  </size>
+                </property>
+              </spacer>
+            </hbox>
+          </widget>
+          <widget class="FLTableDB">
+            <property name="name">
+              <cstring>tdbLotesStock</cstring>
+            </property>
+            <property name="sizePolicy">
+              <sizepolicy>
+                <hsizetype>5</hsizetype>
+                <vsizetype>1</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+              <size>
+                <width>0</width>
+                <height>150</height>
+              </size>
+            </property>
+            <property name="font">
+              <font>
+                <bold>0</bold>
+                <italic>0</italic>
+              </font>
+            </property>
+            <property name="tableName">
+              <string>lotesstock</string>
+            </property>
+          </widget>
+        </vbox>
+      </widget>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]">
+    <images>
+      <image name="produccionimage0">
+        <data format="PNG" length="1924">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000074b49444154789cc59751881d5719c77f379d966f6456cf94db7a0637b803113a9716b2212abb50482222acf8d0843c98908752fa200541d217b56f05116d1021161f8c82c5f820a488b822d2b5a2cd8ab67b0b099d400b73318b672017cec14c990f3adbf56136dbdd6e9a36f6c10397c3cc3d77cefffb9dfff77d73079b9b9bfc3fc7e076f744e493dae93d12c9403b4522413b1d6c5d6f8a98fb54b24fa3edbf2562aa4dbd41a777b5f1adc0a3f77f212233e77f72fe95a5479766b5d10d1119387564920d50f69180573fa8a7b19cfbdddadb6f4cd3ab7afdf25f747dbc1c26cbffa0d3eee31188b8ffa54b2f5d5b38b2f0403c13d3de6c896762dab6258eb7e628c6d5151ae0b9172fb3fc564e3a34efa2ac55ff3cf7b370f5d2afd1f09f8f4260df1e0291e0bcdb8cbb186e401cc57013e23886766b6e204b728c189e39b9c813072b7c55ee13e1f0d2990b3f9d7ff29557ede1b3df40cca73e8cc01e01da29063370ead8c20d33d0b62dc4c03b400abef390806b3cc71f9de7c4e703d59b25e55b97c967479f5b3cf3ecf3f38fbff4b20c8b2fdc9500898440204b32504893f4bdc8df01eeed45a426453a214d32ea50736aa160310ff8a09493cb48a3cc1f3e74f0d4b75ffba31c583a79b704708d03815677447eefd6a27bb7ee0b787518e9d72f1db0a00e3ac3785232be5a81c11cffd6ef7f691e3a7ee67f22104b7ff6db9b6f8d782606854cb648498698406e0c6da720065fafb1f2f22aeeda9a1427cf3f2fb30b473e2a81816b7a0fec22b063b4377b02b748f9c691a519dad5a877b4d7ff4c1629879235324ab27029290e2f7d9f481edcf99cbd752092c12e0233f16efc3b08b4a1253319e57a496672aa69c5e29c657eb6e6d8437340207b6011453151c1ca78f58bee55fb957a7df2c29d087406b3e982830e9cebe73d04da963889f1eab1c612ba406e738ecec3135f9e4752c8b302df794c62d048c9c5027affcec0f710b043fbe0a49948b69e51751599c9a826559f929da7b0057112f7643ac86d4ea803b18df18d63343ba2d596911de1d4311a8ea0010c8c192391ec634701dc25e0e891a3674e9c3cf1bd856261c64d1d699252ad57d8a1453bed71d725d209755353d8021230b3867a5a939b02d7383293e11a473eccf1ea494d8a6b1c36ea9f036cee122022fbce3e79f607c5c1e22cc085172f106b8c0b0e931882068ad902190a8b8f2ca246296c819b382a57913f9273e8e143d0f475a36d5af2618e364a9664b8e0c8926c2781dd263c75f2d48fccacf9e6cadf5636cab2fc579ee79f490fa4f72d3db4448802adb654eb15e1f54079ad249fcd4987296ddd52d625c77409891c230b7e5a23e618b50a363154a12295942a54180cdae96e01d6da0322f2e4f84fe3e9a5bf5ffa31ca95e35f3bfe8bd3274fdf67c4109b3edfbd7a565e5d61fcd731e32b638afd05e5f59267bff31c235986e6695817d2d963b07e0edb1da58c4e930d0b340432c92829f712a8ebbabaf89b8b5f575551d55788d8286cf1aea2bdcb9bfe0c4584138f9da03850b0fa8755965797298a79600df41940c1e4d0293cbc405c8f29ea92f1e42cd970d41f2706badd1d3802364208bf05ee01362492fb6beac1a22cd2366ddf0b1a7a122d8c1e19319a1bb1f0e802e3aa82f5654802580bc18369e1da1acc2d114725d9eb1779439f201f5a4a4a88d895053b716c0068a783ed4a1841152a88c007dfe7ffcd1666607470c4e9c7be4a8832dc7568eb1a12a08bc11630ad7a2add0adcf0d4a1ee09bcaff6dcbe177481344ad146b1627b12d116892806bfc5ae83c523cfa0fbcfa38d8110c014a0800408157912984c4b4c64fa1e1365833b0ad8d90d3552aa506dcf6dd4e282db45c4abc71e7c8a2a79aa3fffb006510dd31208543740ba946acb03ae731f4a601008834cb23eaf25ed0d141934282632b4a14590ed59b5259f3b05d11c083d7e010278b5785a3249095d2096f8ce026e11b815b90b8e34ea450054d30a05ea50a328d5b4463b45c34518028d028a7f4ba11356d773b2a4af903b3c705b13bee701fabcf5c1f75e08da93687a313a2d11041784542c5a5f26eb7ed51f010a134813839f022c42124825a5a6c64676c08e527cc7f70111e9231770c11113e3828770017ff54b64cdd3f8f573e4d1cf811a1aa5ba12c018bc0656aee4780c5994e1bcc362a9bb7ac00735a36d025da0880a68e85fb7b66a791b5a521353861388af89af3f4fbe5f00a5056aa7d8fd421b0297cb39567589858305ae7398d83069264824f7ecdc6f8f00ed7aa3d54d8d4d6c3f8ba50a1536b154d30a6b2c953e85ef8eb35c5ec2a8a352214f52682aaa6946609e85b979b40b98ce50fb1a8b45d1bdcde87d04068130c825a76e6a8c18b4514c62a8432f4a83920d2d2e82f9fddfa5f215f3714ab8e911843409cc3f60086dc0c4fde6dbbf8feca0a4fc600100a6338cdf1c633a4345858d6c6f202cabac62234b20f4d942efee70d3f591763536324c6e4cb0582661d2af6b2a32c908845d7bee15d0f1f6b917cefd3025fdaceffce6ad8a9746291ebfbd2ce5aeaf071ebfcfd5ee357698f0b6ff8eb73e9ff880ef3feed804dacdcdcd0d80ff0273b5dfe7d23483560000000049454e44ae426082</data>
+      </image>
+    </images>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/layoutdefaults[layoutdefaults,1]">
+    <includehints>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+      <includehint>flfielddb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

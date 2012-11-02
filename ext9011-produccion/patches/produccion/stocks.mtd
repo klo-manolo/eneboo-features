@@ -1,0 +1,10 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/TMD[TMD,1]/field[fechaultreg]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[stockmin]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[stockmax]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[fechaultreg]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[horaultreg]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[horaultreg]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[cantidadultreg]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[cantidadultreg]"/>
+</xupdate:modifications>

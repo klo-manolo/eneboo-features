@@ -1,0 +1,115 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtarea]/counter[counter,1]">
+    <relation>
+      <table>movistock</table>
+      <field>idtarea</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtarea]/relation[movistock,idtarea]">
+    <relation>
+      <table>pr_tareastrabajador</table>
+      <field>idtarea</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:update select="/TMD[TMD,1]/field[intervalo]/type[type,1]/text()[1]">uint</xupdate:update>
+  <xupdate:delete select="/TMD[TMD,1]/field[intervalo]/partI[partI,1]"/>
+  <xupdate:delete select="/TMD[TMD,1]/field[intervalo]/partD[partD,1]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fechaactivacion]">
+    <field>
+      <name>codcentro</name>
+      <!--Identificador del centro de coste-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Centro coste")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>25</length>
+      <relation>
+        <table>pr_centroscoste</table>
+        <field>codcentro</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tiempoinvertido]">
+    <field>
+      <name>tiempotrabajadores</name>
+      <!--Suma del tiempo invertido en realizar la tarea por todos los trabajadores-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","T. Trabajadores")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>9</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[tiempotrabajadores]">
+    <field>
+      <name>iniciocuentaf</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contador de tiempo (f)")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[iniciocuentaf]">
+    <field>
+      <name>iniciocuentat</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contador de tiempo (t)")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>time</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[iniciocuentat]">
+    <field>
+      <name>intervaloprep</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","T.Preparación")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[intervaloprep]">
+    <field>
+      <name>intervalotrab</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","T.Trabajo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[intervalotrab]">
+    <field>
+      <name>subestado</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Subestado")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>25</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[subestado]">
+    <field>
+      <name>anexo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Anexo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+      <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[numciclo]">
+    <field>
+      <name>ignorarestadistica</name>
+      <!--La tarea será ignorada en el cálculo de estadísticas-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Ignorar estadística")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

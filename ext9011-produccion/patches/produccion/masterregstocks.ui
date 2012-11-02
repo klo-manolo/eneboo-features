@@ -1,0 +1,112 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">459</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">120</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,toolButtonZoom]">
+    <spacer>
+      <property name="name">
+        <cstring>Spacer3</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Expanding</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>120</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer3]">
+    <widget class="QToolButton">
+      <property name="name">
+        <cstring>tbnRegularizarStock0</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>produccionimage64981</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Regularizar a 0</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Permite regularizar a 0 un conjunto de stocks</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QToolButton,tbnRevisarStock]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]">
+    <widget class="QToolButton">
+      <property name="name">
+        <cstring>tbnEvolStock</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>produccionimage42168</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Evolución prevista</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Permite ver la evolución prevista del stock selecionado</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[articulos_compimage4911]"/>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="produccionimage42168">
+      <data format="PNG" length="1483">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000059249444154789ced973d88644b15c77f335be39e5aee40158c702fac301714b65fd6a19369248ad122069a682a18983e4331f1bd170813ae82f244c4a799669aed1ac84ea0f4042edc0117ee0507aac0ebabb3afeb751bd4edee197b78821fac819534a7ee39753efeff730e7db05eaf799de7f0b57aff7f00ff0b01989bc277befbe4941c6a311ecd018c871cf80fcb69f670f687c75fffc2ea5600e7ef3cf9d27c3efb695b37879a035e3c4913fec41314bc08a882f02fcb1a234113cf2e2e7e027c056e40204e3ed79eb8c361ec214377dda319fa18b0287dec51fe3d39e544cc9159db7e7e0f0231ee5e771df180e61e114fbcee401afaac58815e3bbc38166328729e640d5833c9465864c50b2cb4c31ad9da2755bc38bad01dee05103532770df661435d9da1247c6579fefba7cc4fe7a8519aca9380e1aa0781da3914f095a57bd94316a48279e58104582e5f2c983f6c01c5579e44a2ffe5b0e5dd3692ba6a00c189835c1e05685c03199c78c8602d88dcd0130bb9d88bb9a127166bc057cda4e701b0d682653f809813d6289a0b71922638827e2cd9aa261060090a939e25e5041606edc140cc059e94cbbb4923221072020369096264bf0d9db5f463a41d3a940ea920bc50c88e3844a412fa5111200c11ef846eecf195a08392147aed695d431f0322d045850cc3101111fa49d67c47057499684e6adc10f1973d8c829f9fe12ba82ba1f9ed2f68ae2ef10edad31a4179e3d9539a3f5ee06b8f3f1166270dcdb35fd1bcb828df1f3520d05e75e53e479a538faf643f00773c6157b760153b2a2cc1892d75fad41cfedc01025971ae864f3430261853c11ea09d41e8b159262e397002c70d0c018e2065dd8740732963673adca31645712f175c0e4a7b220c7583fbe40c1d95101572c43f9aa1597106baabd2827ddde04f6780c210e8ae7b3869d15a71e2885d8fbd8b035e1c88529f7eb6c8d5949076b893063bc9580b39e05c53c4e95e4c4b1c13b5b385e4c716fe0a18c189ddea796b59bc08fb1084ac78f1684e138b4b172885bd41cb2f4b904a0adbcdae5b3417e2e986eda9a0a53996719c77f67e57805d00be2a7d2d535f5b6b8b3363a70a957b8e4047c599a9af65a3e74127bda9502888b9312f98ecefe240ca11c512af9e8238f4a522e2e9c7049218a2e22a41a3a2d3ae682a478c8a13a18f116b8438449c38342a42b90718c6a2a75adebd83030d6284e6e159c9e0b8946b667aa86cc9744a2df489baf258769979b18431e19ddf712501c622066c3555f0e396fe2aee43b0c130e432f1522ae58a9b45324d3c9605a62dd6132c212744ec2dacb1a03a4d464dbb112c774d42f105dbdc118652a69413d0d00f09a92c3a1627dd75c20b8431815834263497712d158458f4e398200bfd75b1d33181b1ec1870731be6445b79d4d5f8ca92a6c533fc69415bbf51e4e342b826174b2fb6ec3c6b097f998234694744b174d781f6c46fed532a73690f0257f92d969bad07d396cc60a745c41108f636db97d3f6ccb7bba5d8fb5bf6d652beff630051c30a204cd9a5e5743fc65b58b3e4d65cd870254cdb32295bae60206abac35e561bbf07ebf59ae717cf89035fadebe6475e38081aa6a104882365c58a943d3c39b106c80a2224d5325ef3e6fb0d7dc36d7b03ddcbcb9fbff7e3275f3effc1f9ca003455c3e36f9efdec1b5ffbf6a5a2a73a061bc6f840551ee8d80b6035e97d321fd3acf781a394f56853410bab041f5a234b0c1f8891571cf14a8cbc422439b1efdb4a525db5efab68f8cdafdffbddd9a7cfd6db0a6ccef93be707effef05d73395cde4711cdfa0078a059ad20a2e87d418e34eb9118b9a7590fc5089a752d463ed4ac598c2c15fd40105554c5c8df802422c939a78fbff878f9d6f7dfba0dc1479dc5e582b7bff7f6e1c5c5c53d1df52068382473a8590f800332889135863586b51859f9caaf9ad366f5e6b7de5c9d7de6ec231dfcd300fedbe7b5ff35fb3b1d1d3b4b6af9fa2a0000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[produccionimage42168]">
+    <image name="produccionimage64981">
+      <data format="PNG" length="1223">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000048e49444154789cb5976d4c5b5518c7ff87be00521d2b5dc3eb60519789194b2443b6698568dc974d60c388261b63536348fcb08d40c8642433d3b0c9081f24c44541976c98e824d30f9bc9224eb721cb468408842a1b6b29a594db22dd6e5f6efbf8a1b4dcdb170a02ff4fe79eb7dfff39f7b9e79c0b84888840443a221a21221f2daeeb4494133ac78a44445a229a88012622aa5f55b0c8404928697894278f20598c836b029f37d02326b5774ed395ab767155ed5ac275018acd2e50759d816a1a8d62783f11295793290f793e0200469307b5a74c305b3cb8d49e2d6ebf07404d4402805400390034000400a300ee30c6e87fbb21221a1c7e4ca59563545ca6a7e6b6a9d074e088c84044de4592534f440d4414bf142613c1ab007cb5fbad7fe0f1f883f8b2250b9bb2a3cf639ff5e297df1df8d7e10500683572bcfaf293502a83d31e678c9d5bcc80f81564f70ff241b82a292e2afcc66d073abb383c30b8c3dace7e6e415e6e22ded9978c8217929a89682f80fd8c312e9681dd03437cf0a1303f29acb3cf47683c63c6cdbe478b058581211e03433cf2b725e29313e9450a39eb25221d63cc1cda374e542e143764a429c2263eda3011132ed6dd3f79bc7fcc80194e78164077a43e620398e18460994272f9fc85190c0e3b970c0f68dce846fde949007891883a1735e0742d502dd39e60d96cf1a0abdbb66c78407fdf77e154b319002a89a820aa810d9a8594181c71c2e7f31beafac11eb622cb55cf4d07fe1a7102405d44038220704a45f0f3c1c4a407376e3bf0d0e8c6ad3b8e95d1e7f5dd4f7600d84744096106bc5eef05f57a9964405b87151d5d1cac9c77550cfc7a2b18484d9801994c6eddfbfa3ac9002be7150f5ab65ed9a982462d0deac79f6701fff62d3550fb51f7678141ab218d5a86aa0a35aaab34927acee605800361065a9aca9d730eefe5f23dc9ab6260e7761536662aa1dba192ec296eff4eab0e330000f6596fd3f35b1250b46b65abc0185051e60f242e8e61eb9660ce61da2a48fa4a0c6ccc8cefe36cc2d7278fa7e2994d4b3acc22aaa2743d52b50b516b372c9413e299a4afc40000a4a815875c2efae3d31369c8ce5cfedd63eb730978ef408aa48e8998296ae91524cc0000b49eb7942a954cffc5b92ce46f4b5c327c5741125a3ece08ab9f98f48456f5060aa137220040dd87a9e619db44615343faf7671b338afaee3dc2c5cb76884f4bb172b2943854a1866e47e4dce9bdbb7080e5e52602c0b5c0338bd05fa2a969cf31ad46de0c006e37e1fa6f73b0cc27d2532a198a5f5221799d2ceaf8fbe32e1c396a000028140cd7be7d1a000e33c63a62b1837af3ddb1788fe06b989d13f4d1ee613e1f79391b6fe0799e13d737b74d5171999e4a2bc76870f83111494f95982b10aad7f6eb59f91bc9dbf3f39ed8ac5432f943a3db3a30c43fd08fb9cc9bd32eca4b4a4a4ee7e6e61e0680298b076f7f308e54ad02674ea623335d0100df30c62a97cb5d925a5b5b9576bbbd3f107d4da391aaeb0c64b30be245d1ad091c004c26536d8072e5aa9dda3ba743df54cf9ac16d36dbc1008577fa6878948f942a456b02f7f97cf5d17f1382bab4ea6022ca21ff2f7a2c9988283bd21cff01ba844a5624a4608f0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLTableDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]"/>
+</xupdate:modifications>

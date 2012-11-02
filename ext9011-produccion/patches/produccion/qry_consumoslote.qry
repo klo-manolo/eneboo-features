@@ -1,0 +1,21 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>qry_consumoslote</name>
+
+	<tables>movistock,pr_tipostareapro</tables>
+
+	<select>
+		movistock.*, pr_tipostareapro.idtipotarea
+	</select>
+
+	<from>
+		movistock 
+		LEFT OUTER JOIN pr_tipostareapro ON movistock.idtipotareapro = pr_tipostareapro.idtipotareapro
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+	</order>
+</QRY>

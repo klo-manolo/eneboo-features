@@ -1,0 +1,32 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,contactos]/vbox[vbox,1]/widget[QGroupBox,gbxDatosCon_2]/vbox[vbox,1]/widget[QLayoutWidget,layout28_2]">
+    <widget class="QLayoutWidget">
+      <property name="name">
+        <cstring>layout8_3</cstring>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDireccion_2</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>118</width>
+              <height>25</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                                </font>
+          </property>
+          <property name="fieldName">
+            <string>direccion</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

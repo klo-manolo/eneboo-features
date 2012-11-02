@@ -1,37 +1,37 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="dtoesp">
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranesprov.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="presupuestoscli.ui"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranesprov.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="presupuestoscli.mtd"/>
-  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui"/>
-  <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranesprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidosprov.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="presupuestoscli.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranesprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidosprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="presupuestoscli.mtd" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="proveedores.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" style="legacy1"/>
 </flpatch:modifications>

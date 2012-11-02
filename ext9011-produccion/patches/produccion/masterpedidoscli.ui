@@ -1,0 +1,98 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacer11]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">16</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,tbnAbrirCerrar]">
+    <spacer>
+      <property name="name">
+        <cstring>spacerAbrCer</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Preferred</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>5</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[spacerAbrCer]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnRoturaStock</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>produccionimage6</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Pedir artículos con rotura de stock</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Muestra un formulario donde realizar la petición de material con rotura de stock prevista</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,tbnRoturaStock]">
+    <spacer>
+      <property name="name">
+        <cstring>SpacerRS</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Expanding</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>30</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="produccionimage6">
+      <data format="XPM.GZ" length="11647">789cedd9596f23479207f0777f8a86f3cd18a479155985c13ee822259212499d9416f39067f1bec44b5cec779f54c53f12ed76b7bd8bf5cb0e066dc3feb9aaf28888cc4a967ffde5cbb07ffbe5975f7f7adfaaedd87c3123b5f9f28bddcde71ffff98ffff8af9f7eae665fc25f4925f952f9f96f3ffdeceb5fcc17512a954c5d157e22974b59ad700b4ed36ae12db95222bb3d9c36c80776aa3f6dcfd99ada13b0c1f339b95aa2eb6e00d714398d36457baf6c9314edbd47dbe2fe3338a5ebce46d3f57bd85857b4f746ae952cddef61b4ef4e6c5c3f4617cfbb0f98fb736cba2eb83d43f17486ede83ae69f60fe1ee3a95b8cf7a1705a35144f49f1496b86ee1757e4a444d7c5259be2272ee004f1ecc3d6fb4fe7929c967dbd7011af728827ea6144ae9590df1bb846f6269af23d860dc543f5c83c1e750d2759914fdf64235e2538a3fbf52b6c29ffea8c5c2f6b8acf064e10af3772a30cd7d8943f7f0b67c83ff59786f915e377af708de2a9ef60aed70999e3ad9ed9945f3367d378cd0d9bc66b1ed9141fd18113caa77e87336acf0ed9941fd780913f5126d7cb88cf884ded197646fd6b0fa3bef40539c6670c5b47fdb5c969996cd07f9ac0efd1453c750fe6f12e3f5d2971fc7c464e106f7bcbc6fadeb1b1be5f61d4af798233ec173336d65f1346bdd82a9bee577d36e25f2187f8d17a6946533c6b30faf75336c54b617e758c47ddc0dcfe30ba88b7ed901ba857f5480ef1a57adcc096e267109fac4cf9360a4ec88ee299554dbdd8cfed9accf135024ea85edd131bfb5119467cec0d9bc62fb3e862bce29d4df31792ccf5266a6cdc8ff1d413aa3fdb62233eaf30c76fc1a6ebba1c5d3cef29df19af6f6fd9341e8df134783fc17c1b5c1f7cdd62ff2dde4fd57292517ccc868dfde908a39e7c99ccf561db6c9a9f1fc2d8df54898df5388ba6fda00963bff39d686a7fcf467cf879ccc76ed9c8c708e67acfa229fe0d36ea372137307e79cda6ebe6219ae2c5f723bebac9a67a558817ef0f7e006764bd8da6e70539c3fdae58ffd558afe692cceb2f376c9abfb986b1bf59cdc6febe80317f3567e3f99c8d78d0f8328e877863633db4a2a9bd261bcf8f61ac6f5d61d375db65231e2398f379c7463edb6cc46705f3fec2e3c5f8cd0539c57e611fc9bc7fe4c5f9a456e6f7b7f5e47a42fbb37886793d7cb091ef2718fdd9fb68aa8f0d39d64f359a9e3fc1888f69b311bf098c7c8a2e1bf17e61e3fe358cfdc9276cd4df239be62f717f8afd53f6617e5f61bcbcbfea1d5939b2a7f92a8e9779852dd5a7adb3319e39b981fdc27560cc575461c457ae603cafa66cdcff184df16e9153d4a75bb369fe6a0863bdc85a34c5f78e8dfdb3154df9d230e26f1236de4f8b68aa3703637c5691339c2fe50ce6f8623e19afd72359e1bac7f894c2fb0fe389f93823eb3aae17f59b54e2feebe18cde877a4ee6fad11b98d77f4a4ef97d72c3c679670af379f3994dd7ed199bc6a32e60aedf2b36f2c7fdf1fabe8451bf16f767583fbe04e3bc250c59717c3fa2291f0ee6f3029ee7f8993bb2aec03b98e3b98539fe18afc1fdbe789f24aa5ea6f387782137ca74bed057d1453e720d27385f51ff8ae36d2a30c7abca463d1a36cddfcd61d49ba9b1b1bf2ea28bebea959c219fa21e4ded75d9144fbb8ca67cee60ac17e9a269fd56d9c85f854dede90f18f996376cb4df86b15ff97372cce700467f7e428ef9b330f2a5ef61ce77468ef92bde9ff5b05e707e9c921b16e7c32199f70f9db0d1ff09c6fb48df4653feced974bf32648eafaac088a79b4653be276cec67ad686aef0d467da80d1bbf8f6e60fe3dc3fdf1fb20252bd483b430d68b7d87114fcbd71df603cc2fc49feae9104df13ec275d4432f9af63bc1c67e8af8c4fcf561e44fefc906eb530f60dcef683c71fdd90f18e77dfb0467f83dd66623df0b72c6ef93161be363737ec66cc4ef3e9af627be8ef5ea1d1bf1ca60ac4f3b63a33ecad1b43e28fe613de0fbc23b8cf565eea329ff1318f1f17d18f11414ffb07ea87ff9c246fe3c8cfce8f368aa9f6718edcb23ccf9a2f513d79be9c1bcbfee61aeaf14e6e715d9e2792b613cef0b37aa319f8be8e27de77372c6fbeb1ae6f7579d8d7a66f3fe7bc9a6f8980e8c7ce81599df3ffa1ae6fdaf194df53263d3fd7e134df938c29c9f5bb2ae60bfe9c11cff298cf8290773fccec8319eb8cef1b3c5fbb9a179bff307725ac6ef659a8fe67a570d32ef177a1d4de3f330cfb7cac6fa7c8115d64b339aeecfd8789fcfa369be27d8211f2532ef3f4e4753fc3e608ed7158c78388aaf8ef53980797fc178637d3ec0fc3ea1786aae4f6d61ce47d17f1aea11e7b12772caf1ee9279fd1b498ef1edb2b1bedfa2a9bf298c7ab2b568eaff16e6f3cb0a46fcec351bedb5c91c4fdd88a6eb1d18f151684f237fe2818df8ef60f4272fd9b88efe39feb20263bf113a9aee57308ff799ccf1d6e8df727e0e64c7fb4db11fa53ac3f7044ff9d11c5fbb8251bfee0a7688c7329afaab93393e8acdf5538379ff65f3f8ca649ebf98c23cdf19ccf53f81f1bcdc93b9fe640fe67adfc1dcdf89ec389f4798e3d387b9de61cffb4591bfac96e2fb8ceb91337ccff11598bfdf96d9f4fb503e91793fd329ccf3b530eac9ced998cf058cf9d81732c7cf8e609e7f02f3f3af648e8fdac3e84f9660ceef81ccf1520f30c703d73d9f278b786726c3f71b95b3516f1a46fc4c971ceb61498ef5d08079fc06c6fd4a9163fe0f30cf7f08f3f35b729ccf00e6f96430eecf8bfd5cd5147ebf7805e3f78b83c3f981d6eb09c6f94e3e90637e1298e3af61de2f3b649e8f58c13cfe3798f78f3999e7236f618ee71999f3a3ee61f4ef8af38f32197fdfa4f1c6f8ab2e39c6770c73ff7b72ecbf0d73fccb308f9fe667e2780e30ef1745bde8106f1a4f3e62a37e5e60d49338236b85f3ea968ddf63789eeb41f4c8713c0d98f7930d99c727eb303fbf843deabd588fe17587f1b847b25618ef9a6c2af8feffccc6f89630e75f90797ce21ee6f175c9717c7730dfdf87313e579c8f4da21dbeef4fa2e97c77229b0a2cc9dcbe58c0684f17fb9fb1ba82fa1fc13cdf251bdf9b1ec9a64ee7cf5c45d3fe7682912f5f851dbe770dc8b1ff627fb289a9533ca522c7f5be8011afbc98af75b682ef95398cfea52773fd0a07733d16ebcdd5f9793786717ecb6187f52f35ccf97a27f3f8f322bf2ef48fef83298cf9e7398cdf97f28c1cdb3b27737e4cd1bfaf5bc4d7af60ece77e4f76f87de3af608cdf2530facba7d1141f41e6faf7c5ef69efb93d770763bff3cf30fa375730ce0f6642f6fcfc051bd75fa2a9bf4b98f7d39c4dd7075bd8b3ffca3fff6ef1db3f5248f557b628b534d24a27fd5fd1a2cce5488ec33f27722a67722e17ff9716e552aee45a6ee4bbdcca9ddccb833cca0f799267fffb16e5b9bc9097f24a36654b5ecb1bd9961dd995b7f24ef6645f0ee4bd7c90f9ffac45f9289fe4b37c9143f92adf644996654556654d26b22e1b32959990420825b408b11556b83f6b5178918b91188b89988a997c1373b1104bb1126bb111ef622b766211daeecaadd8cb89988983388a0f7112df89045a3c1717e2525c89a66885315ccbbdb8116dd1115d711bfeed4ef4445f0c6459dc87be7a612663f1201ec59378fe618b2f62285ec59b2889b2a888aaa88944d443f534423b75d110a9c8c44c49d1534229155e40a2abc236a8be5359d4a2cad5488dd5444dc3df3335570bb50c519d84dc0cc398cab2ab5622556bb551efa2aeb66aa7f6eaa08eeae3872d9ed45968f15c5da84b75a59aaa159eba5637aaad3aa17ac6d2a8aeba5577aaa7faa1e581ba570fe2a01ed5d38fab473dab173554afea4d64aa14ce451555553571194ea075d550a9cab4d422bc7fb536e1dce1428d1eb5d7dfa9a5d8e2568ff4584ff454cff45c2ff452aff45a6f4459bf8b3bbdd53bbdd7077dd41ffa2477fa4c4ef4b9bed0973f6e515fe9a66e894c5f8b87d0fa8d6eeb8ebed65d7dabef742fb4d6d7037daf1ff4a37ed2cfa1cd173dd4affaed0f5a2ca99e2eeb8aae86b35c22babaae1b3afc6c35d208a38c36e6f38c10ce4ddee461ac0f61851ecdc88c7fdca29988b5999a99999b855a8baa9e98a559e986599b8d79375bb333fbf0e7608ee6c39ccc99393717e6d25cfdd1ba36cd30be9969996b7363daa6232f4cc8af91e2dcdc9a3b3d34bdd052df0cd4dcdc9b07f3689eccb379897b426e86bf6bf15556cd9b2999723831564d2d9cd4daa66beaa1c58649c331fd73412bf3140e589935d686934cac6f9bdb911ddbc96f5bb4533bb3b310bf8e9ddb854e85340f766957766d37666bdfedd6eeec5eae426f67f6a006f66851dff66496f6cc9edb8b6f5abcb4577a659b762e4fb665af4dc8b3bd514ddbb61ddbb5b7f6cef66cdf0eec7d987bdf3ed8475bd4b77db62f76685fed9b2d7dd362d956c4582fedb54e6dd57efeefd344afc3da9987734d431c6c1ae278d01fb265b3503f7b279d186cc319433bf3795472dee56ef4758b6eec26e137d9d469b3723337d79d90ebd42ddc52fb1047abf79fb9712bb70eed85da711bf7eeb66ee7f6eee08eeec39ddc993bffed1eee2eec9368ba4b77e59aae25e7a11ed7eedaddb8b6d9c9e750900ffacc75dce72ea9dcad28b93bcab2ebb97e686fe0ee5dd8e3bf7dcfb847f7a447aaef9e75d7bd841687eed5bd99ad2b85153334ce955d450f5dd5d5d4b34bf04cdd355cea322fbdf0ea3b6faedc87697a1b8e5d57e16094fb911fbb9238f8899cb85b3ff5333ff70bbff42bbadfaffdc6bffbaddf857fdfbbf1f7dfaee6ca1ffc51b4fc873ff9917bf36736ec3542fb73b7f417feabfdc15f99b26ffa96bf7617df56f8b77ffc8d6ffb8eef8631defa3bdff37d3ff0f714bbafe6f3e01ffd93bff6f1fdf0c7e71effe287fed5bf993b5ff2655ff9e66ad5d77c12ce900dffd5fbe6cf4e523ef5592ebdb51fb9f82a2a2fb9ca756e729bbbdcfff61dfee767b33c17cff9e877ff759c4fd4c9a7f9f4db2bffdfcf8fffc22dfef7df7ffa279f22ee1f</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>FLTableDB.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]">
+    <includehints>
+      <includehint>fltabledb.h</includehint>
+    </includehints>
+  </xupdate:insert-after>
+</xupdate:modifications>

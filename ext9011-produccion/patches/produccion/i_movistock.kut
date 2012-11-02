@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="10" TopMargin="50" RightMargin="10" LeftMargin="20" PageOrientation="1" PageSize="0" >
+ <DetailHeader Height="140" Level="0" >
+ 
+	<Field WordWrap="1" Width="260" X="2" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="35" HAlignment="1" DataType="0" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+ 
+	<CalculatedField FunctionName="flfactinfo.pub_logo" CalculationType="6" WordWrap="0" Width="109" X="400" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="34" HAlignment="0" DataType="5" Field="empresa.logo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.logo]" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	
+	<Label WordWrap="0" Width="200" X="5" Y="45" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="MOVIMIENTOS DE STOCK" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+  
+  <!--Cabecera de lista de articulos-->
+  
+  <Label WordWrap="0" Width="60" X="1" Y="80" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Artículo" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial Narrow" />
+  
+  <Field WordWrap="0" Width="50" X="61" Y="80" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="articulos.referencia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[articulos.referencia]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  
+   <Field WordWrap="0" Width="260" X="101" Y="80" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="articulos.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[articulos.descripcion]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+  
+   <Label WordWrap="0" Width="150" X="1" Y="115" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Fecha prevista" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+   <Label WordWrap="0" Width="100" X="152" Y="115" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cantidad" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+   <Label WordWrap="0" Width="120" X="252" Y="115" BorderStyle="0" Height="15" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cantidad en Stock" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+
+  <Line Width="1" Y1="135" Y2="135" X1="0" X2="670" Style="1" Color="100,100,100" />
+  
+ </DetailHeader>
+ 
+ <Detail Height="20" Level="0" >
+	<Field WordWrap="0" Width="150" X="1" Y="0" BorderStyle="1" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="3" Field="movistock.fechaprev" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	
+	<Field WordWrap="0" Width="100" X="152" Y="0" BorderStyle="1" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="2" Field="movistock.cantidad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	
+	<CalculatedField WordWrap="0" CalculationType="6" Width="120" X="253" Y="0" BorderStyle="1" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="2" Field="" Currency="32" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[]" FunctionName="formarticulos.calcularCantidadStock" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	
+</Detail>
+ 
+</KugarTemplate>

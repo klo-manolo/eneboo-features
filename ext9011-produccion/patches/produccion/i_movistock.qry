@@ -1,0 +1,21 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_movistock</name>
+
+	<tables>empresa,stocks,movistock,articulos</tables>
+
+	<select>
+		empresa.nombre, empresa.cifnif, empresa.direccion, empresa.logo, empresa.codpostal, empresa.ciudad, empresa.provincia, empresa.apartado, empresa.codpais, articulos.referencia, articulos.descripcion, stocks.idstock, movistock.idmovimiento, movistock.cantidad, movistock.fechaprev
+	</select>
+
+	<from>
+		empresa, movistock INNER JOIN stocks ON movistock.idstock = stocks.idstock INNER JOIN articulos ON articulos.referencia = stocks.referencia
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		movistock.fechaprev
+	</order>
+</QRY>

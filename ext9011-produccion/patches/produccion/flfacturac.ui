@@ -1,0 +1,51 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[&amp;Ventas]"/>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/property[defaultUp]">
+    <item name="Ventas_2" text="&amp;Ventas">
+      <action name="presupuestoscli"/>
+      <action name="pedidoscli"/>
+      <action name="albaranescli"/>
+      <action name="facturascli"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Ejercicio]">
+    <item name="Centros_de_Coste" text="Centros de Coste">
+      <action name="distribucioncostes"/>
+    </item>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/menubar[menubar,menubar]/item[Centros_de_Coste]"/>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">251</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[cambiarejer]">
+    <action>
+      <property name="name">
+        <cstring>distribucioncostes</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>centroscosteimage9</iconset>
+      </property>
+      <property name="text">
+        <string>Distribución de costes</string>
+      </property>
+      <property name="menuText">
+        <string>Distribución de costes</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/actions[actions,1]/action[distribucioncostes]"/>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[config_oofficeimage8737]"/>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="centroscosteimage9">
+      <data format="PNG" length="1381">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000052c49444154789c9d97cf6b1d5514c73f696ff45cfb02339ae04c48b5235df80a6212aa345999a29b820b5b6ad1e2a204b7ba70e34a108aabf44fa82ec49558d05a1184465c3482d827b6f002adccc31466a08119e8ab736bc6d4c5fc78f3e6bd97a43d9bcb9d7be7deeff99eef3df7dc316a6659d6f4f2b9e50f2dcb7a9a1450409a8d190c82605293f5d3ac1f990852ba6bbfad7ddffea3fd8b49cd567ddd513656ffe038ceab57bebbf2ad3be33a50d93ceddf3c4913349a244d30c610c7314110fc7df18b8b1faffebcfa75efcf9d6d5f1d9028d1c03e41200551020cb65ae9b2152588083221cf2dbfbfbcb2f4fad26932ee1e1940e1e198c1202af7b8584ae561c841a02021012103a0041997e9f39f9c5f597a6d6f200600543dad6e264a40812516a86c4314d862672c88a02563a5f962737ae5b3953d8118ce80aac49c5a5b61a40089a20465b60c224273766f20f6d7fa6393d6e4f367de39f3f6943575806d504ad1d73ea148ff4d3171404a8a3c35814231b63d46d77431f70d0ac503f3009e6062fee5f9858d8d8d3b9d4e671dd8ae03184056785e8c1a40546f2c58bf8e7fab85e9c6345f39091263429fe89ec1763de2a0cda55b6d4c370b9f58327deaf4a90bc698edb55fd7be01fedb11409f06528305c471807fbb85df6e0182e578b807e768dfb84a70b385bfd1c6731dec434d1ce70896eb10073e51a7856e34b11aeef4d9f7ce7eea77fcf5300cffdc958142ed28c1efb4685dbe48600ceecc1c229ab0d366f5c7af48a210ad85232f2de01c6e62bb1e491412dfb884bfde22ba1bb0f85613efa047d48d5e7067dcd9300c6f5643b1230300e19d806b6b57b1276ccc660029b46eb4701c0fcff3b09d2632e960ba866b973f270e7c92389b6700cbb2b1262d4464bf2007c8843f1a40a9eac2d22ccbc59b31ee8c47029814c2d0873422dcf0b1a61c820d9f38368880d0af1dddb0316900c218b5ec3bc8404580bd4c98ad9a007a5ccab9f1668c6918d016a031182c25909adee65a100576c3a6be390ccb031834bd349b25a38c093d9ecd1095b18092dc53c1a449ee79a69dc28984c1b0ee0840c8329c563a4b2eb58c48df62a632aefbbeebf2ce905ee61c62431900faeeb232036e654cf4a29cf5b34c99e461336884246fa96b6a57062af4151e9bbc4d52537a08f55bb2085beeb94849bf2043e91fce40f5f61b2f3ccc3d2f6fc71e03e5fc5c03490e3e490d5ad5f3ca5e18c8eb00c67b8c1442835e2ca5c640af3ea08f899d04389c8102e956af2fb9a79a4cfd85da0b70949e0b4951c615eb99180a70f9e97a340606625d397a54ce7ba97e9dfda5001144b2ca4e44b2e2a566bb66c2d8c465cc65424a4d180c1652321295a723411458de228b6fbc4bf3e871743e3e8c81d199b0e8171550512336046f6e11b31910ddf511d1989c01a3121c6f9ef9a513cc1d3b816db9b92093911a18ce40c59ab38b9cfd608560a38dd5b0b10f1ec23b3ccf0f5f5ee0fa6a90a95f69c4b55938baccfcd209bc19affcbfac9e87d0bf2706ec299be36f9eca3a5b94da3879ee239a0b4b600cd2b0710f35b1265db4a61430e4a7234f6a7bd6401d4469e33d10f6a44b737611d20c64096ed89324bfd8f67c0aea611800919b7fbbcdd59fae91dc4bfac0f5cdcb5bad868761681e18c940c5926e84df0988bb31a6c05b055163a4d042dd76d5c028d3b6cde2d1f9ec8f4665e1510c8c10e2b09a702b088308c593c0c31d51e4472bde0c08d3de4baa6c2bef89c8445b18fea9af59af50c644c9b3d6a4754c449e21655ff9485179867cbcfe4341ee879be1efc698bfa894e6032552ce8ae4edb0f1c7b594ec0aed3b27ff03dd5c596491e565e40000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[cambiarejer,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>distribucioncostes</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[distribucioncostes,activated(),FLWidgetApplication,openDefaultForm()]"/>
+</xupdate:modifications>

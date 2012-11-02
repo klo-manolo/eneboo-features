@@ -1,0 +1,46 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[refcompuesto]/length[length,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[refcomponente]/null[null,1]/text()[1]">true</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idopcionarticulo]">
+    <field>
+      <name>idtipotareapro</name>
+      <!--Identificador-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Tarea")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <visiblegrid>false</visiblegrid>
+      <relation>
+        <table>pr_tipostareapro</table>
+        <field>idtipotareapro</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idtipotareapro]">
+    <field>
+      <name>diasantelacion</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Días (Entrada - Consumo)")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>uint</type>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[diasantelacion]">
+    <field>
+      <name>codfamiliacomponente</name>
+      <!-- Código de la familia -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Familia")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>4</length>
+      <relation>
+        <table>familias</table>
+        <field>codfamilia</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>
