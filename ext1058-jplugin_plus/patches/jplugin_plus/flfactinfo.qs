@@ -7,9 +7,10 @@ class jPluginPlus extends jasperPlugin {
 	function lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String, etiquetas:Boolean, impDirecta:Boolean, whereFijo:String, nombreReport:String, numCopias:Number, impresora:String, pdf:Boolean) {
 		return this.ctx.jPluginPlus_lanzarInforme(cursor, nombreInforme, orderBy, groupBy, etiquetas, impDirecta, whereFijo, nombreReport, numCopias, impresora, pdf);
 	}
+	function cargaDescripcionJasper(fichero:String):String {
+		return this.ctx.jPluginPlus_cargaDescripcionJasper(fichero);
+	}
 }
-//// MOD_IMPRESION ///////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
 
 /** @class_definition jPluginPlus */
 //////////////////////////////////////////////////////////////////
@@ -90,12 +91,15 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 	//KLO while (q.next())  {
 	var cont:Number = 0;
 	var textModelo:String;
-
+	
+	
 	for (nModelos = 0; nModelos < listaF.length; nModelos++) {
 		textModelo = listaF[nModelos];
+		var nombreReport:String = this.iface.cargaDescripcionJasper(rutaInforme + textModelo);
+		if ( !nombreReport ) nombreReport =  textModelo.left(textModelo.find(".jrxml",0));
 		debug("Nombre del informe: "+textModelo.left(textModelo.find(".jrxml",0)));
 		rB[nModelos] = new RadioButton;
-		rB[nModelos].text = textModelo.left(textModelo.find(".jrxml",0));
+		rB[nModelos].text = nombreReport;
 		arrayModelos[nModelos] = [];
 
 // debug("Report " + q.value("report") + " Consulta " + q.value("consulta"));
@@ -165,6 +169,32 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 	}
 // debug("Report final " + report + " Consulta " + consulta);
 	this.iface.__lanzarInforme(cursor, consulta, ordenacion, groupBy, etiquetas, impDirecta, whereFijo, report, numCopias, impresora, pdf);
+}
+
+function jPluginPlus_cargaDescripcionJasper(fichero:String):String
+{
+   var xmlFinal:String;
+    var ficheroO = new File(fichero);
+        ficheroO.open(File.ReadOnly);
+    var f = ficheroO.read();
+    	ficheroO.close();
+    var xmlReport = new FLDomDocument();
+if (sys.osName() == "WIN32")
+  f = sys.toUnicode(f, "latin1");
+    if (xmlReport.setContent(f)) {
+	        		if (xmlReport.namedItem("jasperReport"))
+	                    		{
+	                     		xmlFinal = xmlReport.toString(2);
+					xmlFinal = xmlFinal.left(xmlFinal.find("\" >",0));
+					xmlFinal = xmlFinal.mid(xmlFinal.find("name=\"",0));
+					xmlFinal = xmlFinal.left(xmlFinal.find("\" ",0));
+					xmlFinal = xmlFinal.right(xmlFinal.length - 6);
+					if (sys.osName() != "WIN32") //Convertimos el fichero a UTF8 si no es win32
+     	                     			xmlFinal = sys.toUnicode(xmlFinal, "utf8");
+					//whereFijo.indexOf("\n")
+			    		}
+				}
+return xmlFinal;
 }
 //// JPLUGIN_PLUS ////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
