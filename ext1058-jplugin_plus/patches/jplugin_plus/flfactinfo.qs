@@ -12,6 +12,10 @@ class jPluginPlus extends jasperPlugin {
 	}
 }
 
+//// JPLUGIN_PLUS ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+
 /** @class_definition jPluginPlus */
 //////////////////////////////////////////////////////////////////
 //// JPLUGIN_PLUS ///////////////////////////////////////////////
@@ -32,15 +36,6 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 			break;
 		}
 		default: {
-// Control de resumenes
-// 		case "i_resalbaranescli":
-// 		case "i_resfacturascli":
-// 		case "i_respedidoscli":
-// 		case "i_respresupuestoscli":
-// 		case "i_resalbaranesprov":
-// 		case "i_resfacturasprov":
-// 		case "i_respedidosprov":
-// 		case "i_resreciboscli":
 			return this.iface.__lanzarInforme(cursor, nombreInforme, orderBy, groupBy, etiquetas, impDirecta, whereFijo, nombreReport, numCopias, impresora, pdf);
 		}
 	}
@@ -68,7 +63,6 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 	var listaF:Array = [];
 	listaF = dir.entryList("*.jrxml");
 
-	//debug("KLO--> listaF: "+listaF.length);
 
 	for (var i = 0; i < listaF.length; i++)
 		debug("KLO--> Lista de ficheros jasper: "+listaF[i]);
@@ -85,10 +79,8 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 	var nModelos:Number = 0;
 	var hayDefecto:Boolean = false;
 	var hayOficial:Boolean = false;
-	//==================================================
+	var posOficial:Number;
 	var iniReport:String;
-
-	//KLO while (q.next())  {
 	var cont:Number = 0;
 	var textModelo:String;
 	
@@ -102,39 +94,28 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 		rB[nModelos].text = nombreReport;
 		arrayModelos[nModelos] = [];
 
-// debug("Report " + q.value("report") + " Consulta " + q.value("consulta"));
-		//debug("KLO--> nombreInforme: "+nombreInforme+".jrxml --> Fichero: "+listaF[nModelos]);
 		if (listaF[nModelos] != nombreInforme+".jrxml") {
 			arrayModelos[nModelos]["report"] = listaF[nModelos];
 			arrayModelos[nModelos]["consulta"] = "";
 			arrayModelos[nModelos]["ordenacion"] = "";
 			rB[nModelos].checked = false;
-			/*KLO if (q.value("modelodefecto")) {
-				hayDefecto = true;
-				rB[nModelos].checked = true;
-			} else {
-				rB[nModelos].checked = false;
-			}
-			if (arrayModelos[nModelos]["report"] == nombreReport && arrayModelos[nModelos]["consulta"] == nombreReport && arrayModelos[nModelos]["ordenacion"] == "") {
-				hayOficial = true;
-			}*/
 			bgroup.add( rB[nModelos] );
 			cont ++;
 		} else {
 			hayOficial = true;
+			posOficial = nModelos;
 		}
 	}
 
 	if (hayOficial) {
 		debug("KLO--> Hay oficial: "+nombreInforme);
-		rB[cont] = new RadioButton;
-		rB[cont].text = util.translate ( "scripts", "Modelo oficial" );
-		//arrayModelos[nModelos] = [];
-		arrayModelos[cont]["report"] = nombreInforme;
-		arrayModelos[cont]["consulta"] = nombreInforme;
-		arrayModelos[cont]["ordenacion"] = "";
-		rB[cont].checked = true; //!hayDefecto;
-		bgroup.add( rB[cont] );
+		rB[posOficial] = new RadioButton;
+		rB[posOficial].text = util.translate ( "scripts", "Modelo oficial" );
+		arrayModelos[posOficial]["report"] = nombreInforme;
+		arrayModelos[posOficial]["consulta"] = nombreInforme;
+		arrayModelos[posOficial]["ordenacion"] = "";
+		rB[posOficial].checked = true; //!hayDefecto;
+		bgroup.add( rB[posOficial] );
 	}
 
 	// No hay modelos adicionales
@@ -163,11 +144,11 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 			break;
 		}
 	}
+ 
+	//if (!report) {
+	//	report = nombreReport;
+	//}
 
-	if (!report) {
-		report = nombreReport;
-	}
-// debug("Report final " + report + " Consulta " + consulta);
 	this.iface.__lanzarInforme(cursor, consulta, ordenacion, groupBy, etiquetas, impDirecta, whereFijo, report, numCopias, impresora, pdf);
 }
 
@@ -191,7 +172,6 @@ if (sys.osName() == "WIN32")
 					xmlFinal = xmlFinal.right(xmlFinal.length - 6);
 					if (sys.osName() != "WIN32") //Convertimos el fichero a UTF8 si no es win32
      	                     			xmlFinal = sys.toUnicode(xmlFinal, "utf8");
-					//whereFijo.indexOf("\n")
 			    		}
 				}
 return xmlFinal;
