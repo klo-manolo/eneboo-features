@@ -1,0 +1,62 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>articulosclientes</name>
+	<!--Listado de articulos asociados a un cliente-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Articulos de Clientes")</alias>
+
+	<field>
+		<name>id</name>
+		<!--Identificador interno-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	<field>
+		<name>referencia</name>
+		<!-- Referencia del artículo	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Referencia")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>18</length>
+		<visible>true</visible>
+
+		<relation>
+			<table>articulos</table>
+			<field>referencia</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+		<name>codcliente</name>
+		<!--Código del cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código Cliente")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+		<visiblegrid>false</visiblegrid>
+		<ck>true</ck>
+
+		<relation>
+			<table>clientes</table>
+			<field>codcliente</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+	<field>
+		<name>pvp</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Precio de venta")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>0</default>
+	</field>
+</TMD>

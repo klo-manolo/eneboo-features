@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[descuentos]">
+    <action>
+      <name>articulosclientes</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Articulos especiales")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada cliente tiene asignado un pvp personalizado")</description>
+      <table>articulosclientes</table>
+      <form>master</form>
+      <formrecord>articulosclientes</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>
