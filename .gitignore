@@ -1,3 +1,5 @@
 .svn
 build
 *~
+
+.DS_Store
