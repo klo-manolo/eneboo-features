@@ -39,6 +39,8 @@ function seteaBarra():String {
         }
 
 }
+//// JASPER_PLUGIN ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 
 /** @class_definition jasperPlugin */
 //////////////////////////////////////////////////////////////////
@@ -73,7 +75,7 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                              	 			debug("JASPER_PLUGIN :: Se han encontrado varios saltos de linea (PARAMETROS) en whereFijo");
 		            				parametrosJasper = whereFijo;
 		            				//Se procede a sacar whereFijo si existe
-		            				if ( whereFijo.lastIndexOf("WHEREFIJO\n") == -1) 
+		            				if ( whereFijo.lastIndexOf("WHEREFIJO\n") == -1)
 		            					{
 		            					debug("JASPER_PLUGIN :: Entre los PARAMETROS no se encuentra WHEREFIFO");
 		            					whereFijo = ""; //ponemos whereFijo vacio
@@ -194,7 +196,7 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
 				if (!groupBy) groupBy="";
 
                                	//Ahora añadimos parametros especiales a parametrosJasper (where,orderby,groupby) y añadimos 6 saltos de linea a cantidadParametrosJasper
-                               	
+
 
                                	if ( parametrosJasper.lastIndexOf("WHERE\n") == -1)
                                					{
@@ -229,13 +231,13 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
 
                                 var stdin:String; //Cadena que se envia a la librería
                                 var ficheroTemporal;
-                                
-                        if (this.iface.procesoInicializado)        
+
+                        if (this.iface.procesoInicializado)
                              if (!this.iface.procesoJP.running)
-                          		this.iface.reportAnterior ="";	
-                          
-                          
-                          if(nombreInforme == "version") 
+                          		this.iface.reportAnterior ="";
+
+
+                          if(nombreInforme == "version")
                           {
                           ficheroTemporal = "version";
                           this.iface.reportAnterior ="";
@@ -431,6 +433,11 @@ if (sys.osName() == "WIN32")
 	        if (xmlReport.namedItem("jasperReport"))
 	                    {
 	                     xmlFinal = xmlReport.toString(2);
+			     //Tratamos codificación
+				var codificacion = util.readSettingEntry("jasperplugin/codificacion");
+				if (!codificacion) codificacion = 0;
+				if ( codificacion == 1 ) xmlFinal = xmlFinal.replace("ISO-8859-1","UTF-8");
+				if ( codificacion == 2 ) xmlFinal = xmlFinal.replace("UTF-8","ISO-8859-1");
 	                     //xmlFinal =  xmlFinal.replace("groovy","java");
                              if (sys.osName() != "WIN32") //Convertimos el fichero a UTF8 si no es win32
      	                     xmlFinal = sys.toUnicode(xmlFinal, "utf8");
