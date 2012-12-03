@@ -243,7 +243,12 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                           this.iface.reportAnterior ="";
                           }
                           			    else ficheroTemporal = this.iface.tratarReport(nombreInforme, nombreReport);
-
+				    if (!ficheroTemporal)
+							{
+							debug("JASPER_PLUGIN :: ERROR :: El report " + nombreReport + " no es una plantilla válida.");
+							this.iface.reportAnterior="";
+							return;
+							}
                                     debug("JASPER_PLUGIN :: Usando fichero temporal " + ficheroTemporal);
                                     stdin = ficheroTemporal + "\n";
                                     stdin += this.iface.guardaTemporal + "\n"; //Valor guardaTemporal para borrar o no temporales
