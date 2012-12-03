@@ -337,66 +337,6 @@
                 <string>...</string>
               </property>
             </widget>
-            <widget class="QGroupBox" row="2" column="0" rowspan="1" colspan="3">
-              <property name="name">
-                <cstring>groupBox3</cstring>
-              </property>
-              <property name="title">
-                <string>Opciones de comportamiento</string>
-              </property>
-              <grid>
-                <property name="name">
-                  <cstring>unnamed</cstring>
-                </property>
-                <widget class="QCheckBox" row="0" column="2">
-                  <property name="name">
-                    <cstring>chbGuardaTemporal</cstring>
-                  </property>
-                  <property name="text">
-                    <string>Conservar ficheros temporales</string>
-                  </property>
-                </widget>
-                <spacer row="0" column="1">
-                  <property name="name">
-                    <cstring>spacer7</cstring>
-                  </property>
-                  <property name="orientation">
-                    <enum>Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                    <enum>Expanding</enum>
-                  </property>
-                  <property name="sizeHint">
-                    <size>
-                      <width>171</width>
-                      <height>20</height>
-                    </size>
-                  </property>
-                </spacer>
-                <widget class="QCheckBox" row="0" column="0">
-                  <property name="name">
-                    <cstring>chbRT</cstring>
-                  </property>
-                  <property name="text">
-                    <string>Detectar RT. Uso de reportes con subreports o imagenes en Disco Duro</string>
-                  </property>
-                  <property name="checked">
-                    <bool>true</bool>
-                  </property>
-                </widget>
-                <widget class="QCheckBox" row="1" column="0">
-                  <property name="name">
-                    <cstring>chbCompilar</cstring>
-                  </property>
-                  <property name="text">
-                    <string>Compilar todos los Reports</string>
-                  </property>
-                  <property name="whatsThis" stdset="0">
-                    <string>Fuerza a compilar todos los Reports, no solo cuando cambiamos de plantilla</string>
-                  </property>
-                </widget>
-              </grid>
-            </widget>
             <widget class="QGroupBox" row="3" column="0" rowspan="1" colspan="3">
               <property name="name">
                 <cstring>groupBox4</cstring>
@@ -422,6 +362,120 @@
                   </property>
                   <property name="text">
                     <string>Java JRE</string>
+                  </property>
+                </widget>
+              </grid>
+            </widget>
+            <widget class="QGroupBox" row="2" column="0" rowspan="1" colspan="3">
+              <property name="name">
+                <cstring>groupBox3</cstring>
+              </property>
+              <property name="title">
+                <string>Opciones de comportamiento</string>
+              </property>
+              <grid>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox" row="0" column="4" rowspan="1" colspan="2">
+                  <property name="name">
+                    <cstring>chbGuardaTemporal</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Conservar ficheros temporales</string>
+                  </property>
+                </widget>
+                <widget class="QCheckBox" row="0" column="0" rowspan="1" colspan="2">
+                  <property name="name">
+                    <cstring>chbRT</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Detectar RT. Uso de reportes con subreports o imagenes en Disco Duro</string>
+                  </property>
+                  <property name="checked">
+                    <bool>true</bool>
+                  </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0">
+                  <property name="name">
+                    <cstring>chbCompilar</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Compilar todos los Reports</string>
+                  </property>
+                  <property name="whatsThis" stdset="0">
+                    <string>Fuerza a compilar todos los Reports, no solo cuando cambiamos de plantilla</string>
+                  </property>
+                </widget>
+                <spacer row="0" column="2" rowspan="1" colspan="2">
+                  <property name="name">
+                    <cstring>spacer7</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>171</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+                <spacer row="1" column="1" rowspan="1" colspan="2">
+                  <property name="name">
+                    <cstring>spacer3</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>270</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+                <widget class="QComboBox" row="1" column="5">
+                  <item>
+                    <property name="text">
+                      <string>No hacer nada</string>
+                    </property>
+                  </item>
+                  <item>
+                    <property name="text">
+                      <string>UTF-8</string>
+                    </property>
+                  </item>
+                  <item>
+                    <property name="text">
+                      <string>ISO-8859-1</string>
+                    </property>
+                  </item>
+                  <property name="name">
+                    <cstring>cBCodificacion</cstring>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>120</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="currentItem">
+                    <number>0</number>
+                  </property>
+                </widget>
+                <widget class="QLabel" row="1" column="3" rowspan="1" colspan="2">
+                  <property name="name">
+                    <cstring>textLabel1_3</cstring>
+                  </property>
+                  <property name="text">
+                    <string>Forzar codificación:</string>
                   </property>
                 </widget>
               </grid>
