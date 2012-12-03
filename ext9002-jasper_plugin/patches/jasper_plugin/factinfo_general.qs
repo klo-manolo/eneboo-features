@@ -31,6 +31,9 @@ class jasperPlugin extends oficial /** %from: oficial */ {
      function fixPath(ruta:String):String {
             return this.ctx.jasperPlugin_fixPath(ruta);
     }
+    function guardaCodificacion() {
+            return this.ctx.jasperPlugin_guardaCodificacion();
+     }
     }
 
 //// JASPER_PLUGIN ///////////////////////////////////////////////
@@ -49,11 +52,13 @@ function jasperPlugin_init()
     connect(this.child("chbRT"), "clicked()", this, "iface.checkRT");
     connect(this.child("chbCompilar"), "clicked()", this, "iface.checkCompilar");
     connect(this.child("chbGuardaTemporal"), "clicked()", this, "iface.checkGuardaTemporal");
+    connect(this.child("cBCodificacion"), "activated(int)", this, "iface.guardaCodificacion");
     this.child("lnJPlugin").text = util.readSettingEntry("jasperplugin/pluginpath");
     this.child("lnPath").text = util.readSettingEntry("jasperplugin/reportspath");
     this.child("chbRT").checked = util.readSettingEntry("jasperplugin/detecRT");
     this.child("chbGuardaTemporal").checked = util.readSettingEntry("jasperplugin/guardatemporal");
     this.child("chbCompilar").checked = util.readSettingEntry("jasperplugin/compilarSiempre");
+    this.child("cBCodificacion").currentItem = util.readSettingEntry("jasperplugin/codificacion");
     this.iface.__init();
 }
 function jasperPlugin_seteaPath()
@@ -129,7 +134,11 @@ var rutaFixed:String;
                 rutaFixed= ruta;
 return rutaFixed;
 }
-
+function jasperPlugin_guardaCodificacion()
+{
+   var util:FLUtil = new FLUtil;
+   util.writeSettingEntry("jasperplugin/codificacion",this.child("cBCodificacion").currentItem);
+}
 //// JASPER_PLUGIN ///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 
