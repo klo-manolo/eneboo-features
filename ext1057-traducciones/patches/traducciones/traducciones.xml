@@ -10,7 +10,7 @@
     <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" style="legacy"/>
     <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" style="legacy"/>
     <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd" style="legacy"/>
-    <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui" style="legacy"/>
+    <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui" style="legacy1"/>
     <flpatch:addFile path="facturacion/almacen/scripts/" name="familias.qs" style="legacy1"/>
     <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" style="legacy"/>
     <flpatch:patchXml path="facturacion/almacen/forms/" name="familias.ui" style="legacy"/>
