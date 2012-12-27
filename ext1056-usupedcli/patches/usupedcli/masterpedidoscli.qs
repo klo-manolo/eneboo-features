@@ -32,7 +32,7 @@ class pubUsuPedCli extends head {
 function usupedcli_actualizarUsuarioPedCli(idPedido:String, campo:String, idUsuario:String):Boolean
 {
 	if (!idUsuario)
-		idUsuario:String = sys.nameUser();
+		idUsuario = sys.nameUser();
 
 	var curPedido:FLSqlCursor = new FLSqlCursor("pedidoscli");
 	curPedido.setActivatedCommitActions(false);
