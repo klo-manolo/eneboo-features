@@ -34,6 +34,9 @@ class jasperPlugin extends oficial /** %from: oficial */ {
     function guardaCodificacion() {
             return this.ctx.jasperPlugin_guardaCodificacion();
      }
+    function guardaMaxJVM() {
+            return this.ctx.jasperPlugin_guardaMaxJVM();
+     }
     }
 
 //// JASPER_PLUGIN ///////////////////////////////////////////////
@@ -53,8 +56,10 @@ function jasperPlugin_init()
     connect(this.child("chbCompilar"), "clicked()", this, "iface.checkCompilar");
     connect(this.child("chbGuardaTemporal"), "clicked()", this, "iface.checkGuardaTemporal");
     connect(this.child("cBCodificacion"), "activated(int)", this, "iface.guardaCodificacion");
+    connect(this.child("leMaxJVM"), "textChanged(QString)", this, "iface.guardaMaxJVM");;
     this.child("lnJPlugin").text = util.readSettingEntry("jasperplugin/pluginpath");
     this.child("lnPath").text = util.readSettingEntry("jasperplugin/reportspath");
+    this.child("leMaxJVM").text = util.readSettingEntry("jasperplugin/MaxJVM");
     this.child("chbRT").checked = util.readSettingEntry("jasperplugin/detecRT");
     this.child("chbGuardaTemporal").checked = util.readSettingEntry("jasperplugin/guardatemporal");
     this.child("chbCompilar").checked = util.readSettingEntry("jasperplugin/compilarSiempre");
@@ -138,6 +143,12 @@ function jasperPlugin_guardaCodificacion()
 {
    var util:FLUtil = new FLUtil;
    util.writeSettingEntry("jasperplugin/codificacion",this.child("cBCodificacion").currentItem);
+}
+
+function jasperPlugin_guardaMaxJVM()
+{
+   var util:FLUtil = new FLUtil;
+   util.writeSettingEntry("jasperplugin/MaxJVM",this.child("leMaxJVM").text);
 }
 //// JASPER_PLUGIN ///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////

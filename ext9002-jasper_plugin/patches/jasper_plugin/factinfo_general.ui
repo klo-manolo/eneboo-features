@@ -1,4 +1,5 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factinfo_general]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">890</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,factinfo_general]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">279</xupdate:update>
   <xupdate:delete select="/UI[UI,1]/widget[QWidget,factinfo_general]/vbox[vbox,1]"/>
   <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factinfo_general]/property[caption]">
@@ -377,7 +378,7 @@
                 <property name="name">
                   <cstring>unnamed</cstring>
                 </property>
-                <widget class="QCheckBox" row="0" column="4" rowspan="1" colspan="2">
+                <widget class="QCheckBox" row="0" column="4">
                   <property name="name">
                     <cstring>chbGuardaTemporal</cstring>
                   </property>
@@ -385,7 +386,7 @@
                     <string>Conservar ficheros temporales</string>
                   </property>
                 </widget>
-                <widget class="QCheckBox" row="0" column="0" rowspan="1" colspan="2">
+                <widget class="QCheckBox" row="0" column="0" rowspan="1" colspan="3">
                   <property name="name">
                     <cstring>chbRT</cstring>
                   </property>
@@ -407,7 +408,7 @@
                     <string>Fuerza a compilar todos los Reports, no solo cuando cambiamos de plantilla</string>
                   </property>
                 </widget>
-                <spacer row="0" column="2" rowspan="1" colspan="2">
+                <spacer row="0" column="3">
                   <property name="name">
                     <cstring>spacer7</cstring>
                   </property>
@@ -424,24 +425,15 @@
                     </size>
                   </property>
                 </spacer>
-                <spacer row="1" column="1" rowspan="1" colspan="2">
+                <widget class="QLabel" row="1" column="1">
                   <property name="name">
-                    <cstring>spacer3</cstring>
+                    <cstring>textLabel1_3</cstring>
                   </property>
-                  <property name="orientation">
-                    <enum>Horizontal</enum>
+                  <property name="text">
+                    <string>Forzar codificación:</string>
                   </property>
-                  <property name="sizeType">
-                    <enum>Expanding</enum>
-                  </property>
-                  <property name="sizeHint">
-                    <size>
-                      <width>270</width>
-                      <height>20</height>
-                    </size>
-                  </property>
-                </spacer>
-                <widget class="QComboBox" row="1" column="5">
+                </widget>
+                <widget class="QComboBox" row="1" column="2">
                   <item>
                     <property name="text">
                       <string>No hacer nada</string>
@@ -470,12 +462,17 @@
                     <number>0</number>
                   </property>
                 </widget>
-                <widget class="QLabel" row="1" column="3" rowspan="1" colspan="2">
+                <widget class="QLabel" row="1" column="3">
                   <property name="name">
-                    <cstring>textLabel1_3</cstring>
+                    <cstring>textLabel1_4</cstring>
                   </property>
                   <property name="text">
-                    <string>Forzar codificación:</string>
+                    <string>Límite memoria JVM</string>
+                  </property>
+                </widget>
+                <widget class="QLineEdit" row="1" column="4">
+                  <property name="name">
+                    <cstring>leMaxJVM</cstring>
                   </property>
                 </widget>
               </grid>
@@ -484,5 +481,15 @@
         </widget>
       </widget>
     </grid>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]">
+    <includes>
+      <include location="local" impldecl="in implementation">factinfo_general.ui.h</include>
+    </includes>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includes[includes,1]">
+    <slots>
+      <slot>leMaxJVM_textChanged( const QString &amp; )</slot>
+    </slots>
   </xupdate:insert-after>
 </xupdate:modifications>
