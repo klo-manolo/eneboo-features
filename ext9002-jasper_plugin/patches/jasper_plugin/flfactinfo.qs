@@ -472,7 +472,7 @@ function jasperPlugin_generarComando(rutaJP:String):Boolean
 {
      var util:FLUtil = new FLUtil();
     var comando:String;
-   var db_ = aqApp.db();
+    var db_ = aqApp.db();
 
     var driver = db_.driverName();
     var driverJava:String;
@@ -488,7 +488,15 @@ function jasperPlugin_generarComando(rutaJP:String):Boolean
         jdbc = "jdbc:mysql://"+ db_.host() + ":" + db_.port() + "/" + db_.database();
     }
     rutaJP = rutaJP + "enebooreports.jar";
-    this.iface.procesoJP = new Process("java","-jar",rutaJP,driverJava,jdbc,db_.user(),db_.password()) ;//Aqui ponemos java -jar la ruta al plugin , con los datos de la conexion
+
+    var maxJVM:String = util.readSettingEntry("jasperplugin/MaxJVM");
+    if (maxJVM != "")
+    		{
+    		maxJVM = "-Xmx" + maxJVM + "m";
+    		this.iface.procesoJP = new Process("java",maxJVM,"-jar",rutaJP,driverJava,jdbc,db_.user(),db_.password()) ;//Aqui ponemos java -jar la ruta al plugin , con los datos de la conexion
+    		}
+    		else this.iface.procesoJP = new Process("java","-jar",rutaJP,driverJava,jdbc,db_.user(),db_.password()) ;
+
     return true;
 }
 
