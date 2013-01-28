@@ -79,7 +79,6 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
     var nModelos:Number = 0;
     var hayDefecto:Boolean = false;
     var hayOficial:Boolean = false;
-    var posOficial:Number;
     var iniReport:String;
     var cont:Number = 0;
     var textModelo:String;
@@ -103,7 +102,6 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
             cont ++;
         } else {
             hayOficial = true;
-            posOficial = cont;
         }
     }
 
