@@ -1,0 +1,5 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="prnusuario">
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="usuarios.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="usuarios.mtd" style="legacy1"/>
+</flpatch:modifications>

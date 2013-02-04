@@ -43,6 +43,6 @@
 	</where>
 	
 	<order>
-		lineasfacturascli.idalbaran, lineasfacturascli.numlinea
+		facturascli.idfactura, lineasfacturascli.idalbaran, lineasfacturascli.numlinea
 	</order>
 </QRY>

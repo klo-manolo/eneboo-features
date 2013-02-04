@@ -43,6 +43,6 @@
 	</where>
 
 	<order>
-		lineaspresupuestoscli.numlinea
+		presupuestoscli.idpresupuesto, lineaspresupuestoscli.numlinea
 	</order>
 </QRY>

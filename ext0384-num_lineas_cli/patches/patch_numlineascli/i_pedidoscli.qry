@@ -43,6 +43,6 @@
 	</where>
 	
 	<order>
-		lineaspedidoscli.numlinea
+		pedidoscli.idpedido, lineaspedidoscli.numlinea
 	</order>
 </QRY>
