@@ -25,8 +25,12 @@ function prnusuario_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, orde
         // Si la llamada es para envío por correo-e el parámetro pdf será true y no avisará de la prn predeterminada.
         if ((prnPredet.length > 0 || prnPredet) && !pdf) {
             var res:Number = MessageBox.warning(util.translate("scripts", "¿Usar impresora predeterminada del usuario?\n"+prnPredet),MessageBox.Yes,  MessageBox.No);
-            if (res == MessageBox.Yes)
+            if (res == MessageBox.Yes) {
                 impresora = prnPredet;
+                // Por ahora, para compatibilidad con jasper-plugin, hay que desactivar la previsualización para que imprima por 
+                //  la impresora asignada al usuario. 
+                impDirecta = true;
+            }
         }
     }
 
