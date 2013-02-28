@@ -723,6 +723,33 @@ function articuloscomp_generarMoviStock(curLinea:FLSqlCursor, codLote:String, ca
 			if (!aDatosStockLinea) {
 				return false;
 			}
+			
+            // KLO. Controlamos si el artículo no permite ventas sin stock entre todos los almacenes.
+            // Parece ser que la clase de artículos compuestos no controla si se permite venta sin stock.
+            var cantidadControl:Number;
+            codAlmacen = aDatosStockLinea["codAlmacen"];
+            referencia = datosArt["referencia"];
+            //debug("KLO======> referencia: "+referencia);
+            //debug("KLO======> codAlmacen: "+codAlmacen);
+            var idStock:Number = parseFloat(this.iface.dameIdStock(codAlmacen, datosArt));
+            var cantidadStock:Number = parseFloat(util.sqlSelect("stocks", "cantidad", "referencia = '" + referencia + "' AND codalmacen = '" + codAlmacen + "'"));
+            if (!cantidadStock || isNaN(cantidadStock))
+                cantidadStock = 0;
+
+            //debug("KLO======> cantidadStock: "+cantidadStock);
+            cantidadControl = cantidadStock - cantidad;
+            //debug("KLO======> cantidadControl: "+cantidadControl);
+            if (cantidadControl < 0) {
+                var nombreCantidad:String;
+                nombreCantidad = util.translate("scripts", "cantidad en stock");
+                if (!util.sqlSelect("articulos", "controlstock", "referencia = '" + referencia + "'")) {
+                    MessageBox.warning( util.translate("scripts", "El artículo %1 no permite ventas sin stock. Este movimiento dejaría el stock de %2 con %3 %4.\n").arg(referencia).arg(codAlmacen).arg(nombreCantidad).arg(cantidadControl), MessageBox.Ok, MessageBox.NoButton);
+                    return false;
+                }
+            }
+            //debug("KLO=======> cantidad01: "+cantidad);
+            // KLO. ---
+
 // 			idLinea = aDatosStockLinea.idLinea;
 // 			switch (tabla) {
 // 				case "lineaspresupuestoscli": {
