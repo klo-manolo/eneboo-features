@@ -1,0 +1,12 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="scab">
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="regstocks.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="transstock.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidosprov.qs" style="legacy"/>
+</flpatch:modifications>
