@@ -7,10 +7,10 @@
 <CalculatedField WordWrap="0" CalculationType="6" FunctionName="flfactinfo.restaurarAcumulado" Width="0" X="0" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="0" HAlignment="2" DataType="2" Field="totalLineas" Currency="32" BackgroundColor="255,255,255" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[lineasfacturascli.pvptotal]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
 
 	<!-- FACTURA -->
-  <Line Width="1" Y1="0" Y2="0" X1="0" X2="210" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="174" Y2="174" X1="0" X2="210" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="174" X1="0" X2="0" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="174" X1="210" X2="210" Style="1"Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="0" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="174" Y2="174" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="174" X1="0" X2="0" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="174" X1="210" X2="210" Style="1" Color="100,100,100" />
 
   <Label WordWrap="0" Width="90" X="2" Y="2" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" FACTURA" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
   <Field WordWrap="0" Width="116" X="92" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="1" DataType="0" Field="facturascli.codigo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.codigo]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
@@ -28,10 +28,10 @@
 
 
 	<!-- EMPRESA -->
-  <Line Width="1" Y1="0" Y2="0" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="80" Y2="80" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="80" X1="219" X2="219" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="80" X1="591" X2="591" Style="1"Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="0" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="80" Y2="80" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="219" X2="219" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="591" X2="591" Style="1" Color="100,100,100" />
 
   <Field WordWrap="1" Width="260" X="221" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="35" HAlignment="1" DataType="0" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
 
@@ -48,10 +48,10 @@
 
 
 	<!-- CLIENTE -->
-  <Line Width="1" Y1="89" Y2="89" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="174" Y2="174" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="89" Y2="174" X1="219" X2="219" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="89" Y2="174" X1="590" X2="590" Style="1"Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="89" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="174" Y2="174" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="174" X1="219" X2="219" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="174" X1="590" X2="590" Style="1" Color="100,100,100" />
 
   <Label WordWrap="0" Width="78" X="222" Y="91" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text=" Cliente" FontWeight="65" FontSize="12" BorderWidth="0" FontFamily="Arial" />
   <Field WordWrap="0" Width="298" X="290" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="2" DataType="0" Field="facturascli.codcliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.codcliente]" FontWeight="65" FontSize="12" BorderWidth="0" Precision="2" FontFamily="Arial Narrow" />
@@ -82,10 +82,10 @@
 <AddOnHeader Height="215" Level="1" >
 
 	<!-- FACTURA -->
-  <Line Width="1" Y1="0" Y2="0" X1="0" X2="210" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="174" Y2="174" X1="0" X2="210" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="174" X1="0" X2="0" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="174" X1="210" X2="210" Style="1"Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="0" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="174" Y2="174" X1="0" X2="210" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="174" X1="0" X2="0" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="174" X1="210" X2="210" Style="1" Color="100,100,100" />
 
   <Label WordWrap="0" Width="90" X="2" Y="2" BorderStyle="0" Height="19" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" VAlignment="1" ForegroundColor="0,0,0" Text=" FACTURA" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
   <Field WordWrap="0" Width="116" X="92" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="19" HAlignment="1" DataType="0" Field="facturascli.codigo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.codigo]" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
@@ -103,10 +103,10 @@
 
 
 	<!-- EMPRESA -->
-  <Line Width="1" Y1="0" Y2="0" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="80" Y2="80" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="80" X1="219" X2="219" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="0" Y2="80" X1="591" X2="591" Style="1"Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="0" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="80" Y2="80" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="219" X2="219" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="0" Y2="80" X1="591" X2="591" Style="1" Color="100,100,100" />
 
   <Field WordWrap="1" Width="260" X="221" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="35" HAlignment="1" DataType="0" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
 
@@ -122,10 +122,10 @@
 
 
 	<!-- CLIENTE -->
-  <Line Width="1" Y1="89" Y2="89" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="174" Y2="174" X1="219" X2="591" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="89" Y2="174" X1="219" X2="219" Style="1"Color="100,100,100" />
-  <Line Width="1" Y1="89" Y2="174" X1="590" X2="590" Style="1"Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="89" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="174" Y2="174" X1="219" X2="591" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="174" X1="219" X2="219" Style="1" Color="100,100,100" />
+  <Line Width="1" Y1="89" Y2="174" X1="590" X2="590" Style="1" Color="100,100,100" />
 
   <Label WordWrap="0" Width="78" X="222" Y="91" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text=" Cliente" FontWeight="65" FontSize="12" BorderWidth="0" FontFamily="Arial" />
   <Field WordWrap="0" Width="298" X="290" Y="91" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="2" DataType="0" Field="facturascli.codcliente" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[facturascli.codcliente]" FontWeight="65" FontSize="12" BorderWidth="0" Precision="2" FontFamily="Arial Narrow" />
@@ -242,16 +242,16 @@
 	<Label WordWrap="0" Width="119" X="460" Y="35" BorderStyle="0" Height="18" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Totales" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
 
 	<CalculatedField WordWrap="0" Width="170" X="1" Y="55" CalculationType="5" BackgroundColor="255,255,255" Height="20" HAlignment="2" DataType="2" Field="facturascli.neto" DateFormat="11" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" Precision="2" FontFamily="Verdana" CommaSeparator="44" />
-	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseBaseImponible" Width="170" X="1" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44" BorderStyle="0"/>
+	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseBaseImponible" Width="170" X="1" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44"/>
 	
 	<CalculatedField WordWrap="0" Width="130" X="180" Y="55" CalculationType="5"  BackgroundColor="255,255,255" Height="20" HAlignment="2" DataType="2" Field="facturascli.totaliva" DateFormat="11" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" Precision="2" FontFamily="Verdana" CommaSeparator="44" />
-	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseIva" Width="130" X="180" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44" BorderStyle="0"/>
+	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseIva" Width="130" X="180" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44"/>
 	
 	<CalculatedField WordWrap="0" Width="130" X="320" Y="55" BlankZero="1" CalculationType="5"  BackgroundColor="255,255,255" Height="20" HAlignment="2" DataType="2" Field="facturascli.totalrecargo" DateFormat="11" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" Precision="2" FontFamily="Verdana" CommaSeparator="44" />
-	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseRecargo" Width="130" X="320" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44" BorderStyle="0"/>
+	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseRecargo" Width="130" X="320" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44"/>
 	
 	<CalculatedField WordWrap="0" Width="119" X="460" Y="55" CalculationType="5"  BackgroundColor="255,255,255" Height="20" HAlignment="2" DataType="2" Field="facturascli.neto+facturascli.totaliva+facturascli.totalrecargo" DateFormat="11" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" Precision="2" FontFamily="Verdana" CommaSeparator="44" />
-	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseTotal" Width="119" X="460" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44" BorderStyle="0"/>
+	<CalculatedField WordWrap="1" FunctionName="flfactinfo.pub_desgloseTotal" Width="119" X="460" BorderStyle="0" Y="75" CalculationType="6"  BackgroundColor="255,255,255" Height="49" HAlignment="2" DataType="0" Field="facturacli" DateFormat="11" VAlignment="0" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="9" Precision="2" FontFamily="Verdana" CommaSeparator="44"/>
 	
 
 	<Line Width="1" Y1="125" Y2="125" X1="0" X2="580" Style="1" Color="100,100,100"/>

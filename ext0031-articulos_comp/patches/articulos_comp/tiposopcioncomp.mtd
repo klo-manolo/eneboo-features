@@ -30,7 +30,7 @@
 		<!-- Nombre del tipo-->
 		<alias>QT_TRANSLATE_NOOP("MetaData","Tipo")</alias>
 		<null>false</null>
-		<pk>falas</pk>
+		<pk>false</pk>
 		<ck>true</ck>
 		<type>string</type>
 		<length>50</length>

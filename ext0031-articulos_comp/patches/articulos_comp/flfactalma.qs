@@ -723,7 +723,7 @@ function articuloscomp_generarMoviStock(curLinea:FLSqlCursor, codLote:String, ca
 			if (!aDatosStockLinea) {
 				return false;
 			}
-			
+
             // KLO. Controlamos si el artículo no permite ventas sin stock entre todos los almacenes.
             // Parece ser que la clase de artículos compuestos no controla si se permite venta sin stock.
             var cantidadControl:Number;
@@ -737,16 +737,28 @@ function articuloscomp_generarMoviStock(curLinea:FLSqlCursor, codLote:String, ca
                 cantidadStock = 0;
 
             //debug("KLO======> cantidadStock: "+cantidadStock);
-            cantidadControl = cantidadStock - cantidad;
-            //debug("KLO======> cantidadControl: "+cantidadControl);
-            if (cantidadControl < 0) {
-                var nombreCantidad:String;
-                nombreCantidad = util.translate("scripts", "cantidad en stock");
-                if (!util.sqlSelect("articulos", "controlstock", "referencia = '" + referencia + "'")) {
-                    MessageBox.warning( util.translate("scripts", "El artículo %1 no permite ventas sin stock. Este movimiento dejaría el stock de %2 con %3 %4.\n").arg(referencia).arg(codAlmacen).arg(nombreCantidad).arg(cantidadControl), MessageBox.Ok, MessageBox.NoButton);
-                    return false;
+            //debug("KLO======> cantidad entrante: "+cantidad);
+            switch (tabla) {
+                case "lineasfacturasprov":
+                case "lineaspedidosprov":
+                case "lineasalbaranesprov": {
+                    cantidadControl = cantidadStock + cantidad;
+                    break;
+                }
+                default: {
+                    cantidadControl = cantidadStock - cantidad;
+                    if (cantidadControl < 0) {
+                        var nombreCantidad:String;
+                        nombreCantidad = util.translate("scripts", "cantidad en stock");
+                        if (!util.sqlSelect("articulos", "controlstock", "referencia = '" + referencia + "'")) {
+                            MessageBox.warning( util.translate("scripts", "El artículo %1 no permite ventas sin stock. Este movimiento dejaría el stock de %2 con %3 %4.\n").arg(referencia).arg(codAlmacen).arg(nombreCantidad).arg(cantidadControl), MessageBox.Ok, MessageBox.NoButton);
+                            return false;
+                        }
+                    }
+                    break;
                 }
             }
+            //debug("KLO======> cantidadControl: "+cantidadControl);
             //debug("KLO=======> cantidad01: "+cantidad);
             // KLO. ---
 
