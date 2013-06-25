@@ -3,6 +3,7 @@
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="regstocks.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/almacen/scripts/" name="transstock.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs" style="legacy"/>
