@@ -1,0 +1,5 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="jasper_plugin_tpv">
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_comandas.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_masterarqueos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastercomandas.qs" style="legacy"/>
+</flpatch:modifications>
