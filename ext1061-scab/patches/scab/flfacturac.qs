@@ -31,7 +31,7 @@ class scab extends oficial {
 //// CONTROL STOCK CABECERA /////////////////////////////////////
 function scab_afterCommit_lineaspedidoscli(curLP:FLSqlCursor):Boolean
 {
-    debug("KLO==================> Nivel de transaccion (2 no ejecuta afterCommit): "+sys.transactionLevel());
+    debug("KLO==================> Nivel de transaccion pedidosCli (2 no ejecuta afterCommit): "+sys.transactionLevel());
     if (sys.transactionLevel() == 2) 
         return true;
 
@@ -42,9 +42,13 @@ function scab_afterCommit_lineaspedidoscli(curLP:FLSqlCursor):Boolean
 
 function scab_afterCommit_lineasalbaranescli(curLA:FLSqlCursor):Boolean
 {
-    debug("KLO==================> Nivel de transaccion (2 no ejecuta afterCommit): "+sys.transactionLevel());
-    if (sys.transactionLevel() == 2) 
+    debug("KLO==================> Nivel de transaccion albaranesCli (2 no ejecuta afterCommit pero si actualiza servido en pedido): "+sys.transactionLevel());
+    if (sys.transactionLevel() == 2) { 
+        if (!this.iface.actualizarPedidosLineaAlbaranCli(curLA)) {
+            return false;
+        }
         return true;
+    }
 
     this.iface.__afterCommit_lineasalbaranescli(curLA);
 
@@ -53,7 +57,7 @@ function scab_afterCommit_lineasalbaranescli(curLA:FLSqlCursor):Boolean
 
 function scab_afterCommit_lineasfacturascli(curLF:FLSqlCursor):Boolean
 {
-    debug("KLO==================> Nivel de transaccion (2 no ejecuta afterCommit): "+sys.transactionLevel());
+    debug("KLO==================> Nivel de transaccion facturasCli (2 no ejecuta afterCommit): "+sys.transactionLevel());
     if (sys.transactionLevel() == 2) 
         return true;
 
@@ -64,7 +68,7 @@ function scab_afterCommit_lineasfacturascli(curLF:FLSqlCursor):Boolean
 
 function scab_afterCommit_lineaspedidosprov(curLP:FLSqlCursor):Boolean
 {
-    debug("KLO==================> Nivel de transaccion (2 no ejecuta afterCommit): "+sys.transactionLevel());
+    debug("KLO==================> Nivel de transaccion pedidosProv(2 no ejecuta afterCommit): "+sys.transactionLevel());
     if (sys.transactionLevel() == 2) 
         return true;
 
@@ -75,9 +79,13 @@ function scab_afterCommit_lineaspedidosprov(curLP:FLSqlCursor):Boolean
 
 function scab_afterCommit_lineasalbaranesprov(curLA:FLSqlCursor):Boolean
 {
-    debug("KLO==================> Nivel de transaccion (2 no ejecuta afterCommit): "+sys.transactionLevel());
-    if (sys.transactionLevel() == 2) 
+    debug("KLO==================> Nivel de transaccion albaranesProv (2 no ejecuta afterCommit pero si actualiza servido en pedido): "+sys.transactionLevel());
+    if (sys.transactionLevel() == 2) {
+        if (!this.iface.actualizarPedidosLineaAlbaranProv(curLA)) {
+            return false;
+        }
         return true;
+    }
 
     this.iface.__afterCommit_lineasalbaranesprov(curLA);
 
@@ -86,9 +94,28 @@ function scab_afterCommit_lineasalbaranesprov(curLA:FLSqlCursor):Boolean
 
 function scab_afterCommit_lineasfacturasprov(curLF:FLSqlCursor):Boolean
 {
-    debug("KLO==================> Nivel de transaccion (2 no ejecuta afterCommit): "+sys.transactionLevel());
-    if (sys.transactionLevel() == 2) 
+    debug("KLO==================> Nivel de transaccion facturasProv (2 no ejecuta afterCommit pero si cambia coste medio): "+sys.transactionLevel());
+    if (sys.transactionLevel() == 2) {
+        var curF:FLSqlCursor = curLF.cursorRelation();
+        if (!curF || curF.action() != "lineasfacturasprov") {
+            var referencia:String, refAnterior:String;
+            referencia = curLF.valueBuffer("referencia");
+            if (referencia && referencia != "") {
+                if (!flfactalma.iface.pub_cambiarCosteMedio(referencia)) {
+                    return false;
+                }
+            }
+            if (curLF.modeAccess() == curLF.Edit) {
+                refAnterior = curLF.valueBufferCopy("referencia");
+                if (refAnterior && refAnterior != "" && refAnterior != referencia) {
+                    if (!flfactalma.iface.pub_cambiarCosteMedio(refAnterior)) {
+                        return false;
+                    }
+                }
+            }
+        }
         return true;
+    }
 
     this.iface.__afterCommit_lineasfacturasprov(curLF);
 
