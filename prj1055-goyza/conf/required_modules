@@ -6,8 +6,8 @@ facturacion/facturacion
 contabilidad/modelos
 colaboracion/procesos
 contabilidad/principal
-produccion/principal
+colaboracion/produccion/principal
 sistema/controlacceso
 contabilidad/informes
-produccion/informes
+colaboracion/produccion/informes
 
