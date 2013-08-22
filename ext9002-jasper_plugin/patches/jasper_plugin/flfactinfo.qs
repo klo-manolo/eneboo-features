@@ -110,15 +110,18 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
 
             q = this.iface.establecerConsulta(cursor, nombreInforme, orderBy, groupBy, whereFijo);
     //debug("------ CONSULTA -------" + q.sql());
-            if (q.exec() == false) {
+    	  if (util.sqlSelect("flfiles", "nombre", "nombre = '" + nombreInforme + ".qry'"))
+    	  	{
+                 if (q.exec() == false) {
                     MessageBox.critical(util.translate("scripts", "Falló la consulta"), MessageBox.Ok, MessageBox.NoButton);
                     return;
-            } else {
-                    if (q.first() == false) {
-                            MessageBox.warning(util.translate("scripts", "No hay registros que cumplan los criterios de búsqueda establecidos"), MessageBox.Ok, MessageBox.NoButton);
-                            return;
-                    }
-            }
+                 } else {
+                         if (q.first() == false) {
+                         MessageBox.warning(util.translate("scripts", "No hay registros que cumplan los criterios de búsqueda establecidos"), MessageBox.Ok, MessageBox.NoButton);
+                         return;
+                    				}
+            		}
+               }
                  }
             var tipoReport:String = "";
             if (!nombreReport || nombreReport == "") {
@@ -377,6 +380,7 @@ function jasperPlugin_comprobarJasperFisico(reportName:String):Boolean
     if (File.exists(reportName)) return true;
      else
      return false;
+
    }
 
 
@@ -554,6 +558,9 @@ function jasperPlugin_establecerConsulta(cursor:FLSqlCursor, nombreConsulta:Stri
                         where = "1 = 1";
                 where += " GROUP BY " + groupBy;
         }
+        //Si no existe el .qry no continua procesandose la consulta
+	if (!util.sqlSelect("flfiles", "nombre", "nombre = '" + nombreConsulta + ".qry'"))
+		return q;
 
         q.setWhere(where);
 
