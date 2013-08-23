@@ -58,7 +58,9 @@ function jasperPlugin_init()
     connect(this.child("cBCodificacion"), "activated(int)", this, "iface.guardaCodificacion");
     connect(this.child("leMaxJVM"), "textChanged(QString)", this, "iface.guardaMaxJVM");;
     this.child("lnJPlugin").text = util.readSettingEntry("jasperplugin/pluginpath");
+    this.child("lnJPlugin").setEnabled(false);
     this.child("lnPath").text = util.readSettingEntry("jasperplugin/reportspath");
+    this.child("lnPath").setEnabled(false);
     this.child("leMaxJVM").text = util.readSettingEntry("jasperplugin/MaxJVM");
     this.child("chbRT").checked = util.readSettingEntry("jasperplugin/detecRT");
     this.child("chbGuardaTemporal").checked = util.readSettingEntry("jasperplugin/guardatemporal");
@@ -97,7 +99,14 @@ function jasperPlugin_testPlugin()
     var util:FLUtil = new FLUtil;
     var ruta:String = this.child("lnJPlugin").text + "enebooreports.jar";
     if (File.exists(ruta))
-    flfactinfo.iface.pub_lanzarInforme(this.cursor(), "version","", "", false, false,"","","","",false);
+    	{
+    	if (flfactinfo.iface.procesoInicializado)
+    		{
+    		flfactinfo.iface.procesoJP.kill();
+    		flfactinfo.iface.procesoInicializado = false;
+    		}
+    	flfactinfo.iface.pub_lanzarInforme(this.cursor(), "version","", "", false, false,"","","","",false);
+        }
      else MessageBox.information(util.translate("scripts", "¡¡ Ruta incorrecta !! \n " + ruta), MessageBox.Ok);
 }
 function jasperPlugin_checkRT()
