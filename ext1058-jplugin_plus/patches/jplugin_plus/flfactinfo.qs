@@ -31,6 +31,7 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
         case "i_pedidosprov":
         case "i_albaranesprov":
         case "i_facturasprov":
+        case "i_servicioscli":
         case "i_recibosprov": {
             break;
         }
