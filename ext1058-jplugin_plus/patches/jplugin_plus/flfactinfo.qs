@@ -2,7 +2,7 @@
 /** @class_declaration jPluginPlus */
 /////////////////////////////////////////////////////////////////
 //// JPLUGIN_PLUS //////////////////////////////////////////////
-class jPluginPlus extends jasperPlugin {
+class jPluginPlus extends jasperPlugin /** %from: jasperPlugin */ {
     function jPluginPlus( context ) { jasperPlugin ( context ); }
 	function lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String, etiquetas:Boolean, impDirecta:Boolean, whereFijo:String, nombreReport:String, numCopias:Number, impresora:String, pdf:Boolean) {
 		return this.ctx.jPluginPlus_lanzarInforme(cursor, nombreInforme, orderBy, groupBy, etiquetas, impDirecta, whereFijo, nombreReport, numCopias, impresora, pdf);
@@ -14,7 +14,6 @@ class jPluginPlus extends jasperPlugin {
 
 //// JPLUGIN_PLUS ////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
-
 
 /** @class_definition jPluginPlus */
 //////////////////////////////////////////////////////////////////
@@ -63,9 +62,8 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
     var listaF:Array = [];
     listaF = dir.entryList("*.jrxml");
 
-
     //for (var i = 0; i < listaF.length; i++)
-    //  debug("KLO--> Lista de ficheros jasper: "+listaF[i]);
+      //debug("KLO--> Lista de ficheros jasper 2: "+listaF[i]);
 
     // KLO Código original.
     var dialog = new Dialog(util.translate ( "scripts", "Modelos de impresion" ), 0);
@@ -87,34 +85,27 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
         textModelo = listaF[cont];
         var nombreReport:String = this.iface.cargaDescripcionJasper(rutaInforme + textModelo);
         if ( !nombreReport ) nombreReport =  textModelo.left(textModelo.find(".jrxml",0));
-        //debug("Nombre del informe: "+textModelo.left(textModelo.find(".jrxml",0)));
+        //debug("Nombre del informe 2: "+textModelo.left(textModelo.find(".jrxml",0)));
         rB[cont] = new RadioButton;
         rB[cont].text = nombreReport;
+        if (listaF[cont] == nombreInforme+".jrxml") {
+            rB[cont].checked = true; //!hayDefecto;
+            hayOficial = true;
+        } else {
+            rB[cont].checked = false;
+        }
         arrayModelos[cont] = new Array(2);
 
-        if (listaF[cont] != nombreInforme+".jrxml") {
-            arrayModelos[cont]["report"] = listaF[cont];
-            arrayModelos[cont]["consulta"] = "";
-            arrayModelos[cont]["ordenacion"] = "";
-            rB[cont].checked = false;
-            bgroup.add( rB[cont] );
-            //debug("KLO-----> Metido1: "+arrayModelos[cont].report+", En posicion: "+cont);
-            cont ++;
-        } else {
-            hayOficial = true;
-        }
-    }
-
-    if (hayOficial) {
-        //debug("KLO--> Hay IReport para oficial: "+nombreInforme);
-        rB[cont] = new RadioButton;
-        rB[cont].text = util.translate ( "scripts", "Modelo estandar" );
-        arrayModelos[cont]["report"] = nombreInforme;
+        arrayModelos[cont]["report"] = listaF[cont];
         arrayModelos[cont]["consulta"] = "";
         arrayModelos[cont]["ordenacion"] = "";
-        rB[cont].checked = true; //!hayDefecto;
         bgroup.add( rB[cont] );
-    } else {
+        //debug("KLO-----> Metido1: "+arrayModelos[cont].report+", En posicion: "+cont);
+        cont ++;
+    }
+//debug("KLO=====> cont = "+cont);
+
+    if (!hayOficial) {
         //debug("KLO--> No hay IReport para oficial: "+nombreInforme);
         rB[cont] = new RadioButton;
         rB[cont].text = util.translate ( "scripts", "Modelo oficial" );
@@ -125,10 +116,11 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
         arrayModelos[cont]["ordenacion"] = "";
         rB[cont].checked = true; //!hayDefecto;
         bgroup.add( rB[cont] );
+        cont ++;
     }
 
     // No hay modelos adicionales
-    if (cont == 0) {
+    if (cont-1 <= 0) {
         this.iface.__lanzarInforme(cursor, nombreInforme, orderBy, groupBy, etiquetas, impDirecta, whereFijo, nombreReport, numCopias, impresora, pdf);
         return;
     }
