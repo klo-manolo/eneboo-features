@@ -49,10 +49,10 @@ class proveed extends oficial {
 		return this.ctx.proveed_codCuentaPagoProv(curFactura);
 	}
 	function siGenerarRecibosProv(curFactura:FLSqlCursor, masCampos:Array):Boolean {
-		return this.ctx.provee_siGenerarRecibosProv(curFactura, masCampos);
+		return this.ctx.proveed_siGenerarRecibosProv(curFactura, masCampos);
 	}
 	function obtenerDatosCuentaDomProv(codProveedor:String):Array {
-		return this.ctx.provee_obtenerDatosCuentaDomProv(codProveedor);
+		return this.ctx.proveed_obtenerDatosCuentaDomProv(codProveedor);
 	}
 }
 //// PROVEED /////////////////////////////////////////////////////
@@ -776,7 +776,7 @@ function proveed_codCuentaPagoProv(curFactura:FLSqlCursor):String
 	return "";
 }
 
-function provee_siGenerarRecibosProv(curFactura:FLSqlCursor, masCampos:Array):Boolean 
+function proveed_siGenerarRecibosProv(curFactura:FLSqlCursor, masCampos:Array):Boolean 
 {
  	var camposAcomprobar = new Array("codproveedor","total","codpago","fecha");
 	
@@ -805,7 +805,7 @@ function provee_siGenerarRecibosProv(curFactura:FLSqlCursor, masCampos:Array):Bo
 	codcuenta: Código de la cuenta en la tabla de cuentas
 	error: 0.Sin error 1.Datos no encontrados 2.Error
 \end */
-function provee_obtenerDatosCuentaDomProv(codProveedor:String):Array
+function proveed_obtenerDatosCuentaDomProv(codProveedor:String):Array
 {
 	var datosCuentaDom:Array = [];
 	var util:FLUtil = new FLUtil;
