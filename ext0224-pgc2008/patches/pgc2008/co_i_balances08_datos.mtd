@@ -70,6 +70,7 @@
 		<null>true</null>
 		<pk>false</pk>
 		<type>string</type>
+		<length>100</length>
 	</field>
 </TMD>
 
