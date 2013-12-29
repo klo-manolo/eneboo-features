@@ -1,0 +1,7 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="proyectoscc">
+  <flpatch:patchXml name="cl_proyectos.ui" path="colaboracion/proyectos/forms/" style="legacy1"/>
+  <flpatch:patchXml name="cl_subproyectos.ui" path="colaboracion/proyectos/forms/" style="legacy1"/>
+  <flpatch:patchScript name="flcolaproy.qs" path="colaboracion/proyectos/scripts/" style="legacy"/>
+  <flpatch:patchXml name="cl_proyectos.mtd" path="colaboracion/proyectos/tables/" style="legacy1"/>
+  <flpatch:patchXml name="cl_subproyectos.mtd" path="colaboracion/proyectos/tables/" style="legacy1"/>
+</flpatch:modifications>
