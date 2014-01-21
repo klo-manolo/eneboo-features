@@ -1,6 +1,0 @@
-<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:delete select="/TMD[TMD,1]/field[emailfrom]"/>
-  <xupdate:delete select="/TMD[TMD,1]/field[nombrefrom]"/>
-  <xupdate:delete select="/TMD[TMD,1]/field[emailcontacto]"/>
-  <xupdate:delete select="/TMD[TMD,1]/field[emailwebmaster]"/>
-</xupdate:modifications>

@@ -50,7 +50,6 @@
   <flpatch:deleteFile path="facturacion/almacen/tables/" name="idiomas.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="intervalospesos.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="modificadossql.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="opcionestv.mtd" style="legacy1"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="parametrospasarela.mtd"/>
   <flpatch:addFile path="facturacion/almacen/tables/" name="pasarelaspago.mtd"/>
   <flpatch:patchXml path="facturacion/almacen/tables/" name="recordarcontras.mtd" style="legacy1"/>
