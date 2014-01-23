@@ -21,8 +21,8 @@ function orderCols_init()
 	var cursor:FLSqlCursor = this.cursor();
 	var orden:Array = formRecordordercols.iface.pub_aplicarOrden(cursor);
 
-	this.iface.tdbRecords.setOrderCols(orden);
-	this.iface.tdbRecords.refresh();
+	this.child("tableDBRecords").setOrderCols(orden);
+	this.child("tableDBRecords").refresh();
 }
 //// ORDER COLS /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
