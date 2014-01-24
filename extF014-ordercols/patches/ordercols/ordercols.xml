@@ -1,0 +1,49 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="ordercols">
+  <flpatch:patchXml name="flfactppal.xml" path="facturacion/principal/" style="legacy1"/>
+  <flpatch:patchXml name="flfactppal.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:addFile name="ordercols.ui" path="facturacion/principal/forms/"/>
+  <flpatch:addFile name="ordercols.qs" path="facturacion/principal/scripts/"/>
+  <flpatch:addFile name="ordercols.mtd" path="facturacion/principal/tables/"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="mastertarifas.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/almacen/scripts/" name="mastertransstock.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterbancos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="mastercuentasbanco.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterclientes.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="mastercuentasbcocli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterdescuentos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterdivisas.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterejercicios.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterformaspago.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterimpuestos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterintervalos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterpaises.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterproveedores.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterseries.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masteralbaranesprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterclientes.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterfacturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterinventario.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterpedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterpedidosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterpresupuestoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterproveedores.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterreciboscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterrecibosprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_masterriesgocli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="i_mastervencimientos.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastercausasmovimiento.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastercomandas.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_masterpuntosventa.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastervales.qs" style="legacy"/>
+</flpatch:modifications>

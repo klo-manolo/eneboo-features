@@ -1,0 +1,46 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tablas_Generales]/separator[separator,4]">
+    <action name="ordercols"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[ciudades]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,7]">
+    <action name="ordercols"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[cambioempresa]">
+    <action>
+      <property name="name">
+        <cstring>ordercols</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image50050</iconset>
+      </property>
+      <property name="text">
+        <string>Ordenar Columnas</string>
+      </property>
+      <property name="toolTip">
+        <string>Ordenar Columnas</string>
+      </property>
+      <property name="whatsThis">
+        <string>Personalizar el orden de columnas de las tablas</string>
+      </property>
+      <property name="accel">
+        <string/>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image34523]">
+    <image name="image50050">
+      <data format="PNG" length="1247">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004a649444154789cb5964d6c545514c77faf3314e807a128a9c2ce0d89624416b80059f8c5474b014b4d2b44d1c4ee656f5cb87141a271c75714039682e384d2b4041362108c90f403504c13839a2006055a18a6ed0c73cf7171ef7bf3e6cd7bb56038c9cdbdef7efdcf3de7ff7ff77a9f1ec8d4aaea87c04ecff39600a82a228aaa20a28808a2b636466c2d82185b1b635c1d6e1b3b1ef499ebc542f1d09591b31f5d193a330908009fecfffae3ef7ebca8b9fca446ad67e07c555fdc9888aa71a564447b06ceebfd9268b1245ab82f3a7ddfe8f57f2674dfe17e6dd9f1fe67401d500350e379debbab9e5b4643dd7c1ec6544183b696dbc198a20a0b1734d2ba7e2d35a939db8105401ae7c5e2f9f3e6266caeb1fd01581cb886c75cede635d6d723aa8b5c04e6e07b7164f042e0b67f065518bdbe94917dd7ca670a4014686678cf553b5ffd310515d0054c1fff1e9c0376b5f5428cf8b81e405a55e9dcb02af694a3fbaeb1f2e9c5b1634397ff64e5f2a541b8094563e8e2af74b5ad094e1e8ec6d16c9fbf8575402439cce52d23bd0aaa5205aceab986c482ab828854ec9556adeca8428af9f4d3107c3be00a0ec4802b604cc401114de480f204433ffd85cda5db050155a6a68b0c5ffacd9eb6820776bcf7c4596239108d808824726064cfefac7ce6c9cad3b9b1e14b5759f1ec534147787c74f4673a5a57579c5c5d640ef61c8b383083d49821cfaa12e90f2d8b84dd0757122290883f439e09e53966612cb82561e582b43192c8017411c397ff70da0ee9dc716264f417caff070dda00998173c471204afa580ef8de17be39c35b5b5fac4883cfecaf8e9fa573d39a58b66706ceb175c3ea881a6cbdf78bc3155835c6989bf9c9e92af0200531e0d1b056e75c63c127eee41031e3fef60035c542f1e0e91f86c9dd9bac06771db14009fffb6ae76c7d7bfc0ebdd9418a53f7fa8092ef80b7e6e54d0d2b5e58bb3b35676ebb2a8f27dfe7ae8ebc01fc3741f8ade0bf1d2adf14e656712a3f3876617077612a7703b80d143dec8d380f7b45d6e12ea84764256012b80b4ce33f4a9c13b5403dd00034fe9fd2ded5adc063c0c2507f83dbbfd6e13d3a6befea56e7c4422035d35c2f6983a405999ebdf54001304973ed43c69233dbbbbf09c8f9f3a3561348265466b2f6aeee3c36a4291f5cf1d70a22c611d0b6b15198eb3b162d5e1ca0e77975d81c563c14dbbbbac74291686adbb673572a9dfe207b64ff722ca10c40dbb6b7c7549513992f9f072680bf81c958ac040752ceeb68fe6a5fef7cefa61fe26cef816637278d657711a075eb8ebbfdd943cb9c43b77029781007aafa9ca580c6cd1def8ce342d89739d80ce4b1b2f2f35c87657d9150fee3b01e540e06c81d3ff6799331258c94d8b8e5cd1bb817ae6feb5ab6e581296c5462c9f7b00ed0b2657b695dcb1bbbfab3879ac5941053625d6bc7388e9800460cafacdf72171b899965181796cd1d3bb57c1794191eee3bd97f7409605eddd87e83403d6515f9f5e9537d810c679d02e34e26a684098a418c41c470b2ffe8722cf1f2df0e649a448c93a0c4493990e1ac239024c39015b1f2cab9ef4607540bf0d26b6d63eef4ff29c3a48ba780954f52fe0ca1bfa173a4189e7ffa549f2fc3093737d61e5486b3b559cbf05fadf0691a1f32bdeb0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[cambioempresa,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>ordercols</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>
