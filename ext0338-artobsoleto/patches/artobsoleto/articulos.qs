@@ -58,6 +58,10 @@ function artObsoletos_calculateField(fN:String):String
 				res = "NAN";
 			break;
 		}
+		default: {
+			res = this.iface.__calculateField(fN);
+			break;
+		}
 	}
 	return res;
 }
