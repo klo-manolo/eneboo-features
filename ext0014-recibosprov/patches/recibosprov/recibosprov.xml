@@ -1,5 +1,4 @@
 <flpatch:modifications name="recibosprov" >
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
     <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" />
     <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" />
     <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
