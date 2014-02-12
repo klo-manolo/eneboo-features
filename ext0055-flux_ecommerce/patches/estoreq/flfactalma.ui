@@ -7,13 +7,9 @@
       <action name="fabricantes"/>
       <separator/>
       <action name="formaspago"/>
-      <action name="pasarelaspago"/>
       <action name="plazosenvio"/>
-      <action name="codigosdescuento"/>
       <separator/>
       <action name="formasenvio"/>
-      <action name="zonasventa"/>
-      <action name="intervalospesos"/>
       <separator/>
       <action name="modulosweb"/>
       <action name="infogeneral"/>
@@ -23,8 +19,6 @@
       <separator/>
       <action name="idiomas"/>
       <action name="traducciones"/>
-      <separator/>
-      <action name="statsweb"/>
       <separator/>
       <action name="opcionestv"/>
       <action name="datostv"/>

@@ -10,39 +10,6 @@
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbNoStock]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbSeCompra]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbSeVende]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
-  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QFrame,frmFamilia]/hbox[hbox,1]/widget[FLFieldDB,fdbDesFamilia]">
-    <widget class="FLFieldDB">
-      <property name="name">
-        <cstring>fdbCodUnidad</cstring>
-      </property>
-      <property name="sizePolicy">
-        <sizepolicy>
-          <hsizetype>7</hsizetype>
-          <vsizetype>0</vsizetype>
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-        </sizepolicy>
-      </property>
-      <property name="minimumSize">
-        <size>
-          <width>70</width>
-          <height>25</height>
-        </size>
-      </property>
-      <property name="fieldName">
-        <string>codunidad</string>
-      </property>
-      <property name="tableName">
-        <string/>
-      </property>
-      <property name="foreignField">
-        <string>codunidad</string>
-      </property>
-      <property name="fieldRelation">
-        <string>codfamilia</string>
-      </property>
-    </widget>
-  </xupdate:insert-after>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxFabricante]/hbox[hbox,1]/widget[FLFieldDB,fdbCodFabricante]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxFabricante]/hbox[hbox,1]/widget[FLFieldDB,fdbCodFabricante]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">29</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxFabricante]/hbox[hbox,1]/widget[FLFieldDB,fdbNomFabricante]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
@@ -476,30 +443,6 @@
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,atributos]/vbox[vbox,1]/widget[QGroupBox,gbxPreciosTarifa_2]/vbox[vbox,1]/widget[QFrame,barraBotonesPTarifaw_2]/hbox[hbox,1]/widget[QToolButton,toolButtonDeleteAtr]/property[iconSet]/iconset[iconset,1]/text()[1]">flux_ecommerceimage53518</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,atributos]/vbox[vbox,1]/widget[QGroupBox,gbxPreciosTarifa_2]/vbox[vbox,1]/widget[QFrame,barraBotonesPTarifaw_2]/hbox[hbox,1]/widget[QToolButton,toolButtonZoomAtr]/property[iconSet]/iconset[iconset,1]/text()[1]">flux_ecommerceimage14570</xupdate:update>
   <xupdate:delete select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,compra]/vbox[vbox,1]/widget[QGroupBox,gbxPreciosProv]/vbox[vbox,1]/widget[QFrame,barraBotonesPProv]/hbox[hbox,1]/spacer[Spacer2_3]"/>
-  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,stocks]/vbox[vbox,1]/widget[QGroupBox,gbxStocks1]/hbox[hbox,1]/widget[FLFieldDB,fdbControlStock]">
-    <widget class="FLFieldDB">
-      <property name="name">
-        <cstring>fdbStockComp</cstring>
-      </property>
-      <property name="sizePolicy">
-        <sizepolicy>
-          <hsizetype>1</hsizetype>
-          <vsizetype>0</vsizetype>
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-        </sizepolicy>
-      </property>
-      <property name="minimumSize">
-        <size>
-          <width>38</width>
-          <height>24</height>
-        </size>
-      </property>
-      <property name="fieldName">
-        <string>stockcomp</string>
-      </property>
-    </widget>
-  </xupdate:insert-after>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,stocks]/vbox[vbox,1]/widget[QGroupBox,gbxStocks2]/vbox[vbox,1]/widget[QFrame,barraBotonesStocksFluxec]/hbox[hbox,1]/widget[QToolButton,toolButtomInsertStock]/property[iconSet]/iconset[iconset,1]/text()[1]">flux_ecommerceimage28628</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,stocks]/vbox[vbox,1]/widget[QGroupBox,gbxStocks2]/vbox[vbox,1]/widget[QFrame,barraBotonesStocksFluxec]/hbox[hbox,1]/widget[QToolButton,toolButtonEditStock]/property[iconSet]/iconset[iconset,1]/text()[1]">flux_ecommerceimage41735</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,stocks]/vbox[vbox,1]/widget[QGroupBox,gbxStocks2]/vbox[vbox,1]/widget[QFrame,barraBotonesStocksFluxec]/hbox[hbox,1]/widget[QToolButton,toolButtonDeleteStock]/property[iconSet]/iconset[iconset,1]/text()[1]">flux_ecommerceimage11693</xupdate:update>
