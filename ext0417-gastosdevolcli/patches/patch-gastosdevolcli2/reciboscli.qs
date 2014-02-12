@@ -177,7 +177,7 @@ function gastoDevol_bufferChanged(fN:String)
 	switch (fN) {
 		case "importe": {
 			this.child("fdbTexto").setValue(this.iface.calculateField("texto"));
-			//KLO. this.child("gbxPagDev").setDisabled(true);
+			//KLO: this.child("gbxPagDev").setDisabled(true);
 			if (!this.iface.bloqueoImporte_) {
 				this.iface.bloqueoImporte_ = true;
 				cursor.setValueBuffer("importesingd", this.iface.calculateField("importesingd"));
