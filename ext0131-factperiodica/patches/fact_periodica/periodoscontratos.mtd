@@ -97,11 +97,6 @@
 			<field>idfactura</field>
 			<card>M1</card>
 		</relation>
-        
-        <associated>
-            <with>codcliente</with>
-            <by>codcliente</by>
-        </associated>
 	</field>
 
 	<field>
