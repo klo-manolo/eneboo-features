@@ -21,7 +21,7 @@ function reportUnico_lanzar()
 	if (!pI) {
 		return;
 	}
-	var whereFijo:String = "PARAM_titulo\nAlbar√°n\nPARAM_tabla\nalbaranescli\nPARAM_subtabla\nalbaran\nPARAM_orderdef\nalbaranescli.codigo\nPARAM_tablareldoc\npedidoscli\nPARAM_reldoc\npedido\n";
+	var whereFijo:String = "PARAM_titulo\nAlbar·n\nPARAM_tabla\nalbaranescli\nPARAM_subtabla\nalbaran\nPARAM_orderdef\nalbaranescli.codigo\nPARAM_tablareldoc\npedidoscli\nPARAM_reldoc\npedido\n";
 	pI.whereFijo = whereFijo + pI.whereFijo;
 	flfactinfo.iface.pub_lanzarInforme(cursor, pI.nombreInforme, pI.orderBy, "", false, false, pI.whereFijo);
 }
