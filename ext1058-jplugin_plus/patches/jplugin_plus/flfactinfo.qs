@@ -22,7 +22,7 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
 {
     debug("KLO--> jPluginPlus_lanzarInforme()");
     debug("nombreInforme " + nombreInforme);
-    switch(nombreInforme) {
+   /** switch(nombreInforme) {
         case "i_presupuestoscli":
         case "i_pedidoscli":
         case "i_albaranescli":
@@ -38,7 +38,7 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
         default: {
             return this.iface.__lanzarInforme(cursor, nombreInforme, orderBy, groupBy, etiquetas, impDirecta, whereFijo, nombreReport, numCopias, impresora, pdf);
         }
-    }
+    } **/
 
     var util:FLUtil = new FLUtil();
     var report:String = "";

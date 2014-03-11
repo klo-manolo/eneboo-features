@@ -171,7 +171,7 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                     	//Cargamos configuración plugin
                         this.iface.rutaReports =  util.readSettingEntry("jasperplugin/reportspath");
                         this.iface.guardaTemporal = util.readSettingEntry("jasperplugin/guardatemporal");
-                        this.iface.dbName = util.readSettingEntry("DBA/lastDB");
+                        this.iface.dbName = sys.nameBD();
                         this.iface.detectarRutaTrabajo = util.readSettingEntry("jasperplugin/detecRT");
                         this.iface.barra = this.iface.seteaBarra(); //Barra de separacion.
                         //Generamos ruta a directorio de reports
@@ -451,9 +451,17 @@ if (sys.osName() == "WIN32")
                              if (sys.osName() != "WIN32") //Convertimos el fichero a UTF8 si no es win32
      	                     xmlFinal = sys.toUnicode(xmlFinal, "utf8");
      	                     //Creamos el nombre del fichero...
-                             var ficheroTemporal = this.iface.rutaReports + this.iface.dbName + this.iface.barra + "temp_files" + this.iface.barra + nombreReport + date.getYear().toString() + "_"
+                             var directorio = this.iface.rutaReports + this.iface.dbName + this.iface.barra + "temp_files" ;	
+			     var ficheroTemporal = directorio + this.iface.barra + nombreReport + date.getYear().toString() + "_"
                        + date.getMonth().toString() + "_" + date.getDay().toString() + "_" + date.getHours().toString() + "_" + date.getMinutes().toString() + date.getSeconds().toString()+ date.getMilliseconds().toString() + ".jrxml";
-
+                       
+                       
+                       //Comprobamos si temp_files existe
+			     var dir = new Dir();
+			     if (!dir.fileExists(directorio)) 
+				dir.mkdir(directorio);	
+				
+			
                         //guardamos el fichero
                         try {
                             var ficheroD = new File(ficheroTemporal);
