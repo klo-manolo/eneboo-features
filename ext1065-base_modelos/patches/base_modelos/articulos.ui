@@ -1,0 +1,42 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formArticulos]/vbox[vbox,1]/widget[QTabWidget,tbwArticulo]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QGroupBox,gbxContabilidad]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxModelos</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="title" >
+<string>Modelos fiscales</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<spacer>
+<property name="name" >
+<cstring>spacer10</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Minimum</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>20</width>
+<height>10</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>
