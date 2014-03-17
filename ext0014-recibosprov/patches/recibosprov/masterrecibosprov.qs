@@ -46,7 +46,7 @@ class oficial extends interna {
 class proveed extends oficial {
     function proveed( context ) { oficial( context ); } 
 	function imprimir(codRecibo:String) {
-		return this.ctx.proveed_imprimir(codRecibo)
+		return this.ctx.oficial_imprimir(codRecibo)
 	}
 }
 //// PROVEED /////////////////////////////////////////////////////
@@ -108,7 +108,7 @@ function interna_init()
 /** \D
 Crea un informe con el listado de registros de la remesa. Funciona cuando está cargado el módulo de informes
 \end */
-function proveed_imprimir(codRecibo:String)
+function oficial_imprimir(codRecibo:String)
 {
 	if (sys.isLoadedModule("flfactinfo")) {
 		var codigo:String;

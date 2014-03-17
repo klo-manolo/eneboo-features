@@ -339,4 +339,14 @@
 		<visiblegrid>false</visiblegrid>
 		<editable>false</editable>
 	</field>
+    
+    <field>
+        <name>iban</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","IBAN")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>34</length>
+        <editable>false</editable>
+    </field>
 </TMD>
