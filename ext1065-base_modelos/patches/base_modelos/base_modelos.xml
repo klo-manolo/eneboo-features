@@ -1,0 +1,18 @@
+<flpatch:modifications name="base_modelos" >
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" />
+    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui" />
+    <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" />
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="co_subcuentas.ui" />
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="co_asientos.ui" />
+    <flpatch:patchScript path="contabilidad/principal/scripts/" name="co_asientos.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="formaspago.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="formaspago.mtd" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbanco.ui" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" />
+    <flpatch:patchXml path="contabilidad/principal/forms/" name="flcontppal.ui" />
+    <flpatch:patchXml path="contabilidad/principal/" name="flcontppal.xml" />
+    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
+</flpatch:modifications>

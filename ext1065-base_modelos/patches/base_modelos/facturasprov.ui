@@ -1,0 +1,34 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formfacturasprov]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,contabilidad]" >
+<widget class="QWidget" >
+<property name="name" >
+<cstring>modelos</cstring>
+</property>
+<attribute name="title" >
+<string>&amp;Modelos</string>
+</attribute>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<spacer>
+<property name="name" >
+<cstring>spacerModelos</cstring>
+</property>
+<property name="orientation" >
+<enum>Vertical</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>21</width>
+<height>178</height>
+</size>
+</property>
+</spacer>
+</vbox>
+</widget>
+</xupdate:insert-after>
+</xupdate:modifications>

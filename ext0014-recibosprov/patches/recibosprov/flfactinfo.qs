@@ -2,7 +2,7 @@
 /** @class_declaration recibosProv */
 /////////////////////////////////////////////////////////////////
 //// RECIBOS PROV ///////////////////////////////////////////////
-class recibosProv extends oficial {
+class recibosProv extends oficial /** %from: oficial */ {
     function recibosProv( context ) { oficial ( context ); }
 	function aplicarCriterio(tabla:String, campo:String, valor:String, signo:String):String {
 		return this.ctx.recibosProv_aplicarCriterio(tabla, campo, valor, signo);
@@ -10,9 +10,6 @@ class recibosProv extends oficial {
 }
 //// RECIBOS PROV ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
-
-
 
 /** @class_definition recibosProv */
 /////////////////////////////////////////////////////////////////
@@ -44,6 +41,4 @@ function recibosProv_aplicarCriterio(tabla:String, campo:String, valor:String, s
 }
 //// RECIBOS PROV ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
-
 

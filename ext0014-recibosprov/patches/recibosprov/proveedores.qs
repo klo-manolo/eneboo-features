@@ -2,7 +2,7 @@
 /** @class_declaration recibosProv */
 /////////////////////////////////////////////////////////////////
 //// RECIBOS PROV ///////////////////////////////////////////////
-class recibosProv extends oficial {
+class recibosProv extends oficial /** %from: oficial */ {
     function recibosProv( context ) { oficial ( context ); }
 	function init() {
 		this.ctx.recibosProv_init();
@@ -34,3 +34,4 @@ function recibosProv_imprimirRecibo()
 }
 //// RECIBOS PROV ///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

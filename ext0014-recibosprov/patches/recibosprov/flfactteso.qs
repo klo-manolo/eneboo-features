@@ -2,10 +2,10 @@
 /** @class_declaration proveed */
 //////////////////////////////////////////////////////////////////
 //// PROVEED /////////////////////////////////////////////////////
-class proveed extends oficial {
+class proveed extends oficial /** %from: oficial */ {
     var curReciboProv:FLSqlCursor;
-	
-	function proveed( context ) { oficial( context ); } 
+
+	function proveed( context ) { oficial( context ); }
 	function tienePagosDevProv(idRecibo:Number):Boolean {
 		return this.ctx.proveed_tienePagosDevProv(idRecibo);
 	}
@@ -61,7 +61,7 @@ class proveed extends oficial {
 /** @class_declaration pubProveed */
 /////////////////////////////////////////////////////////////////
 //// PUB PROVEEDORES ////////////////////////////////////////////
-class pubProveed extends ifaceCtx {
+class pubProveed extends ifaceCtx /** %from: ifaceCtx */ {
 	function pubProveed( context ) { ifaceCtx( context ); }
 	function pub_calcularEstadoFacturaProv(idRecibo:String, idFactura:String):Boolean {
 		return this.calcularEstadoFacturaProv(idRecibo, idFactura);
@@ -94,7 +94,7 @@ function proveed_regenerarRecibosProv(cursor:FLSqlCursor, forzarEmitirComo:Strin
 	var util:FLUtil = new FLUtil();
 	var contActiva:Boolean = sys.isLoadedModule("flcontppal") && util.sqlSelect("empresa", "contintegrada", "1 = 1");
 	var idFactura:Number = cursor.valueBuffer("idfactura");
-	
+
 	if (!this.iface.curReciboProv) {
 		this.iface.curReciboProv = new FLSqlCursor("recibosprov");
 	}
@@ -112,13 +112,13 @@ function proveed_regenerarRecibosProv(cursor:FLSqlCursor, forzarEmitirComo:Strin
 	} else {
 		emitirComo = util.sqlSelect("formaspago", "genrecibos", "codpago = '" + codPago + "'");
 	}
-	
+
 	var codProveedor:String = cursor.valueBuffer("codproveedor");
 	var datosCuentaDom = this.iface.obtenerDatosCuentaDomProv(codProveedor);
 	if (datosCuentaDom.error == 2) {
 		return false;
 	}
-	
+
 	var total:Number = parseFloat(cursor.valueBuffer("total"));
 	var idRecibo:Number;
 	var numRecibo:Number = 1;
@@ -126,7 +126,7 @@ function proveed_regenerarRecibosProv(cursor:FLSqlCursor, forzarEmitirComo:Strin
 	var diasAplazado:Number, fechaVencimiento:String;
 	var tasaConv:Number = parseFloat(cursor.valueBuffer("tasaconv"));
 	var divisa:String = util.sqlSelect("divisas", "descripcion", "coddivisa = '" + cursor.valueBuffer("coddivisa") + "'");
-	
+
 	var codCuentaEmp:String = "";
 	var desCuentaEmp:String = "";
 	var ctaEntidadEmp:String = "";
@@ -194,9 +194,9 @@ function proveed_regenerarRecibosProv(cursor:FLSqlCursor, forzarEmitirComo:Strin
 
 		importeEuros = importeRecibo * tasaConv;
 		diasAplazado = curPlazos.valueBuffer("dias");
-		
+
 		with (this.iface.curReciboProv) {
-			setModeAccess(Insert); 
+			setModeAccess(Insert);
 			refreshBuffer();
 			setValueBuffer("numero", numRecibo);
 			setValueBuffer("idfactura", idFactura);
@@ -245,16 +245,16 @@ function proveed_regenerarRecibosProv(cursor:FLSqlCursor, forzarEmitirComo:Strin
 
 		fechaVencimiento = this.iface.calcFechaVencimientoProv(cursor, numPlazo, diasAplazado);
 		this.iface.curReciboProv.setValueBuffer("fechav", fechaVencimiento);
-		
+
 		if (!this.iface.datosReciboProv())
 			return false;
-		
+
 		if (!this.iface.curReciboProv.commitBuffer())
 			return false;
 
 		if (emitirComo == "Pagado") {
 			idRecibo = this.iface.curReciboProv.valueBuffer("idrecibo");
-				
+
 			var curPago:FLSqlCursor = new FLSqlCursor("pagosdevolprov");
 			with(curPago) {
 				setModeAccess(Insert);
@@ -292,7 +292,7 @@ function proveed_regenerarRecibosProv(cursor:FLSqlCursor, forzarEmitirComo:Strin
 function proveed_afterCommit_pagosdevolprov(curPD:FLSqlCursor):Boolean
 {
 	var idRecibo:String = curPD.valueBuffer("idrecibo");
-	
+
 	/** \C Se cambia el pago anterior al actual para que sólo el último sea editable
 	\end */
 	switch (curPD.modeAccess()) {
@@ -308,23 +308,23 @@ function proveed_afterCommit_pagosdevolprov(curPD:FLSqlCursor):Boolean
 			break;
 		}
 	}
-		
+
 	if (!this.iface.calcularEstadoFacturaProv(idRecibo))
 		return false;
 
 	var util:FLUtil = new FLUtil();
 	if (sys.isLoadedModule("flcontppal") == false || util.sqlSelect("empresa", "contintegrada", "1 = 1") == false)
 		return true;
-		
+
 	switch (curPD.modeAccess()) {
 		case curPD.Del: {
 			if (curPD.isNull("idasiento"))
 				return true;
-	
+
 			var idAsiento:Number = curPD.valueBuffer("idasiento");
 			if (flfacturac.iface.pub_asientoBorrable(idAsiento) == false)
 				return false;
-	
+
 			var curAsiento:FLSqlCursor = new FLSqlCursor("co_asientos");
 			curAsiento.select("idasiento = " + idAsiento);
 			if (curAsiento.first()) {
@@ -386,7 +386,7 @@ function proveed_generarAsientoPagoDevolProv(curPD:FLSqlCursor):Boolean
 	var valoresDefecto:Array;
 	valoresDefecto["codejercicio"] = codEjercicio;
 	valoresDefecto["coddivisa"] = util.sqlSelect("empresa", "coddivisa", "1 = 1");
-	
+
 	var curTransaccion:FLSqlCursor = new FLSqlCursor("empresa");
 	curTransaccion.transaction(false);
 	try {
@@ -416,9 +416,9 @@ function proveed_generarAsientoPagoDevolProv(curPD:FLSqlCursor):Boolean
 				throw util.translate("scripts", "Error al generar el asiento inverso al pago");
 			}
 		}
-	
+
 		curPD.setValueBuffer("idasiento", datosAsiento.idasiento);
-	
+
 		if (!flcontppal.iface.pub_comprobarAsiento(datosAsiento.idasiento)) {
 			throw util.translate("scripts", "Error al comprobar el asiento");
 		}
@@ -456,7 +456,7 @@ function proveed_generarPartidasProv(curPD:FLSqlCursor, valoresDefecto:Array, da
 	}
 	if (codEjercicioFac == valoresDefecto.codejercicio) {
 		ctaDebe.codsubcuenta = util.sqlSelect("co_partidas p" + " INNER JOIN co_subcuentas s ON p.idsubcuenta = s.idsubcuenta" + " INNER JOIN co_cuentas c ON c.idcuenta = s.idcuenta", "s.codsubcuenta", "p.idasiento = " + idAsientoFactura + " AND c.idcuentaesp = 'PROVEE'", "co_partidas,co_subcuentas,co_cuentas");
-	
+
 		if (!ctaDebe.codsubcuenta) {
 			MessageBox.warning(util.translate("scripts", "No se ha encontrado la subcuenta de proveedor del asiento contable correspondiente a la factura a pagar"), MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
 			return false;
@@ -487,7 +487,7 @@ function proveed_generarPartidasProv(curPD:FLSqlCursor, valoresDefecto:Array, da
 	var debe:Number = 0;
 	var debeME:Number = 0;
 	var tasaconvDebe:Number = 1;
-	
+
 	if (valoresDefecto.coddivisa == recibo.coddivisa) {
 		debe = parseFloat(recibo.importe);
 		debeME = 0;
@@ -537,14 +537,14 @@ function proveed_generarPartidasBancoProv(curPD:FLSqlCursor, valoresDefecto:Arra
 {
 	var util:FLUtil = new FLUtil();
 	var ctaHaber:Array = [];
-	
+
 	ctaHaber.codsubcuenta = curPD.valueBuffer("codsubcuenta");
 	ctaHaber.idsubcuenta = util.sqlSelect("co_subcuentas", "idsubcuenta", "codsubcuenta = '" + ctaHaber.codsubcuenta + "' AND codejercicio = '" + valoresDefecto.codejercicio + "'");
 	if (!ctaHaber.idsubcuenta) {
 		MessageBox.warning(util.translate("scripts", "No tiene definida la subcuenta %1 en el ejercicio %2.\nAntes de dar el pago debe crear la subcuenta o modificar el ejercicio").arg(ctaHaber.codsubcuenta).arg(valoresDefecto.codejercicio), MessageBox.Ok, MessageBox.NoButton);
 		return false;
 	}
-		
+
 	var haber:Number = 0;
 	var haberME:Number = 0;
 	var tasaconvHaber:Number = 1;
@@ -561,7 +561,7 @@ function proveed_generarPartidasBancoProv(curPD:FLSqlCursor, valoresDefecto:Arra
 	haberME = util.roundFieldValue(haberME, "co_partidas", "haberme");
 
 	var esAbono:Boolean = util.sqlSelect("recibosprov r INNER JOIN facturasprov f ON r.idfactura = f.idfactura", "deabono", "idrecibo = " + curPD.valueBuffer("idrecibo"), "recibosprov,facturasprov");
-	
+
 	var curPartida:FLSqlCursor = new FLSqlCursor("co_partidas");
 	with(curPartida) {
 		setModeAccess(curPartida.Insert);
@@ -612,8 +612,8 @@ function proveed_generarPartidasCambioProv(curPD:FLSqlCursor, valoresDefecto:Arr
 	var tasaconvDebe:Number = 1;
 	var tasaconvHaber:Number = 1;
 	var diferenciaCambio:Number = 0;
-		
-		
+
+
 	tasaconvHaber = curPD.valueBuffer("tasaconv");
 	tasaconvDebe = util.sqlSelect("recibosprov r INNER JOIN facturasprov f ON r.idfactura = f.idfactura ", "tasaconv", "idrecibo = " + curPD.valueBuffer("idrecibo"), "recibosprov,facturasprov");
 	haber = parseFloat(recibo.importe) * parseFloat(tasaconvHaber);
@@ -686,7 +686,7 @@ function proveed_generarPartidasCambioProv(curPD:FLSqlCursor, valoresDefecto:Arr
 \end */
 function proveed_calcFechaVencimientoProv(curFactura:FLSqlCursor, numPlazo:Number, diasAplazado:Number):String
 {
-	var util:FLUtil = new FLUtil; 
+	var util:FLUtil = new FLUtil;
 	return util.addDays(curFactura.valueBuffer("fecha"), diasAplazado);
 }
 
@@ -709,7 +709,7 @@ function proveed_cambiaUltimoPagoProv(idRecibo:String, idPagoDevol:String, unloc
 	curPagosDevol.select("idrecibo = " + idRecibo + " AND idpagodevol <> " + idPagoDevol + " ORDER BY fecha, idpagodevol");
 	if (curPagosDevol.last())
 		curPagosDevol.setUnLock("editable", unlock);
-	
+
 	return true;
 }
 
@@ -771,25 +771,25 @@ function proveed_borrarRecibosProv(idFactura:Number):Boolean
 
 /** Para sobrecargar en extensiones
 */
-function proveed_codCuentaPagoProv(curFactura:FLSqlCursor):String 
+function proveed_codCuentaPagoProv(curFactura:FLSqlCursor):String
 {
 	return "";
 }
 
-function proveed_siGenerarRecibosProv(curFactura:FLSqlCursor, masCampos:Array):Boolean 
+function proveed_siGenerarRecibosProv(curFactura:FLSqlCursor, masCampos:Array):Boolean
 {
  	var camposAcomprobar = new Array("codproveedor","total","codpago","fecha");
-	
+
 	for (var i:Number = 0; i < camposAcomprobar.length; i++)
 		if (curFactura.valueBuffer(camposAcomprobar[i]) != curFactura.valueBufferCopy(camposAcomprobar[i]))
 			return true;
-	
+
 	if (masCampos) {
 		for (i = 0; i < masCampos.length; i++)
 			if (curFactura.valueBuffer(masCampos[i]) != curFactura.valueBufferCopy(masCampos[i]))
 				return true;
 	}
-	
+
 	return false;
 }
 
@@ -834,3 +834,4 @@ function proveed_obtenerDatosCuentaDomProv(codProveedor:String):Array
 
 //// PROVEED ////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
+
