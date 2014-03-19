@@ -168,11 +168,12 @@ function ivaIncluido_commonCalculateField(fN, cursor):String
 			if (isNaN(iva)) {
 				iva = 0;
 			}
-			var recargo:Number = parseFloat(cursor.valueBuffer("recargo"));
-			if (isNaN(recargo)) {
-				iva = recargo;
-			}
-			iva += parseFloat(recargo);
+			/// Realmente el recargo no debe incluirse
+			// var recargo:Number = parseFloat(cursor.valueBuffer("recargo"));
+			// if (isNaN(recargo)) {
+			// 	iva = recargo;
+			// }
+			// iva += parseFloat(recargo);
 			valor = cursor.valueBuffer("pvpunitario") * ((100 + iva) / 100);
 			break;
 		}
@@ -181,11 +182,12 @@ function ivaIncluido_commonCalculateField(fN, cursor):String
 			if (isNaN(iva)) {
 				iva = 0;
 			}
-			var recargo:Number = parseFloat(cursor.valueBuffer("recargo"));
-			if (isNaN(recargo)) {
-				iva = recargo;
-			}
-			iva += parseFloat(recargo);
+			/// Realmente el recargo no debe incluirse
+			// var recargo:Number = parseFloat(cursor.valueBuffer("recargo"));
+			// if (isNaN(recargo)) {
+			// 	iva = recargo;
+			// }
+			// iva += parseFloat(recargo);
 			valor = parseFloat(cursor.valueBuffer("pvpunitarioiva")) / ((100 + iva) / 100);
 			break;
 		}
