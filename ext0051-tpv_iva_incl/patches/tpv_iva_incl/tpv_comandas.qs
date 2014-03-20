@@ -31,22 +31,30 @@ class ivaIncluido extends oficial /** %from: oficial */ {
 //// IVA INCLUIDO ////////////////////////////////////////////////
 function ivaIncluido_datosLineaVenta():Boolean
 {
-	this.iface.__datosLineaVenta();
+	var util= new FLUtil;
+	var cursor= this.cursor();
 
-	var util:FLUtil = new FLUtil;
-	var cursor:FLSqlCursor = this.cursor();
+	if (!this.iface.__datosLineaVenta()) {
+		return false;
+	}
+
 	var ivaIncluido:Boolean;
 	if (cursor.valueBuffer("referencia")) {
 		ivaIncluido = formRecordtpv_lineascomanda.iface.pub_commonCalculateField("ivaincluido", this.iface.curLineas);
 	} else {
 		ivaIncluido = flfactalma.iface.pub_valorDefectoAlmacen("ivaincluido");
 	}
+
+	this.iface.curLineas.setValueBuffer("recargo", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("recargo", this.iface.curLineas));
 	this.iface.curLineas.setValueBuffer("ivaincluido", ivaIncluido);
 
-//	if (ivaIncluido) {
-		this.iface.curLineas.setValueBuffer("pvpunitarioiva", util.roundFieldValue(this.iface.txtPvpArticulo.text, "tpv_lineascomanda", "pvpunitarioiva"));
+	if (this.iface.curLineas.valueBuffer("ivaincluido")) {
+		this.iface.curLineas.setValueBuffer("pvpunitarioiva", util.roundFieldValue(this.iface.txtPvpArticulo.text, "tpv_lineascomanda", "pvpunitario"));
 		this.iface.curLineas.setValueBuffer("pvpunitario", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvpunitario2", this.iface.curLineas));
-//	}
+	} else {
+		this.iface.curLineas.setValueBuffer("pvpunitario", util.roundFieldValue(this.iface.txtPvpArticulo.text, "tpv_lineascomanda", "pvpunitario"));
+		this.iface.curLineas.setValueBuffer("pvpunitarioiva", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvpunitarioiva2", this.iface.curLineas));
+	}
 
 	this.iface.curLineas.setValueBuffer("pvpsindto", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvpsindto", this.iface.curLineas));
 	this.iface.curLineas.setValueBuffer("pvptotal", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvptotal", this.iface.curLineas));

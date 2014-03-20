@@ -88,7 +88,8 @@ function envioMail_enviarDocumento(codFactura:String, codCliente:String)
 	curImprimir.setValueBuffer("descripcion", "temp");
 	curImprimir.setValueBuffer("d_facturascli_codigo", codigo);
 	curImprimir.setValueBuffer("h_facturascli_codigo", codigo);
-	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_facturascli", "", "", false, false, "", "i_facturascli", 1, rutaDocumento, true);
+	var whereFijo:String = "PARAM_titulo\nFactura\nPARAM_tabla\nfacturascli\nPARAM_subtabla\nfactura\nPARAM_orderdef\nfacturascli.codigo\nPARAM_tablareldoc\nalbaranescli\nPARAM_reldoc\nalbaran\n";
+	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_facturascli", "", "", false, false, whereFijo, "i_facturascli", 1, rutaDocumento, true);
 
 	var arrayDest:Array = [];
 	arrayDest[0] = [];

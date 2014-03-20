@@ -88,7 +88,8 @@ function envioMail_enviarDocumento(codPresupuesto:String, codCliente:String)
 	curImprimir.setValueBuffer("descripcion", "temp");
 	curImprimir.setValueBuffer("d_presupuestoscli_codigo", codigo);
 	curImprimir.setValueBuffer("h_presupuestoscli_codigo", codigo);
-	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_presupuestoscli", "", "", false, false, "", "i_presupuestoscli", 1, rutaDocumento, true);
+	var whereFijo:String = "PARAM_titulo\nPresupuesto\nPARAM_tabla\npresupuestoscli\nPARAM_subtabla\npresupuesto\nPARAM_orderdef\npresupuestoscli.codigo\nPARAM_tablareldoc\npresupuestoscli\nPARAM_reldoc\npresupuesto\n";
+	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_presupuestoscli", "", "", false, false, whereFijo, "i_presupuestoscli", 1, rutaDocumento, true);
 
 	var arrayDest:Array = [];
 	arrayDest[0] = [];
