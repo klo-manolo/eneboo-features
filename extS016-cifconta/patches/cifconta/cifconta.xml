@@ -1,0 +1,10 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="cifconta">
+  <flpatch:addFile path="flcontppal/" name="COPYING"/>
+  <flpatch:patchXml path="flcontppal/forms/" name="co_mastersubcuentas.ui" style="legacy1"/>
+  <flpatch:patchXml path="flcontppal/forms/" name="co_subcuentas.ui" style="legacy1"/>
+  <flpatch:patchScript path="flcontppal/scripts/" name="co_mastersubcuentas.qs" style="legacy"/>
+  <flpatch:patchScript path="flcontppal/scripts/" name="co_subcuentas.qs" style="legacy"/>
+  <flpatch:patchXml path="flcontppal/tables/" name="co_subcuentas.mtd" style="legacy1"/>
+  <flpatch:addFile path="flfactppal/" name="COPYING"/>
+  <flpatch:patchScript path="flfactppal/scripts/" name="flfactppal.qs" style="legacy"/>
+</flpatch:modifications>
