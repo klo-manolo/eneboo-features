@@ -1,0 +1,3 @@
+Arregla el problema del cálculo del PMCP en facturas de proveedores.
+Hasta ahora sólo funcionaba al hacer la factura, no cuándo esta se convierte desde un albarán, o se asocian varios albaranes para hacer una factura.
+
