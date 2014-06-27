@@ -7,4 +7,10 @@
   <flpatch:patchScript name="i_masteralbaranescli.qs" path="facturacion/informes/scripts/" style="legacy"/>
   <flpatch:patchScript name="i_masterpedidoscli.qs" path="facturacion/informes/scripts/" style="legacy"/>
   <flpatch:patchScript name="i_masterpresupuestoscli.qs" path="facturacion/informes/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masteralbaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterfacturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterpedidosprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="i_masterfacturasprov.qs" path="facturacion/informes/scripts/" style="legacy"/>
+  <flpatch:patchScript name="i_masteralbaranesprov.qs" path="facturacion/informes/scripts/" style="legacy"/>
+  <flpatch:patchScript name="i_masterpedidosprov.qs" path="facturacion/informes/scripts/" style="legacy"/>
 </flpatch:modifications>
