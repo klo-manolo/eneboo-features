@@ -1,0 +1,19 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codproyecto]">
+    <field>
+      <name>codcentro</name>
+      <!--Código del centro-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Centro Coste")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <editable>false</editable>
+      <relation>
+        <table>centroscoste</table>
+        <field>codcentro</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

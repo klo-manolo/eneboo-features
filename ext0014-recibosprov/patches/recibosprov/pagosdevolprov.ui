@@ -8,7 +8,7 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>546</width>
+            <width>679</width>
             <height>346</height>
         </rect>
     </property>
@@ -148,8 +148,8 @@
                                         </property>
                                         <property name="minimumSize">
                                             <size>
-                                                <width>250</width>
-                                                <height>0</height>
+                                                <width>26</width>
+                                                <height>22</height>
                                             </size>
                                         </property>
                                         <property name="font">
@@ -251,8 +251,8 @@ en que se genero la factura</string>
                                         </property>
                                         <property name="minimumSize">
                                             <size>
-                                                <width>150</width>
-                                                <height>0</height>
+                                                <width>26</width>
+                                                <height>22</height>
                                             </size>
                                         </property>
                                         <property name="font">
@@ -303,8 +303,8 @@ en que se genero la factura</string>
                                         </property>
                                         <property name="minimumSize">
                                             <size>
-                                                <width>300</width>
-                                                <height>25</height>
+                                                <width>4</width>
+                                                <height>22</height>
                                             </size>
                                         </property>
                                         <property name="font">
@@ -348,8 +348,8 @@ en que se genero la factura</string>
                                         </property>
                                         <property name="minimumSize">
                                             <size>
-                                                <width>100</width>
-                                                <height>0</height>
+                                                <width>4</width>
+                                                <height>22</height>
                                             </size>
                                         </property>
                                         <property name="font">
@@ -383,8 +383,8 @@ en que se genero la factura</string>
                                         </property>
                                         <property name="minimumSize">
                                             <size>
-                                                <width>100</width>
-                                                <height>0</height>
+                                                <width>4</width>
+                                                <height>22</height>
                                             </size>
                                         </property>
                                         <property name="font">
@@ -418,8 +418,8 @@ en que se genero la factura</string>
                                         </property>
                                         <property name="minimumSize">
                                             <size>
-                                                <width>40</width>
-                                                <height>0</height>
+                                                <width>24</width>
+                                                <height>22</height>
                                             </size>
                                         </property>
                                         <property name="font">
@@ -450,8 +450,8 @@ en que se genero la factura</string>
                                         </property>
                                         <property name="minimumSize">
                                             <size>
-                                                <width>200</width>
-                                                <height>0</height>
+                                                <width>4</width>
+                                                <height>22</height>
                                             </size>
                                         </property>
                                         <property name="font">
@@ -471,6 +471,71 @@ en que se genero la factura</string>
                                             <string>codcuenta</string>
                                         </property>
                                     </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout5</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="FLFieldDB">
+                                        <property name="name">
+                                            <cstring>fdbIBAN</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>1</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>16</width>
+                                                <height>24</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="fieldName">
+                                            <string>iban</string>
+                                        </property>
+                                        <property name="tableName">
+                                            <string></string>
+                                        </property>
+                                        <property name="foreignField">
+                                            <string>iban</string>
+                                        </property>
+                                        <property name="fieldRelation">
+                                            <string>codcuenta</string>
+                                        </property>
+                                        <property name="showAlias">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer4</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>140</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
                                 </hbox>
                             </widget>
                         </vbox>
@@ -510,8 +575,8 @@ en que se genero la factura</string>
                                 </property>
                                 <property name="minimumSize">
                                     <size>
-                                        <width>220</width>
-                                        <height>25</height>
+                                        <width>26</width>
+                                        <height>22</height>
                                     </size>
                                 </property>
                                 <property name="font">
@@ -544,8 +609,8 @@ en que se genero la factura</string>
                                 </property>
                                 <property name="minimumSize">
                                     <size>
-                                        <width>79</width>
-                                        <height>25</height>
+                                        <width>26</width>
+                                        <height>22</height>
                                     </size>
                                 </property>
                                 <property name="maximumSize">
@@ -598,8 +663,8 @@ en que se genero la factura</string>
                                 </property>
                                 <property name="minimumSize">
                                     <size>
-                                        <width>160</width>
-                                        <height>25</height>
+                                        <width>26</width>
+                                        <height>22</height>
                                     </size>
                                 </property>
                                 <property name="font">
@@ -657,8 +722,8 @@ en que se genero la factura</string>
                         </property>
                         <property name="minimumSize">
                             <size>
-                                <width>190</width>
-                                <height>25</height>
+                                <width>26</width>
+                                <height>22</height>
                             </size>
                         </property>
                         <property name="font">
@@ -718,8 +783,6 @@ en que se genero la factura</string>
         </widget>
     </vbox>
 </widget>
-<customwidgets>
-</customwidgets>
 <connections>
     <connection>
         <sender>fdbCodSubcuenta</sender>
@@ -736,6 +799,20 @@ en que se genero la factura</string>
 </connections>
 <layoutdefaults spacing="6" margin="11"/>
 <includehints>
-    <includehint>FLTableDB.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>fltabledb.h</includehint>
 </includehints>
 </UI>

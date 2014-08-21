@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/property[name]" >
+<property name="geometry" >
+<rect>
+<x>0</x>
+<y>0</y>
+<width>600</width>
+<height>23</height>
+</rect>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/property[geometry]" >
+<property name="acceptDrops" >
+<bool>true</bool>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/property[acceptDrops]" >
+<property name="frameShape" >
+<enum>MenuBarPanel</enum>
+</property>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/property[frameShape]" >
+<property name="defaultUp" >
+<bool>false</bool>
+</property>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -121,7 +121,17 @@
 		<editable>false</editable>
 	</field>
 	
-	<field>
+    <field>
+        <name>iban</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","IBAN")</alias>
+        <null>true</null>
+        <pk>false</pk>
+        <type>string</type>
+        <length>34</length>
+        <editable>false</editable>
+    </field>
+
+    <field>
 		<name>idasiento</name>
 		<!-- Código del asiento generado por el pago o devolución-->
 		<alias>QT_TRANSLATE_NOOP("MetaData","Asiento")</alias>

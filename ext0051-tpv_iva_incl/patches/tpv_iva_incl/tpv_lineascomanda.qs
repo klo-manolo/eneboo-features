@@ -55,6 +55,7 @@ debug("BCH " + fN);
 		}
 		case "codimpuesto": {
 			this.child("fdbIva").setValue(this.iface.commonCalculateField("iva", this.cursor()));
+			this.child("fdbRecargo").setValue(this.iface.commonCalculateField("recargo", this.cursor()));
 			break;
 		}
 		case "ivaincluido": {
@@ -70,6 +71,18 @@ debug("BCH " + fN);
 				} else {
 					this.child("fdbPvpUnitarioIva").setValue(this.iface.commonCalculateField("pvpunitarioiva2", cursor));
 /*					cursor.setValueBuffer("pvpunitario", this.iface.commonCalculateField("pvpunitario2", cursor));*/
+				}
+				this.iface.bloqueoPrecio = false;
+			}
+			break;
+		}
+		case "recargo": {
+			if (!this.iface.bloqueoPrecio) {
+				this.iface.bloqueoPrecio = true;
+				if (cursor.valueBuffer("ivaincluido")) {
+					cursor.setValueBuffer("pvpunitario", this.iface.commonCalculateField("pvpunitario2", cursor));
+				} else {
+					this.child("fdbPvpUnitarioIva").setValue(this.iface.commonCalculateField("pvpunitarioiva2", cursor));
 				}
 				this.iface.bloqueoPrecio = false;
 			}
