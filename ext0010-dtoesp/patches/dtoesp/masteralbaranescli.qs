@@ -88,6 +88,18 @@ debug("Calculando " + fN);
 			valor = parseFloat(util.roundFieldValue(valor, "albaranescli", "pordtoesp"));
 			break;
 		}
+	/** \C
+		El --totalirpf-- es el producto del --irpf-- por el --neto--
+		\end */
+		case "totalirpf": {
+			valor = (util.sqlSelect("lineasalbaranescli", "SUM((pvptotal * irpf) / 100)", "idalbaran = " + cursor.valueBuffer("idalbaran")));
+			if (parseFloat(cursor.valueBuffer("pordtoesp")) != 0)
+			{
+			valor = valor - (valor * parseFloat(cursor.valueBuffer("pordtoesp")) / 100);
+			}
+			valor = parseFloat(util.roundFieldValue(valor, "albaranescli", "totalirpf"));
+			break;
+		}
 		default: {
 			valor = this.iface.__commonCalculateField(fN, cursor);
 			break;

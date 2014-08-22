@@ -13,7 +13,7 @@ class centrosCoste extends pgc2008 /** %from: pgc2008 */
 	function centrosCoste( context ) { pgc2008( context ); }
 
 	function lanzarBalance(cursor:FLSqlCursor) {
-		return this.ctx.centroscoste_lanzarBalance(cursor);
+		return this.ctx.centrosCoste_lanzarBalance(cursor);
 	}
 	function agregarCentro(curInforme:FLSqlCursor, nomSubTabla:String):Boolean {
 		return this.ctx.centrosCoste_agregarCentro(curInforme, nomSubTabla);
@@ -28,16 +28,16 @@ class centrosCoste extends pgc2008 /** %from: pgc2008 */
 		return this.ctx.centrosCoste_eliminarSubcentro(curInforme, codSubcentro, nomSubTabla);
 	}
 	function datoFacturasRecCC(nodo:FLDomNode, campo:String):String {
-		return this.ctx.centroscoste_datoFacturasRecCC(nodo, campo);
+		return this.ctx.centrosCoste_datoFacturasRecCC(nodo, campo);
 	}
 	function datoTotalFacturasRecCC(nodo:FLDomNode, campo:String):String {
-		return this.ctx.centroscoste_datoTotalFacturasRecCC(nodo, campo);
+		return this.ctx.centrosCoste_datoTotalFacturasRecCC(nodo, campo);
 	}
 	function popularBuffer(ejercicio:String, posicion:String, idBalance:Number, fechaDesde:String, fechaHasta:String, tablaCB:String, masWhere:String) {
-		return this.ctx.centroscoste_popularBuffer(ejercicio, posicion, idBalance, fechaDesde, fechaHasta, tablaCB, masWhere);
+		return this.ctx.centrosCoste_popularBuffer(ejercicio, posicion, idBalance, fechaDesde, fechaHasta, tablaCB, masWhere);
 	}
 	function establecerListasCentros(listaCentros:String, listaSubcentros:String) {
-		return this.ctx.centroscoste_establecerListasCentros(listaCentros, listaSubcentros);
+		return this.ctx.centrosCoste_establecerListasCentros(listaCentros, listaSubcentros);
 	}
 }
 //// CENTROS COSTE /////////////////////////////////////////////////
@@ -66,7 +66,7 @@ function centrosCoste_agregarCentro(curInforme:FLSqlCursor, nomSubTabla:String):
 		filtro = "codcentro NOT IN (" + listaCentros + ")";
 
 
-	var f:Object = new FLFormSearchDB("co_i_seleccioncentroscoste");
+	var f:Object = new FLFormSearchDB("co_i_seleccioncentrosCoste");
 	var curCentros:FLSqlCursor = f.cursor();
 
 	if (curInforme.modeAccess() != curInforme.Browse)
@@ -113,7 +113,7 @@ function centrosCoste_agregarCentro(curInforme:FLSqlCursor, nomSubTabla:String):
 			curTab.refreshBuffer();
 			curTab.setValueBuffer("idinforme", idInforme);
 			curTab.setValueBuffer("codcentro", codCentro);
-			curTab.setValueBuffer("descripcion", util.sqlSelect("centroscoste", "descripcion", "codcentro = '" + codCentro + "'"));
+			curTab.setValueBuffer("descripcion", util.sqlSelect("centrosCoste", "descripcion", "codcentro = '" + codCentro + "'"));
 			curTab.commitBuffer();
 		}
 	}
@@ -150,7 +150,7 @@ function centrosCoste_eliminarCentro(curInforme:FLSqlCursor, codCentro:String, n
 
  	// Un centro
 	if (codCentro)
-		curTab.select("codsubcentro IN (select codsubcentro from subcentroscoste where codcentro = '" + codCentro + "') AND idinforme = " + idInforme);
+		curTab.select("codsubcentro IN (select codsubcentro from subcentrosCoste where codcentro = '" + codCentro + "') AND idinforme = " + idInforme);
  	// Todos
  	else
 		curTab.select("idinforme = " + idInforme);
@@ -200,7 +200,7 @@ function centrosCoste_agregarSubcentro(curInforme:FLSqlCursor, nomSubTabla:Strin
 	if (listaSubcentros)
 		filtro += " AND codsubcentro NOT IN (" + listaSubcentros + ")";
 
-	var f:Object = new FLFormSearchDB("co_i_seleccionsubcentroscoste");
+	var f:Object = new FLFormSearchDB("co_i_seleccionsubcentrosCoste");
 	var curSubcentros:FLSqlCursor = f.cursor();
 
 	if (curInforme.modeAccess() != curInforme.Browse)
@@ -248,7 +248,7 @@ function centrosCoste_agregarSubcentro(curInforme:FLSqlCursor, nomSubTabla:Strin
 			curTab.refreshBuffer();
 			curTab.setValueBuffer("idinforme", idInforme);
 			curTab.setValueBuffer("codsubcentro", codSubcentro);
-			curTab.setValueBuffer("descripcion", util.sqlSelect("subcentroscoste", "descripcion", "codsubcentro = '" + codSubcentro + "'"));
+			curTab.setValueBuffer("descripcion", util.sqlSelect("subcentrosCoste", "descripcion", "codsubcentro = '" + codSubcentro + "'"));
 			curTab.commitBuffer();
 		}
 	}
@@ -282,7 +282,7 @@ function centrosCoste_eliminarSubcentro(curInforme:FLSqlCursor, codSubcentro:Str
 	util.destroyProgressDialog();
 }
 
-function centroscoste_datoFacturasRecCC(nodo:FLDomNode, campo:String):String
+function centrosCoste_datoFacturasRecCC(nodo:FLDomNode, campo:String):String
 {
 	var util:FLUtil = new FLUtil;
 	var idAsiento:Number = nodo.attributeValue("co_asientos.idasiento");
@@ -326,7 +326,7 @@ function centroscoste_datoFacturasRecCC(nodo:FLDomNode, campo:String):String
 	return valor;
 }
 
-function centroscoste_datoTotalFacturasRecCC(nodo:FLDomNode, campo:String):String
+function centrosCoste_datoTotalFacturasRecCC(nodo:FLDomNode, campo:String):String
 {
 	switch(campo) {
 		case "bi":
@@ -341,7 +341,7 @@ function centroscoste_datoTotalFacturasRecCC(nodo:FLDomNode, campo:String):Strin
 	}
 }
 
-function centroscoste_lanzarBalance(cursor:FLSqlCursor)
+function centrosCoste_lanzarBalance(cursor:FLSqlCursor)
 {
 	var util:FLUtil = new FLUtil;
 	var idBalance = cursor.valueBuffer("id");
@@ -359,7 +359,7 @@ function centroscoste_lanzarBalance(cursor:FLSqlCursor)
 }
 
 
-function centroscoste_popularBuffer(ejercicio:String, posicion:String, idBalance:Number, fechaDesde:String, fechaHasta:String, tablaCB:String, masWhere:String)
+function centrosCoste_popularBuffer(ejercicio:String, posicion:String, idBalance:Number, fechaDesde:String, fechaHasta:String, tablaCB:String, masWhere:String)
 {
 	var util:FLUtil = new FLUtil();
 
@@ -517,7 +517,7 @@ function centroscoste_popularBuffer(ejercicio:String, posicion:String, idBalance
 }
 
 
-function centroscoste_establecerListasCentros(listaCentros:String, listaSubcentros:String)
+function centrosCoste_establecerListasCentros(listaCentros:String, listaSubcentros:String)
 {
 	this.iface.listaCentros = listaCentros;
 	this.iface.listaSubcentros = listaSubcentros;
