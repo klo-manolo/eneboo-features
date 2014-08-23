@@ -1,5 +1,5 @@
 <xupdate:modifications>
-<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[wg_widget]" >
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_amortizaciones]" >
 <action>
 <property name="name" >
 <cstring>co_traspasoejer</cstring>
@@ -12,7 +12,7 @@
 </property>
 </action>
 </xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[wg_widget,activated(),FLWidgetApplication,execDefaultScript()]" >
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_amortizaciones,activated(),FLWidgetApplication,openDefaultForm()]" >
 <connection>
 <sender>co_traspasoejer</sender>
 <signal>activated()</signal>
@@ -23,6 +23,4 @@
 <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ejercicio]/action[ejercicios]" >
 <action name="co_traspasoejer" />
 </xupdate:insert-after>
-<xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >32</xupdate:update>
-<xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >369</xupdate:update>
 </xupdate:modifications>
