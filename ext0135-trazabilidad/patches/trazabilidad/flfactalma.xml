@@ -1,0 +1,94 @@
+<xupdate:modifications>
+<xupdate:update select="/ACTIONS[ACTIONS,1]/action[stocks]/scriptformrecord[scriptformrecord,1]/text()[1]" >stocks</xupdate:update>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[stocks]/scriptformrecord[scriptformrecord,1]" >
+<scriptformrecord>regstocks</scriptformrecord>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]" >
+<action>
+<name>lotes</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los lotes son grupos de artículos con una determinada fecha de caducidad, cuyas entradas, salidas y regularizaciones registra el sistema&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lotes&quot;)</alias>
+<table>lotes</table>
+<form>masterlotes</form>
+<formrecord>lotes</formrecord>
+<scriptform>masterlotes</scriptform>
+<scriptformrecord>lotes</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lotes]" >
+<action>
+<name>movilote</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los movimientos de lotes registran las entradas, salidas y regularizaciones de cada lote de artículos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Movimientos de lote&quot;)</alias>
+<table>qry_movilote</table>
+<form>master</form>
+<formrecord>movilote</formrecord>
+<scriptformrecord>movilote</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[movilote]" >
+<action>
+<name>moviloteo</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Acción gemela de movilote que permite distinguir los movimientos asociados al almacén de origen y de destino en líneas de transferencia de stock&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Movimientos de lote origen&quot;)</alias>
+<table>qry_movilote</table>
+<form>master</form>
+<formrecord>movilote</formrecord>
+<scriptformrecord>movilote</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[moviloteo]" >
+<action>
+<name>purgarmov</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Las purgas de movimientos son acciones de eliminación de los movimientos por lotes que ya no tienen relevancia en el sistema. Estas purgas se realizan por cuestiones de rendimiento del sistema, y deben hacerse siempre tras realizar una copia de seguridad de la base de datos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Purgas de movimientos&quot;)</alias>
+<scriptform>purgarmov</scriptform>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[purgarmov]" >
+<action>
+<name>insertarlotes</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los lotes son grupos de artículos con una determinada fecha de caducidad, cuyas entradas, salidas y regularizaciones registra el sistema&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lotes&quot;)</alias>
+<table>lotes</table>
+<form>lotes</form>
+<formrecord>lotes</formrecord>
+<scriptform>lotes</scriptform>
+<scriptformrecord>lotes</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[insertarlotes]" >
+<action>
+<name>trazabilidadinterna</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Muestra los movimientos de almacen en una fecha concreta&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Trazabilidad interna&quot;)</alias>
+<table>trazabilidadinterna</table>
+<form>master</form>
+<formrecord>trazabilidadinterna</formrecord>
+<scriptformrecord>trazabilidadinterna</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazabilidadinterna]" >
+<action>
+<name>lineastrazabilidadinterna</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Muestra para un determinado artículo (por lote) sus entradas y salidas en el mismo formulario&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lineas Trazabilidad interna&quot;)</alias>
+<table>lineastrazabilidadinterna</table>
+<form>master</form>
+<formrecord>lineastrazabilidadinterna</formrecord>
+<scriptformrecord>lineastrazabilidadinterna</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[marcas]" >
+<action>
+<name>seleclotes</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Los lotes son grupos de artículos con una determinada fecha de caducidad, cuyas entradas, salidas y regularizaciones registra el sistema&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Lotes&quot;)</alias>
+<table>lotes</table>
+<form>masterseleclotes</form>
+<formrecord>lotes</formrecord>
+<scriptform>masterseleclotes</scriptform>
+<scriptformrecord>lotes</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,97 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>movilote</name>
+	<query>ventaslotes</query>
+	
+	<alias>QT_TRANSLATE_NOOP("MetaData","Ventas de Lotes")</alias>
+	
+	<field>
+		<name>id</name>
+		<!-- Identificador del movimiento -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Identificador")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<visiblegrid>false</visiblegrid>
+	</field>
+	
+	<field>
+		<name>codlote</name>
+		<!-- Identificador del lote asociado-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Lote")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>30</length>
+		
+		<relation>
+			<field>codlote</field>
+			<table>lotes</table>
+			<card>M1</card>
+		</relation>
+	</field>
+	<field>
+		<name>nombrecliente</name>
+		<!--Nombre del cliente-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>codcliente</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>6</length>
+
+		<relation>
+			<table>clientes</table>
+			<field>codcliente</field>
+			<card>M1</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>codalbaran</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Albarán")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+		<default>0</default>
+		<editable>false</editable>
+	</field>
+	
+	<field>
+		<name>codfactura</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Factura")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>12</length>
+		<default>0</default>
+		<editable>false</editable>
+	</field>
+
+	<field>
+		<name>fecha</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fecha")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>date</type>
+	</field>
+	
+	<field>
+		<name>cantidad</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Cantidad")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>double</type>
+		<partI>6</partI>
+		<partD>2</partD>
+		<default>1</default>
+	</field>
+</TMD>

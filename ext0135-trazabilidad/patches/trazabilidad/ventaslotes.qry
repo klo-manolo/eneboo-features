@@ -1,0 +1,18 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>ventaslotes</name>
+	
+	<tables>albaranescli,lineasalbaranescli,movilote</tables>
+	
+	<select>
+		movilote.id,movilote.codlote, albaranescli.nombrecliente, albaranescli.codcliente, albaranescli.codigo as codalbaran,facturascli.codigo as codfactura, movilote.fecha, movilote.cantidad
+	</select>
+	
+	<from>
+		movilote LEFT OUTER JOIN lineasalbaranescli ON movilote.idlineaac = lineasalbaranescli.idlinea LEFT OUTER JOIN albaranescli ON lineasalbaranescli.idalbaran = albaranescli.idalbaran
+		LEFT OUTER JOIN lineasfacturascli ON movilote.idlineafc = lineasfacturascli.idlinea LEFT OUTER JOIN facturascli ON lineasfacturascli.idfactura = facturascli.idfactura
+	</from>
+	
+	<where>
+	</where>
+</QRY>
