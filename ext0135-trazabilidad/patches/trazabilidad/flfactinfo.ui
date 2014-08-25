@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[tesoreraRecibosAction]" >
+<action>
+<property name="name" >
+<cstring>i_movilote</cstring>
+</property>
+<property name="text" >
+<string>Movimientos de lotes</string>
+</property>
+<property name="menuText" >
+<string>Movimientos de &amp;lotes</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_reciboscli,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>i_movilote</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Almacn]/action[i_inventarioval]" >
+<action name="i_movilote" />
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,26 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[co_amortizaciones]" >
+<action>
+<property name="name" >
+<cstring>co_traspasoejer</cstring>
+</property>
+<property name="text" >
+<string>Traspaso entre ejercicios</string>
+</property>
+<property name="menuText" >
+<string>Traspaso entre ejercicios</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[co_amortizaciones,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>co_traspasoejer</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Ejercicio]/action[ejercicios]" >
+<action name="co_traspasoejer" />
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,14 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[trazadoc]" >
+<action>
+<name>seleclote</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Permite seleccionar o crear un lote para asociarlo a líneas de albaranes generados a partir de pedidos&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Seleccionar Lote&quot;)</alias>
+<scriptform>seleclote</scriptform>
+<scriptformrecord>seleclote</scriptformrecord>
+<table>seleclote</table>
+<form>seleclote</form>
+<formrecord>seleclote</formrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

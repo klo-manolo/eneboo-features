@@ -1,0 +1,333 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >615</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]" >
+<images/>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="trazabilidadimage0" >
+<data format="PNG" length="1568" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005e749444154789cc5975f685be719c61fa56e39292578f9b3c910980ab9c829294425bd7077535fecc6d960d8e46231e9a84d183664c5734bd95cd3796aa09d67469834101c5d881e337024078cd20b0da790201552ac803ba9e082dce542719d56761c9035d7e5b78bef1c5b525adbcd06fb403c7ce7e89cf7799ff779df4f0a00fa7faeb6d60b8140206059d6a1fa56fd09abcd0ad4b7eab2da2cd5b7ea016f8f65b53f55b73a7ea42dfdcbd246b5bef6f9f70ebc9d38d0f4b12ceb909370fe09ac51e02ba03a5f98af02ab1478003c282e14d781afbb0653cba15f9009be3cfa87f613d59fa8cd7a24a1dd08008f12509b0e032bb5f51a00b59a417cf0f695bb65007a861d42bf84f070f19bf0201fb79fe9ffb5acf6438f4dc0b2acc36ed2fd0280151394759a4850f570b108c0e865177b1a3a878bd4ca10bec467c1d3fc4ad2138fa74092954aa56262565b94d8f438ac1816b97c0e8091cb0ec19f41f8528e9ef7a067b2867d81ac75d47ef171145869cad4cf7cb3054d1598cbce99725c72084d833d98a35682a124b0c8aa75a2fbdce32bb0de9cb9bffcebbe0299d9145c81d03917fb22d81773740e437fa2c6f9181bed277b2efcf70ab42e4f01b206dca44b791642af829d85e0b914a169e8ba049db779681def7cb995c0815669ea5b75f5a92f70efde3de907d2c6c30de9a0a4af9bbfb7f170437a56ca7f94977e2a5dbf9656df2b7deabb96507d55d2df62b29fe9d50b1ffe591d923ade8f3d639fe97e576dd60fbfb5160d0a1c7193eefd26055ae46f55c0f7406a3a0505181a73601d5253a9a6fb13935182c74317f6f2c01192dcdfaf07e60bf34d4132b319831f3463ee660e62103c1e7c4d52db7712b02ceb889b70bfdc8f02f3658c3f6e7afbbc2143de806f507f1f8d45098542c3929edc5d81045f56eeeeae80bface1794840b9648652d1c7050f0b06e76fcf431c82c783c37b2ae0249c7d29d0330b7605ec6153ebedc979d7c3459a48387187502834b22b015f8172d938ac5a352c2ad5e65e744bd00ff4674183e0cc180ff81372be5469522297cff90abcb11f05be6acc682809ed0b604f426d1dce4f41d72638defde038d80bd0330dd54db0e3105c8048c21890028d0abcd948e05be7c08006b4f4d992744c5abdbfaad82b92f5f782ee6d49cfbd2fdd5896ea57a58163d2eb77a4174e48fa78434be7a4de8ca435a9e3af31bd659d3573222ce56fe535a001694b813de7c0b6027e2d3d2fd8978de9fb3dd747bc1a8f2c189cf0f6f645172a3cd20d9e02bfdf4f17547d376f7743d56068b24a3f30bab04322d2103cfcc61c23e390bb31d7147c2e3b07710885426fed4ac0b2ac234edc31397b2ff595c82d981aa70c17464b1e096f2276c6a13d6bce04f05a0fb6cf0a27e6503c511cdb5b8138557fc2154be6edc5c5323d80eb91192998cc233e89451802acb1325dbfdb5160ee46c384340abcbd9702479db8b30a802773b154a4b669fa1ea07bda53c02f83e7f29e19e85a070de68c7ad9cc4e704f01fba43dde48e03bbb20ff515e7a5e2add292876e7391d1e2da9704beaf8cd752ddd929efd6349abcf4bef7c222d85a58ea1b40aff903e7d33ad76bda4836f27a44fceeafab5b4cefefcacd257d3a60ba403524327eca6805fc348122843e4bd09588154c28115e89ef18c3706e4c1b912850a44c627e0360c8d4dc0a6774a62ce82f2a9f23b7b79e02871d6e65a5cbcedea9b66ef7e90a33301ddf12ac1573d72341ecd2e4c813be561d28518d827edcb929edadd0331670dd83ee5fca07e5ffba7def93804f3d07571d49c173768aab99fb99b74a16614089f0abfbb2b816d05b2cd2e6ec5dc4d83a14187c87884cc8c0996f2712ab59379c20c2162609fb2ffb49702c79cb8f3a0514ebf8f5bf799d90c54c14d38663fd390f9e64ee64edcfc428ac6a2944f9727f624408c074ec281b8f770029c440326bd9727bde08df7e3e6b9682c0a31885e89c21598989c8018844f87ffd2482000cdff8e0f3e79f0e9f099f06fd34affb877ab17b549da92d26d69f5aa77fb7b697def7da057bd07963e5ffa707979f92af06f498f1208040201af4f9f6eead7ffdd42d206f08d24fd07b970ec2447a8ebd30000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="trazabilidadimage1" >
+<data format="PNG" length="1625" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000062049444154789cc5975f685be719875f275af8564aaafcd926338f1d8107392117d53003e72a86edc61bb4c884511b0fe610465cbce199ec5f1a865102f5d4500c3a03c1d185997ce3c92e18371702a7e0610f54a48136d9c317f2f08ae3a9a9ec3843d23c876717dff95449b1eb26bdd801f1e33be748efef7dcefbbedf511b20ffcfa3edb0734aa9d3b583da49e5536db5839a289f92da41adcd5ba394ff544db57f4d6ad52de59347b57f6f3f9583da73053e3271a5d46937e1fe0dd825c72740399bcb96811d723c061e17f2853d60bf7734b563cdf0a7c095c81d7f67f9b2f894ef790c1c6ec22767815265af02405d2bcdbab5590460783c893508a1d1c2d3d00d3ef4770dfd4494fff40b1b504a9d4d4e25ff0540097dec795af1b4ece9ba96c8bd24d6ebd03d5aa05284d008eb812e6e88f2bff26204a6286d6d6de958e57253e6ec7b1e4afa7c36930560ecae4be007101a59263c01e1c90aa11bfc459db7bff322044a4d999accf75b7453cb627a1180f0888b3503f68d652a79184a00ebeca8cedeab2f4cc0d4403da8f1e49dcfe6348185f9144c827535897d1decebcb8446612851a1dfa1eabf101efce2045a0f8f00692dc9a924c579b07e0c761aac37525833d03302dd199ea88eee2bad064eb41aa81dd4644006da1e3e7c287246a4faa42af26511f96ff37dd52755916f88e43ecc897c4fe4fdf76665e0470332f05e426a3b22d5df3bd2eeeb936f7ff08eb48b48fb1f9c97edaedeb7c5a7be7a584d341238979c4a7e0c7c5afd2df85b092c3ed035909a49410e866fbbb007a9e964538d44efc508745883c7d5c02b4c51dadad435606ae1991af0baa2902f340559985fd07abf59979796c1814047e06722e23bd2402010f856cc89edd5bf04b0a2c5145c9d8cd1bc777da5f9fee59675cc896159d6a8887ce950033d577a06634eec9f8d992cde5f6c0a6ed46037a48aeb7a3216560b4d648c6633598843a02330fa0c01a5d409d2bc934c24a104c323c3300ffd57fb610efadfe88725884e449b33bb0f943e1d46f5c969bac39b94859c36e1c65d2ccb1a6b34d0262232343834695fb27fbaf6f7b5a76b6b6b9bc160f0ebc1cee0a93bfe3be2f81ca9d6aab2f1d186ec3eda15a594043b8272e6fc197973fb4db9b67d4d125d0959ed7e5f2e86be2f3b6b0939635f938d8d87120cb6cbeadaaa5cb42fcaca9f57e4f25f2f4b7ba4fd17db1f6dbf0b1c9867de397c7db852f96ee563f5b27a4bf9d46bd1bbd17253265e66a9b9143c80f0eb61487b0a908f010a327ea00c19dbc3ee91cad148e097ad8fe0a4dfef7f4d29f54311e9109fb493e09179a6e52d6f2fd86ba8fa091dfcd6af23143229c00f2b02d8b0d90b0c41b11be861f9414317c4c1eab07e7554179cf4eae1ac9b703f398c407d227ad59f9c5ed0ed99162000990060412ee0d542375061c12b648fc06f8eec026f0e9c2341d95473b1e891283593306696e72390102ac6c4aa0df4c07a0f10a2381780296f4ec4c1b2acb73ed38052ea9c1b77cb8d55fc0c09b3479839908ec1be1f5694be58d4c1c9fb0145ec5ea44ea0d059b87d3c813865d3efad24eaef091e91fa7b41fa96fecd554bd7424e0142715ac104a4e6160c81df1e47e0bc1b777780fa84332628b61069d515cbab01052858122859f5f9e13a2ef6057bfc3802e789b363864d9d84996c86487df2796432b774f07c0010caf3a2f18ff780e36d540ed817ec88889cfa5c04b22bde84cbd064c2f475216f325fd0c15703801fe644eb8c829c7e4f00bd17142f15ef7c1e02bb6623326ac66d3653008629ccd95a972240d82b403fc5691dbc7c5fe0b64d643c0ad39e094de0eef1041c771780259a4c98f5627a114a659814d8573ae37d014763674e206f3176730cf6bce0154d207429f4f6671a3004ccfe6e76bd565d98d77d1dbb1b86dbdd446ef6c07898e44488c8cd5ec66ede02c70b9ed02d8803f625fb77c711f88a1b771fd73385fa3b5febda4cb8e4740af62139958232c41c9db1c9dc8deb37a49813a3f86a317aac011c1ebb0917e2de9713e0261a74cafbf1563599c675301c884dc66012a2f7a2e040e8d5d0bb8d069ef973aa7ceaa55057e8e7b332fbcdbe833ec427220722b3be59e993befa7db3f2dcebb63ee93bb1f18f8d0fb6b7b7ff08fc47e4887fc7dee7a523ae7fd10311a9024f4544fe072ab10016c05a52160000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="trazabilidadimage2" >
+<data format="PNG" length="2025" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000007b049444154789ca5976f6c93d715c67f0147bade12edbe93595fb7e9e66c3061041241a0e1880f4946a52a6e564ab44ea4a55543d9a40498509836ada15297f6c3dad0aa15d9bf924f6da9c462a8684da5764d6911616523914a6b1843312b08bb80e2bbe2c577607af6e1be0e24034ab7235947af7c75cf7dceb9f739cfa9e2cbd92ce00ee0bb4014a8052e0313c009200bfcebcb6c58758bebbe0ddcaf42aa15c562ad74adc5a2420a5bb650065334ffa6cc69603f3004bc0394ffdf0344819fe91afdf041ffe0d71fd58fa294c262499326594e0260cb965439458b69c1140dc61828b31f781a78f37f3d409b52ead9f8fcf8dc86860694525086bcc9c365b0d602502a970813a6542e01608a066b2cd97c165bb45780df025b0173bd20b36e107c93effbbb3bd776ce1d3d3c4a4b530b039b072004a9b529a88674671a5dab1956c3a060580f1356610e460ee2fb3ef1f9717cdf9fad426a03b01bf8e6ad6660536c6eecf92d9bb7d0ddd5cdc881111ac71ae93ed98d35166b2d168b1ff119f8cd00bd8ff7923b95c35cbc0660190ac502d65ab2a7b2e4f3798043c0fdc0999b649dd6585decf233db9e111111392c22e7447a36f688ec13e958d321b25b64f50f578b9c1591cfdcb2a1dd432227443ad7778aec1259bd6ab5c82a91d695ad92589e103fe20b20c06b40cd8d32709baa511ff46ceef9d693bf7a92f4eb69928524dd7fedae20408594f34ab16efd3a1a138d14ce17f0e6788c8e8db2a46109fd4ff73bd417f25082822d608d65ecf818b668017e01fcfa7ae8b73537353b48ef3b27e79ceb7ba2ef2af2bd227d5bfb649a5d0afcb8736fec7d43e41391ae8d5d22bb449a57364b7c7e5c0821c0a7c0a299c1635a6bd3f7549f1c193de2f61a1f9fb6f93b6fbd238f6d7d4c3ad676c8cd6ce2ec8488887cfce1c72222d2b1b6c3956245427c7faa14cf31e301fc7c7cf1b8ecf8fd0e914b01021191891908838cc8899b9e61cafa9ee893e6a66669bda75526ef9e94f8c2b828a5041807e6119c62b652aa6d83bf8175c575f43fd74fb22d49a150000f4a174b508d23dc39c171e705df37b1f49e3463636310025dab79503d88aed18e4fa01e585e597b87d6faa2ac12e9d9dc23322a226fcd8072e97af86e62e32272d8d55ef68a743ed229b2db7dc76231512125c076a0ba0a68f1ebfc3f2d59b8a4ca8ffa98824185158d2b1ae9eeeabe39cceb5909f823245f4da23d8dd61a700c690a86ecc92cb933394cd1bc0574cc026e57a8aaa1f210a660489553e4cee7e8dcd349f7a6eeab9bdeaa85a1ff423fe9ce344a2906d63a067d65cd2b28942b4108806f00b555c04f62b1d8efa27e144f7b807bef16d7e554ad22b53c45b62d4bfdbcfa2f4e40a944381c763c72344977be1bca608b1673d170ece431970163fe06fc601650ae34cd922d31c41000e987d2684f935a93a2fd403bf517eac91ccdb88537ba8097211c0e4301926d49326d1906b60de0698fc13583586b4987d295d59f035205dc1bab8bbde6453c57af1078ca8310a8b09a623f2fe2d1ff6cbf2b47f8fac1a98652a144d80b93cd66a9afaf27732cc382f80206ff30c8e847a31c3a7088eca92cc6980f801f012cd0117d697cf1b82456246472e5a4b4dedd2ab22be0fe7dc12dbe74cd6b98e92b56e18db381ffd0b923871db90ded1a12d92b152ed803cc99059cc2f28f64390965a64446fbce76001e78e9019452648e67a01a0ae70b0e69851fae350f72b91c4421732c038b60e4d0084b962d61f8cd61da8fb553bfa9bea2938e034e5410e2c5f8dcb824962664a269c2656055c0fdbb459e792ae88e1526acf82003db9fdf3e1d79c0e247461c721976ff352c6d105da3851093403b30bbd20d57ea887ebbbeae1ea5145e4d700794826a48ed4a4dddeedce91cd13ba3e47239a2d128e9d7d3ec7c6927a664482412342e6ba4e5ae163247332c58b4c0e989bf3792dc9364e4cf234e4f14ed01e0c7411600a8564aed8fcf8f4b6279429a9b9a65f2eee02e8c5c4554a9e9542fc888c8e8358cb7b653645864fbb620234157ed5adf25b1584c74448b52ea0ad0037c15a6eb81bbfc88ffa6e77bb3b5d6a89022acc2f877fa0c2e1e247d679a645b72aaefe74ee788be1b25f96a12a5147ed467400db0ceacc35a8b8e6806e60fd09bef65df9e7d64f359b0608ae63d6023f011ae334eb3176275316958da20cd2b9aa5796590897b5c26760cee989689aef55d32d134e15ec948d0ffdf0f5e4d7087269a26c4f77dd1112dc039600df0954ac0999af06b8448c5ea62dff7b487ae71bc100e39d51b8d46892f8cd3fbcb5efa9fed67dfebfb08d784f1a33e008a6be6848b86c28502d933598c3118632cf014f0224e9400ffad8aff4999474e9d3975b070a180291a283be99d566972b91cbd7fe9a5f7f15eb6ccdbe298eda1345818bc6f10630d836d8398826187d941fe42de5170d158e079e0e5200b5376a3b9e076e0051dd1edd148741a4396ca25c22a4ca158c0531eaa465dd50b811a3645432e9fc31a8b299a4f71adf765e0131c057fe10108ead4a594faa9aed1759e76c1d22a4d3bed8ea243900eb909c95a8b291a4ac512c618acb557acb5ef05297f17383f33f8171da0620b8187817b9552f394521555e3da6ad9fd8c75e5b2d65e048e007b81b771f26bf2469bdfea705a057c07f81eb00c371ddf866b4b9f039f01392013043f8e1b408ab7b2f197b56adc585ecbd56e701937965b5cbfbc72ab9bfd077e05515254abdd3c0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="trazabilidadimage3" >
+<data format="PNG" length="1694" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000066549444154789cad575f6c53d719ff915ec8090dabd9d6ccab28332d2d356a1ed265139e36a9a691863c4dab827800d417f23081c7a6c88db4cc9aa688f280b2a88a6433a5f3dd66cdd6266afa80dc3c302552d326b0b0f88189744a3b2b6291f1b2d441018c155c7e7d38e7bbcebd49e82af57bf9dd7bfe7de7fb7dbff39d7b1f83c79452a8d7ebdee646bfa5daea0feb0f7c3edf2e58686dddd6daacb6a91ffadb7cf7f63cf3dccf6e2fddbed2bebffdbbe54af9369a50574d0af5879baff798b7a18e3ad004e0e17adfca525f81c23eabc93a625956d56ab20ef9beaaeebcb4bffdf4934fed7eceb2ac9f3cddb663abdaee7badbc542eb6bfd8fef24279e1a38efd1d6de5c5f2dd4d77e165c0635b0058ca52db9552bf544a7d27f8427094533c9fcb66a6492e1eb36fd4ab157eda31c05556f8f0ccd9c15b2cf1e35067281b3a10fa69f0c5e0af7cadbec795a55a365adc6d9643c55a0b2b4bed3cd875f0db911f475e899e8aeebb7f67d9d7b26327f6bc05ec6c05d456e0d632303f7f0b1dea9bf86d780a077ff0bdd5e4f9e416fb8ff65f95a5fef7e1bf3e7cab56af7d5cbb5bfbf48b3000004fb0c4f759a2cb3ad21a73458dc74635e234c99ba4337e8ae41c6f875f0ebfc94e9e78640a60ad61618d9d3a79aa9f2459d56be6e7aa0cda64ea7a89ec27c3df0f31d8d5cd13972a0c0e91ea68c6b5d9e29cde654767870d60c3281b0c58d8aa2cd50c0bcdca52cd009afc7effeedc85dcbfd72e1ab47594b19327c80a19e90a9325b23b4dfac6c95436af072e6a480c27ee0576057e01e071f1d7b4d679a833f44aac2ff6673ee0542a9dfa3bd3bc9a4aa7ae32cb9937cebe71f1f083c33b0ad70a008077ffb98cfb7781837f9945e1a3327aa28701b513c7df7e17a801f8bd8d9e633fc2f2f232f02490fd4316857f1416cb4be55900f7d645ce71fe86453eda0cfd9c361a387783d555323c40862e93917e4d7ba0970c4d936397c748929974862c91f15fc7c922ff130804ba5cce235d91a3c5a2f65e5dd15e2a958aebdd695fd4ed93137a715fef24fd0364e06c91c101d277324fff51323e3048924cd92972884c8da4f4fb488aec635129b55fe7dc524d89e1c4077a7513a1e0750d37aedfd00fb31a66a6674892b974865c2143a7130c4c90fed7120c4d90b1fe385925078706c922994826f4c439a385a1047980e700007ebfff296679a774b3e48a509ccc14665c9bf062ee42861c21cf9c3d430e906706e21c3c37a89d27c9dc859c19976bac6793ddaf76ff0d401b2a7b2bfb52764af36bd42a91f2a6c1c5cf4113d9e4c4a47e1837cccd1ae68c669ccd6473e428af0078068140e0798eb0ea445630938c79b5208b3adaa86eac915249332ae77f6c5c6b4684d97da4fb0a806711dc1b7c3e356218908857e83651bfd186a309a311499744ee68e8a67bbc2b1d97a937e0306022979cafb355f762726ac4b930230c080a03929efca5bc9b81cade4a8301a9031281d7a45f4e87a46b42c3e494d1803028774141432efb0806bcaaf79ae47addfbeac6e31c0666d76820bb01032e0dcc6dc2c0ea26e8356997f98631092e93d595f2d10c4c6fc28051b9f4cbe9104d544aeefa217545fac746c7c87443881b6ac039b772bebd910943e65c3b39bfac41e875722ff5c4682493360c6437604054ba190312b19c6f192f9bf6462eea97f6fca53c699b3464bd1a481a0d18b57abf7c1c557bef0a41192f75c4c394141fb99032d9cc7a06a45239e5d46312999c126fc52b154b1b3222ebe62ee4c811733ba6bd1a300c3839f5326072e968648aeecd7a3560fac579fe1ddd2eb76226bd9681bd817d1c6155689249de4a2791cb38a7b28de61b986df40b8af3949d22874d1a6cb2fb48f755bd815d81dd89e1c45d924e2d97c9f23e39ee2ea30e9ac5e56889caa5dfd5be6abe0f683631caf700ec012c34c7fbe2d74420e23cf74ece855ee74ebfe7be179567d219d236ce9274be0f84895067e84f00bea63f460f844e71a5a15271e2fa8cfa3c5c3539ae9289e104b9d2c0c1a141b26ac655c9586face26bf51d07b04dfe8cb6450e45ce87c3e19e96d616445ba3b0eb367ad0a3d1ea810d8d5964711cc7d7a1777cb29644145124eb4944ad289248225a8fe2f585d7ef5f7cfbe29bf3f3f3bf03b0d0f81fb0d4f6e00bc19f739cd762bdb1ff72969fc4fa624b9ce39260bc3ffe7f61ac2fb6c4d935d81bfb84052e440e45c6fc5ff747017c4b7e09d6ff1b02df50967aba865a8b82420d357c09b8a556af3d005006b008a00a8000f0198e1bce5ec2f293380000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/vbox[vbox,1]/widget[QLayoutWidget,layout12]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxMoviLote</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+<italic>1</italic>
+</font>
+</property>
+<property name="title" >
+<string>&amp;Movimientos de lotes</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QFrame" >
+<property name="name" >
+<cstring>barraBotonesPTarifa</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>20</width>
+<height>40</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="frameShape" >
+<enum>NoFrame</enum>
+</property>
+<property name="frameShadow" >
+<enum>Raised</enum>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<property name="margin" >
+<number>0</number>
+</property>
+<property name="spacing" >
+<number>2</number>
+</property>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>toolButtonInsertMov</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>trazabilidadimage0</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Insertar registro (A)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para crear un nuevo registro en la tabla</string>
+</property>
+</widget>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>toolButtonEditMov</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>trazabilidadimage1</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Modificar registro (M)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para modificar el registro activo de la tabla</string>
+</property>
+</widget>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>toolButtonDeleteMov</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>trazabilidadimage2</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Eliminar registro (E)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Elimina el registro actual de la tabla</string>
+</property>
+</widget>
+<widget class="QToolButton" >
+<property name="name" >
+<cstring>toolButtonZoomMov</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32767</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="iconSet" >
+<iconset>trazabilidadimage3</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Ver registro (V)</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Para ver registro, sin permitir editar</string>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>Spacer2_3_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>370</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="FLTableDB" >
+<property name="name" >
+<cstring>tdbMoviLote</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>7</hsizetype>
+<vsizetype>7</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>0</width>
+<height>200</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+<italic>0</italic>
+</font>
+</property>
+<property name="tableName" >
+<string>movilote</string>
+</property>
+<property name="foreignField" >
+<string>idlinea</string>
+</property>
+<property name="fieldRelation" >
+<string>idlineaap</string>
+</property>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/images[images,1]" >
+<connections>
+<connection>
+<sender>toolButtonInsertMov</sender>
+<signal>clicked()</signal>
+<receiver>tdbMoviLote</receiver>
+<slot>insertRecord()</slot>
+</connection>
+<connection>
+<sender>toolButtonEditMov</sender>
+<signal>clicked()</signal>
+<receiver>tdbMoviLote</receiver>
+<slot>editRecord()</slot>
+</connection>
+<connection>
+<sender>toolButtonDeleteMov</sender>
+<signal>clicked()</signal>
+<receiver>tdbMoviLote</receiver>
+<slot>deleteRecord()</slot>
+</connection>
+<connection>
+<sender>toolButtonZoomMov</sender>
+<signal>clicked()</signal>
+<receiver>tdbMoviLote</receiver>
+<slot>browseRecord()</slot>
+</connection>
+</connections>
+</xupdate:insert-after>
+</xupdate:modifications>
