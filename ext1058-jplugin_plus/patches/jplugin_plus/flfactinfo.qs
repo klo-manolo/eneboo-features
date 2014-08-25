@@ -54,7 +54,7 @@ function jPluginPlus_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, ord
     // KLO. Aqui es donde tengo que capturar los informes de topo jxml que haya en el directorio dado.
     // KLO this.iface.rutaReports + this.iface.dbName + this.iface.barra + "reports" + this.iface.barra + nombreInforme + this.iface.barra + nombreReport + ".jrxml"
     this.iface.rutaReports =  util.readSettingEntry("jasperplugin/reportspath");
-    this.iface.dbName = util.readSettingEntry("DBA/lastDB");
+    this.iface.dbName = sys.nameBD();
     this.iface.barra = this.iface.seteaBarra(); //Barra de separacion.
 
     var rutaInforme:String = this.iface.rutaReports + this.iface.dbName + this.iface.barra + "reports" + this.iface.barra + nombreInforme + this.iface.barra;

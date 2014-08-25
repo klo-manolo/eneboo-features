@@ -1,0 +1,44 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]/formrecord[formrecord,1]">
+    <scriptform>contactos</scriptform>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[secuencias]">
+    <action>
+      <name>editcontacto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contactos")</alias>
+      <table>crm_contactos</table>
+      <form>contactos</form>
+      <scriptform>contactos</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[editcontactoprov]">
+    <action>
+      <name>insertcontacto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Contactos")</alias>
+      <table>crm_contactos</table>
+      <form>master</form>
+    </action>
+  </xupdate:insert-after>
+ <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]">
+    <action>
+      <name>traducciones</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Traducciones")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>traducciones</table>
+      <form>mastertraducciones</form>
+      <formrecord>traducciones</formrecord>
+      <scriptform>mastertraducciones</scriptform>
+      <scriptformrecord>traducciones</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[traducciones]">
+    <action>
+      <name>idiomas</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","idiomas")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","")</alias>
+      <table>idiomas</table>
+      <form>master</form>
+      <formrecord>idiomas</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

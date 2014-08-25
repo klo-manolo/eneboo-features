@@ -1,6 +1,0 @@
-La clase que se usa en este proyecto es la llamada "megar", pues la "megarOil" es la que está en la extensión megar y no se puede usar aquí.
-
-Tener en cuenta que en el base de megar usado aqui, estÃ¡ ivaIncuido (no el de TPV) y fux-ecommerce.
-Por eso en required-features no está flux-ecommerce
-
-Aquí se ha metido en src todo el código después de aplicarle lo del nuevo 347.

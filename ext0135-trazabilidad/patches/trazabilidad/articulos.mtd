@@ -1,0 +1,29 @@
+<xupdate:modifications>
+<xupdate:update select="/TMD[TMD,1]/field[codsubcuentacom]/length[length,1]/text()[1]" >152</xupdate:update>
+<xupdate:insert-after select="/TMD[TMD,1]/field[referencia]/relation[lineasfacturasprov,referencia]" >
+<relation>
+<table>lotes</table>
+<field>referencia</field>
+<card>1M</card>
+</relation>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentacom]" >
+<field>
+<name>porlotes</name>
+<!-- Indica si el artículo está bajo control de lotes --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Artículo por lotes&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[porlotes]" >
+<field>
+<name>diasconsumo</name>
+<!-- Número de días que componen el período de consumo preferente del artículo --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Días de consumo preferente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>uint</type>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,546 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formNoticias</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formNoticias</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>663</width>
+            <height>551</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Noticias</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxFormaPago_2_2_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>10</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout30</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDescripcion</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>450</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>titulo</string>
+                            </property>
+                            <property name="tableName">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnTradTitulo</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>image0</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Traducciones</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer36</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>51</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnImagen</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Imagen</string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image1</iconset>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout27</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbAutor</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>350</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>autor</string>
+                            </property>
+                            <property name="tableName">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer34</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>31</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout18</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbPublico</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>140</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>publico</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer15</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>30</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbFecha</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>140</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>fecha</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer15_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbFechaLimite</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>140</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>fechalimite</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxFormaPago_2_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="title">
+                <string>Resumen</string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>10</number>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbResumen</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>600</width>
+                            <height>100</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>resumen</string>
+                    </property>
+                    <property name="tableName">
+                        <string></string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>false</bool>
+                    </property>
+                    <property name="textFormat">
+                        <number>0</number>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout22_2</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnTradResumen</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>image0</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Traducciones</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer27_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>21</width>
+                                    <height>121</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </vbox>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>gbxFormaPago_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="title">
+                <string>Texto</string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>10</number>
+                </property>
+                <widget class="FLFieldDB">
+                    <property name="name">
+                        <cstring>fdbTexto</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>600</width>
+                            <height>250</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="fieldName">
+                        <string>texto</string>
+                    </property>
+                    <property name="tableName">
+                        <string></string>
+                    </property>
+                    <property name="foreignField">
+                        <string></string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string></string>
+                    </property>
+                    <property name="showAlias">
+                        <bool>false</bool>
+                    </property>
+                    <property name="textFormat">
+                        <number>0</number>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout22</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbnTradTexto</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>image0</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Traducciones</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer27</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>21</width>
+                                    <height>121</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </vbox>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+       <data format="PNG" length="1259" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000004b249444154789ce596cd6f1b4514c07fb39fde751cc7a676a8633b22162ac84d5455a282430171e150f54ea1125c5aa9542021f11ff00f205039003d20ce1c5a0e4820712045e2841415a444294923d1c469ead471fdb55eaf87c3ee566eed751bd537467ad27ebc99f79bf7e6bd79f07f1f22eac7a953a75e745df7f2c1c1c19bf7eeddcbd7ebf504603cb34121c8643277eedebd9b8f04585c5cbc944aa53e4f269346bfdf47088110827ebf3f249ee71deabddd6eb3b5b5f5d0b6f6b8f14c26f3a1aaaa57e2f138cd661329e5c3c9cffaec380edbdbdb8fd87b1ce055cff3bec86432b4dbed47c8a59487321aea87ef8d4683bdbd3da494e3c2235696969664369b95a6694a21441f7003e9a9aa2a17161624e00d7c1f14efc89123a18e0ce705fa1ed00fa43e0ae0acaeeb525194fbc04740115006fe9fb32c4be67239095c8ed8c495d9d95959281424d08cdceac0180cc105d775ebc0ebc0cd11bac5582c46b7db05a844acf7826118388e03b01da133122009bc0d5c88300e50b42c8b46a301b01ba1b350afd769b55a003b4f0310bad8c177ebf763748b96658df3805014655e5555545505a81e06a0037c8b7f7022014cd30cdd3b0ae0395555638661a0280ac0fdc3003c7108218ab55a0d296503688c5039aaeb3aa669228400a84d12605ad3b499e0392afe39c330300c230478304980622c160b5d1b75b8664dd344d7f510a0355100dbb6c385a3d22b6d59d6a007260f1094d1280fa46ddb46d7f5300b3a9304280c0044792065db369aa685a1ea4d0c405194a26ddbf47a3d803ba3748410b6699aa8aa3a79005dd75fb26d3bac01b723001ed68000605c4d39144036954a9d00e8743ae300f420f6e8ba0e109b0880a2289fe57239cdf33c5cd77588388452ca5678f75b9605301fb1a476fefcf9af1289c4f34f03f0fefcfcfc45cff3e8f57af4fbfd0dfcfb7c14c003cff3f03c8fe9e969f02f373142ceeeeeee5e6a341af34f0278379fcf5f9d9a9aa2d3e9e0380e52ca5522fa4829e596e338f47a3d745d27954abd924ea7df07a680386007f2c9f2f23252ca2d4019ea0983f15ea150f8ceb22cb556ab619a66780b6ee277c65d860fd95abbdd460841abd5a2542aa169dad7c78f1f2fafacac5cdfdfdfd72a95ca45dbb64fefededdd0e36a28ff2c089b9b9b9abaaaaaad56a15cff31042d06c3601b682dd8cf2c28d5aade64929715d976ab58aa228ba65599f9e3973e6b793274ffe5a2c16df99999901f83df0c67057ac69dac7c964d2dcdcdc244caba9a929d6d7d7257e068811bb07b85fa9546ee472b9370e0e0e705d975bb76eb1baba8aa228349b4db2d92c954aa50bfc845faadd210f188671348c65289aa6d16834d6817dfc123b32c73b9dce97f5badf6f76bb5d5cd7c5711ceaf53af1789c6eb78be338d78055fcebba3f04d06eb7ff4826930821e8f57a148b4536363600aee33722e36afcb5b5b5b59fb3d92c9aa6e1ba2e524af2f93cf1789c9d9d9d3f816f807fc6ad33178bc56e96cb65b9b4b424d3e9b417183f4d10b7314300254dd36e944a25592e97e5b163c7642291e8023f026f012906b26fd4618a01af011f0059e02fe007e06ffc4ee849255607168173c0cbc19c65e017e05fa03db8c62800819f6a7140c56f585b3ce5e5120c35d888895fb83af8a93b54c4fe03180f69d48da91b530000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="1012">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003bb49444154789cd5955f489d751cc63fefdae2bc11e18124071b78a07fe7d02eb636d0b5c58e34b63c0b4a6184e2458e6e0e79212e89dc2ecabc8865b15062a0049b67919941b92d747a31e714d751707bdf13260a32ce648df38a17ef799b879e2ede57a7d04511bbe8073f1e1e7edfdff77d78be0fbfd790c4a3585b1e49d7a071d6be653b80c32d1cc0f9c73c83e35c71ae1886f1946118acedc41b1560d9d6aa24e981f4af309795246517e755ff6e4d0a78624d6de5b1384872835255754a962dd59c93ac19a9a6534a4f6dc0b396d2935255bb347c598ad675c8b5fdbb63edc39d80b1d6d8b0662c37b62b669efa6181b6a108848002401e30a1f0375830c1b1612946fcf511463eae8055d8f36aac6d7a2273baf2cdb80c492e609287f037b0fd303843403978e310da07dea8cf19050e063c0ade05186b84fdbb030f1cd8be27dc1c298d9c79ec78f5f196e2678ab7754e2ce01c09b32b0b3b8f42e80e840f83791bc20908cf42f82d30e7207c0448e529dcdb46ef2f3718bcb993def4256a5f791e1e2f1cf2fe607a93c74d8b525a524bff8024a9c79fcf3ab64c49e979a9bc418ab64ba163963824b157e280d4d3db27cd484def273fc4b22d579206ecaca267a53828072aa7494daf49e91f3ba48fa464a314af934acba492a312c772a24c62479778d2155b6b2457eaebed51b231d9bc49714f498904aa0185908a9074b6487da91a6945ea18f4e3d67a4dcab95253bf64cd4a956d698d8d48ca4aca49c986fae675c5966d4992d29fb62af9748baacaa4aa17a5aebadd9250f681ef472ec87136e7e37c80e9c0aee1c101bfb124773df4335d92a481599f9eb926b98b52dfd480e44aad8392bb2225fba5f4a254d92d0ddb52fc9cefbd5c7f271bea9bb7d8191bb6813d740a767c02a30912cfc1c2cd4e4e1e84fea505aa7727e8be0dd377e1e5afe07206aa2f80e3c1a951189f83c4d77ecc47ae5ff2df8a583406ab102b6b82abcbb0370fe3b5445e8ac297fba92dc943a69b13fba032e2e77af93e74c4617c02a601ef379be552e077a83890c003d6154f5d3d09f965f23f2fc0c234cec07bf04e1867ee34443390f98c130761f8d9119ccf215c7497e401f07e1a815f63785fa4a0d8571c82e0ad58093cbe51ef8f75b2c5e7764730a1be6062c33eaee7285893925624dddb908af9d9795792722b7eb51b7cc40d2eaff187e73ee672eee6c207eec6547cb025521a3153175384ef9ba42ea630efe3e3129bf8c37393d4f914e16593d4f96e580af08ec9f7dfa5280f55e015bcbcd1dad6f2f6dd25e705f0fe646b080a1eff010d60d50c99df1afabffdf3fe029d45808d1d18ac050000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="2" margin="5"/>
+</UI>

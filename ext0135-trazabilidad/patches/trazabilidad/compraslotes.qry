@@ -1,0 +1,18 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>ventaslotes</name>
+	
+	<tables>albaranesprov,lineasalbaranesprov,movilote</tables>
+	
+	<select>
+		movilote.id,movilote.codlote, albaranesprov.nombre, albaranesprov.codproveedor, albaranesprov.codigo as codalbaran, facturasprov.codigo as codfactura, movilote.fecha, movilote.cantidad
+	</select>
+	
+	<from>
+		movilote LEFT OUTER JOIN lineasalbaranesprov ON movilote.idlineaap = lineasalbaranesprov.idlinea LEFT OUTER JOIN albaranesprov ON lineasalbaranesprov.idalbaran = albaranesprov.idalbaran 
+		LEFT OUTER JOIN lineasfacturasprov ON movilote.idlineafp = lineasfacturasprov.idlinea LEFT OUTER JOIN facturasprov ON lineasfacturasprov.idfactura = facturasprov.idfactura
+	</from>
+	
+	<where>
+	</where>
+</QRY>
