@@ -2,8 +2,8 @@
 /** @class_declaration preciEspeCli */
 //////////////////////////////////////////////////////////////////
 //// PRECIESPECLI ////////////////////////////////////////////////
-class preciEspeCli extends oficial {
-    function preciEspeCli( context ) { oficial ( context ); }
+class preciEspeCli extends serviciosCli {
+    function preciEspeCli( context ) { serviciosCli ( context ); }
         function commonCalculateField(fN:String, cursor:FLSqlCursor):String {
                 return this.ctx.preciEspeCli_commonCalculateField(fN, cursor);
         }
