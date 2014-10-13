@@ -16,6 +16,10 @@ class envioMail extends oficial /** %from: oficial */ {
 	function existeEnvioMail():Boolean {
 		return this.ctx.envioMail_existeEnvioMail();
 	}
+	function extension(nE)
+	{
+		return this.ctx.envioMail_extension(nE);
+	}
 }
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
@@ -213,6 +217,18 @@ function envioMail_existeEnvioMail():Boolean
 	return true;
 }
 
+function envioMail_extension(nE)
+{
+  var _i = this.iface;
+
+  switch (nE) {
+    case "envio_mail": {
+      return true;
+    }
+    default:
+      return _i.__extension(nE);
+  }
+}
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
