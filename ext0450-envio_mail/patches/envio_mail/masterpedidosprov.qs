@@ -84,7 +84,8 @@ function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
 	curImprimir.setValueBuffer("descripcion", "temp");
 	curImprimir.setValueBuffer("d_pedidosprov_codigo", codigo);
 	curImprimir.setValueBuffer("h_pedidosprov_codigo", codigo);
-	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_pedidosprov", "", "", false, false, "", "i_pedidosprov", 1, rutaDocumento, true);
+	var whereFijo:String = "PARAM_titulo\nPedido\nPARAM_tabla\npedidosprov\nPARAM_subtabla\npedido\nPARAM_orderdef\npedidosprov.codigo\nPARAM_tablareldoc\npresupuestosprov\nPARAM_reldoc\npresupuesto\n";
+	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_pedidosprov", "", "", false, false, whereFijo, "i_pedidosprov", 1, rutaDocumento, true);
 
 	var arrayDest:Array = [];
 	arrayDest[0] = [];
