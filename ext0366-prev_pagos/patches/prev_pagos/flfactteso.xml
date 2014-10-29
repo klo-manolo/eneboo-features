@@ -1,0 +1,55 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]" >
+<action>
+<name>pagospuntuales</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagos puntuales&quot;)</alias>
+<table>pagospuntuales</table>
+<form>master</form>
+<formrecord>pagospuntuales</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagospuntuales]" >
+<action>
+<name>pagosperiodicos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Pagos periódicos&quot;)</alias>
+<table>pagosperiodicos</table>
+<form>master</form>
+<formrecord>pagosperiodicos</formrecord>
+<scriptformrecord>pagosperiodicos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosperiodicos]" >
+<action>
+<name>cobrospuntuales</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cobros puntuales&quot;)</alias>
+<table>cobrospuntuales</table>
+<form>master</form>
+<formrecord>cobrospuntuales</formrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cobrospuntuales]" >
+<action>
+<name>cobrosperiodicos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cobros periódicos&quot;)</alias>
+<table>cobrosperiodicos</table>
+<form>master</form>
+<formrecord>cobrosperiodicos</formrecord>
+<scriptformrecord>cobrosperiodicos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cobrosperiodicos]" >
+<action>
+<name>informeprevpagos</name>
+<description>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;&quot;)</description>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Informe de Pagos&quot;)</alias>
+<table>informeprevpagos</table>
+<form>master</form>
+<formrecord>informeprevpagos</formrecord>
+<scriptformrecord>informeprevpagos</scriptformrecord>
+</action>
+</xupdate:insert-after>
+</xupdate:modifications>

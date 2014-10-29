@@ -1,0 +1,27 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[i_resrecibosprov]" >
+<action>
+<property name="name" >
+<cstring>i_prevpagos</cstring>
+</property>
+<property name="text" >
+<string>Previsión de pagos</string>
+</property>
+<property name="menuText" >
+<string>Previsión de pagos</string>
+</property>
+</action>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[i_resrecibosprov,activated(),FLWidgetApplication,openDefaultForm()]" >
+<connection>
+<sender>i_prevpagos</sender>
+<signal>activated()</signal>
+<receiver>FLWidgetApplication</receiver>
+<slot>openDefaultForm()</slot>
+</connection>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/menubar[menubar,1]/item[Tesorera]/item[item,1]" >
+<action name="i_prevpagos" />
+</xupdate:insert-after>
+<xupdate:update select="/UI[UI,1]/menubar[menubar,1]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >21</xupdate:update>
+</xupdate:modifications>

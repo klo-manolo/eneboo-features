@@ -1,0 +1,30 @@
+<flpatch:modifications name="prev_pagos" >
+    <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" />
+    <flpatch:patchXml path="facturacion/principal/tables/" name="proveedores.mtd" />
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagospuntuales.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagospuntuales.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="pagosperiodicos.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="pagosperiodicos.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="informeprevpagos.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="informeprevpagos.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="informeprevpagos.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="pagosperiodicos.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_prevpagos_buffer.mtd" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_prevpagos.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_prevpagos.kut" />
+    <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterprevpagos.qs" />
+    <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_prevpagos.mtd" />
+    <flpatch:addFile path="facturacion/informes/forms/" name="i_prevpagos.ui" />
+    <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_prevpagos_agr.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_prevpagos_agr.kut" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="evolucioncuenta.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="cobrospuntuales.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="cobrosperiodicos.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="cobrospuntuales.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="cobrosperiodicos.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="cobrosperiodicos.qs" />
+</flpatch:modifications>
