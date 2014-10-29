@@ -1,15 +1,16 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="eti_articulo">
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranesprov.ui"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranesprov.qs"/>
-  <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml"/>
-  <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui"/>
-  <flpatch:addFile path="facturacion/informes/forms/" name="i_etiquetas.ui"/>
-  <flpatch:addFile path="facturacion/informes/reports/" name="i_a4_3x7.kut"/>
-  <flpatch:addFile path="facturacion/informes/reports/" name="i_a4_4x11.kut"/>
-  <flpatch:addFile path="facturacion/informes/reports/" name="i_a4_4x17.kut"/>
-  <flpatch:addFile path="facturacion/informes/scripts/" name="i_masteretiquetas.qs"/>
-  <flpatch:addFile path="facturacion/informes/tables/" name="i_etiquetas.mtd"/>
+  <flpatch:patchXml name="flfactalma.xml" path="facturacion/almacen/" style="legacy1"/>
+  <flpatch:patchXml name="masterarticulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchScript name="flfactalma.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterarticulos.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:patchXml name="masteralbaranesprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="masteralbaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchXml name="flfactinfo.xml" path="facturacion/informes/" style="legacy1"/>
+  <flpatch:patchXml name="flfactinfo.ui" path="facturacion/informes/forms/" style="legacy1"/>
+  <flpatch:addFile name="i_etiquetas.ui" path="facturacion/informes/forms/"/>
+  <flpatch:addFile name="i_a4_3x7.kut" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_a4_4x11.kut" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_a4_4x17.kut" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_masteretiquetas.qs" path="facturacion/informes/scripts/"/>
+  <flpatch:addFile name="i_etiquetas.mtd" path="facturacion/informes/tables/"/>
 </flpatch:modifications>
