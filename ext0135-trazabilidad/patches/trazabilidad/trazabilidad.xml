@@ -81,4 +81,5 @@
     <flpatch:addFile path="facturacion/facturacion/tables/" name="ventaslotes.mtd" />
     <flpatch:addFile path="facturacion/facturacion/queries/" name="compraslotes.qry" />
     <flpatch:addFile path="facturacion/facturacion/tables/" name="compraslotes.mtd" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
 </flpatch:modifications>
