@@ -168,7 +168,7 @@ function dtoEspecial_buscarPorDtoEsp(where:String):Number
 {
 	var util:FLUtil = new FLUtil;
 	var porDtoEsp:Number = util.sqlSelect("pedidosprov", "pordtoesp", where);
-	var porDtoEsp2:Number = util.sqlSelect("pedidosprov", "pordtoesp", where + "AND pordtoesp <> " + porDtoEsp);
+	var porDtoEsp2:Number = util.sqlSelect("pedidosprov", "pordtoesp", where + " AND pordtoesp <> " + porDtoEsp);
 	if (!porDtoEsp2 && isNaN(parseFloat(porDtoEsp2)))
 		return porDtoEsp;
 	else
