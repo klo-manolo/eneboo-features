@@ -74,7 +74,7 @@
 		<alias>QT_TRANSLATE_NOOP("MetaData","Lote")</alias>
 		<pk>false</pk>
 		<type>string</type>
-		<length>15</length>
+		<length>30</length>
 		
 		<relation>
 			<table>lotes</table>
