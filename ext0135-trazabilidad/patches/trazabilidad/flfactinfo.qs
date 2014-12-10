@@ -4,8 +4,8 @@
 //// TRAZABILIDAD ///////////////////////////////////////////////
 class traza extends oficial {
     function traza( context ) { oficial ( context ); }
-    function whereFijoExtendido():String {
-        return this.ctx.traza_whereFijoExtendido();
+    function whereFijoExtendido(nombreInforme:String):String {
+        return this.ctx.traza_whereFijoExtendido(nombreInforme);
     }
 }
 //// TRAZABILIDAD ///////////////////////////////////////////////

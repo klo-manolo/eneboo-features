@@ -38,8 +38,8 @@ function seteaBarra():String {
     function establecerConsulta(cursor:FLSqlCursor, nombreConsulta:String, orderBy:String, groupBy:String, whereFijo:String):FLSqlQuery {
                 return this.ctx.jasperPlugin_establecerConsulta(cursor, nombreConsulta, orderBy, groupBy, whereFijo);
         }
-   function whereFijoExtendido():String {
-       return this.ctx.jasperPlugin_whereFijoExtendido();
+   function whereFijoExtendido(nombreInforme:String):String {
+       return this.ctx.jasperPlugin_whereFijoExtendido(nombreInforme);
     }
 }
 //// JASPER_PLUGIN ///////////////////////////////////////////////
