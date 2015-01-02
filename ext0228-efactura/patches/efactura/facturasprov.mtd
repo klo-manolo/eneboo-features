@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[hora]">
+    <field>
+      <name>docelectronico</name>
+      <!--Indica si la factura ha sido generada a partir de un documento electrónico-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Doc. Electrónico")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>
