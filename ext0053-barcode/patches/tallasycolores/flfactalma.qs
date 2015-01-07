@@ -2,7 +2,7 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
-class barCode extends oficial {
+class barCode extends oficial /** %from: oficial */ {
     function barCode( context ) { oficial ( context ); }
 // 	function controlStockPedidosCli(curLP:FLSqlCursor):Boolean {
 // 		return this.ctx.barCode_controlStockPedidosCli(curLP);
@@ -77,11 +77,10 @@ class barCode extends oficial {
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
 /** @class_declaration pubBarCode */
 /////////////////////////////////////////////////////////////////
 //// PUB TALLAS Y COLORES POR BARCODE ///////////////////////////
-class pubBarCode extends ifaceCtx {
+class pubBarCode extends ifaceCtx /** %from: ifaceCtx */ {
 	function pubBarCode( context ) { ifaceCtx( context ); }
 	function pub_controlStockPedidosProv(curLP:FLSqlCursor):Boolean {
 		return this.controlStockPedidosProv(curLP);
@@ -108,6 +107,7 @@ class pubBarCode extends ifaceCtx {
 }
 //// PUB TALLAS Y COLORES POR BARCODE ///////////////////////////
 /////////////////////////////////////////////////////////////////
+
 /** @class_definition barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
@@ -198,9 +198,9 @@ function barCode_controlStock(curLinea:FLSqlCursor, campo:String, signo:Number, 
 }
 
 /** \D Cambia un campo del stock según la variación especificada
-@param	codAlmacen: Código del almacén asociado al stock 
-@param	barCode: Bar code asociado al stock 
-@param	referencia: Referencia asociada al stock 
+@param	codAlmacen: Código del almacén asociado al stock
+@param	barCode: Bar code asociado al stock
+@param	referencia: Referencia asociada al stock
 @param	variacion: Variación a aplicar
 @param	campo: Nombre del campo a modificar
 @return	identificador del stock creado si la inserción es correcta, false en caso contrario
@@ -211,8 +211,8 @@ function barCode_cambiarStock(codAlmacen:String, barCode:String, referencia:Stri
 	var idStock:String;
 	if (!referencia || referencia == "")
 		return true;
-	
-	if (!barCode || barCode == "") 
+
+	if (!barCode || barCode == "")
 		idStock = util.sqlSelect("stocks", "idstock", "referencia = '" + referencia + "' AND (barcode IS NULL OR barcode = '') AND codalmacen = '" + codAlmacen + "'");
 	else
 		idStock = util.sqlSelect("stocks", "idstock", "referencia = '" + referencia + "' AND barcode = '" + barCode + "' AND codalmacen = '" + codAlmacen + "'");
@@ -225,10 +225,10 @@ function barCode_cambiarStock(codAlmacen:String, barCode:String, referencia:Stri
 	curStock.select("idstock = " + idStock);
 	if (!curStock.first())
 		return false;
-	
+
 	curStock.setModeAccess(curStock.Edit);
 	curStock.refreshBuffer();
-	
+
 	var cantidadPrevia:Number = parseFloat(curStock.valueBuffer(campo));
 	var nuevaCantidad:Number = cantidadPrevia + parseFloat(variacion);
 	if (nuevaCantidad < 0 && campo == "cantidad") {
@@ -237,7 +237,7 @@ function barCode_cambiarStock(codAlmacen:String, barCode:String, referencia:Stri
 			return false;
 		}
 	}
-	
+
 	curStock.setValueBuffer(campo, nuevaCantidad);
 
 	if (campo == "cantidad" || campo == "reservada") {
@@ -255,11 +255,11 @@ debug("CS ");
 	}
 	return true;
 }
-	
+
 /** \D Crea una línea de stock
-@param	codAlmacen: Código del almacén asociado al stock 
-@param	barCode: Bar code asociado al stock 
-@param	referencia: Referencia asociada al stock 
+@param	codAlmacen: Código del almacén asociado al stock
+@param	barCode: Bar code asociado al stock
+@param	referencia: Referencia asociada al stock
 @return	identificador del stock creado si la inserción es correcta, false en caso contrario
 */
 function barCode_crearStock(codAlmacen:String, barCode:String, referencia:String):Number
@@ -283,14 +283,14 @@ function barCode_crearStock(codAlmacen:String, barCode:String, referencia:String
 	}
 	if (!curStock.commitBuffer())
 		return false;
-	
+
 	return curStock.valueBuffer("idstock");
 }
 
 /** \D Crea una línea de stock. Esta función se ha creado para evitar que la sobrecarga de crearStock haga que no funcionen las llamadas dentro de la clase barcode
-@param	codAlmacen: Código del almacén asociado al stock 
-@param	barCode: Bar code asociado al stock 
-@param	referencia: Referencia asociada al stock 
+@param	codAlmacen: Código del almacén asociado al stock
+@param	barCode: Bar code asociado al stock
+@param	referencia: Referencia asociada al stock
 @return	identificador del stock creado si la inserción es correcta, false en caso contrario
 */
 function barCode_crearStockBarcode(codAlmacen:String, barCode:String, referencia:String):Number
@@ -314,7 +314,7 @@ function barCode_crearStockBarcode(codAlmacen:String, barCode:String, referencia
 	}
 	if (!curStock.commitBuffer())
 		return false;
-	
+
 	return curStock.valueBuffer("idstock");
 }
 
@@ -329,10 +329,10 @@ function barCode_controlStockPedidosProv(curLP:FLSqlCursor):Boolean
 	var codAlmacen:String = util.sqlSelect("pedidosprov", "codalmacen", "idpedido = " + curLP.valueBuffer("idpedido"));
 	if (!codAlmacen || codAlmacen == "")
 		return true;
-	
+
 	if (!this.iface.controlStock(curLP, "pterecibir", 1, codAlmacen))
 		return false;
-	
+
 	return true;
 }
 
@@ -349,10 +349,10 @@ function barCode_controlStockAlbaranesProv(curLA:FLSqlCursor):Boolean
 	var codAlmacen:String = util.sqlSelect("albaranesprov", "codalmacen", "idalbaran = " + curLA.valueBuffer("idalbaran"));
 	if (!codAlmacen || codAlmacen == "")
 		return true;
-	
+
 	if (!this.iface.controlStock(curLA, "cantidad", 1, codAlmacen))
 		return false;
-	
+
 	return true;
 }
 
@@ -370,7 +370,7 @@ function barCode_controlStockFacturasProv(curLF:FLSqlCursor):Boolean
 		var codAlmacen:String = util.sqlSelect("facturasprov", "codalmacen", "idfactura = " + idFactura);
 		if (!codAlmacen || codAlmacen == "")
 			return true;
-		
+
 		if (!this.iface.controlStock(curLF, "cantidad", 1, codAlmacen))
 			return false;
 	}
@@ -385,14 +385,14 @@ function barCode_controlStockPedidosCli(curLP:FLSqlCursor):Boolean
 {
 	var util:FLUtil = new FLUtil;
 	var idPedido:String = curLP.valueBuffer("idpedido");
-	
+
 	var codAlmacen:String = util.sqlSelect("pedidoscli", "codalmacen", "idpedido = " + idPedido);
 	if (!codAlmacen || codAlmacen == "")
 		return true;
 
 	if (!this.iface.controlStock(curLP, "reservada", 1, codAlmacen))
 		return false;
-	
+
 	return true;
 }
 
@@ -408,10 +408,10 @@ function barCode_controlStockAlbaranesCli(curLA:FLSqlCursor):Boolean
 	var codAlmacen:String = util.sqlSelect("albaranescli", "codalmacen", "idalbaran = " + curLA.valueBuffer("idalbaran"));
 	if (!codAlmacen || codAlmacen == "")
 		return true;
-	
+
 	if (!this.iface.controlStock(curLA, "cantidad", -1, codAlmacen))
 		return false;
-	
+
 	return true;
 }
 
@@ -430,7 +430,7 @@ function barCode_controlStockFacturasCli(curLF:FLSqlCursor):Boolean
 		var codAlmacen:String = util.sqlSelect("facturascli", "codalmacen", "idfactura = " + idFactura);
 		if (!codAlmacen || codAlmacen == "")
 			return true;
-		
+
 		if (!this.iface.controlStock(curLF, "cantidad", -1, codAlmacen))
 			return false;
 	}
@@ -472,7 +472,7 @@ function barCode_crearBarcode(referencia:String, datos:Array):Boolean
 
 /** \D Pide al usuario la talla y color de un artículo y crea su registro de atributos (barcode)
 @param	referencia: Referencia del artículo
-\end */ 
+\end */
 function barCode_pedirColor(referencia:String):Boolean
 {
 	var util:FLUtil = new FLUtil;
@@ -501,7 +501,7 @@ function barCode_pedirColor(referencia:String):Boolean
 		if (!commitBuffer())
 			return false;
 	}
-	
+
 	return true;
 }
 
@@ -526,11 +526,11 @@ function barCode_controlStockLineasTrans(curLTS:FLSqlCursor):Boolean
 	var codAlmacenOrigen:String = util.sqlSelect("transstock", "codalmaorigen", "idtrans = " + curLTS.valueBuffer("idtrans"));
 	if (!codAlmacenOrigen || codAlmacenOrigen == "")
 		return true;
-		
+
 	var codAlmacenDestino:String = util.sqlSelect("transstock", "codalmadestino", "idtrans = " + curLTS.valueBuffer("idtrans"));
 	if (!codAlmacenDestino || codAlmacenDestino == "")
 		return true;
-	
+
 	var cantidad:Number = parseFloat(curLTS.valueBuffer("cantidad"));
 	var referencia:String = curLTS.valueBuffer("referencia");
 	var barCode:String = curLTS.valueBuffer("barcode");
@@ -567,7 +567,7 @@ function barCode_controlStockLineasTrans(curLTS:FLSqlCursor):Boolean
 function barCode_controlStockReservado(curLinea:FLSqlCursor, codAlmacen:String):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var idPedido:String = curLinea.valueBuffer("idpedido");
 	var referencia:String = curLinea.valueBuffer("referencia");
 	var barcode:String = curLinea.valueBuffer("barcode");
@@ -585,18 +585,18 @@ function barCode_controlStockReservado(curLinea:FLSqlCursor, codAlmacen:String):
 			return false;
 		}
 	}
- 
+
 	return true;
 }
 
 function barCode_actualizarStockReservado(referencia:String, barcode:String, codAlmacen:String, idPedido:String):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	if (!referencia || referencia == "") {
 		return true;
 	}
-	
+
 	var idStock:String;
 	if (!barcode || barcode == "") {
 		idStock = util.sqlSelect("stocks", "idstock", "referencia = '" + referencia + "' AND (barcode IS NULL OR barcode = '') AND codalmacen = '" + codAlmacen + "'");
@@ -609,7 +609,7 @@ function barCode_actualizarStockReservado(referencia:String, barcode:String, cod
 			return false;
 		}
 	}
-	
+
 	var reservada:Number;
 	if (!barcode || barcode == "") {
 		reservada = util.sqlSelect("lineaspedidoscli lp INNER JOIN pedidoscli p ON lp.idpedido = p.idpedido", "sum(lp.cantidad - lp.totalenalbaran)", "p.codalmacen = '" + codAlmacen + "' AND (p.servido IN ('No', 'Parcial') OR p.idpedido = " + idPedido + ") AND lp.referencia = '" + referencia + "' AND (barcode IS NULL OR barcode = '') AND (lp.cerrada IS NULL OR lp.cerrada = false)", "lineaspedidoscli,pedidoscli");
@@ -647,7 +647,7 @@ function barCode_actualizarStockReservado(referencia:String, barcode:String, cod
 function barCode_controlStockPteRecibir(curLinea:FLSqlCursor, codAlmacen:String):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var idPedido:String = curLinea.valueBuffer("idpedido");
 	var referencia:String = curLinea.valueBuffer("referencia");
 	var barcode:String = curLinea.valueBuffer("barcode");
@@ -665,14 +665,14 @@ function barCode_controlStockPteRecibir(curLinea:FLSqlCursor, codAlmacen:String)
 			return false;
 		}
 	}
- 
+
 	return true;
 }
 
 function barCode_actualizarStockPteRecibir(referencia:String, barcode:String, codAlmacen:String, idPedido:String):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var idStock:String;
 	if (!barcode || barcode == "") {
 		idStock = util.sqlSelect("stocks", "idstock", "referencia = '" + referencia + "' AND (barcode IS NULL OR barcode = '') AND codalmacen = '" + codAlmacen + "'");
@@ -692,11 +692,11 @@ function barCode_actualizarStockPteRecibir(referencia:String, barcode:String, co
 	} else {
 		pteRecibir = util.sqlSelect("lineaspedidosprov lp INNER JOIN pedidosprov p ON lp.idpedido = p.idpedido", "sum(lp.cantidad - lp.totalenalbaran)", "p.codalmacen = '" + codAlmacen + "' AND (p.servido IN ('No', 'Parcial') OR p.idpedido = " + idPedido + ") AND lp.referencia = '" + referencia + "' AND barcode = '" + barcode + "' AND (lp.cerrada IS NULL OR lp.cerrada = false)", "lineaspedidosprov,pedidosprov");
 	}
-	
+
 	if (isNaN(pteRecibir)) {
 		pteRecibir = 0;
 	}
-	
+
 	var curStock:FLSqlCursor = new FLSqlCursor("stocks");
 	curStock.select("idstock = " + idStock);
 	if (!curStock.first()) {
@@ -728,23 +728,23 @@ function barCode_controlStockValesTPV(curLinea:FLSqlCursor):Boolean
 	var codAlmacen:String = curLinea.valueBuffer("codalmacen");
 	if (!codAlmacen || codAlmacen == "")
 		return true;
-	
+
 	if (!this.iface.controlStock(curLinea, "cantidad", 1, codAlmacen))
 		return false;
-	
+
 	return true;
 }
 
 function barCode_controlStockComandasCli(curLV:FLSqlCursor):Boolean {
 	var util:FLUtil = new FLUtil;
-	
+
 	var codAlmacen = util.sqlSelect("tpv_comandas c INNER JOIN tpv_puntosventa pv ON c.codtpv_puntoventa = pv.codtpv_puntoventa", "pv.codalmacen", "idtpv_comanda = " + curLV.valueBuffer("idtpv_comanda"), "tpv_comandas,tpv_puntosventa");
 	if (!codAlmacen || codAlmacen == "")
 		return true;
-		
+
 	if (!this.iface.controlStock(curLV, "cantidad", -1, codAlmacen))
 		return false;
-	
+
 	return true;
 }
 
