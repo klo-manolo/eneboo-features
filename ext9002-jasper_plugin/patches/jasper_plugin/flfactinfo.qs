@@ -14,6 +14,7 @@ class jasperPlugin extends oficial /** %from: oficial */ {
     var detectarRutaTrabajo:Boolean;
     var guardaTemporal:Boolean;
     var whereCursor:String;
+    var whereFijoExt:String;
     var reportAnterior;
     function jasperPlugin( context ) { oficial( context ); }
 function lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String, etiquetas:Boolean, impDirecta:Boolean, whereFijo:String, nombreReport:String, numCopias:Number, impresora:String, pdf:Boolean) {
@@ -37,7 +38,9 @@ function seteaBarra():String {
     function establecerConsulta(cursor:FLSqlCursor, nombreConsulta:String, orderBy:String, groupBy:String, whereFijo:String):FLSqlQuery {
                 return this.ctx.jasperPlugin_establecerConsulta(cursor, nombreConsulta, orderBy, groupBy, whereFijo);
         }
-
+   function whereFijoExtendido(nombreInforme:String):String {
+       return this.ctx.jasperPlugin_whereFijoExtendido(nombreInforme);
+    }
 }
 //// JASPER_PLUGIN ///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -56,12 +59,19 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
 
                              	var cadena1:String = "";
                              	var cadena2:String;
+
+                                // Agregamos los parametros extras al whereFijo
+                                this.iface.whereFijoExt = "";
+                                this.iface.whereFijoExtendido(nombreInforme);
+                                whereFijo = whereFijo + this.iface.whereFijoExt;
+
                              	if (!whereFijo || whereFijo == "")
                              	{
                              	cadena2 = "";
                              	debug("JASPER_PLUGIN :: WhereFijo está vacío");
                              	}
                              	else cadena2 = whereFijo;
+
                              	var cantidadParametrosJasper:Number = -1;
                              	var parametrosJasper:String = ""; // Aquí guardamos la lista de parametros a pasar a la librería.
                              	do
@@ -370,6 +380,14 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                     }
             }
     }
+
+/** Agrega parametros directamente al whereFijo
+\end */
+function jasperPlugin_whereFijoExtendido(nombreInforme:String)
+{
+    // debug("jasperPlugin_whereFijoExtendido -> " + this.iface.whereFijoExt);
+    return;
+}
 
 /** Comprueba si existe un jrxml en la carpeta compartida
 @return true = Existe , false = No existe

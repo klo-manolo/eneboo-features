@@ -41,7 +41,7 @@
                                             </font>
           </property>
           <property name="title">
-            <string>Nombre o ruta de acceso al navegador</string>
+            <string>Nombre o ruta de acceso al navegador de internet</string>
           </property>
           <hbox>
             <property name="name">
@@ -93,7 +93,7 @@
                 <string>Usuario</string>
               </property>
               <property name="whatsThis" stdset="0">
-                <string>Cambiar usuario</string>
+                <string>Cambiar la ruta del navegador de internet</string>
               </property>
             </widget>
           </hbox>
@@ -159,7 +159,7 @@
                 <string>Usuario</string>
               </property>
               <property name="whatsThis" stdset="0">
-                <string>Cambiar usuario</string>
+                <string>Cambiar la aplicación de correo a usar</string>
               </property>
             </widget>
           </hbox>
@@ -222,10 +222,10 @@
                 <string>Cambiar</string>
               </property>
               <property name="toolTip" stdset="0">
-                <string>Usuario</string>
+                <string>Cambiar ruta a la aplicación de correo</string>
               </property>
               <property name="whatsThis" stdset="0">
-                <string>Cambiar usuario</string>
+                <string>Cambiar ruta a la aplicación de correo</string>
               </property>
             </widget>
           </hbox>
@@ -291,7 +291,7 @@
                 <string>Usuario</string>
               </property>
               <property name="whatsThis" stdset="0">
-                <string>Cambiar usuario</string>
+                <string>Cambiar el directorio de almacenamiento</string>
               </property>
             </widget>
           </hbox>
