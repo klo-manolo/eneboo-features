@@ -126,7 +126,7 @@ function eFactura_generarEFactura()
 {
 	var util:FLUtil = new FLUtil;
 	var cadenaXML:String = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-	var versionFacturae:String = util.sqlSelect("empresa", "facturaever", "1 = 1");
+	var versionFacturae:String = flfactppal.iface.pub_valorDefectoEmpresa("facturaever"); // Compatible multiempresa
 	var cadenaFun:String = this.iface.nodoFacturae("Facturae", versionFacturae);
 
 
@@ -140,7 +140,10 @@ function eFactura_generarEFactura()
 	if (!nombreFichero)
 		return;
 
-	nombreFichero = nombreFichero + ".xml";
+	// Si se indica el ".xml", no volverlo a poner
+	var arrayNombreFichero:Array = nombreFichero.split(".");
+	if (arrayNombreFichero[arrayNombreFichero.length-1] != "xml")
+		nombreFichero = nombreFichero + ".xml";
 
 	var xml:FLDomDocument = new FLDomDocument();
 	if (!xml.setContent(cadenaXML)) {
@@ -156,21 +159,36 @@ function eFactura_generarEFactura()
 
 	var contenido:String = xml.toString(2);
 
-	File.write(nombreFichero, sys.fromUnicode( contenido, "UTF-8" ));
+	// File.write(nombreFichero, sys.fromUnicode( contenido, "UTF-8" )); // el sys.fromUnicode genera errores con tildes
+	File.write(nombreFichero, contenido);
 	//MessageBox.information(util.translate("scripts", "Documento creado en %1").arg(nombreFichero), MessageBox.Ok, MessageBox.NoButton);
 
-	var certFile:String = util.readSettingEntry("scripts/flfacturac/rutacert");
+	var idempresa = flfactppal.iface.pub_valorDefectoEmpresa("id");
+	var certFile:String = util.readSettingEntry("scripts/flfacturac/rutacert"+idempresa);
+
+	if (!certFile || certFile == ""){
+		MessageBox.warning(util.translate("scripts", "No se ha podido firmar el fichero debido a que no se ha informado la ruta del certificado para ésta empresa.\
+			\nPuede definirla en Facturación -> Principal -> Empresa -> Configuración Local"), MessageBox.Ok, MessageBox.NoButton);
+		return;
+	}
+
 	var rutaLib:String = util.readSettingEntry("scripts/flfacturac/rutalib");
+
+	if (!rutaLib || rutaLib == ""){
+		MessageBox.warning(util.translate("scripts", "No se ha podido firmar el fichero debido a que no se ha informado la ruta de la libreria.\
+			\nPuede definirla en Facturación -> Principal -> Empresa -> Configuración Local"), MessageBox.Ok, MessageBox.NoButton);
+		return;
+	}
+
 	var password=""; //Si no lo pongo lo pregunta la librería.
-		comando = "java -jar " + rutaLib + " CREATE_SIGNATURE " + nombreFichero + " " + certFile + " " + password;
+	var comando = "java -jar " + rutaLib + " CREATE_SIGNATURE " + nombreFichero + " " + certFile + " " + password;
 
 	var res:Array = flfactppal.iface.pub_ejecutarComandoAsincrono(comando);
 
-	if (!res["ok"])
-		{
+	if (!res["ok"]){
 		MessageBox.warning(util.translate("scripts", "Se ha producido un problema al firmar el fichero " + nombreFichero + "\n"+res["salida"]), MessageBox.Ok, MessageBox.NoButton);
 		return;
-		}
+	}
 }
 
 function eFactura_nodoFacturae(nombreNodo:String, version:String):String
@@ -1386,31 +1404,38 @@ function eFactura_nodoTaxesTypeFacturae(nombreNodo:String, version:String, curso
 							if (!qryIva.exec()) {
 								return util.translate("scripts", "ERROR: Nodo %1: Error en la consulta de IVA").arg(nombreNodo);
 							}
-							while (qryIva.next()) {
-								datosImpuesto["baseimponible"] = qryIva.value("neto");
-								datosImpuesto["porcentaje"] = qryIva.value("iva");
-								datosImpuesto["total"] = qryIva.value("totaliva");
-								//if (qryIva.value("totalrecargo") != 0) {
-									//return util.translate("scripts", "ERROR: Nodo %1: La generación de facturas electrónicas todaví­a no soporta facturas con Recargo de equivalencia").arg(nombreNodo);
+							if (qryIva.size()){
+								while (qryIva.next()) {
+									datosImpuesto["baseimponible"] = qryIva.value("neto");
+									datosImpuesto["porcentaje"] = qryIva.value("iva");
+									datosImpuesto["total"] = qryIva.value("totaliva");
 
-
-								//}
-								if (qryIva.value("totalrecargo") != 0) {
-//								debug("recargo doc");
-								datosImpuesto["totalrecargo"] = qryIva.value("totalrecargo");
-								datosImpuesto["recargo"] =  (datosImpuesto["totalrecargo"] * 100 )/ datosImpuesto["baseimponible"];
+									if (qryIva.value("totalrecargo") != 0) {
+										datosImpuesto["totalrecargo"] = qryIva.value("totalrecargo");
+										datosImpuesto["recargo"] =  (datosImpuesto["totalrecargo"] * 100 )/ datosImpuesto["baseimponible"];
+									}
+									else {
+										datosImpuesto["recargo"] = "";
+									}
+									datosImpuesto["tipoimpuesto"] = "01"; // IVA
+									cadenaFun = this.iface.nodoTaxTypeFacturae("Tax", version, datosImpuesto);
+									if (cadenaFun.startsWith("ERROR"))
+										return cadenaFun + sufijoError;
+									cadenaXML += cadenaFun;
 								}
-								else
-								{
-//								debug("NO recargo doc");
-								datosImpuesto["recargo"] = "";
-								}
+							} else {
+								// No hay lineas de IVA, pero el NODO debe existir y contener algo
+								datosImpuesto["baseimponible"] = cursor.valueBuffer("neto");
+								datosImpuesto["porcentaje"] = 0; // no hay
+								datosImpuesto["total"] = cursor.valueBuffer("totaliva"); // será 0
 								datosImpuesto["tipoimpuesto"] = "01"; // IVA
+								datosImpuesto["recargo"] = "";
 								cadenaFun = this.iface.nodoTaxTypeFacturae("Tax", version, datosImpuesto);
 								if (cadenaFun.startsWith("ERROR"))
 									return cadenaFun + sufijoError;
 								cadenaXML += cadenaFun;
 							}
+
 							cadenaXML += "</TaxesOutputs>";
 							break;
 						}
@@ -2538,7 +2563,8 @@ function eFactura_nodoTextMax2500TypeFacturae(nombreNodo:String, version:String,
 				return util.translate("scripts", "ERROR: Nodo %1: La cadena no está definida").arg(nombreNodo);
 
 			if (valor.length > 2500)
-				return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 80 caracteres").arg(nombreNodo);
+				valor = valor.left(2500);
+				// return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 2500 caracteres").arg(nombreNodo);
 
 			cadenaXML = "<" + nombreNodo + ">";
 			cadenaXML += valor;
@@ -2557,7 +2583,8 @@ function eFactura_nodoTextMax80TypeFacturae(nombreNodo:String, version:String, v
 		return util.translate("scripts", "ERROR: Nodo %1: La cadena no está definida").arg(nombreNodo);
 
 	if (valor.length > 80)
-		return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 80 caracteres").arg(nombreNodo);
+		valor = valor.left(80);
+		// return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 80 caracteres").arg(nombreNodo);
 
 	var cadenaXML:String = "<" + nombreNodo + ">";
 	cadenaXML += valor;
@@ -2574,7 +2601,8 @@ function eFactura_nodoTextMax50TypeFacturae(nombreNodo:String, version:String, v
 		return util.translate("scripts", "ERROR: Nodo %1: La cadena no está definida").arg(nombreNodo);
 
 	if (valor.length > 50)
-		return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 50 caracteres").arg(nombreNodo);
+		valor = valor.left(50);
+		// return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 50 caracteres").arg(nombreNodo);
 
 	var cadenaXML:String = "<" + nombreNodo + ">";
 	cadenaXML += valor;
@@ -2591,7 +2619,8 @@ function eFactura_nodoTextMax40TypeFacturae(nombreNodo:String, version:String, v
 		return util.translate("scripts", "ERROR: Nodo %1: La cadena no está definida").arg(nombreNodo);
 
 	if (valor.length > 40)
-		return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 40 caracteres").arg(nombreNodo);
+		valor = valor.left(40);
+		// return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 40 caracteres").arg(nombreNodo);
 
 	var cadenaXML:String = "<" + nombreNodo + ">";
 	cadenaXML += valor;
@@ -2608,7 +2637,8 @@ function eFactura_nodoTextMax20TypeFacturae(nombreNodo:String, version:String, v
 		return util.translate("scripts", "ERROR: Nodo %1: La cadena no está definida").arg(nombreNodo);
 
 	if (valor.length > 20)
-		return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 20 caracteres").arg(nombreNodo);
+		valor = valor.left(20);
+		// return util.translate("scripts", "ERROR: Nodo %1: La longitud de la cadena es superior a 20 caracteres").arg(nombreNodo);
 
 	var cadenaXML:String = "<" + nombreNodo + ">";
 	cadenaXML += valor;

@@ -25,9 +25,11 @@ function eFactura_init()
 	this.iface.__init();
 
 	var util:FLUtil = new FLUtil();
+	var cursor:FLSqlCursor = this.cursor();
+	var idempresa = cursor.valueBuffer("id");
 
 	this.child("lblRutaLib").text = util.readSettingEntry("scripts/flfacturac/rutalib");
-	this.child("lblRutaCertificado").text = util.readSettingEntry("scripts/flfacturac/rutacert");
+	this.child("lblRutaCertificado").text = util.readSettingEntry("scripts/flfacturac/rutacert"+idempresa); // compatible multiempresa
 
 	connect( this.child( "pbnCambiarRutaLib" ), "clicked()", this, "iface.pbnCambiarRutaLib_clicked" );
 	connect( this.child( "pbnCambiarRutaCert" ), "clicked()", this, "iface.pbnCambiarRutaCert_clicked" );
@@ -49,6 +51,8 @@ function eFactura_pbnCambiarRutaLib_clicked()
 function eFactura_pbnCambiarRutaCert_clicked()
 {
 	var util:FLUtil = new FLUtil();
+	var cursor:FLSqlCursor = this.cursor();
+	var idempresa = cursor.valueBuffer("id");
 	var ruta:String = FileDialog.getOpenFileName("", util.translate( "scripts", "Ruta al fichero de certificado"));
 
 	if ( !File.isFile( ruta ) ) {
@@ -56,7 +60,7 @@ function eFactura_pbnCambiarRutaCert_clicked()
 		return;
 	}
 	this.child("lblRutaCertificado").text = ruta;
-	util.writeSettingEntry("scripts/flfacturac/rutacert", ruta);
+	util.writeSettingEntry("scripts/flfacturac/rutacert"+idempresa, ruta); // compatible multiempresa
 }
 //// E-FACTURA //////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
