@@ -63,5 +63,4 @@
   <flpatch:patchXml path="facturacion/principal/forms/" name="masterejercicios.ui" style="legacy1"/>
   <flpatch:patchScript path="facturacion/principal/scripts/" name="ejercicios.qs" style="legacy"/>
   <flpatch:patchXml path="facturacion/principal/tables/" name="ejercicios.mtd" style="legacy1"/>
-  <flpatch:patchScript path="contabilidad/modelos/scripts/" name="flcontmode.qs" style="legacy"/>
 </flpatch:modifications>
