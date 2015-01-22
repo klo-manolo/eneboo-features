@@ -63,7 +63,11 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                                 // Agregamos los parametros extras al whereFijo
                                 this.iface.whereFijoExt = "";
                                 this.iface.whereFijoExtendido(nombreInforme);
-                                whereFijo = whereFijo + this.iface.whereFijoExt;
+                
+                                if (!whereFijo || whereFijo == "")
+                                    whereFijo = this.iface.whereFijoExt;
+                                else 
+                                    whereFijo = whereFijo + this.iface.whereFijoExt;
 
                              	if (!whereFijo || whereFijo == "")
                              	{

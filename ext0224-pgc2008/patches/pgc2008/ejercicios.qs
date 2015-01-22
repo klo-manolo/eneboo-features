@@ -2,7 +2,7 @@
 /** @class_declaration pgc2008 */
 /////////////////////////////////////////////////////////////////
 //// PGC 2008 //////////////////////////////////////////////////////
-class pgc2008 extends oficial /** %from: modelo303 */
+class pgc2008 extends oficial
 {
 	var curSubcuenta_:FLSqlCursor;
     function pgc2008( context ) { oficial ( context ); }
