@@ -63,6 +63,7 @@ function ivaBarcode_bufferChanged(fN:String)
 				this.child("fdbPvpUnitario").setDisabled(false);
 				this.child("fdbPvpUnitarioIva").setDisabled(true);
 			}
+		break;
 		}
 		case "pvpunitarioiva": {
 			if (!this.iface.bloqueoPrecio) {
