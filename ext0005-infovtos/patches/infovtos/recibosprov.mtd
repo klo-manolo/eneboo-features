@@ -1,0 +1,18 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[numero]" >
+<field>
+<name>codcuentapago</name>
+<!-- Código de la cuenta de la que se obtiene el dinero para pagar al proveedor--><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Cuenta de pago&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>6</length>
+<visiblegrid>false</visiblegrid>
+<relation>
+<table>cuentasbanco</table>
+<field>codcuenta</field>
+<card>M1</card>
+</relation>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>

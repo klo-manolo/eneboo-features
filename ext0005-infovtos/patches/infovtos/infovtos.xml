@@ -9,4 +9,8 @@
   <flpatch:addFile path="facturacion/informes/scripts/" name="i_vencimientos.qs"/>
   <flpatch:addFile path="facturacion/informes/tables/" name="i_vencimientos.mtd"/>
   <flpatch:addFile path="facturacion/informes/tables/" name="i_vencimientos_buffer.mtd"/>
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="recibosprov.mtd" />
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="recibosprov.ui" />
+  <flpatch:patchXml path="facturacion/tesoreria/tables/" name="reciboscli.mtd" />
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="reciboscli.ui" />
 </flpatch:modifications>
