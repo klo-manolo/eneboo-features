@@ -56,11 +56,19 @@
   <flpatch:patchXml name="albaranesprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
   <flpatch:patchXml name="facturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
   <flpatch:patchXml name="facturasprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="lineasalbaranescli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:addFile name="lineastallacol.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="lineastallacolcli.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="lineastallcol.ui" path="facturacion/facturacion/forms/"/>
   <flpatch:patchScript name="albaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
   <flpatch:patchScript name="albaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
   <flpatch:patchScript name="facturascli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
   <flpatch:patchScript name="facturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
   <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
   <flpatch:patchScript name="lineasalbaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:addFile name="masterlineastallacol.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:addFile name="masterlineastallacolcli.qs" path="facturacion/facturacion/scripts/"/>
   <flpatch:patchXml name="lineasalbaranescli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:addFile name="lineastallacol.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="lineastallacolcli.mtd" path="facturacion/facturacion/tables/"/>
 </flpatch:modifications>
