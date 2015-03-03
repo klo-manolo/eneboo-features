@@ -7,30 +7,17 @@ class envioMail extends oficial {
 	function init() { 
 		return this.ctx.envioMail_init(); 
 	}
-	function enviarDocumento(codPedido:String, codProveedor:String) {
-		return this.ctx.envioMail_enviarDocumento(codPedido, codProveedor);
+	function enviarDocumento(codAlbaran, codProveedor) {
+		return this.ctx.envioMail_enviarDocumento(codAlbaran, codProveedor);
 	}
-	function imprimir(codPedido:String) {
-		return this.ctx.envioMail_imprimir(codPedido);
+	function imprimir(codAlbaran) {
+		return this.ctx.envioMail_imprimir(codAlbaran);
 	}
-	function dameParamInformeMail(idPedido) {
-		return this.ctx.envioMail_dameParamInformeMail(idPedido);
+	function dameParamInformeMail(idAlbaran) {
+		return this.ctx.envioMail_dameParamInformeMail(idAlbaran);
 	}
 }
 //// ENVIO_MAIL ////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
-
-/** @class_declaration pubEnvioMail */
-/////////////////////////////////////////////////////////////////
-//// PUB_ENVIO_MAIL /////////////////////////////////////////////
-class pubEnvioMail extends head {
-    function pubEnvioMail( context ) { head( context ); }
-	function pub_enviarDocumento(codPedido:String, codProveedor:String) {
-		return this.enviarDocumento(codPedido, codProveedor);
-	}
-}
-
-//// PUB_ENVIO_MAIL /////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
 /** @class_definition envioMail */
@@ -38,15 +25,15 @@ class pubEnvioMail extends head {
 //// ENVIO_MAIL /////////////////////////////////////////////////
 function envioMail_init()
 {
-	this.iface.__init();
-	//this.child("tbnEnviarMail").close();
-	connect(this.child("tbnEnviarMail"), "clicked()", this, "iface.enviarDocumento()");
+	var _i = this.iface;
+	_i.__init();	
+	connect(this.child("tbnEnviarMail"), "clicked()", _i, "enviarDocumento()");
 }
 
-function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
+function envioMail_enviarDocumento(codAlbaran, codProveedor)
 {
-	var cursor:FLSqlCursor = this.cursor();
-	var util:FLUtil = new FLUtil();
+	var _i = this.iface;
+	var cursor = this.cursor();	
 	var usuario = sys.nameUser();
 	var usarSMTP;
 	
@@ -58,48 +45,47 @@ function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
 		usarSMTP = AQUtil.sqlSelect("usuarios", "utilizarsmtp", "idusuario='" + usuario + "'");
 	}
 	
-	if (!codPedido) {
-		codPedido = cursor.valueBuffer("codigo");
+	if (!codAlbaran) {
+		codAlbaran = cursor.valueBuffer("codigo");
 	}
 
 	if (!codProveedor) {
 		codProveedor = cursor.valueBuffer("codproveedor");
 	}
 
-	var tabla:String = "proveedores";
-	var emailProveedor:String = flfactppal.iface.pub_componerListaDestinatarios(codProveedor, tabla);
+	var tabla = "proveedores";
+	var emailProveedor = flfactppal.iface.pub_componerListaDestinatarios(codProveedor, tabla);
 	if (!emailProveedor) {	
 		return;
-	}
-
-	var rutaIntermedia:String = util.readSettingEntry("scripts/flfactinfo/dirCorreo");
+	}	                               
+	var rutaIntermedia = AQUtil.readSettingEntry("scripts/flfactinfo/dirCorreo");
 	if (!rutaIntermedia.endsWith("/")) {
 		rutaIntermedia += "/";
 	}
 
-	var cuerpo:String = "";
-	var asunto:String = util.translate("scripts", "Pedido %1").arg(codPedido);
-	var rutaDocumento:String = rutaIntermedia + "P_" + codPedido + ".pdf";
+	var cuerpo = "";
+	var asunto = sys.translate("Albarán %1").arg(codAlbaran);
+	var rutaDocumento = rutaIntermedia + "A_" + codAlbaran + ".pdf";
 
-	var codigo, idPedido;
-	if (codPedido) {
-		codigo = codPedido;
-		idPedido = util.sqlSelect("pedidosprov", "idpedido", "codigo = '" + codigo + "'");
+	var codigo, idAlbaran;
+	if (codAlbaran) {
+		codigo = codAlbaran;
+		idAlbaran = AQUtil.sqlSelect("albaranesprov", "idalbaran", "codigo = '" + codigo + "'");
 	} else {
 		if (!cursor.isValid()) {
 			return;
 		}
 		codigo = cursor.valueBuffer("codigo");
-		idPedido = cursor.valueBuffer("idpedido");
+		idAlbaran = cursor.valueBuffer("idalbaran");
 	}
 	
-	var curImprimir:FLSqlCursor = new FLSqlCursor("i_pedidosprov");
+	var curImprimir = new FLSqlCursor("i_albaranesprov");
 	curImprimir.setModeAccess(curImprimir.Insert);
 	curImprimir.refreshBuffer();
 	curImprimir.setValueBuffer("descripcion", "temp");
-	curImprimir.setValueBuffer("d_pedidosprov_codigo", codigo);
-	curImprimir.setValueBuffer("h_pedidosprov_codigo", codigo);
-	var oParam = this.iface.dameParamInformeMail(idPedido);
+	curImprimir.setValueBuffer("d_albaranesprov_codigo", codigo);
+	curImprimir.setValueBuffer("h_albaranesprov_codigo", codigo);
+	var oParam = _i.dameParamInformeMail(idAlbaran);
 	
 	if(!oParam){
 		return;
@@ -130,34 +116,34 @@ function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
 	     var arrayAttach = [];
 	     arrayAttach[0] = rutaDocumento;
 	     datosMail["attach"] = arrayAttach;
-	     flfacturac.iface.pub_enviarMail(datosMail);   
+	     flfacturac.iface.pub_enviarMail(datosMail);  
 	     
 	}
 }
 
-function envioMail_dameParamInformeMail(idPedido)
+function envioMail_dameParamInformeMail(idAlbaran)
 {
-	var oParam = this.iface.dameParamInforme(idPedido);
+	var _i = this.iface;
+	var oParam = _i.dameParamInforme(idAlbaran);
 	return oParam;
 }
 
-function envioMail_imprimir(codPedido:String)
-{
-	var util:FLUtil = new FLUtil;
+function envioMail_imprimir(codAlbaran)
+{	
+	var _i = this.iface;
+	var datosEMail = [];
+	datosEMail["tipoInforme"] = "albaranesprov";
 	
-	var datosEMail:Array = [];
-	datosEMail["tipoInforme"] = "pedidosprov";
-	var codCliente:String;
-	if (codPedido && codPedido != "") {
-		datosEMail["codDestino"] = util.sqlSelect("pedidosprov", "codproveedor", "codigo = '" + codPedido + "'");
+	if (codAlbaran && codAlbaran != "") {
+		datosEMail["codDestino"] = AQUtil.sqlSelect("albaranesprov", "codproveedor", "codigo = '" + codAlbaran + "'");
 		datosEMail["codDocumento"] = codPedido;
 	} else {
-		var cursor:FLSqlCursor = this.cursor();
+		var cursor = this.cursor();
 		datosEMail["codDestino"] = cursor.valueBuffer("codproveedor");
 		datosEMail["codDocumento"] = cursor.valueBuffer("codigo");
 	}
 	flfactinfo.iface.datosEMail = datosEMail;
-	this.iface.__imprimir(codPedido);
+	_i.__imprimir(codAlbaran);
 }
 
 //// ENVIO_MAIL /////////////////////////////////////////////////

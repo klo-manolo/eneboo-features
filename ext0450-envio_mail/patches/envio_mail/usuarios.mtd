@@ -1,0 +1,78 @@
+<xupdate:modifications>
+<xupdate:insert-after select="/TMD[TMD,1]/field[email]" >
+<field>
+<name>utilizarsmtp</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Utilizar cliente correo interno&quot;)</alias>
+<null>false</null>
+<pk>false</pk>
+<type>bool</type>
+<default>false</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[utilizarsmtp]" >
+<field>
+<name>hostcorreosaliente</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Host correo saliente&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>100</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[hostcorreosaliente]" >
+<field>
+<name>puertosmtp</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Puerto SMTP&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<default>465</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[puertosmtp]" >
+<field>
+<name>tipocxsmtp</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo conexión SMTP&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>4</length>
+<optionslist>SSL,TLS,Otra</optionslist>
+<default>SSL</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipocxsmtp]" >
+<field>
+<name>tipoautsmtp</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Tipo autenticación SMTP&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>10</length>
+<optionslist>Plain,Login,Otra</optionslist>
+<default>Plain</default>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[tipoautsmtp]" >
+<field>
+<name>usuariosmtp</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Usuario SMTP&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+</field>
+</xupdate:insert-after>
+<xupdate:insert-after select="/TMD[TMD,1]/field[usuariosmtp]" >
+<field>
+<name>passwordsmtp</name>
+<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Contraseña SMTP&quot;)</alias>
+<null>true</null>
+<pk>false</pk>
+<type>string</type>
+<length>50</length>
+<visiblegrid>false</visiblegrid>
+</field>
+</xupdate:insert-after>
+</xupdate:modifications>
