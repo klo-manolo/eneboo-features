@@ -1,0 +1,287 @@
+<xupdate:modifications>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >391</xupdate:update>
+<xupdate:update select="/UI[UI,1]/widget[QWidget,usuarios]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]" >701</xupdate:update>
+<xupdate:append-first select="/UI[UI,1]" >
+<images/>
+</xupdate:append-first>
+<xupdate:append-first select="/UI[UI,1]/images[images,1]" >
+<image name="envio_mailimage40321" >
+<data format="PNG" length="1051" >89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000003e249444154789ced964f481c571cc73f13dee10d5898851c5c6861171a700b1eec49a597427370a1d00816d2928325392434072b16446c08cbb6042ba560d683697b88b187a0e450b685063c14b2424337b485292460404121c2cc41323ff0c1ebe18dbb31fea91bd05efcc1f060e6bdf97c7fbfdff7cd3c3889933886b0d6fe8ff449374cfd39c573fb1c46773e3e75e40286811bd84005f6e2cf172dba29ea78044c62031d50c815c8b7e54161d3fb0078470aff1602023b7f7e9e4425f8ca677e699e4abde2d8f1510ab8015a693b7b6e1614080240a002e61ecd517d5c65b66fd6db5340f14e91eac755c039d8db7bdafe5176f05be76e39b001ad346204ad345a69aa7f578925f6d4aec5e3505daa527a50b2cbf1b2d732fc3a60b0537d5f134b0c26017c2213e1e3838272ad4cb811c2b5974db8bd453436abb3842ba165bc05f8f8367c82c824249b11898144123080819bbfdd245c0fe11a1ed75f1430042860135bec7897c8acd1df55048365e410f011079fe82b119918911831826cc688b836dca97f477db50e253c46695620180d601588b1c58e1e7acef42222c41233f1fe18da60193a007ed5c14b7d630e6a1c5044d2bec36258a5f6a40e13788c005fb9a58d06e7aee7ecdbafbf45e18d02420280562040a07cc67f9c0483c7cc4bf04b80c28e0d5c716e37a07123060295a1bef28085878b308dc710f04d7379b30506442220213102a49920c426a274e18a6bc7e00bf04197f9d8c027886ace771510b4f209d74216961661038fab3be18d0ab48fb4b33eb10e97b03d6fe6e8edea75229406045f6912848cd294a7e7dc3ae3321f1eec07ad498ce0a34944004d4669a26742e57e3a5f03d3bbbb770a70f0cbc00c5eed9fa7fcf1571d5f8198181424c4f80a2284b1cbfd9060d9c20e0f1649dadc73c0990f21a3356c6a2a3fa570b5377c87071a258d001f5bec2e90ebcc232601e5834ad0f8080919c1657a3a838fa65dbb7922cef5d15ac4f7bf2c824ee13fec0ddf2d00e002ce795bd8feb35db47706ce580ab74d219de0be6c2231cb71085b1a0c6437f32cfc1a829fc26fef0fdf5b00c0792001045beccbc199751283b337e0a7de000d46c0380f649fe599bb1bc26be97bef1e0cdf5f00c007e9b889fd68a08074468d3ddda884718318c8ade4a9ccd4a12dcdfcde7fc3e1a0f3c0bd06c09bbb1d123ccea0035c15d24bb7b9b1b091a7325d773d378787c3617ec7efa542043bfc591751f79adbe7ca953fffa440f98b9acb1ce0fee1e1709813d1f60b15dee49775b28ff2692584c26a17e5cf6ba0f090d6e1d0ca81e41d9cef045baaf49039adf9f4c3c566e64badc35b1300d00dc490eb086c361350fbfda9fbc23d7c35f8ab45c771c24ee218e25fdd84b7a28ad76c6e0000000049454e44ae426082</data>
+</image>
+</xupdate:append-first>
+<xupdate:insert-after select="/UI[UI,1]/widget[QWidget,usuarios]/vbox[vbox,1]/widget[QGroupBox,gbxUsuario]" >
+<widget class="QGroupBox" >
+<property name="name" >
+<cstring>gbxMail</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>1</bold>
+</font>
+</property>
+<property name="title" >
+<string>Envío mail</string>
+</property>
+<vbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutUtilizarSmtp</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbUtilizarSmtp</cstring>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>0</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>26</width>
+<height>22</height>
+</size>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>utilizarsmtp</string>
+</property>
+<property name="foreignField" >
+<string/>
+</property>
+<property name="fieldRelation" >
+<string/>
+</property>
+</widget>
+<spacer>
+<property name="name" >
+<cstring>spacerId_2</cstring>
+</property>
+<property name="orientation" >
+<enum>Horizontal</enum>
+</property>
+<property name="sizeType" >
+<enum>Expanding</enum>
+</property>
+<property name="sizeHint" >
+<size>
+<width>141</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutHost</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbHostSmtp</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>hostcorreosaliente</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbPuertoSmtp</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>puertosmtp</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutTipoSmtp</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTipoCxSmtp</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>tipocxsmtp</string>
+</property>
+</widget>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbTipoAutSmtp</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>tipoautsmtp</string>
+</property>
+</widget>
+</hbox>
+</widget>
+<widget class="QLayoutWidget" >
+<property name="name" >
+<cstring>layoutUsuarioSmtp</cstring>
+</property>
+<hbox>
+<property name="name" >
+<cstring>unnamed</cstring>
+</property>
+<widget class="FLFieldDB" >
+<property name="name" >
+<cstring>fdbUsuarioSmtp</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="fieldName" >
+<string>usuariosmtp</string>
+</property>
+</widget>
+<widget class="QLabel" >
+<property name="name" >
+<cstring>lblRepita</cstring>
+</property>
+<property name="font" >
+<font>
+<bold>0</bold>
+</font>
+</property>
+<property name="text" >
+<string>Contraseña</string>
+</property>
+</widget>
+<widget class="QLineEdit" >
+<property name="name" >
+<cstring>ledClaveAcceso</cstring>
+</property>
+<property name="maximumSize" >
+<size>
+<width>150</width>
+<height>21</height>
+</size>
+</property>
+<property name="font" >
+<font/>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="echoMode" >
+<enum>Password</enum>
+</property>
+<property name="alignment" >
+<set>AlignHCenter</set>
+</property>
+</widget>
+<widget class="QPushButton" >
+<property name="name" >
+<cstring>tbnEnviarMailPrueba</cstring>
+</property>
+<property name="enabled" >
+<bool>true</bool>
+</property>
+<property name="sizePolicy" >
+<sizepolicy>
+<hsizetype>1</hsizetype>
+<vsizetype>1</vsizetype>
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="maximumSize" >
+<size>
+<width>32</width>
+<height>32</height>
+</size>
+</property>
+<property name="focusPolicy" >
+<enum>NoFocus</enum>
+</property>
+<property name="text" >
+<string/>
+</property>
+<property name="accel" >
+<string>I</string>
+</property>
+<property name="iconSet" >
+<iconset>envio_mailimage40321</iconset>
+</property>
+<property name="toolTip" stdset="0" >
+<string>Enviar un email de prueba</string>
+</property>
+<property name="whatsThis" stdset="0" >
+<string>Envía un email de prueba</string>
+</property>
+</widget>
+</hbox>
+</widget>
+</vbox>
+</widget>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" >
+<includehint>flfielddb.h</includehint>
+</xupdate:insert-after>
+</xupdate:modifications>

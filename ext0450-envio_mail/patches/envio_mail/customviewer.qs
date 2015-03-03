@@ -2,7 +2,7 @@
 /** @class_declaration envioMail */
 /////////////////////////////////////////////////////////////////
 //// ENVIO MAIL /////////////////////////////////////////////////
-class envioMail extends oficial /** %from: oficial */ {
+class envioMail extends oficial {
 	var tbnEnviarMail;
 	function envioMail( context ) { oficial( context ); }
 	function init() {
@@ -29,7 +29,7 @@ function envioMail_enviarEMail()
 {
 	var util:FLUtil = new FLUtil;
 	var tabla:String;
-
+	
 	var rutaIntermedia:String = util.readSettingEntry("scripts/flfactinfo/dirCorreo");
 	if (!rutaIntermedia.endsWith("/")) {
 		rutaIntermedia += "/";
@@ -99,7 +99,7 @@ function envioMail_enviarEMail()
 			}
 		}
 	}
-	delete flfactinfo.iface.datosEMail; /// Para que no se quede para el prÃ³ximo informe
+	delete flfactinfo.iface.datosEMail; /// Para que no se quede para el próximo informe
 	flfactinfo.iface.datosEMail = false;
 	if (!rutaDocumento || rutaDocumento == "") {
 		var nombre:String = Input.getText(util.translate("scripts", "Nombre del fichero a enviar"));
@@ -124,4 +124,3 @@ function envioMail_enviarEMail()
 }
 //// ENVIO MAIL /////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
