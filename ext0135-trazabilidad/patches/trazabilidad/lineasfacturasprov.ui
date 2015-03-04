@@ -1,5 +1,4 @@
 <xupdate:modifications>
-<xupdate:update select="/UI[UI,1]/widget[QWidget,lineaspedidosprov]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]" >627</xupdate:update>
 <xupdate:append-first select="/UI[UI,1]" >
 <images/>
 </xupdate:append-first>
@@ -333,84 +332,5 @@
 <receiver>tdbMoviLote</receiver>
 <slot>browseRecord()</slot>
 </connection>
-</xupdate:insert-after>
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]" />
-<xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:append-first>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLFieldDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]" >
-<includehint>FLTableDB.h</includehint>
-</xupdate:insert-after>
-<xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]" >
-<includehints>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-<includehint>flfielddb.h</includehint>
-</includehints>
 </xupdate:insert-after>
 </xupdate:modifications>

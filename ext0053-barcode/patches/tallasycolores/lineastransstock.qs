@@ -2,7 +2,7 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
-class barCode extends oficial {
+class barCode extends oficial /** %from: oficial */ {
     function barCode( context ) { oficial ( context ); }
     function init() {
 		return this.ctx.barCode_init();
@@ -93,7 +93,7 @@ function barCode_refrescarStock()
 	var codAlmaDestino:String = cursor.cursorRelation().valueBuffer("codalmadestino");
 	this.child("lblAlmacenOrigen").text = util.translate("scripts", "Almacén origen (%1)").arg(codAlmaOrigen);
 	this.child("lblAlmacenDestino").text = util.translate("scripts", "Almacén destino (%1)").arg(codAlmaDestino);
-		
+
 	var barCode:String = cursor.valueBuffer("barcode");
 	if (!barCode || barCode == "") {
 		var referencia:String = cursor.valueBuffer("referencia");
@@ -118,7 +118,7 @@ function barCode_refrescarStock()
 	if (!cantidadOrigen || isNaN(cantidadOrigen))
 		cantidadOrigen = 0;
 	cantidadOrigen += parseFloat(this.iface.canPrevia);
- 
+
 	this.child("lblCanInicialOrigen").text = cantidadOrigen;
 	this.child("lblCanFinalOrigen").text = cantidadOrigen - cantidad;
 
@@ -133,3 +133,4 @@ function barCode_refrescarStock()
 
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
 /////////////////////////////////////////////////////////////////
+

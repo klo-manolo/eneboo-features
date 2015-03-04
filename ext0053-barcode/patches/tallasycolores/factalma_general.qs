@@ -2,7 +2,7 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES ///////////////////////////////////////////
-class barCode extends oficial {
+class barCode extends oficial /** %from: oficial */ {
 	function barCode( context ) { oficial ( context ); }
 	function init() {
 		return this.ctx.barCode_init();
@@ -123,3 +123,4 @@ function barCode_habilitacionesCalculoBarcode()
 }
 //// TALLAS Y COLORES ///////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

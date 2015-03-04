@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="50" TopMargin="200" RightMargin="30" LeftMargin="50" PageOrientation="0" PageSize="0" >
+<Detail Height="0" Level="0"/>
+
+ <DetailHeader Height="202" Level="1" >
+
+  
+  <Field WordWrap="1" Width="550" X="0" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.nombreproveedor" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+  <Field WordWrap="0" Width="400" X="0" Y="15" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirproveedores.direccion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Field WordWrap="0" Width="300" X="0" Y="30" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirproveedores.ciudad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Field WordWrap="0" Width="60" X="0" Y="45" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirproveedores.codpostal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  <Field WordWrap="0" Width="200" X="60" Y="45" BorderStyle="0" NegValueColor="0,0,0" Height="18" HAlignment="0" DataType="0" Field="dirproveedores.provincia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+  <CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.lugarFecha" WordWrap="0" Width="400" X="120" Y="120" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="0" Field="" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+  <CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.lineaNumImp" WordWrap="0" Width="550" X="0" Y="140" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="0" Field="" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+
+  <Label WordWrap="0" Width="550" X="0" Y="160" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="como pago de los conceptos que se detallan a continuación" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+
+ <!--Cabeceras de lista de artículos-->
+
+ <Label WordWrap="0" Width="150" X="0" Y="180" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="FACTURA" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+ <Label WordWrap="0" Width="150" X="150" Y="180" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="RECIBO" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+ <Label WordWrap="0" Width="150" X="300" Y="180" BorderStyle="0" Height="18" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="VENCIMIENTO" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+ <Label WordWrap="0" Width="100" X="450" Y="180" BorderStyle="0" Height="18" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="IMPORTE" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+ 
+ <Line Width="1" Y1="200" Y2="200" X1="0" X2="550" Style="1" Color="0,0,0" />
+</DetailHeader>
+
+
+ <Detail Height="20" Level="1" >
+
+  <Field WordWrap="0" Width="150" X="0" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="facturasprov.codigo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+  <Field WordWrap="0" Width="150" X="150" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="recibosprov.codigo" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+  <Field WordWrap="0" Width="100" X="300" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="3" Field="recibosprov.fechav" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+  
+  <Field WordWrap="0" Width="150" X="400" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="recibosprov.importe" DateFormat="18" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+ </Detail>
+
+ <DetailFooter Height="360" Level="1" NewPage="true" PlaceAtBottom="true">
+	<Label WordWrap="0" Width="100" X="300" Y="0" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="TOTAL" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+ 
+	<CalculatedField CalculationType="1" WordWrap="0" Width="150" X="400" Y="0" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="recibosprov.importe" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<Label WordWrap="0" Width="300" X="0" Y="20" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Sin más, le saluda atentamente" FontWeight="50" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="5" WordWrap="0" Width="250" X="50" Y="170" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="bancos.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="5" WordWrap="0" Width="250" X="50" Y="185" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="sucursales.poblacion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="5" WordWrap="0" Width="250" X="50" Y="200" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="sucursales.direccion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="5" WordWrap="0" Width="60" X="50" Y="215" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="sucursales.codpostal" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="5" WordWrap="0" Width="200" X="110" Y="215" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="sucursales.provincia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="5" WordWrap="0" Width="80" X="450" Y="170" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="0" Field="pagaresprov.cuenta" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="5" WordWrap="0" Width="20" X="450" Y="170" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="1" DataType="0" Field="pagaresprov.dc" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="5" WordWrap="0" Width="40" X="410" Y="170" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.ctaagencia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="5" WordWrap="0" Width="40" X="370" Y="170" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.ctaentidad" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+ 
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.ibanCompleto" WordWrap="0" Width="200" X="370" Y="185" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="9" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.fechaTexto" WordWrap="0" Width="200" X="100" Y="235" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.fechav" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.importeAsterisco" WordWrap="0" Width="150" X="420" Y="215" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="0" Field="" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.paraAbonar" WordWrap="0" Width="500" X="50" Y="265" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.importeTexto" WordWrap="1" Width="430" X="80" Y="280" BorderStyle="0" NegValueColor="0,0,0" Height="40" HAlignment="0" DataType="0" Field="" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.fechaTexto" WordWrap="0" Width="200" X="100" Y="320" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.fecha" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.secuencia" WordWrap="0" Width="80" X="100" Y="350" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.secuencia" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="5" WordWrap="0" Width="20" X="180" Y="350" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.dcn" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	
+	<CalculatedField CalculationType="6" FunctionName="formi_pagaresprov.codCMC7" WordWrap="0" Width="550" X="80" Y="380" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="pagaresprov.numero" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="50" FontSize="12" BorderWidth="1" Precision="2" FontFamily="IDAutomationCMC7n10" />
+ </DetailFooter>
+
+</KugarTemplate>

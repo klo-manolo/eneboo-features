@@ -32,7 +32,6 @@
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidosprov.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs" style="legacy"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd" style="legacy1"/>
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasfacturasprov.mtd" style="legacy1"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranesclicomp.qry"/>
   <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranesprovcomp.qry"/>

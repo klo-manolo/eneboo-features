@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate BottomMargin="20" TopMargin="40" RightMargin="10" LeftMargin="20" PageOrientation="0" PageSize="0" >
+	
+	<Detail Height="25" Level="0" >
+		
+		<Field WordWrap="1" Width="500" X="2" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="0" DataType="0" Field="empresa.nombre" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[empresa.nombre]" FontWeight="65" FontSize="11" BorderWidth="1" Precision="2" FontFamily="Arial" />
+		
+	</Detail>
+	
+	<DetailHeader Height="50" Level="1" >
+		<!--titulo-->
+		<Label WordWrap="0" Width="300" X="1" Y="0" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Previsión de pagos a proveedores" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<!--Fecha-->
+		<Label WordWrap="0" Width="50" X="300" Y="0" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Fecha" FontWeight="50" FontSize="10" BorderWidth="0" FontFamily="Arial Narrow" />
+		<Special WordWrap="0" Width="60" X="355" Y="0" BorderStyle="0" Height="20" HAlignment="0" DateFormat="19" BorderColor="0,0,0" BackgroundColor="255,255,255" Type="0" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+		<!--página-->
+		<Label WordWrap="0" Width="60" X="440" Y="0" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="página" FontWeight="50" FontSize="10" BorderWidth="0" FontFamily="Arial Narrow" />
+		<Special WordWrap="0" Width="20" X="500" Y="0" BorderStyle="0" Height="20" HAlignment="2" DateFormat="19" BorderColor="0,0,0" BackgroundColor="255,255,255" Type="1" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+		
+		<Label WordWrap="0" Width="199" X="0" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Descripcion" FontWeight="65"  FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="59" X="200" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Fecha" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="129" X="260" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Proveedor" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="129" X="390" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cuenta bancaria" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="59" X="520" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Importe" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+	</DetailHeader>
+	
+	<AddOnHeader Height="50" Level="1" >
+		<!--titulo-->
+		<Label WordWrap="0" Width="300" X="1" Y="0" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Previsión de pagos a proveedores" FontWeight="65" FontSize="12" BorderWidth="1" FontFamily="Arial" />
+		<!--Fecha-->
+		<Label WordWrap="0" Width="50" X="300" Y="0" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Fecha" FontWeight="50" FontSize="10" BorderWidth="0" FontFamily="Arial Narrow" />
+		<Special WordWrap="0" Width="60" X="355" Y="0" BorderStyle="0" Height="20" HAlignment="0" DateFormat="19" BorderColor="0,0,0" BackgroundColor="255,255,255" Type="0" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+		<!--página-->
+		<Label WordWrap="0" Width="60" X="440" Y="0" BorderStyle="0" Height="20" HAlignment="2" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="página" FontWeight="50" FontSize="10" BorderWidth="0" FontFamily="Arial Narrow" />
+		<Special WordWrap="0" Width="20" X="500" Y="0" BorderStyle="0" Height="20" HAlignment="2" DateFormat="19" BorderColor="0,0,0" BackgroundColor="255,255,255" Type="1" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="" FontWeight="50" FontSize="10" BorderWidth="1" FontFamily="Arial Narrow" />
+		
+		<Label WordWrap="0" Width="199" X="0" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Descripcion" FontWeight="65"  FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="59" X="200" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Fecha" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="129" X="260" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Proveedor" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="129" X="390" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Cuenta bancaria" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<Label WordWrap="0" Width="59" X="520" Y="25" BorderStyle="0" Height="20" HAlignment="1" BorderColor="0,0,0" BackgroundColor="220,220,220" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Importe" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+	</AddOnHeader>
+	
+	<Detail Height="15" Level="1" >
+		<Field WordWrap="0" Width="200" X="0" Y="2" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="i_prevpagos_buffer.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[i_prevpagos_buffer.codigo]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		<Field WordWrap="0" Width="60" X="200" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="1" DataType="3" Field="i_prevpagos_buffer.fechav" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[i_prevpagos_buffer.fecha]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		<Field WordWrap="0" Width="40" X="260" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="i_prevpagos_buffer.codproveedor" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[i_prevpagos_buffer.fechav]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		<Field WordWrap="0" Width="90" X="300" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="proveedores.nombre" DateFormat="19" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[i_prevpagos_buffer.fechav]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		<Field WordWrap="0" Width="40" X="390" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="i_prevpagos_buffer.codcuenta" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[i_prevpagos_buffer.codcliente]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		<Field WordWrap="0" Width="90" X="430" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="0" DataType="0" Field="cuentasbanco.descripcion" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[i_prevpagos_buffer.codcliente]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+		<Field WordWrap="0" Width="60" X="520" Y="1" BorderStyle="0" NegValueColor="0,0,0" Height="15" HAlignment="2" DataType="2" Field="i_prevpagos_buffer.importe" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="[i_prevpagos_buffer.nombrecliente]" FontWeight="50" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial Narrow" />
+	</Detail>
+	
+	
+	<AddOnFooter Height="35" Level="1" >
+		<Line Width="1" Y1="5" Y2="5" X1="0" X2="580" Style="1" Color="150,150,150" />
+		<Label WordWrap="0" Width="200" X="0" Y="10" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Suma y sigue" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<CalculatedField WordWrap="0" CalculationType="1" Width="60" X="520" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="i_prevpagos_buffer.importe" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	</AddOnFooter>
+	
+	<DetailFooter Height="35" Level="1" >
+		<Line Width="1" Y1="5" Y2="5" X1="0" X2="580" Style="1" Color="150,150,150" />
+		<Label WordWrap="0" Width="200" X="0" Y="10" BorderStyle="0" Height="20" HAlignment="0" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" Text="Total" FontWeight="65" FontSize="10" BorderWidth="1" FontFamily="Arial" />
+		<CalculatedField WordWrap="0" CalculationType="1" Width="60" X="520" Y="10" BorderStyle="0" NegValueColor="0,0,0" Height="20" HAlignment="2" DataType="2" Field="i_prevpagos_buffer.importe" DateFormat="11" Currency="32" BorderColor="0,0,0" BackgroundColor="255,255,255" FontItalic="0" VAlignment="1" ForegroundColor="0,0,0" CommaSeparator="44" Text="" FontWeight="65" FontSize="10" BorderWidth="1" Precision="2" FontFamily="Arial" />
+	</DetailFooter>
+	
+	<PageFooter Height="5" PrintFrequency="1" >
+	</PageFooter>
+</KugarTemplate>

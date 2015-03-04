@@ -1,48 +1,49 @@
-<xupdate:modifications>
-<xupdate:insert-after select="/TMD[TMD,1]/field[recargo]" >
-<field>
-<name>ivaincluido</name>
-<!-- Indica si el precio de venta del artículo incluye el IVA --><alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;I.V.A. Incluido&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>bool</type>
-</field>
-</xupdate:insert-after>
-<xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]" >
-<field>
-<name>pvpunitarioiva</name>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;PVP con IVA&quot;)</alias>
-<null>false</null>
-<pk>false</pk>
-<type>double</type>
-<partI>6</partI>
-<partD>2</partD>
-<default>0</default>
-</field>
-</xupdate:insert-after>
-<xupdate:insert-after select="/TMD[TMD,1]/field[irpf]" >
-<field>
-<name>pvptotaliva</name>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Total con IVA&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>double</type>
-<partI>6</partI>
-<partD>2</partD>
-<default>0</default>
-<editable>false</editable>
-</field>
-</xupdate:insert-after>
-<xupdate:insert-after select="/TMD[TMD,1]/field[pvptotaliva]" >
-<field>
-<name>pvpsindtoiva</name>
-<alias>QT_TRANSLATE_NOOP(&quot;MetaData&quot;,&quot;Importe sin dto. con IVA&quot;)</alias>
-<null>true</null>
-<pk>false</pk>
-<type>double</type>
-<partI>6</partI>
-<partD>2</partD>
-<default>0</default>
-</field>
-</xupdate:insert-after>
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[recargo]">
+    <field>
+      <name>ivaincluido</name>
+      <!-- Indica si el precio de venta del artículo incluye el IVA -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. Incluido")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
+    <field>
+      <name>pvpunitarioiva</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","PVP con IVA")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>6</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[irpf]">
+    <field>
+      <name>pvptotalivainc</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Total con IVA")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>6</partI>
+      <partD>2</partD>
+      <default>0</default>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[pvptotalivainc]">
+    <field>
+      <name>pvpsindtoiva</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Importe sin dto. con IVA")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>6</partI>
+      <partD>2</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>

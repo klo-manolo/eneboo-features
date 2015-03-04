@@ -217,7 +217,7 @@ function ivaIncluido_commonCalculateField(fN, cursor):String
             break;
         }
 		default:
-			return this.iface.__commonCalculateField(fN, cursor);
+			valor = this.iface.__commonCalculateField(fN, cursor);
 	}
 	return valor;
 }

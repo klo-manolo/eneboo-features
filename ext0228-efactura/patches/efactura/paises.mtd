@@ -1,0 +1,24 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[validarprov]">
+    <field>
+      <name>codisoalpha3</name>
+      <!--Código ISO Alpha 3-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Código I.S.O. Alpha 3")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codisoalpha3]">
+    <field>
+      <name>codisoalpha2</name>
+      <!--Código ISO Alpha 2-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Código I.S.O. Alpha 2")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>3</length>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

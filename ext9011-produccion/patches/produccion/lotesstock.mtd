@@ -8,7 +8,7 @@
         <null>false</null>
         <pk>true</pk>
         <type>string</type>
-        <length>10</length>
+        <length>30</length>
         <counter>true</counter>
         <relation>
             <table>movistock</table>

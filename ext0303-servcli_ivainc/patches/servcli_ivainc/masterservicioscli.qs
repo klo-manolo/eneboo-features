@@ -2,7 +2,7 @@
 /** @class_declaration servIvaInc */
 /////////////////////////////////////////////////////////////////
 //// SERV_IVAINC ////////////////////////////////////////////////
-class servIvaInc extends oficial
+class servIvaInc extends oficial /** %from: oficial */
 {
   function servIvaInc(context)
   {
@@ -27,8 +27,9 @@ function servIvaInc_datosLineaServicio(curLineaServicio: FLSqlCursor, curLineaAl
     setValueBuffer("pvptotaliva", curLineaServicio.valueBuffer("pvptotaliva"));
   }
 
-  return this.iface.__datosLineaServicio(curLineaServicio, curLineaAlbaran, idAlbaran);;
+  return this.iface.__datosLineaServicio(curLineaServicio, curLineaAlbaran, idAlbaran);
 }
 
 //// SERV_IVAINC ////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

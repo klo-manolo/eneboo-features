@@ -2,8 +2,8 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
-class barCode extends funNumSerie {
-    function barCode( context ) { funNumSerie ( context ); }
+class barCode extends oficial /** %from: oficial */ {
+    function barCode( context ) { oficial ( context ); }
 	function afterCommit_lineaspedidosprov(curLP:FLSqlCursor):Boolean {
 		return this.ctx.barCode_afterCommit_lineaspedidosprov(curLP);
 	}
@@ -17,7 +17,7 @@ class barCode extends funNumSerie {
 /** @class_declaration pubBarcode */
 /////////////////////////////////////////////////////////////////
 //// PUB BARCODE ////////////////////////////////////////////////
-class pubBarcode extends ifaceCtx {
+class pubBarcode extends ifaceCtx /** %from: ifaceCtx */ {
 	function pubBarcode( context ) { ifaceCtx( context ); }
 	function pub_validarLinea(curLinea:FLSqlCursor):Boolean {
 		return this.validarLinea(curLinea);

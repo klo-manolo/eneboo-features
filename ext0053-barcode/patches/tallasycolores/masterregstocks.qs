@@ -2,7 +2,7 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
-class barCode extends oficial {
+class barCode extends oficial /** %from: oficial */ {
 	function barCode( context ) { oficial ( context ); }
 	function init() {
 		return this.ctx.barCode_init();
@@ -40,7 +40,7 @@ class barCode extends oficial {
 /** @class_declaration pubBarCode */
 /////////////////////////////////////////////////////////////////
 //// PUB_BARCODE ////////////////////////////////////////////////
-class pubBarCode extends ifaceCtx {
+class pubBarCode extends ifaceCtx /** %from: ifaceCtx */ {
     function pubBarCode( context ) { ifaceCtx( context ); }
 	function pub_insertarRegularizaciones(referencia:String, codAlmacen:String) {
 		return this.insertarRegularizaciones(referencia, codAlmacen);
@@ -88,7 +88,7 @@ function barCode_insertarRegularizaciones(referencia:String, codAlmacen:String)
 		return false;
 
 	curRegBuffer.setModeAccess(curRegBuffer.Edit);
-	
+
 	f.setMainWidget();
 	curRegBuffer.refreshBuffer();
 	curRegBuffer.setValueBuffer("referencia", referencia);
@@ -118,7 +118,7 @@ function barCode_insertarRegularizaciones(referencia:String, codAlmacen:String)
 		curRegBuffer.rollback();
 		MessageBox.critical(util.translate("scripts", "Hubo un error en la generación de las líneas de regularización de stocks:\n%1").arg(e), MessageBox.Ok, MessageBox.NoButton);
 	}
-	
+
 	return true;
 }
 
@@ -150,7 +150,7 @@ function barCode_generarRegStocks(curRegBuffer:FLSqlCursor):Boolean
 	for (var i:Number = 0; i < tempBarcode.length; i++) {
 		temp = tempBarcode[i].split(",");
 		datos = [];
-		datos["barcode"] = temp[0]; 
+		datos["barcode"] = temp[0];
 		datos["codtalla"] = temp[1];
 		datos["codcolor"] = temp[2];
 		datos["cantidadfin"] = parseFloat(temp[3]);
@@ -190,7 +190,7 @@ function barCode_crearRegularizacion(idStock:String, curRegBuffer:FLSqlCursor, d
 	curLineaReg.setValueBuffer("hora", curRegBuffer.valueBuffer("hora"));
 	if (!curLineaReg.commitBuffer())
 		return false;
-	
+
 	var curStock:FLSqlCursor = new FLSqlCursor("stocks");
 	with (curStock) {
 		select("idstock = " + idStock);
@@ -224,22 +224,22 @@ function barCode_transferirStock(idStock1:String):Boolean
 	var referencia:String = util.sqlSelect("stocks", "referencia", "idstock = " + idStock1);
 	if (!referencia)
 		return false;
-	
+
 	var barCode:String = util.sqlSelect("stocks", "barcode", "idstock = " + idStock1);
 	if (!referencia)
 		return false;
 
 	var fecha:Date = new Date();
-	
+
 	var f:Object = new FLFormSearchDB("transferenciastock");
 	var curTrans:FLSqlCursor = f.cursor();
-	
+
 	curTrans.select();
 	if (!curTrans.first())
 		curTrans.setModeAccess(curTrans.Insert);
 	else
 		curTrans.setModeAccess(curTrans.Edit);
-	
+
 	f.setMainWidget();
 	curTrans.refreshBuffer();
 	curTrans.setValueBuffer("referencia", referencia);
@@ -247,7 +247,7 @@ function barCode_transferirStock(idStock1:String):Boolean
 	curTrans.setValueBuffer("idstock1", idStock1);
 	curTrans.setValueBuffer("fecha", fecha);
 	curTrans.setValueBuffer("hora", fecha);
-	
+
 	var acpt:String = f.exec("id");
 
 	if (acpt) {
@@ -262,7 +262,7 @@ function barCode_transferirStock(idStock1:String):Boolean
 			MessageBox.warning(util.translate("scripts", "No ha establecido el sentido de la transferencia"), MessageBox.Ok, MessageBox.NoButton);
 			return false;
 		}
-		
+
 		curTrans.transaction(false);
 		try {
 			if (this.iface.transferencia(curTrans))
@@ -289,13 +289,13 @@ function barCode_transferirStock(idStock1:String):Boolean
 function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var codAlmacen2:String = curTrans.valueBuffer("codalmacen2");
 	var codAlmacen1:String = util.sqlSelect("stocks", "codalmacen", "idstock = " +
 	 curTrans.valueBuffer("idstock1"));
 	var referencia:String = curTrans.valueBuffer("referencia");
 	var barCode:String = curTrans.valueBuffer("barcode");
-	
+
 	var idStock2:String = util.sqlSelect("stocks", "idstock", "codalmacen = '" + codAlmacen2 + "' AND barcode = '" + barCode + "'");
 	if (!idStock2) {
 		idStock2 = flfactalma.iface.pub_crearStockBarcode(codAlmacen2, barCode, referencia);
@@ -307,7 +307,7 @@ function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 		de1a2 = true;
 	else
 		de1a2 = false;
-	
+
 	var curLineaReg:FLSqlCursor = new FLSqlCursor("lineasregstocks");
 	with(curLineaReg) {
 		setModeAccess(Insert);
@@ -337,7 +337,7 @@ function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 		if (!commitBuffer())
 			return false;
 	}
-		
+
 	with(curLineaReg) {
 		setModeAccess(Insert);
 		refreshBuffer();
@@ -365,7 +365,7 @@ function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 		if (!commitBuffer())
 			return false;
 	}
-	
+
 	return true;
 }
 
@@ -378,26 +378,26 @@ function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 function barCode_transferirStock(idStock1:String):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var referencia:String = util.sqlSelect("stocks", "referencia", "idstock = " + idStock1);
 	if (!referencia)
 		return false;
-	
+
 	var barCode:String = util.sqlSelect("stocks", "barcode", "idstock = " + idStock1);
 	if (!referencia)
 		return false;
-	
+
 	var fecha:Date = new Date();
-	
+
 	var f:Object = new FLFormSearchDB("transferenciastock");
 	var curTrans:FLSqlCursor = f.cursor();
-	
+
 	curTrans.select();
 	if (!curTrans.first())
 		curTrans.setModeAccess(curTrans.Insert);
 	else
 		curTrans.setModeAccess(curTrans.Edit);
-	
+
 	f.setMainWidget();
 	curTrans.refreshBuffer();
 	curTrans.setValueBuffer("referencia", referencia);
@@ -405,13 +405,13 @@ function barCode_transferirStock(idStock1:String):Boolean
 	curTrans.setValueBuffer("idstock1", idStock1);
 	curTrans.setValueBuffer("fecha", fecha);
 	curTrans.setValueBuffer("hora", fecha);
-	
+
 	var codTerminal:String = util.readSettingEntry("scripts/fltpv_ppal/codTerminal");
 	if (codTerminal)
 		curTrans.setValueBuffer("codagente", util.sqlSelect("tpv_puntosventa","codtpv_agente","codtpv_puntoventa ='" + codTerminal + "'"));
-	
+
 	var acpt:String = f.exec("id");
-	
+
 	if (acpt) {
 		if (!curTrans.commitBuffer())
 			return false;
@@ -424,7 +424,7 @@ function barCode_transferirStock(idStock1:String):Boolean
 			MessageBox.warning(util.translate("scripts", "No ha establecido el sentido de la transferencia"), MessageBox.Ok, MessageBox.NoButton);
 		return false;
 		}
-	
+
 		curTrans.transaction(false);
 		try {
 			if (this.iface.transferencia(curTrans))
@@ -451,12 +451,12 @@ function barCode_transferirStock(idStock1:String):Boolean
 function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 {
 	var util:FLUtil = new FLUtil;
-	
+
 	var codAlmacen2:String = curTrans.valueBuffer("codalmacen2");
 	var codAlmacen1:String = util.sqlSelect("stocks", "codalmacen", "idstock = " + curTrans.valueBuffer("idstock1"));
 	var referencia:String = curTrans.valueBuffer("referencia");
 	var barCode:String = curTrans.valueBuffer("barcode");
-	
+
 	var idStock2:String = util.sqlSelect("stocks", "idstock", "codalmacen = '" + codAlmacen2 + "' AND barcode = '" + barCode + "'");
 	if (!idStock2) {
 		idStock2 = flfactalma.iface.pub_crearStock(codAlmacen2, barCode, referencia);
@@ -468,7 +468,7 @@ function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 		de1a2 = true;
 	else
 		de1a2 = false;
-		
+
 	var curLineaReg:FLSqlCursor = new FLSqlCursor("lineasregstocks");
 	with(curLineaReg) {
 		setModeAccess(Insert);
@@ -489,7 +489,7 @@ function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 	}
 	if (!util.sqlUpdate("stocks", "cantidad", curTrans.valueBuffer("cantidadnueva1"), "idstock = " + curTrans.valueBuffer("idstock1")))
 		return false;
-	
+
 	with(curLineaReg) {
 		setModeAccess(Insert);
 		refreshBuffer();
@@ -509,10 +509,11 @@ function barCode_transferencia(curTrans:FLSqlCursor):Boolean
 	}
 	if (!util.sqlUpdate("stocks", "cantidad", curTrans.valueBuffer("cantidadnueva2"), "idstock = " + idStock2))
 		return false;
-	
+
 	return true;
 }
 /** ----------------------------------------------------------------------------------------------------------------------------------- */
 
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
 /////////////////////////////////////////////////////////////////
+
