@@ -1,66 +1,74 @@
-<flpatch:modifications name="tallasycolores" >
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui"/>
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturasprov.ui"/>
-    <flpatch:addFile path="facturacion/almacen/forms/" name="articulosmodoinv.ui"/>
-    <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd"/>
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs"/>
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineasalbaranescli.qs"/>
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranescli.qs"/>
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="albaranesprov.qs"/>
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturascli.qs"/>
-    <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs"/>
-    <flpatch:addFile path="facturacion/almacen/scripts/" name="articulosmodoinv.qs"/>
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui"/>
-    <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranesprov.ui"/>
-    <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml"/>
-    <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="atributosarticulos.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="atributostarifas.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="barcodeprov.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="colores.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="coloresarticulo.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="coloresset.ui" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="factalma_general.ui" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="grupostalla.ui" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="lineasregstocks.ui" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="lineastransstock.ui" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="masterarticulos.ui" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="masterregstocks.ui" />
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="regstocks.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="regstocks_buffer.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="setscolores.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="setstallas.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="tallas.ui" />
-    <flpatch:addFile path="facturacion/almacen/forms/" name="tallasset.ui" />
-    <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs" />
-    <flpatch:addFile path="facturacion/almacen/scripts/" name="atributosarticulos.qs" />
-    <flpatch:addFile path="facturacion/almacen/scripts/" name="coloresarticulo.qs" />
-    <flpatch:patchScript path="facturacion/almacen/scripts/" name="factalma_general.qs" />
-    <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs" />
-    <flpatch:patchScript path="facturacion/almacen/scripts/" name="lineastransstock.qs" />
-    <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs" />
-    <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterregstocks.qs" />
-    <flpatch:patchScript path="facturacion/almacen/scripts/" name="regstocks.qs" />
-    <flpatch:addFile path="facturacion/almacen/scripts/" name="regstocks_buffer.qs" />
-    <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="atributosarticulos.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="atributostarifas.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="barcodeprov.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="colores.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="coloresarticulo.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="coloresset.mtd" />
-    <flpatch:patchXml path="facturacion/almacen/tables/" name="factalma_general.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="grupostalla.mtd" />
-    <flpatch:patchXml path="facturacion/almacen/tables/" name="lineasregstocks.mtd" />
-    <flpatch:patchXml path="facturacion/almacen/tables/" name="lineastransstock.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="regstocks_buffer.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="setscolores.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="setstallas.mtd" />
-    <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="tallas.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="tallasarticulo.mtd" />
-    <flpatch:addFile path="facturacion/almacen/tables/" name="tallasset.mtd" />
-    <flpatch:patchXml path="facturacion/almacen/tables/" name="tarifas.mtd" />
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="tallasycolores">
+  <flpatch:patchXml name="flfactalma.xml" path="facturacion/almacen/" style="legacy1"/>
+  <flpatch:patchXml name="articulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:addFile name="articulosmodoinv.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="atributosarticulos.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="atributostarifas.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="barcodeprov.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="colores.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="coloresarticulo.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="coloresset.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:patchXml name="factalma_general.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="flfactalma.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:addFile name="grupostalla.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:patchXml name="lineasregstocks.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="lineastransstock.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterarticulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterregstocks.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="regstocks.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:addFile name="regstocks_buffer.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="setscolores.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="setstallas.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="tallas.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="tallasset.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:patchScript name="articulos.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:addFile name="articulosmodoinv.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="atributosarticulos.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="coloresarticulo.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:patchScript name="factalma_general.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:patchScript name="flfactalma.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:patchScript name="lineastransstock.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterarticulos.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterregstocks.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:patchScript name="regstocks.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:addFile name="regstocks_buffer.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:patchXml name="articulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="atributosarticulos.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="atributostarifas.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="barcodeprov.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="colores.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="coloresarticulo.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="coloresset.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="factalma_general.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="grupostalla.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="lineasregstocks.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineastransstock.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="regstocks_buffer.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="setscolores.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="setstallas.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="stocks.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="tallas.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="tallasarticulo.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="tallasset.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="tarifas.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="flfacturac.xml" path="facturacion/facturacion/" style="legacy1"/>
+  <flpatch:patchXml name="albaranescli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="albaranesprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="facturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="facturasprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="lineasalbaranescli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:addFile name="lineastallacol.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="lineastallacolcli.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="lineastallcol.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:patchScript name="albaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="albaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="facturascli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="facturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="lineasalbaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:addFile name="masterlineastallacol.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:addFile name="masterlineastallacolcli.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:patchXml name="lineasalbaranescli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:addFile name="lineastallacol.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="lineastallacolcli.mtd" path="facturacion/facturacion/tables/"/>
 </flpatch:modifications>

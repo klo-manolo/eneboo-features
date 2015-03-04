@@ -1,0 +1,32 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_prevpagos_agr</name>
+
+	<tables>empresa,i_prevpagos_buffer,proveedores,cuentasbanco</tables>
+	<group>
+		<level>0</level>
+		<field>empresa.cifnif</field>
+	</group>
+	<group>
+		<level>1</level>
+		<field>i_prevpagos_buffer.fechav</field>
+	</group>
+	
+	<select>
+		i_prevpagos_buffer.descripcion,
+		i_prevpagos_buffer.fechav, i_prevpagos_buffer.importe,
+		i_prevpagos_buffer.codproveedor, i_prevpagos_buffer.codcuenta,
+		i_prevpagos_buffer.agrupacion,
+		empresa.nombre, empresa.cifnif, empresa.direccion,
+		empresa.codpostal, empresa.ciudad, empresa.provincia, empresa.apartado,
+		empresa.codpais,
+		proveedores.nombre,cuentasbanco.descripcion
+	</select>
+
+	<from>
+		empresa, i_prevpagos_buffer
+		LEFT JOIN proveedores on i_prevpagos_buffer.codproveedor = proveedores.codproveedor
+		LEFT JOIN cuentasbanco on i_prevpagos_buffer.codcuenta = cuentasbanco.codcuenta
+	</from>
+
+</QRY>

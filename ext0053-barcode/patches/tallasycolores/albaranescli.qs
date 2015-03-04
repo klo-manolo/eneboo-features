@@ -2,7 +2,7 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
-class barCode extends oficial {
+class barCode extends oficial /** %from: oficial */ {
 	var curLinTC:FLSqlCursor;
     function barCode( context ) { oficial ( context ); }
 	function init() {
@@ -27,7 +27,7 @@ class barCode extends oficial {
 /** @class_declaration pubBarCode */
 /////////////////////////////////////////////////////////////////
 //// PUB_BARCODE ////////////////////////////////////////////////
-class pubBarCode extends ifaceCtx {
+class pubBarCode extends ifaceCtx /** %from: ifaceCtx */ {
     function pubBarCode ( context ) { ifaceCtx( context ); }
 	function pub_lineasTallaColor(tabla:String, campoPadre:String, valorCP:String, referencia:String, habilitar:Boolean):Boolean {
 		return this.lineasTallaColor(tabla, campoPadre, valorCP, referencia, habilitar);

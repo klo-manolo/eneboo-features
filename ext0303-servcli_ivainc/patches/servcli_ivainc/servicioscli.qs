@@ -2,7 +2,7 @@
 /** @class_declaration servcliIvaInc */
 /////////////////////////////////////////////////////////////////
 //// SERVCLI_IVAINC ////////////////////////////////////////
-class servcliIvaInc extends oficial
+class servcliIvaInc extends oficial /** %from: oficial */
 {
   function servcliIvaInc(context)
   {
@@ -34,7 +34,7 @@ function servcliIvaInc_datosLineaServicio(datosArt: Array): Boolean {
     this.iface.curLineaServicio_.setValueBuffer("pvpunitario", formRecordlineaspedidoscli.iface.pub_commonCalculateField("pvpunitario2", this.iface.curLineaServicio_));
     this.iface.curLineaServicio_.setValueBuffer("pvpsindtoiva", formRecordlineaspedidoscli.iface.pub_commonCalculateField("pvpsindtoiva2", this.iface.curLineaServicio_));
     this.iface.curLineaServicio_.setValueBuffer("pvpsindto", formRecordlineaspedidoscli.iface.pub_commonCalculateField("pvpsindto2", this.iface.curLineaServicio_));
-    this.iface.curLineaServicio_.setValueBuffer("pvptotaliva", formRecordlineaspedidoscli.iface.pub_commonCalculateField("pvptotaliva2", this.iface.curLineaServicio_));
+    this.iface.curLineaServicio_.setValueBuffer("pvptotalivainc", formRecordlineaspedidoscli.iface.pub_commonCalculateField("pvptotaliva2", this.iface.curLineaServicio_));
     this.iface.curLineaServicio_.setValueBuffer("pvptotal", formRecordlineaspedidoscli.iface.pub_commonCalculateField("pvptotal2", this.iface.curLineaServicio_));
   } else {
     this.iface.curLineaServicio_.setValueBuffer("pvpunitario", formRecordlineaspedidoscli.iface.pub_commonCalculateField("pvpunitario", this.iface.curLineaServicio_));
@@ -49,3 +49,4 @@ function servcliIvaInc_datosLineaServicio(datosArt: Array): Boolean {
 }
 //// SERVCLI_IVAINC ////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+

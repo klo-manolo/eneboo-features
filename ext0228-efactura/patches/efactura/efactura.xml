@@ -1,0 +1,13 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="efactura">
+  <flpatch:patchXml name="masterfacturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterfacturasprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="facturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterfacturascli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterfacturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchXml name="facturasprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="empresa.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="paises.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchScript name="empresa.qs" path="facturacion/principal/scripts/" style="legacy"/>
+  <flpatch:patchXml name="empresa.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="paises.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+</flpatch:modifications>

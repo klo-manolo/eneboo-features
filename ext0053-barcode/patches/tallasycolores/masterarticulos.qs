@@ -2,22 +2,22 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
-class barCode extends ivaIncluido {
+class barCode extends oficial /** %from: oficial */ {
 	var curColorArticulo:FLSqlCursor;
 	var curAtributoArticulo:FLSqlCursor;
 	var curAtributoTarifa:FLSqlCursor;
 	var curBarcodeProv:FLSqlCursor;
 	//variable de etiArticulo
 	var tbnEtiquetas:Object;
-    function barCode( context ) { ivaIncluido ( context ); }
+    function barCode( context ) { oficial ( context ); }
 	/** Funciones de etiArticulo */
 	function init() {
 		return this.ctx.barCode_init();
-	}	
+	}
 	function imprimirEtiquetas() {
 		return this.ctx.barCode_imprimirEtiquetas();
 	}
-	/** ------------------------------------------------------------------------------------------------------------ */	
+	/** ------------------------------------------------------------------------------------------------------------ */
 	function copiarAnexosArticulo(refOriginal:String, refNueva:String):Boolean {
 		return this.ctx.barCode_copiarAnexosArticulo(refOriginal, refNueva);
 	}
@@ -78,7 +78,7 @@ function barCode_imprimirEtiquetas()
 	if (!cantidad) {
 		return false;
 	}
-	
+
 	var xmlKD:FLDomDocument = new FLDomDocument;
 	xmlKD.setContent("<!DOCTYPE KUGAR_DATA><KugarData/>");
 	var eRow:FLDomElement;
@@ -119,18 +119,18 @@ function barCode_copiarTablaAtributosArticulos(refOriginal:String, refNueva:Stri
 	if (!this.iface.curAtributoArticulo) {
 		this.iface.curAtributoArticulo = new FLSqlCursor("atributosarticulos");
 	}
-	
+
 	var campos:Array = util.nombreCampos("atributosarticulos");
 	var totalCampos:Number = campos[0];
 
 	var curAtributoArticuloOrigen:FLSqlCursor = new FLSqlCursor("atributosarticulos");
 	curAtributoArticuloOrigen.select("referencia = '" + refOriginal + "'");
 	var barcodeOrigen:String;
-	
+
 	formRecordarticulos.iface.calculoBarcode_ = flfactalma.iface.pub_valorDefectoAlmacen("calculobarcode");
 	formRecordarticulos.iface.digitosBarcode_ = flfactalma.iface.pub_valorDefectoAlmacen("digitosbarcode");
 	formRecordarticulos.iface.prefijoBarcode_ = flfactalma.iface.pub_valorDefectoAlmacen("prefijobarcode");
-	
+
 	while (curAtributoArticuloOrigen.next()) {
 		curAtributoArticuloOrigen.setModeAccess(curAtributoArticuloOrigen.Browse);
 		curAtributoArticuloOrigen.refreshBuffer();
@@ -198,7 +198,7 @@ function barCode_copiarTablaColoresArticulo(refOriginal:String, refNueva:String)
 	if (!this.iface.curColorArticulo) {
 		this.iface.curColorArticulo = new FLSqlCursor("coloresarticulo");
 	}
-	
+
 	var campos:Array = util.nombreCampos("coloresarticulo");
 	var totalCampos:Number = campos[0];
 
@@ -208,7 +208,7 @@ function barCode_copiarTablaColoresArticulo(refOriginal:String, refNueva:String)
 		this.iface.curColorArticulo.setModeAccess(this.iface.curColorArticulo.Insert);
 		this.iface.curColorArticulo.refreshBuffer();
 		this.iface.curColorArticulo.setValueBuffer("referencia", refNueva);
-	
+
 		for (var i:Number = 1; i <= totalCampos; i++) {
 			if (!this.iface.datosColorArticulo(curColorArticuloOrigen, campos[i])) {
 				return false;
@@ -251,7 +251,7 @@ function barCode_copiarTablaAtributosTarifas(barcodeOrigen:String, nuevoBarcode:
 	if (!this.iface.curAtributoTarifa) {
 		this.iface.curAtributoTarifa = new FLSqlCursor("atributostarifas");
 	}
-	
+
 	var campos:Array = util.nombreCampos("atributostarifas");
 	var totalCampos:Number = campos[0];
 
@@ -261,7 +261,7 @@ function barCode_copiarTablaAtributosTarifas(barcodeOrigen:String, nuevoBarcode:
 		this.iface.curAtributoTarifa.setModeAccess(this.iface.curAtributoTarifa.Insert);
 		this.iface.curAtributoTarifa.refreshBuffer();
 		this.iface.curAtributoTarifa.setValueBuffer("barcode", nuevoBarcode);
-	
+
 		for (var i:Number = 1; i <= totalCampos; i++) {
 			if (!this.iface.datosAtributoTarifa(curAtributoTarifaOrigen, campos[i])) {
 				return false;
@@ -305,7 +305,7 @@ function barCode_copiarTablaBarcodeProv(barcodeOrigen:String, nuevoBarcode:Strin
 	if (!this.iface.curBarcodeProv) {
 		this.iface.curBarcodeProv = new FLSqlCursor("barcodeprov");
 	}
-	
+
 	var campos:Array = util.nombreCampos("barcodeprov");
 	var totalCampos:Number = campos[0];
 
@@ -315,7 +315,7 @@ function barCode_copiarTablaBarcodeProv(barcodeOrigen:String, nuevoBarcode:Strin
 		this.iface.curBarcodeProv.setModeAccess(this.iface.curBarcodeProv.Insert);
 		this.iface.curBarcodeProv.refreshBuffer();
 		this.iface.curBarcodeProv.setValueBuffer("barcode", nuevoBarcode);
-	
+
 		for (var i:Number = 1; i <= totalCampos; i++) {
 			if (!this.iface.datosBarcodeProv(curBarcodeProvOrigen, campos[i])) {
 				return false;
@@ -327,7 +327,7 @@ function barCode_copiarTablaBarcodeProv(barcodeOrigen:String, nuevoBarcode:Strin
 		}
 	}
 
-	return true;	
+	return true;
 }
 
 function barCode_datosBarcodeProv(cursorOrigen:FLSqlCursor,campo:String):Boolean
@@ -354,3 +354,4 @@ function barCode_datosBarcodeProv(cursorOrigen:FLSqlCursor,campo:String):Boolean
 }
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
 /////////////////////////////////////////////////////////////////
+

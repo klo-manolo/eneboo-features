@@ -2,8 +2,8 @@
 /** @class_declaration barCode */
 /////////////////////////////////////////////////////////////////
 //// TALLAS Y COLORES POR BARCODE ///////////////////////////////
-class barCode extends funNumSerie  /** %from: oficial */ {
-    function barCode( context ) { funNumSerie ( context ); }
+class barCode extends oficial /** %from: oficial */ {
+    function barCode( context ) { oficial ( context ); }
     function init() {
 		return this.ctx.barCode_init();
 	}

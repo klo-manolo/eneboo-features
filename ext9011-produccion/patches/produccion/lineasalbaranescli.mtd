@@ -7,7 +7,7 @@
       <null>true</null>
       <pk>false</pk>
       <type>string</type>
-      <length>10</length>
+      <length>30</length>
       <relation>
         <table>lotestocks</table>
         <field>codlote</field>

@@ -1,0 +1,68 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnEFactura</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>image33020</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Cargar un documento electrónico</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Carga un fichero en formato Facturae a partir de un ficherol</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,masterfacturasprov]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,tbnEFactura]">
+    <spacer>
+      <property name="name">
+        <cstring>spacer56</cstring>
+      </property>
+      <property name="orientation">
+        <enum>Horizontal</enum>
+      </property>
+      <property name="sizeType">
+        <enum>Expanding</enum>
+      </property>
+      <property name="sizeHint">
+        <size>
+          <width>231</width>
+          <height>20</height>
+        </size>
+      </property>
+    </spacer>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image38751]">
+    <image name="image33020">
+      <data format="PNG" length="1813">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006dc49444154789ced975f6c1c471dc73f4ed6d5ac7411b3c241b7ea216ea5003e68442e4aaac64a1eec3712ac124741c20e5293404531e2a1c91331e2a1b40fa811424a5a2125e5c921806a21442d5a293655912d35215b48c8b972c81ec46497f6ca4e9a2bfb73bcd83ccc3a76fe024f7d80914eb3739a9ddff7fb9ddfbfed585a5ae2c31c6b3e54ebff070038001d1d1d77fcabe0b143d00aa1da6b7799047e7bf4f67d4a432ef6572c5fb906da050115a578758f588aed06d08000aa583f4081d44eb981dc5d43497f8c4afd51aadbfaa8f66e43571fc6c15936be3cb2dc1efe6c83a7f7fd84dfbf34c93e056b571b5d3d772c2d2ddd47816190b48b1dc343ca5103baf299cf9153520e6b8d648be4f28169362e323b71869953bf2069fc4e95e0cc353869f8d2b8544ff9c65b1b4e868b03155e3c34c87715bc77a712f706a034ec3ef14479cb9e678232157f1d88d80bcb32bb45042487a80d62e2797d61744c5d7ce9b9cddf6fa88947d46bc3d5435ed80e193f370e0da8e5bcf1cc57f896bf9eb7d42a107703e8aa76b2f7e51f0ef46f7eaaaf1b94038d39c80492366805a66dc1a429b8c0ce1ad4cb30f2f397af4dd6f7ddfcc6f60355b7d3652a9b82364c5f9e8659d04de223fd1cda59e7b4c092b90b8052b0ffcc8f8eecef79f2e0568881f10b109b15056867d44af659392e3d958c7ad9e5d44cca48be8b9e0d3ef57575c617c6093a0304214e63c2cb21322710920fd6f9c1c12ff09ceec4dc0ee08bc7be7ee0e9e1174fee8008186d58e346403b85f73ae0b65206b778f8dabe763e8167cd10aa12b173fd00630b63d43a6b088242210864105e0e899a11322df456183fb49fafad4441b5b752fbfcf0c8c1472cf3d106442d2bb75285f18279d6e5317631e57ccb1a7fa17d18d335c59ef5438c6399032bc6293cce80cc0ae50aad9e6dfcd97359ef00a0cbb063f8896d351ed61e8c452bb2eb927ddfd3d6e974c99e8578349a30ad47b8541ae5f0c74798628a1a35005c5c5252341a41089b218db0c1e046a607b7733a70b998c0750b20a75357363fee976032824b09180394ac51bf54f80010b732bc920b1ac6cc61a6394aafeae5e4ec4952274672ab928880065ffbd4dd3ab18951390b039bf865e0722e815905c602f8f2e8278272f0d9d458a98cb1b2935be6690e81033d1ac471490526925708cd71ca46d398096d56c941290d22283449b549e66be21bf1b29a2d7f3d71025735bcbbecd7901388836bda36d46e1d56b2e1e796204952d22e8fa6b1a118e8cd9c285f42f2f320864612a3cb352457a406923864a2fb383e3e2282890d3b032220d6f08fe53c609d7076bc840273c3da46acb79383a756b26398d8541bb580dc2732018a3ece37ebe8ae6124df83b477d18c7a68243d8808013e92d87a512ff3470def09649ad5b5c04437b3764696db90c3e1d65da605980ca1d65528849d05685c8e319987381e02a46dc87245da8e515ac182224a6234a47ddd5c48e0ba82f9e55ab0a68882abe4dc94bc605ec43d6215885b2006c2b9c2119723ab0d53b306ed976fed570ed016a414e32b85360a339b30b89137cb9d5cd670ddc03f8b1452009899bc6292c65fc821bd6199df4ab76df04ad65dc7c388e86a6455928c4c52a224c6552e49bba8726986b405a3a60974c0e45b211aaef775332170cdc08dd5d5d0026835da323bfd6b9383eb80dcb04c44ec3a13a8553c7cad00451c45c457239a714ccfa61eebb0d8dc41ee12b723f4c6081288661b1cdccaab358f8b06fea6619ec2016faf05e5faa3e5a7cebc1e943de529c0b549473945062c42921ca2b90ce5087ed983dc4a1f1b9014a2998886330a7b8f42a8a8af4bce3ebf9b6306ce29f893c0bcbe4b0180247cd3bc71fc84c92d635ddc31b9bd7f17485b401bfc924bd0e521c6ee895ba004b49351db1063b61ec7cc08352709bfb79b1f0bcc68986395f1651fb8a31aea8faabdc77e55db32f4985619ae72514e86f65c14197d5517cfc998681669d9711132ea5d2e810693470c5dde4572b5b134e0f3ea917e7e2af036f0b6c0df573317eed70fe8f2a754fff3a7834d03f59d9f84c12deeada4440e89406420d0f6a0a0686d26cc14df3c3b84b49aef0ed7193db0834903730aae880dbda57bf584f7eb882a6c1f3e76e4db471eaf955d1bdfcba1272bc9493b10b763a6cd286367bf335f73e437c3fdfcac7723b309bca3604ee0837b317f704f082847b9aa7bdb937adbd057fd0dc1a7834aad934e855620b9a032214c46171bc9c9bf2ad30c87b6f05a6f3f7ff07d5203ef688b796175fbb59af9837bc2dbc74750ba86f6b7a2cb55601dc23c2a7abfdadd9ce9dbca95be7e8cbf11d1d036f0be827981c50731bfbf0ffc07a3da0d232f80eee6a1c0e72160095830906b58bc17d3fbad9dffca7231faf642bd1728be1a342caeeef75733fd77eb8efff9afe37f01ef7f712c8f276a800000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+</xupdate:modifications>

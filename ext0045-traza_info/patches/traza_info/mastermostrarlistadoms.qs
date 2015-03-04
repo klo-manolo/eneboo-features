@@ -261,7 +261,7 @@ function oficial_refrescarTabla()
 	var qry:FLSqlQuery = new FLSqlQuery;	
 	with (qry) {
 		setTablesList("movistock");
-		setSelect("idmovimiento, referencia, estado, cantidad, fechaprev, fechareal, horareal, codlote, idlineaac, idlineapc, idlineaap, idlineapp, idlineapr, idlineaco, idlineava, idproceso, idlineats");
+		setSelect("idmovimiento, referencia, estado, cantidad, fechaprev, fechareal, horareal, codlote, idlineafc, idlineafp, idlineaac, idlineapc, idlineaap, idlineapp, idlineapr, idlineaco, idlineava, idproceso, idlineats");
 		setFrom("movistock");
 		setWhere(filtro + " ORDER BY fechareal, horareal, fechaprev");
 		setForwardOnly(true);
@@ -472,6 +472,40 @@ function oficial_identificarDocumento(qry:FLSqlQuery):Array
 				datosDoc["codigo"] = qryCodigo.value("a.codigo");
 				datosDoc["origen"] = qryCodigo.value("a.codproveedor") + " - " + qryCodigo.value("a.nombre");
 			} 
+		} else if (qry.value("idlineafc") && qry.value("idlineafc") != "") {
+			datosDoc["tipo"] = "Factura cliente";
+			with (qryCodigo) {
+				setTablesList("facturascli,lineasfacturascli");
+				setSelect("a.codigo,a.codcliente,a.nombrecliente");
+				setFrom("facturascli a INNER JOIN lineasfacturascli l ON a.idfactura = l.idfactura");
+				setWhere("l.idlinea = " + qry.value("idlineafc"));
+				setForwardOnly(true);
+			}
+			if (!qryCodigo.exec()) {
+				return false;
+			}
+			if (qryCodigo.first()) {
+				datosDoc["codigo"] = qryCodigo.value("a.codigo");
+				datosDoc["origen"] = qryCodigo.value("a.codcliente") + " - " + qryCodigo.value("a.nombrecliente");
+				// debug("Cargando origen stock desde facturascli = " + datosDoc["origen"]);
+			}
+		} else if (qry.value("idlineafp") && qry.value("idlineafp") != "") {
+			datosDoc["tipo"] = "Factura proveedor";
+			with (qryCodigo) {
+				setTablesList("facturasprov,lineasfacturasprov");
+				setSelect("a.codigo,a.codproveedor,a.nombre");
+				setFrom("facturasprov a INNER JOIN lineasfacturasprov l ON a.idfactura = l.idfactura");
+				setWhere("l.idlinea = " + qry.value("idlineafp"));
+				setForwardOnly(true);
+			}
+			if (!qryCodigo.exec()) {
+				return false;
+			}
+			if (qryCodigo.first()) {
+				datosDoc["codigo"] = qryCodigo.value("a.codigo");
+				datosDoc["origen"] = qryCodigo.value("a.codproveedor") + " - " + qryCodigo.value("a.nombre");
+				// debug("Cargando origen stock desde facturasprov = " + datosDoc["origen"]);
+			}
 		} else if (qry.value("idlineats") && qry.value("idlineats") != "") {
 			datosDoc["tipo"] = "Transferencia";
 			with (qryCodigo) {
@@ -658,6 +692,16 @@ function oficial_verDocumento()
 		}
 		case "Albarán proveedor": {
 			tabla = "albaranesprov";
+			where = "codigo = '" + identificador + "'";
+			break;
+		}
+		case "Factura cliente": {
+			tabla = "facturascli";
+			where = "codigo = '" + identificador + "'";
+			break;
+		}
+		case "Factura proveedor": {
+			tabla = "facturasprov";
 			where = "codigo = '" + identificador + "'";
 			break;
 		}

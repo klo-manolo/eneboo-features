@@ -56,8 +56,8 @@
                     </property>
                     <property name="minimumSize">
                         <size>
-                            <width>350</width>
-                            <height>25</height>
+                            <width>26</width>
+                            <height>22</height>
                         </size>
                     </property>
                     <property name="font">
@@ -117,8 +117,8 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>350</width>
-                                    <height>25</height>
+                                    <width>26</width>
+                                    <height>22</height>
                                 </size>
                             </property>
                             <property name="font">
@@ -243,8 +243,8 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>200</width>
-                                    <height>0</height>
+                                    <width>38</width>
+                                    <height>24</height>
                                 </size>
                             </property>
                             <property name="font">
@@ -271,8 +271,8 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>200</width>
-                                    <height>0</height>
+                                    <width>9</width>
+                                    <height>23</height>
                                 </size>
                             </property>
                             <property name="font">
@@ -288,7 +288,7 @@
                                 <string>proveedores</string>
                             </property>
                             <property name="foreignField">
-                                <string>codproveedor</string>
+                                <string>i_pagaresprov_codproveedor</string>
                             </property>
                             <property name="fieldRelation">
                                 <string>codproveedor</string>
@@ -338,8 +338,8 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>150</width>
-                                    <height>0</height>
+                                    <width>38</width>
+                                    <height>24</height>
                                 </size>
                             </property>
                             <property name="font">
@@ -366,8 +366,8 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>200</width>
-                                    <height>0</height>
+                                    <width>9</width>
+                                    <height>23</height>
                                 </size>
                             </property>
                             <property name="font">
@@ -383,7 +383,7 @@
                                 <string>cuentasbanco</string>
                             </property>
                             <property name="foreignField">
-                                <string>codcuenta</string>
+                                <string>i_pagaresprov_codcuenta</string>
                             </property>
                             <property name="fieldRelation">
                                 <string>codcuenta</string>
@@ -450,8 +450,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>220</width>
-                                            <height>25</height>
+                                            <width>26</width>
+                                            <height>22</height>
                                         </size>
                                     </property>
                                     <property name="font">
@@ -476,8 +476,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>200</width>
-                                            <height>25</height>
+                                            <width>26</width>
+                                            <height>22</height>
                                         </size>
                                     </property>
                                     <property name="font">
@@ -529,8 +529,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>200</width>
-                                            <height>25</height>
+                                            <width>26</width>
+                                            <height>22</height>
                                         </size>
                                     </property>
                                     <property name="font">
@@ -555,8 +555,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>200</width>
-                                            <height>25</height>
+                                            <width>2</width>
+                                            <height>21</height>
                                         </size>
                                     </property>
                                     <property name="maximumSize">
@@ -645,8 +645,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>220</width>
-                                            <height>25</height>
+                                            <width>26</width>
+                                            <height>22</height>
                                         </size>
                                     </property>
                                     <property name="font">
@@ -671,8 +671,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>200</width>
-                                            <height>25</height>
+                                            <width>26</width>
+                                            <height>22</height>
                                         </size>
                                     </property>
                                     <property name="font">
@@ -724,8 +724,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>200</width>
-                                            <height>25</height>
+                                            <width>26</width>
+                                            <height>22</height>
                                         </size>
                                     </property>
                                     <property name="font">
@@ -750,8 +750,8 @@
                                     </property>
                                     <property name="minimumSize">
                                         <size>
-                                            <width>200</width>
-                                            <height>25</height>
+                                            <width>2</width>
+                                            <height>21</height>
                                         </size>
                                     </property>
                                     <property name="maximumSize">
@@ -807,21 +807,21 @@
 </widget>
 <layoutdefaults spacing="6" margin="11"/>
 <includehints>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
-    <includehint>FLFieldDB.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
 </includehints>
 </UI>
