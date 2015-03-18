@@ -4,7 +4,7 @@
 //// ACT_PRECIOS //////////////////////////////////////////////////
 class actPrecios extends oficial
 {
-	var sep:String = "ð";
+	var sep:String = "|";
 	var tablaDestino:String = "articulos";
 	var crearSiNoExiste:Boolean = false;
 	var corr = [];
@@ -57,7 +57,7 @@ function actPrecios_importar()
 {
 	var util:FLUtil = new FLUtil();
 
-	var res:Object = MessageBox.information(util.translate("scripts",  "Van a realizarse el proceso de importación. Esta acción no podrá deshacerse.\nEs aconsejable tener copias de seguridad en su base de datos antes de proceder.\n\n¿Desea continuar?"), MessageBox.Yes, MessageBox.No, MessageBox.NoButton);
+	var res:Object = MessageBox.information(util.translate("scripts",  "Van a realizarse el proceso de importación usando el separador de campos |. Esta acción no podrá deshacerse.\nEs aconsejable tener copias de seguridad en su base de datos antes de proceder.\n\n¿Desea continuar?"), MessageBox.Yes, MessageBox.No, MessageBox.NoButton);
 	if (res != MessageBox.Yes) return;
 
 	this.iface.corr = [];
