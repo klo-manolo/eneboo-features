@@ -243,14 +243,14 @@ function eFactura_cargarCabeceraFacturae(nodoInvoice:FLDomNode):Array
 					return datos;
 				}
 			}
-		
-		
+
+
 			var ruta:String = "EquivalenceSurchargeAmount";
 	var nombreNodo:Array = ruta.split("/");
 	var nodoXML:FLDomNode = nodoTax;
 	for (var i:Number = 0; i < nombreNodo.length; i++) {
 		nodoXML = nodoXML.namedItem(nombreNodo[i]);
-			if (!nodoXML) 
+			if (!nodoXML)
 				datos["totalrecargo"] = 0;
 			else
 				datos["totalrecargo"] += this.iface.valorNodo(nodoTax, "EquivalenceSurchargeAmount");

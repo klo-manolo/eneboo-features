@@ -1,13 +1,18 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="efactura">
-  <flpatch:patchXml name="masterfacturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
-  <flpatch:patchXml name="masterfacturasprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
-  <flpatch:patchScript name="facturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
-  <flpatch:patchScript name="masterfacturascli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
-  <flpatch:patchScript name="masterfacturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
-  <flpatch:patchXml name="facturasprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
-  <flpatch:patchXml name="empresa.ui" path="facturacion/principal/forms/" style="legacy1"/>
-  <flpatch:patchXml name="paises.ui" path="facturacion/principal/forms/" style="legacy1"/>
-  <flpatch:patchScript name="empresa.qs" path="facturacion/principal/scripts/" style="legacy"/>
-  <flpatch:patchXml name="empresa.mtd" path="facturacion/principal/tables/" style="legacy1"/>
-  <flpatch:patchXml name="paises.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturascli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masterfacturasprov.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="facturasprov.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturasprov.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturasprov.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
+  <flpatch:addFile path="facturacion/principal/forms/" name="centrosadmincli.ui"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="empresa.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="empresa.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/principal/tables/" name="centrosadmincli.mtd"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd" style="legacy1"/>
 </flpatch:modifications>
