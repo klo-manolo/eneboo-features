@@ -1,0 +1,13 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactosclientes]">
+    <action>
+      <name>centrosadmincli</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Centros administrativos de clientes")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada cliente con facturación-e puede tener asignados unos centros administrativos")</description>
+      <table>centrosadmincli</table>
+      <form>master</form>
+      <formrecord>centrosadmincli</formrecord>
+      <scriptformrecord>centrosadmincli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

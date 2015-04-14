@@ -124,11 +124,12 @@ function eFactura_init()
 
 function eFactura_generarEFactura()
 {
+	var cursor:FLSqlCursor = this.cursor();
 	var util:FLUtil = new FLUtil;
 	var cadenaXML:String = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	var versionFacturae:String = flfactppal.iface.pub_valorDefectoEmpresa("facturaever"); // Compatible multiempresa
 	var cadenaFun:String = this.iface.nodoFacturae("Facturae", versionFacturae);
-
+	var extFichero:String;
 
 	if (cadenaFun.startsWith("ERROR")) {
 		MessageBox.warning(util.translate("scripts", "Error al generar la factura:") + "\n" + cadenaFun, MessageBox.Ok, MessageBox.NoButton);
@@ -139,11 +140,13 @@ function eFactura_generarEFactura()
 	var nombreFichero:String = FileDialog.getSaveFileName();
 	if (!nombreFichero)
 		return;
+	//////////////////////// EXTENSIÓN DEL FICHERO //////////////////////////////
+	extFichero = util.sqlSelect("clientes","extfacturae","codcliente = '" + cursor.valueBuffer("codcliente") + "'");
 
 	// Si se indica el ".xml", no volverlo a poner
 	var arrayNombreFichero:Array = nombreFichero.split(".");
 	if (arrayNombreFichero[arrayNombreFichero.length-1] != "xml")
-		nombreFichero = nombreFichero + ".xml";
+		nombreFichero = nombreFichero + "." + extFichero;
 
 	var xml:FLDomDocument = new FLDomDocument();
 	if (!xml.setContent(cadenaXML)) {
@@ -471,7 +474,11 @@ function eFactura_nodoFacturae(nombreNodo:String, version:String):String
 				case "3.0":
 				case "3.2":
 				case "3.2.1": {
-					cadenaXML += "";
+                    // KLO.
+                    var codCliente:String = flfactppal.iface.pub_cerosIzquierda(cursor.valueBuffer("codcliente"),10);
+                    cadenaXML += "<PartyIdentification>"
+                    cadenaXML += codCliente;
+                    cadenaXML += "</PartyIdentification>";
 					break;
 				}
 			}
@@ -482,7 +489,61 @@ function eFactura_nodoFacturae(nombreNodo:String, version:String):String
 				case "3.0":
 				case "3.2":
 				case "3.2.1": {
-					cadenaXML += "";
+
+			var util:FLUtil = new FLUtil;
+			var aDir:Array;
+			var codISO:String;
+			//Bucle recorriendo los centros administrativos ...
+			var qryCentrosAdministrativos:FLSqlCursor = new FLSqlQuery;
+			qryCentrosAdministrativos.setTablesList("centrosadmincli");
+			qryCentrosAdministrativos.setSelect("rol,centro,descripcion,direccion,codpostal,ciudad,provincia,apartado,telefono1,fax");
+			qryCentrosAdministrativos.setFrom("centrosadmincli");
+			qryCentrosAdministrativos.setWhere("codcliente ='" + cursor.valueBuffer("codcliente") + "'");
+
+			if (!qryCentrosAdministrativos.exec())
+				break;
+
+            if (qryCentrosAdministrativos.size() == 0)
+                break;
+
+			cadenaXML += "<AdministrativeCentres>";
+
+			while (qryCentrosAdministrativos.next()) {
+				aDir["direccion"] = qryCentrosAdministrativos.value("direccion");
+				aDir["codpostal"] = qryCentrosAdministrativos.value("codpostal");
+				aDir["ciudad"] = qryCentrosAdministrativos.value("ciudad");
+				aDir["provincia"] = qryCentrosAdministrativos.value("provincia");
+				codISO = util.sqlSelect("paises", "codisoalpha3", "codpais = '" + qryCentrosAdministrativos.value("codpais") + "'");
+				if (!codISO)
+					{
+					codISO = "ESP"; //Forzamos a ESP si no hay definido un ISO3
+					}
+				aDir["codisoalpha3"] = codISO;
+
+				cadenaXML += "<AdministrativeCentre>";
+				cadenaXML += "<CentreCode>" + qryCentrosAdministrativos.value("centro") + "</CentreCode>";
+				cadenaXML += "<RoleTypeCode>" + qryCentrosAdministrativos.value("rol").left(2) + "</RoleTypeCode>";
+				cadenaXML += this.iface.nodoAddressTypeFacturae("AddressInSpain",version,aDir);
+				//cadenaXML += this.iface.nodoFacturae("ContactDetails", version);
+		if (qryCentrosAdministrativos.value("telefono1") != "" || qryCentrosAdministrativos.value("fax") != "")
+				{
+				cadenaXML += "<ContactDetails>";
+				if (qryCentrosAdministrativos.value("telefono1") != "")
+					{
+					cadenaXML += "<Telephone>" + qryCentrosAdministrativos.value("telefono1") + "</Telephone>";
+					}
+				if (qryCentrosAdministrativos.value("fax") != "")
+					{
+					cadenaXML += "<TeleFax>" + qryCentrosAdministrativos.value("fax") + "</TeleFax>";
+					}
+				cadenaXML += "</ContactDetails>";
+				}
+
+		 cadenaXML += "<CentreDescription>" + qryCentrosAdministrativos.value("descripcion") +
+"</CentreDescription></AdministrativeCentre>" ;
+			}
+
+                    cadenaXML += "</AdministrativeCentres>";
 					break;
 				}
 			}
@@ -2334,15 +2395,19 @@ function eFactura_nodoEmpresaTypeFacturae(nombreNodo:String, version:String, val
 		return cadenaFun + sufijoError;
 	cadenaXML += cadenaFun;
 
-	cadenaFun = this.iface.nodoFacturae("PartyIdentification", version);
-	if (cadenaFun.startsWith("ERROR"))
-		return cadenaFun + sufijoError;
-	cadenaXML += cadenaFun;
+    // KLO.
+    if (valor == "buyer") {
+    	debug("COMPRA COMPRA");
+    	cadenaFun = this.iface.nodoFacturae("PartyIdentification", version);
+        if (cadenaFun.startsWith("ERROR"))
+            return cadenaFun + sufijoError;
+        cadenaXML += cadenaFun;
 
-	cadenaFun = this.iface.nodoFacturae("AdministrativeCentres", version);
-	if (cadenaFun.startsWith("ERROR"))
-		return cadenaFun + sufijoError;
-	cadenaXML += cadenaFun;
+        cadenaFun = this.iface.nodoFacturae("AdministrativeCentres", version, datosEmpresa);
+        if (cadenaFun.startsWith("ERROR"))
+            return cadenaFun + sufijoError;
+        cadenaXML += cadenaFun;
+    }
 
 	if (datosEmpresa["tipopersona"] == "J") {
 		cadenaFun = this.iface.nodoLegalEntityTypeFacturae("LegalEntity", version, datosEmpresa);
@@ -2824,6 +2889,7 @@ function eFactura_nodoOverseasAddressTypeFacturae(nombreNodo:String, version:Str
 
 	return cadenaXML;
 }
+
 //// EFACTURA ///////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 

@@ -1,0 +1,577 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">882</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">603</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCliente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">38</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QFrame,frame7]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCliente]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8]/vbox[vbox,1]/widget[QLayoutWidget,layout84]/hbox[hbox,1]/widget[QLayoutWidget,layout83]/vbox[vbox,1]/widget[QLayoutWidget,layout14]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8]/vbox[vbox,1]/widget[QLayoutWidget,layout84]/hbox[hbox,1]/widget[QLayoutWidget,layout83]/vbox[vbox,1]/widget[QLayoutWidget,layout15]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8]/vbox[vbox,1]/widget[QLayoutWidget,layout84]/hbox[hbox,1]/widget[QLayoutWidget,layout82]/vbox[vbox,1]/widget[QLayoutWidget,layout18]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8]/vbox[vbox,1]/widget[QLayoutWidget,layout84]/hbox[hbox,1]/widget[QLayoutWidget,layout82]/vbox[vbox,1]/widget[QLayoutWidget,layout19]/hbox[hbox,1]/widget[FLFieldDB,fdbCodTipoRappel]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8_2]/vbox[vbox,1]/widget[QLayoutWidget,layout17_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaRem]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QFrame,frame8_2]/vbox[vbox,1]/widget[QLayoutWidget,layout140]/hbox[hbox,1]/widget[QGroupBox,gbxCuentaDom]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaDom]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout80]/hbox[hbox,1]/widget[QFrame,frame10]/vbox[vbox,1]/widget[FLFieldDB,fdbRegimenIva]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout80]/hbox[hbox,1]/widget[QFrame,frame10]/vbox[vbox,1]/widget[FLFieldDB,fdbRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,comercial]/vbox[vbox,1]/widget[QLayoutWidget,layout80]/hbox[hbox,1]/widget[QFrame,frame10]/vbox[vbox,1]/widget[FLFieldDB,fdbCopiasFactura]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">24</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbEjercicioSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[FLFieldDB,fdbDebeSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[FLFieldDB,fdbHaberSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">25</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[FLFieldDB,fdbSaldoSubcuenta]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formClientes]/vbox[vbox,1]/widget[QTabWidget,tbwCliente]/widget[QWidget,contabilidad]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>TabPage</cstring>
+      </property>
+      <attribute name="title">
+        <string>Factura-e</string>
+      </attribute>
+      <vbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+          <property name="name">
+            <cstring>gbxFacturae</cstring>
+          </property>
+          <property name="font">
+            <font>
+              <italic>1</italic>
+            </font>
+          </property>
+          <property name="title">
+            <string>Centros administrativos de cliente</string>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QFrame">
+              <property name="name">
+                <cstring>barraBotones_2_4_2</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>20</width>
+                  <height>40</height>
+                </size>
+              </property>
+              <property name="focusPolicy">
+                <enum>NoFocus</enum>
+              </property>
+              <property name="frameShape">
+                <enum>NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+                <enum>Raised</enum>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                  <number>4</number>
+                </property>
+                <property name="spacing">
+                  <number>2</number>
+                </property>
+                <widget class="QToolButton">
+                  <property name="name">
+                    <cstring>toolButtonInsertCA</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>1</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>32</width>
+                      <height>32</height>
+                    </size>
+                  </property>
+                  <property name="focusPolicy">
+                    <enum>NoFocus</enum>
+                  </property>
+                  <property name="text">
+                    <string/>
+                  </property>
+                  <property name="iconSet">
+                    <iconset>image12200</iconset>
+                  </property>
+                  <property name="toolTip" stdset="0">
+                    <string>Insertar registro (A)</string>
+                  </property>
+                  <property name="whatsThis" stdset="0">
+                    <string>Para crear un nuevo registro en la tabla</string>
+                  </property>
+                </widget>
+                <widget class="QToolButton">
+                  <property name="name">
+                    <cstring>toolButtonEditCA</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>1</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>32</width>
+                      <height>32</height>
+                    </size>
+                  </property>
+                  <property name="focusPolicy">
+                    <enum>NoFocus</enum>
+                  </property>
+                  <property name="text">
+                    <string/>
+                  </property>
+                  <property name="iconSet">
+                    <iconset>image15455</iconset>
+                  </property>
+                  <property name="toolTip" stdset="0">
+                    <string>Modificar registro (M)</string>
+                  </property>
+                  <property name="whatsThis" stdset="0">
+                    <string>Para modificar el registro activo de la tabla</string>
+                  </property>
+                </widget>
+                <widget class="QToolButton">
+                  <property name="name">
+                    <cstring>toolButtonDeleteCA</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>1</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>32</width>
+                      <height>32</height>
+                    </size>
+                  </property>
+                  <property name="focusPolicy">
+                    <enum>NoFocus</enum>
+                  </property>
+                  <property name="text">
+                    <string/>
+                  </property>
+                  <property name="iconSet">
+                    <iconset>image32297</iconset>
+                  </property>
+                  <property name="toolTip" stdset="0">
+                    <string>Eliminar registro (E)</string>
+                  </property>
+                  <property name="whatsThis" stdset="0">
+                    <string>Elimina el registro actual de la tabla</string>
+                  </property>
+                </widget>
+                <widget class="QToolButton">
+                  <property name="name">
+                    <cstring>toolButtonZoomCA</cstring>
+                  </property>
+                  <property name="sizePolicy">
+                    <sizepolicy>
+                      <hsizetype>1</hsizetype>
+                      <vsizetype>1</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                    <size>
+                      <width>32</width>
+                      <height>32</height>
+                    </size>
+                  </property>
+                  <property name="focusPolicy">
+                    <enum>NoFocus</enum>
+                  </property>
+                  <property name="text">
+                    <string/>
+                  </property>
+                  <property name="iconSet">
+                    <iconset>image40664</iconset>
+                  </property>
+                  <property name="toolTip" stdset="0">
+                    <string>Ver registro (V)</string>
+                  </property>
+                  <property name="whatsThis" stdset="0">
+                    <string>Para ver registro, sin permitir editar</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>Spacer2_3_2_4_2</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>40</width>
+                      <height>16</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <widget class="FLTableDB">
+              <property name="name">
+                <cstring>tdbCentrosAdminCli</cstring>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                  <italic>0</italic>
+                </font>
+              </property>
+              <property name="tableName">
+                <string>centrosadmincli</string>
+              </property>
+              <property name="foreignField">
+                <string>codcliente</string>
+              </property>
+              <property name="fieldRelation">
+                <string>codcliente</string>
+              </property>
+            </widget>
+          </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>layout30</cstring>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbExtFacturaE</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>38</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>250</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="font">
+                <font>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="focusPolicy">
+                <enum>StrongFocus</enum>
+              </property>
+              <property name="fieldName">
+                <string>extfacturae</string>
+              </property>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacer37_2</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>600</width>
+                  <height>20</height>
+                </size>
+              </property>
+            </spacer>
+          </hbox>
+        </widget>
+        <widget class="QFrame">
+          <property name="name">
+            <cstring>frame23</cstring>
+          </property>
+          <property name="frameShape">
+            <enum>StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+            <enum>Raised</enum>
+          </property>
+          <vbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLabel">
+              <property name="name">
+                <cstring>textLabel1</cstring>
+              </property>
+              <property name="text">
+                <string>Para poder realizar facturas a la Administración Pública deberá introducir como mínimo los roles:</string>
+              </property>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout29</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacer33_3</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Fixed</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>30</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>textLabel1_2</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <bold>0</bold>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>01-Fiscal (Oficina contable)</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacer38</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>600</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout27</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacer33</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Fixed</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>30</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>textLabel1_2_2</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <bold>0</bold>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>02-Receptor (Organo gestor)</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacer36</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>600</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <widget class="QLayoutWidget">
+              <property name="name">
+                <cstring>layout28</cstring>
+              </property>
+              <hbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacer33_2</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Fixed</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>30</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+                <widget class="QLabel">
+                  <property name="name">
+                    <cstring>textLabel1_2_2_2</cstring>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <bold>0</bold>
+                    </font>
+                  </property>
+                  <property name="text">
+                    <string>03-Pagador (Unidad tramitadora)</string>
+                  </property>
+                </widget>
+                <spacer>
+                  <property name="name">
+                    <cstring>spacer37</cstring>
+                  </property>
+                  <property name="orientation">
+                    <enum>Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                    <enum>Expanding</enum>
+                  </property>
+                  <property name="sizeHint">
+                    <size>
+                      <width>590</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </hbox>
+            </widget>
+            <widget class="QLabel">
+              <property name="name">
+                <cstring>textLabel2</cstring>
+              </property>
+              <property name="text">
+                <string>Puede consultar la siguiente web para las codificaciones de los centros: https://face.gob.es/es/directorio/relaciones</string>
+              </property>
+            </widget>
+          </vbox>
+        </widget>
+      </vbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonBrowseContacto,clicked(),tdbContactos,browseRecord()]">
+    <connection>
+      <sender>toolButtonInsertCA</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbCentrosAdminCli</receiver>
+      <slot>insertRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsertCA,clicked(),tdbCentrosAdminCli,insertRecord()]">
+    <connection>
+      <sender>toolButtonEditCA</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbCentrosAdminCli</receiver>
+      <slot>editRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEditCA,clicked(),tdbCentrosAdminCli,editRecord()]">
+    <connection>
+      <sender>toolButtonDeleteCA</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbCentrosAdminCli</receiver>
+      <slot>deleteRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDeleteCA,clicked(),tdbCentrosAdminCli,deleteRecord()]">
+    <connection>
+      <sender>toolButtonZoomCA</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbCentrosAdminCli</receiver>
+      <slot>browseRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/customwidgets[customwidgets,1]"/>
+</xupdate:modifications>
