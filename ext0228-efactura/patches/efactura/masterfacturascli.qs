@@ -2618,7 +2618,19 @@ function eFactura_nodoTextMin3Max30TypeFacturae(nombreNodo:String, version:Strin
 
 function eFactura_nodoTextMax2500TypeFacturae(nombreNodo:String, version:String, valor:String):String
 {
-	var cadenaXML:String = "";
+    // Si el código o descripción del artículo esta vacio se asegura de que el valor es vacio y no nulo para no dar error.
+    if (!valor) {
+        switch (nombreNodo) {
+            case "ArticleCode":
+            case "ItemDescription": {
+                valor = " ";
+            }
+        }
+        //debug("KLO=======> nombreNodo: "+nombreNodo);
+        //debug("KLO=====> valor referencia: "+valor);
+    }
+
+    var cadenaXML:String = "";
 	switch (version) {
 		case "3.0":
 		case "3.2":
