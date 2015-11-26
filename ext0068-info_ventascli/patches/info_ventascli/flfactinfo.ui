@@ -2,6 +2,12 @@
   <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">738</xupdate:update>
   <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">641</xupdate:update>
   <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">738</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[i_inventarioval]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]">
+    <action name="i_ventascli"/>
+  </xupdate:insert-after>
   <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Ventas]/item[popupMenu_10]">
     <action name="i_ventascli"/>
   </xupdate:insert-after>
