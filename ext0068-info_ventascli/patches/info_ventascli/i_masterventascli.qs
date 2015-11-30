@@ -324,10 +324,11 @@ function oficial_rellenarDatos()
 function oficial_vaciarDatos()
 {
 	var util:FLUtil = new FLUtil();
-	if (util.sqlDelete("i_ventascli_buffer", "idsesion = '" + sys.idSession() + "'"))
-		return true;
-	
-	return false
+		if (util.sqlDelete("i_ventascli_buffer", "1 = 1")) {
+			return true;
+		} else {
+			return false;
+		}
 }
 
 //// OFICIAL /////////////////////////////////////////////////////

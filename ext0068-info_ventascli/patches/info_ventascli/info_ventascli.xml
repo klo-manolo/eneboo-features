@@ -2,6 +2,7 @@
   <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml"/>
   <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui"/>
   <flpatch:addFile path="facturacion/informes/forms/" name="i_ventascli.ui"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_ventascli.qry"/>
   <flpatch:addFile path="facturacion/informes/reports/" name="i_ventascli.kut"/>
   <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterventascli.qs"/>
   <flpatch:addFile path="facturacion/informes/tables/" name="i_ventascli.mtd"/>
