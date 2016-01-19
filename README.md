@@ -1,9 +1,4 @@
-* CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 8 de enero de 2016
-* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EXTENSIONES-agrupadas-por-tipos)
 
-----
 ### EXTENSIONES agrupadas por tipos
 
 #### Indice:
@@ -18,7 +13,8 @@
 #### 1. de INFORMES de ESTADISTICAS de VENTAS:
 
  
-* ext0039-info_ventasmes  
+* [ext0039-info_ventasmes](./ext0039-info_ventasmes)  ![imagen icono] (./ext0039-info_ventasmes/doc/ext0039-icono-menu-ventas-mes.jpg)
+
 * ext0068-info_ventascli
 * ext0075-info_ventasmcli
 * ext0337-estventascli
