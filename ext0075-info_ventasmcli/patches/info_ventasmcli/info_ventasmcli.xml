@@ -1,11 +1,11 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="info_ventasmcli">
-  <flpatch:patchXml path="facturacion/informes/" name="flfactinfo.xml"/>
-  <flpatch:patchXml path="facturacion/informes/forms/" name="flfactinfo.ui"/>
-  <flpatch:addFile path="facturacion/informes/forms/" name="i_ventasmcli.ui"/>
-  <flpatch:addFile path="facturacion/informes/queries/" name="i_ventasmcli.qry"/>
-  <flpatch:addFile path="facturacion/informes/reports/" name="i_ventasmcli.kut"/>
-  <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterventasmcli.qs"/>
-  <flpatch:addFile path="facturacion/informes/scripts/" name="i_ventasmcli.qs"/>
-  <flpatch:addFile path="facturacion/informes/tables/" name="i_ventasmcli.mtd"/>
-  <flpatch:addFile path="facturacion/informes/tables/" name="i_ventasmcli_buffer.mtd"/>
+  <flpatch:patchXml name="flfactinfo.xml" path="facturacion/informes/" style="legacy1"/>
+  <flpatch:patchXml name="flfactinfo.ui" path="facturacion/informes/forms/" style="legacy1"/>
+  <flpatch:addFile name="i_ventasmcli.ui" path="facturacion/informes/forms/"/>
+  <flpatch:addFile name="i_ventasmcli.qry" path="facturacion/informes/queries/"/>
+  <flpatch:addFile name="i_ventasmcli.kut" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_masterventasmcli.qs" path="facturacion/informes/scripts/"/>
+  <flpatch:addFile name="i_ventasmcli.qs" path="facturacion/informes/scripts/"/>
+  <flpatch:addFile name="i_ventasmcli.mtd" path="facturacion/informes/tables/"/>
+  <flpatch:addFile name="i_ventasmcli_buffer.mtd" path="facturacion/informes/tables/"/>
 </flpatch:modifications>
