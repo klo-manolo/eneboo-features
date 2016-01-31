@@ -22,10 +22,10 @@
         <iconset>pgc2008image49805</iconset>
       </property>
       <property name="text">
-        <string>Cuentas anuales</string>
+        <string>Cuentas anuales (PGC-2008)</string>
       </property>
       <property name="menuText">
-        <string>&amp;Cuentas anuales</string>
+        <string>&amp;Cuentas anuales (PGC-2008)</string>
       </property>
     </action>
   </xupdate:insert-after>
