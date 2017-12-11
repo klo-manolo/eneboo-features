@@ -135,6 +135,10 @@ debug("arrayMails[i] " + arrayMails[i]);
 	else {
 		listaDestinatarios = emailPrincipal;
 	}
+
+if (listaDestinatarios)
+	listaDestinatarios = listaDestinatarios.replace("\n","");
+	
 debug("listaDestinatarios " + listaDestinatarios);
 	return listaDestinatarios;
 }
