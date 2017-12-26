@@ -1,0 +1,9 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="bot_impr_fac">
+  <flpatch:patchXml name="masteralbaranescli.ui" path="facturacion\facturacion\forms/" style="legacy1"/>
+  <flpatch:patchXml name="masteralbaranesprov.ui" path="facturacion\facturacion\forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterfacturascli.ui" path="facturacion\facturacion\forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterfacturasprov.ui" path="facturacion\facturacion\forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpedidoscli.ui" path="facturacion\facturacion\forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpedidosprov.ui" path="facturacion\facturacion\forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpresupuestoscli.ui" path="facturacion\facturacion\forms/" style="legacy1"/>
+</flpatch:modifications>
